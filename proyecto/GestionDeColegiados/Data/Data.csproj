@@ -87,7 +87,7 @@
   <ItemGroup>
     <Compile Include="DatosEncuentroFinalizado.cs" />
     <Compile Include="DatosEquipos.cs" />
-    <Compile Include="falloBDException.cs" />
+    <Compile Include="FalloBDException.cs" />
     <Compile Include="ConexionBD.cs" />
     <Compile Include="ConexionUsuarioBD.cs" />
     <Compile Include="DatosColegiados.cs" />
