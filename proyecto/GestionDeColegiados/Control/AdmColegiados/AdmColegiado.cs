@@ -139,10 +139,10 @@ namespace Control.AdmColegiados {
       _contexto = new Contexto(AdmAsistente1.GetAdmA1());
       _contexto.Datos(id, dgvListarColegiados);
 
-      _contexto = new Contexto(AdmAsistente2.getAdmA2());
+      _contexto = new Contexto(AdmAsistente2.GetAdmA2());
       _contexto.Datos(id, dgvListarColegiados);
 
-      _contexto = new Contexto(AdmCuartoArbitro.getAdmCA());
+      _contexto = new Contexto(AdmCuartoArbitro.GetAdmCA());
       _contexto.Datos(id, dgvListarColegiados);
     }
 
@@ -229,10 +229,10 @@ namespace Control.AdmColegiados {
         contextoArbitro = new Contexto(AdmAsistente1.GetAdmA1());
       }
       if(arbitro == "Asistente 2") {
-        contextoArbitro = new Contexto(AdmAsistente2.getAdmA2());
+        contextoArbitro = new Contexto(AdmAsistente2.GetAdmA2());
       }
       if(arbitro == "Cuarto Árbitro") {
-        contextoArbitro = new Contexto(AdmCuartoArbitro.getAdmCA());
+        contextoArbitro = new Contexto(AdmCuartoArbitro.GetAdmCA());
       }
       return contextoArbitro;
     }

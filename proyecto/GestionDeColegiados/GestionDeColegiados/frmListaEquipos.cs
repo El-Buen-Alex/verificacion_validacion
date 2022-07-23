@@ -4,27 +4,27 @@ using System.Windows.Forms;
 using Control.AdmEquipos;
 
 namespace GestionDeColegiados {
-  public partial class frmListaEquipos : Form {
-    private List<Label> listaContenedores = new List<Label>();
-    private AdmEquipo admEquipo = AdmEquipo.GetEquipo();
-    public frmListaEquipos() {
+  public partial class FrmListaEquipos : Form {
+    private List<Label> _listaContenedores = new List<Label>();
+    private AdmEquipo _admEquipo = AdmEquipo.GetEquipo();
+    public FrmListaEquipos() {
       InitializeComponent();
       /*se llenan los labels a una lista 
        * para poder gestionar el conjunto de ellos, al mostrar
        * los equipo
       */
-      listaContenedores.Add(lblEquipo1);
-      listaContenedores.Add(lblEquipo2);
-      listaContenedores.Add(lblEquipo3);
-      listaContenedores.Add(lblEquipo4);
-      listaContenedores.Add(lblEquipo5);
-      listaContenedores.Add(lblEquipo6);
-      listaContenedores.Add(lblEquipo7);
-      listaContenedores.Add(lblEquipo8);
-      listaContenedores.Add(lblEquipo9);
-      listaContenedores.Add(lblEquipo10);
+      _listaContenedores.Add(lblEquipo1);
+      _listaContenedores.Add(lblEquipo2);
+      _listaContenedores.Add(lblEquipo3);
+      _listaContenedores.Add(lblEquipo4);
+      _listaContenedores.Add(lblEquipo5);
+      _listaContenedores.Add(lblEquipo6);
+      _listaContenedores.Add(lblEquipo7);
+      _listaContenedores.Add(lblEquipo8);
+      _listaContenedores.Add(lblEquipo9);
+      _listaContenedores.Add(lblEquipo10);
       //llenamos los equipos en los labls
-      admEquipo.LlenarEquipos(listaContenedores);
+      _admEquipo.LlenarEquipos(_listaContenedores);
     }
   }
 }

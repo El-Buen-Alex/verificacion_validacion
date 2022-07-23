@@ -1,7 +1,7 @@
 ﻿
 namespace GestionDeColegiados
 {
-    partial class frmListaEquipos
+    partial class FrmListaEquipos
     {
         /// <summary>
         /// Required designer variable.
@@ -336,7 +336,7 @@ namespace GestionDeColegiados
     "10.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // frmListaEquipos
+            // FrmListaEquipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -367,8 +367,8 @@ namespace GestionDeColegiados
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "frmListaEquipos";
-            this.Text = "frmListaEquipos";
+            this.Name = "FrmListaEquipos";
+            this.Text = "FrmListaEquipos";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();

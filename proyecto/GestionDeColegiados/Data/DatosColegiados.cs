@@ -16,8 +16,8 @@ namespace Data {
   /// Se usa para ejecutar los procedimientos almacenados y operaciones de la BD.
   /// </remarks>
   public class DatosColegiados {
-    private MySqlConnection conexion = null;
-    private MySqlTransaction trans = null;
+    private MySqlConnection _conexion = null;
+    private MySqlTransaction _trans = null;
 
     /// <summary>
     /// Método para guardar Juez Central.
@@ -26,12 +26,12 @@ namespace Data {
     /// <returns>Devuelve el último id insertado como entero.</returns>
     public int InsertarJuezCentral(JuezCentral juezCentral) {
       int id = 0;
-      conexion = ConexionBD.getConexion(); //Obtener conexión
-      conexion.Open();                     //Abrir conexión
-      trans = conexion.BeginTransaction(); //Comenzar transaccion
+      _conexion = ConexionBD.getConexion(); //Obtener conexión
+      _conexion.Open();                     //Abrir conexión
+      _trans = _conexion.BeginTransaction(); //Comenzar transaccion
       try {
         //Inicializa una nueva instancia de la clase MySqlCommand con el texto de la consulta, MySqlConnection y MySqlTransaction
-        MySqlCommand cmd = new MySqlCommand("guardarJuezCentral", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("guardarJuezCentral", _conexion, _trans);
 
         //Comando para decirle que lo que ejecutar es un procedimiento
         cmd.CommandType = CommandType.StoredProcedure;
@@ -48,18 +48,18 @@ namespace Data {
         cmd.ExecuteNonQuery();
 
         //Obtener ID de la ultima sentencia que se ejecutó
-        cmd = new MySqlCommand("obtenerId", conexion);
+        cmd = new MySqlCommand("obtenerId", _conexion);
         cmd.CommandType = CommandType.StoredProcedure;
 
         //Convertir lo obtenido a entero
         id = Convert.ToInt32(cmd.ExecuteScalar());
 
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close(); //Cerrar conexión
+      _conexion.Close(); //Cerrar conexión
       return id;
     }
 
@@ -70,11 +70,11 @@ namespace Data {
     /// <returns>Devuelve el último id insertado como entero.</returns>
     public int InsertarAsistente1(Asistente asistente1) {
       int id = 0;
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
-      trans = conexion.BeginTransaction();    //Comenzar transaccion
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
+      _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
-        MySqlCommand cmd = new MySqlCommand("guardarAsistente1", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("guardarAsistente1", _conexion, _trans);
         cmd.CommandType = CommandType.StoredProcedure;
 
         cmd.Parameters.AddWithValue("@_cedula", asistente1.Cedula);
@@ -87,16 +87,16 @@ namespace Data {
 
         cmd.ExecuteNonQuery();
 
-        cmd = new MySqlCommand("obtenerId", conexion);
+        cmd = new MySqlCommand("obtenerId", _conexion);
         cmd.CommandType = CommandType.StoredProcedure;
         id = Convert.ToInt32(cmd.ExecuteScalar());
 
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return id;
     }
 
@@ -107,11 +107,11 @@ namespace Data {
     /// <returns>Devuelve el último id insertado como entero.</returns>
     public int InsertarAsistente2(Asistente asistente2) {
       int id = 0;
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
-      trans = conexion.BeginTransaction();    //Comenzar transaccion
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
+      _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
-        MySqlCommand cmd = new MySqlCommand("guardarAsistente2", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("guardarAsistente2", _conexion, _trans);
         cmd.CommandType = CommandType.StoredProcedure;
 
         cmd.Parameters.AddWithValue("@_cedula", asistente2.Cedula);
@@ -124,16 +124,16 @@ namespace Data {
 
         cmd.ExecuteNonQuery();
 
-        cmd = new MySqlCommand("obtenerId", conexion);
+        cmd = new MySqlCommand("obtenerId", _conexion);
         cmd.CommandType = CommandType.StoredProcedure;
         id = Convert.ToInt32(cmd.ExecuteScalar());
 
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return id;
     }
 
@@ -144,11 +144,11 @@ namespace Data {
     /// <returns>Devuelve el último id insertado como entero</returns>
     public int InsertarCuartoArbitro(CuartoArbitro cuartoArbitro) {
       int id = 0;
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
-      trans = conexion.BeginTransaction();    //Comenzar transaccion
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
+      _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
-        MySqlCommand cmd = new MySqlCommand("guardarCuartoArbitro", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("guardarCuartoArbitro", _conexion, _trans);
         cmd.CommandType = CommandType.StoredProcedure;
 
         cmd.Parameters.AddWithValue("@_cedula", cuartoArbitro.Cedula);
@@ -158,15 +158,15 @@ namespace Data {
         cmd.Parameters.AddWithValue("@_email", cuartoArbitro.Email);
         cmd.Parameters.AddWithValue("@_telefono", cuartoArbitro.Telefono);
         cmd.ExecuteNonQuery();
-        cmd = new MySqlCommand("obtenerId", conexion);
+        cmd = new MySqlCommand("obtenerId", _conexion);
         cmd.CommandType = CommandType.StoredProcedure;
         id = Convert.ToInt32(cmd.ExecuteScalar());
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return id;
     }
 
@@ -176,11 +176,11 @@ namespace Data {
     /// <param name="colegiado">Objeto Colegiado.</param>
     /// <returns>Devuelve el último id insertado como entero</returns>
     public void InsertarColegiado(Colegiado colegiado) {
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
-      trans = conexion.BeginTransaction();    //Comenzar transaccion
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
+      _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
-        MySqlCommand cmd = new MySqlCommand("guardarColegiado", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("guardarColegiado", _conexion, _trans);
         cmd.CommandType = CommandType.StoredProcedure;
 
         cmd.Parameters.AddWithValue("@_idjuezcentral", colegiado.Idjuezcentral);
@@ -190,12 +190,12 @@ namespace Data {
 
         cmd.ExecuteNonQuery();
 
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();//Cerrar conexión
+      _conexion.Close();//Cerrar conexión
     }
 
     /// <summary>
@@ -205,10 +205,10 @@ namespace Data {
     public List<int> ConsultarIdColegiado() {
       List<int> listaIdColegiado = new List<int>(); //Crear lista
       MySqlDataReader reader = null;          //tabla virtual
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
       try {
-        MySqlCommand comando = new MySqlCommand("obtenerIdColegiado", conexion);
+        MySqlCommand comando = new MySqlCommand("obtenerIdColegiado", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         reader = comando.ExecuteReader();
 
@@ -221,7 +221,7 @@ namespace Data {
         listaIdColegiado = null;
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return listaIdColegiado;
     }
 
@@ -234,10 +234,10 @@ namespace Data {
       List<JuezCentral> listaArbitro = new List<JuezCentral>(); //Crear lista
       JuezCentral arbitro = null;
       MySqlDataReader reader = null;          //tabla virtual
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
       try {
-        MySqlCommand comando = new MySqlCommand("obtenerJuezCentral", conexion);
+        MySqlCommand comando = new MySqlCommand("obtenerJuezCentral", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("@_idColegiado", id);
         reader = comando.ExecuteReader();
@@ -257,7 +257,7 @@ namespace Data {
         listaArbitro = null;
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return listaArbitro;
     }
 
@@ -271,10 +271,10 @@ namespace Data {
       List<Asistente> listaAsistente = new List<Asistente>();
       Asistente asistente = null;
       MySqlDataReader reader = null;          //tabla virtual
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
       try {
-        MySqlCommand comando = new MySqlCommand(procedimiento, conexion);
+        MySqlCommand comando = new MySqlCommand(procedimiento, _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("@_idColegiado", id);
         reader = comando.ExecuteReader();
@@ -294,7 +294,7 @@ namespace Data {
         listaAsistente = null;
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return listaAsistente;
     }
 
@@ -329,10 +329,10 @@ namespace Data {
       List<CuartoArbitro> listaCA = new List<CuartoArbitro>(); //Crear lista
       CuartoArbitro arbitro = null;
       MySqlDataReader reader = null;          //tabla virtual
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
       try {
-        MySqlCommand comando = new MySqlCommand("obtenerCuartoArbitro", conexion);
+        MySqlCommand comando = new MySqlCommand("obtenerCuartoArbitro", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("@_idColegiado", id);
         reader = comando.ExecuteReader();
@@ -352,7 +352,7 @@ namespace Data {
         listaCA = null;
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return listaCA;
     }
 
@@ -364,10 +364,10 @@ namespace Data {
       List<IntegrantesColegiados> listaColegiado = new List<IntegrantesColegiados>(); //Crear lista
       IntegrantesColegiados integrantesColeg = null;      //Instanciar clase IntegrantesColegiados
       MySqlDataReader reader = null;          //tabla virtual
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
       try {
-        MySqlCommand comando = new MySqlCommand("obtenerColegiado", conexion);
+        MySqlCommand comando = new MySqlCommand("obtenerColegiado", _conexion);
 
         comando.CommandType = CommandType.StoredProcedure;
         reader = comando.ExecuteReader();
@@ -386,7 +386,7 @@ namespace Data {
         listaColegiado = null;
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return listaColegiado;
     }
 
@@ -398,10 +398,10 @@ namespace Data {
       List<IntegrantesColegiados> listaColegiado = new List<IntegrantesColegiados>();
       IntegrantesColegiados integrantesColeg = null;
       MySqlDataReader reader = null;          //tabla virtual
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
       try {
-        MySqlCommand comando = new MySqlCommand("obtenerCedulaColegiado", conexion);
+        MySqlCommand comando = new MySqlCommand("obtenerCedulaColegiado", _conexion);
 
         comando.CommandType = CommandType.StoredProcedure;
         reader = comando.ExecuteReader();
@@ -420,7 +420,7 @@ namespace Data {
         listaColegiado = null;
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return listaColegiado;
     }
 
@@ -432,10 +432,10 @@ namespace Data {
     public string ObtenerNombreDeColegiados(int idColegiado) {
       string nombres = "";
       MySqlDataReader reader = null;          //tabla virtual
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
       try {
-        MySqlCommand comando = new MySqlCommand("obtenerUnColegiado", conexion);
+        MySqlCommand comando = new MySqlCommand("obtenerUnColegiado", _conexion);
 
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("@_idColegiado", idColegiado);
@@ -449,7 +449,7 @@ namespace Data {
       } catch(MySqlException ex) {
         Console.WriteLine(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return nombres;
     }
 
@@ -462,10 +462,10 @@ namespace Data {
       List<Colegiado> listaIDColegiado = new List<Colegiado>();
       Colegiado colegiado = null;
       MySqlDataReader reader = null;          //tabla virtual
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
       try {
-        MySqlCommand comando = new MySqlCommand("obtenerTodosIDColegiado", conexion);
+        MySqlCommand comando = new MySqlCommand("obtenerTodosIDColegiado", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("@_idColegiado", idColegiado);
         reader = comando.ExecuteReader();
@@ -484,7 +484,7 @@ namespace Data {
         listaIDColegiado = null;
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
       return listaIDColegiado;
     }
 
@@ -493,11 +493,11 @@ namespace Data {
     /// </summary>
     /// <param name="juezCentral">ID de Juez Central.</param>
     public void EditarJuezCentralBD(JuezCentral juezCentral) {
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
-      trans = conexion.BeginTransaction();    //Comenzar transaccion
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
+      _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
-        MySqlCommand comando = new MySqlCommand("editarJuezCentral", conexion, trans);
+        MySqlCommand comando = new MySqlCommand("editarJuezCentral", _conexion, _trans);
         comando.CommandType = CommandType.StoredProcedure;
 
         comando.Parameters.AddWithValue("@_idJuezCentral", juezCentral.IdArbitro);
@@ -509,12 +509,12 @@ namespace Data {
         comando.Parameters.AddWithValue("@_telefono", juezCentral.Telefono);
 
         comando.ExecuteNonQuery();
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
     }
 
     /// <summary>
@@ -523,11 +523,11 @@ namespace Data {
     /// <param name="asistente">Objeto Asistente.</param>
     /// <param name="procedimiento">Nombre del procedimiento.</param>
     public void EditarAsistenteBD(Asistente asistente, string procedimiento) {
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
-      trans = conexion.BeginTransaction();    //Comenzar transaccion
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
+      _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
-        MySqlCommand comando = new MySqlCommand(procedimiento, conexion, trans);
+        MySqlCommand comando = new MySqlCommand(procedimiento, _conexion, _trans);
         comando.CommandType = CommandType.StoredProcedure;
 
         comando.Parameters.AddWithValue("@_idAsistente", asistente.IdArbitro);
@@ -539,12 +539,12 @@ namespace Data {
         comando.Parameters.AddWithValue("@_telefono", asistente.Telefono);
 
         comando.ExecuteNonQuery();
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
     }
 
     /// <summary>
@@ -570,11 +570,11 @@ namespace Data {
     /// </summary>
     /// <param name="cuartoArbitro">Objeto Cuarto Arbitro-</param>
     public void EditarCuartoArbitro(CuartoArbitro cuartoArbitro) {
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
-      trans = conexion.BeginTransaction();    //Comenzar transaccion
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
+      _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
-        MySqlCommand comando = new MySqlCommand("editarCuartoArbitro", conexion, trans);
+        MySqlCommand comando = new MySqlCommand("editarCuartoArbitro", _conexion, _trans);
         comando.CommandType = CommandType.StoredProcedure;
 
         comando.Parameters.AddWithValue("@_idCuartoArbitro", cuartoArbitro.IdArbitro);
@@ -586,12 +586,12 @@ namespace Data {
         comando.Parameters.AddWithValue("@_telefono", cuartoArbitro.Telefono);
 
         comando.ExecuteNonQuery();
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
     }
 
     /// <summary>
@@ -600,22 +600,22 @@ namespace Data {
     /// <param name="idArbitro">ID arbitro.</param>
     /// <param name="procedimiento">Nombre del procedimiento.</param>
     public void EliminarArbitro(int idArbitro, string procedimiento) {
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
-      trans = conexion.BeginTransaction();    //Comenzar transaccion
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
+      _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
-        MySqlCommand comando = new MySqlCommand(procedimiento, conexion, trans);
+        MySqlCommand comando = new MySqlCommand(procedimiento, _conexion, _trans);
         comando.CommandType = CommandType.StoredProcedure;
 
         comando.Parameters.AddWithValue("@_idArbitro", idArbitro);
 
         comando.ExecuteNonQuery();
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
     }
 
     /// <summary>
@@ -670,11 +670,11 @@ namespace Data {
     /// <param name="idNuevo">ID del nuevo arbitro.</param>
     /// <param name="arbitro">Tipo de árbitro.</param>
     public void ActualizarColegiadoBD(int idColegiado, int idNuevo, string arbitro) {
-      conexion = ConexionBD.getConexion();    //Obtener conexión
-      conexion.Open();                        //Abrir conexión
-      trans = conexion.BeginTransaction();    //Comenzar transaccion
+      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion.Open();                        //Abrir conexión
+      _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
-        MySqlCommand comando = new MySqlCommand("actualizarColegiado", conexion, trans);
+        MySqlCommand comando = new MySqlCommand("actualizarColegiado", _conexion, _trans);
         comando.CommandType = CommandType.StoredProcedure;
 
         comando.Parameters.AddWithValue("@_idColegiado", idColegiado);
@@ -682,12 +682,12 @@ namespace Data {
         comando.Parameters.AddWithValue("@_arbitro", arbitro);
 
         comando.ExecuteNonQuery();
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new FalloBDException(ex.Message);
       }
-      conexion.Close();   //Cerrar conexión
+      _conexion.Close();   //Cerrar conexión
     }
   }
 }

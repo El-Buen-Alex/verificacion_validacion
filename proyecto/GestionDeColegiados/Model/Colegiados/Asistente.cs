@@ -3,7 +3,7 @@
   /// Clase Asistente que hereda los atributos de arbitro.
   /// </summary>
   public class Asistente : Arbitro {
-    private string banda;
+    private string _banda;
 
     /// <summary>
     /// Constructor por defecto.
@@ -25,13 +25,13 @@
     public Asistente(int idArbitro, string cedula, string nombre, string apellidos,
         string domicilio, string email, string telefono, string banda) : base(idArbitro, cedula,
             nombre, apellidos, domicilio, email, telefono) {
-      this.banda = banda;
+      this._banda = banda;
     }
 
     /// <summary>
     /// Método Getter y Setter de los atributos de asistente.
     /// </summary>
-    public string Banda { get => banda; set => banda = value; }
+    public string Banda { get => _banda; set => _banda = value; }
 
     /// <summary>
     /// Método que “convierte” el objeto a mostrar en texto.

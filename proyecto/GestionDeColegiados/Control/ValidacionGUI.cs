@@ -66,6 +66,7 @@ namespace Control {
       bool vacio = true;
       if(txtcedula.Text != "" && txtnombre.Text != "" && txtapellido.Text != "" &&
           txtdomicilio.Text != "" && txtemail.Text != "" && txttelefono.Text != "") {
+
         return vacio = false;
       }
       return vacio;
@@ -82,6 +83,7 @@ namespace Control {
     public bool ValidarNum(int idJuezCentral, int idAsistente1, int idAsistente2, int idCuartoArbitro) {
       bool vacio = true;
       if(idJuezCentral != 0 && idAsistente1 != 0 && idAsistente2 != 0 && idCuartoArbitro != 0) {
+
         vacio = false;
       }
       return vacio;
@@ -111,6 +113,7 @@ namespace Control {
     public bool ValidarFecha(DateTime fechaElegida) {
       bool respuesta = true;
       if(fechaElegida <= DateTime.Now) {
+
         respuesta = false;
       }
       return respuesta;

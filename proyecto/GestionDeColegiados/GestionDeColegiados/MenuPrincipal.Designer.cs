@@ -142,7 +142,7 @@ namespace GestionDeColegiados
             this.btnGestionColegiado1.TabIndex = 19;
             this.btnGestionColegiado1.Text = "Gestión Colegiados";
             this.btnGestionColegiado1.UseVisualStyleBackColor = false;
-            this.btnGestionColegiado1.MouseEnter += new System.EventHandler(this.btnGestionColegiados_MouseEnter);
+            this.btnGestionColegiado1.MouseEnter += new System.EventHandler(this.BtnGestionColegiados_MouseEnter);
             // 
             // flpOpcionGestionColegiado
             // 

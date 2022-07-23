@@ -278,7 +278,7 @@ namespace GestionDeColegiados {
     /// <returns>Devuelve el id del último Asistente 2 ingresado como entero.</returns>
     private int obtenerIdAsistente2() {
       int id = 0;
-      contexto = new Contexto(AdmAsistente2.getAdmA2());
+      contexto = new Contexto(AdmAsistente2.GetAdmA2());
       id = contexto.ObtenerDatos(txtcedulaAs2, txtnombreAs2, txtapellidoAs2, txtdomicilioAs2, txtemailAs2, txttelefonoAs2);
       return id;
     }
@@ -292,7 +292,7 @@ namespace GestionDeColegiados {
     /// <returns>Devuelve el id del último Cuarto Árbitro ingresado como entero.</returns>
     private int obtenerIdCuartoArbitro() {
       int id = 0;
-      contexto = new Contexto(AdmCuartoArbitro.getAdmCA());
+      contexto = new Contexto(AdmCuartoArbitro.GetAdmCA());
       id = contexto.ObtenerDatos(txtcedulaCA, txtnombreCA, txtapellidoCA, txtdomicilioCA, txtemailCA, txttelefonoCA);
       return id;
     }

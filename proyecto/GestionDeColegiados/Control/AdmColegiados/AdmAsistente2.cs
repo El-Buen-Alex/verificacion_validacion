@@ -14,14 +14,14 @@ namespace Control.AdmColegiados {
   /// Crea las listas, instancias y validaciones para obtener los datos de Asistente2.
   /// </remarks>
   public class AdmAsistente2 : IAdm {
-    List<Asistente> listaAsistente2 = new List<Asistente>();
-    Asistente asistente2 = null;
-    ValidacionGUI v = new ValidacionGUI();
-    DatosColegiados datos = new DatosColegiados();
+    List<Asistente> _listaAsistente2 = new List<Asistente>();
+    Asistente _asistente2 = null;
+    ValidacionGUI _v = new ValidacionGUI();
+    DatosColegiados _datos = new DatosColegiados();
 
-    private static AdmAsistente2 admA2 = null;
+    private static AdmAsistente2 _admA2 = null;
 
-    public List<Asistente> ListaAsistente2 { get => listaAsistente2; set => listaAsistente2 = value; }
+    public List<Asistente> ListaAsistente2 { get => _listaAsistente2; set => _listaAsistente2 = value; }
 
     /// <summary>
     /// Paso para el uso de Singleton.
@@ -30,7 +30,7 @@ namespace Control.AdmColegiados {
     /// Creando atributo privado de la clase AdmAsistente2.
     /// </remarks>
     private AdmAsistente2() {
-      listaAsistente2 = new List<Asistente>();
+      _listaAsistente2 = new List<Asistente>();
     }
 
     /// <summary>
@@ -40,10 +40,10 @@ namespace Control.AdmColegiados {
     /// Creando atributo estático de la clase AdmAistente2.
     /// </remarks>
     /// <returns>Devuelve una instancia de AdmAsistente2.</returns>
-    public static AdmAsistente2 getAdmA2() {
-      if(admA2 == null)
-        admA2 = new AdmAsistente2();
-      return admA2;
+    public static AdmAsistente2 GetAdmA2() {
+      if(_admA2 == null)
+        _admA2 = new AdmAsistente2();
+      return _admA2;
     }
 
     /// <summary>
@@ -66,11 +66,11 @@ namespace Control.AdmColegiados {
           telefono = txttelefonoAs2.Text;
       int id = 0;
 
-      asistente2 = new Asistente(0, cedula, nombre, apellidos, domicilio, email, telefono, "Izquierda");
+      _asistente2 = new Asistente(0, cedula, nombre, apellidos, domicilio, email, telefono, "Izquierda");
 
-      if(asistente2 != null) {
-        listaAsistente2.Add(asistente2);      //Añadir a la lista
-        id = GuardarAsistente2BD(asistente2); //Guardar BD
+      if(_asistente2 != null) {
+        _listaAsistente2.Add(_asistente2);      //Añadir a la lista
+        id = GuardarAsistente2BD(_asistente2); //Guardar BD
       }
       return id;
     }
@@ -84,7 +84,7 @@ namespace Control.AdmColegiados {
       int id = 0;
       string mensaje = "";
       try {
-        id = datos.InsertarAsistente2(asistente2);
+        id = _datos.InsertarAsistente2(asistente2);
       } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -101,8 +101,8 @@ namespace Control.AdmColegiados {
     /// <param name="id">ID de un Asistente2.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
     public void ObtenerDatos(int id, DataGridView dgvListarColegiados) {
-      listaAsistente2 = datos.ConsultarAsistente2(id);
-      foreach(Asistente datosAs2 in listaAsistente2) {
+      _listaAsistente2 = _datos.ConsultarAsistente2(id);
+      foreach(Asistente datosAs2 in _listaAsistente2) {
         dgvListarColegiados.Rows.Add("Asistente 2", datosAs2.Cedula, datosAs2.Nombre, datosAs2.Apellidos, datosAs2.Domicilio, datosAs2.Email, datosAs2.Telefono);
       }
     }
@@ -110,7 +110,7 @@ namespace Control.AdmColegiados {
     /// <summary>
     /// Instancia de la clase Asistente.
     /// </summary>
-    Asistente as2;
+    Asistente _as2;
 
     /// <summary>
     /// Método RecogerDatosEditar de la interface IAdm.
@@ -120,14 +120,14 @@ namespace Control.AdmColegiados {
     /// </remarks>
     /// <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
     public void RecogerDatosEditar(DataGridViewRow filaSeleccionada) {
-      foreach(Asistente asistente in listaAsistente2) {
+      foreach(Asistente asistente in _listaAsistente2) {
         if(asistente.Cedula == filaSeleccionada.Cells[1].Value.ToString() &&
             asistente.Nombre == filaSeleccionada.Cells[2].Value.ToString() &&
             asistente.Apellidos == filaSeleccionada.Cells[3].Value.ToString() &&
             asistente.Domicilio == filaSeleccionada.Cells[4].Value.ToString() &&
             asistente.Email == filaSeleccionada.Cells[5].Value.ToString() &&
             asistente.Telefono == filaSeleccionada.Cells[6].Value.ToString()) {
-          as2 = asistente;
+          _as2 = asistente;
         }
       }
     }
@@ -147,12 +147,12 @@ namespace Control.AdmColegiados {
     /// <param name="txtTelefono">Telefono.</param>
     public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido, TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
       try {
-        txtCedula.Text = as2.Cedula.ToString();
-        txtNombre.Text = as2.Nombre.ToString();
-        txtApellido.Text = as2.Apellidos.ToString();
-        txtDomicilio.Text = as2.Domicilio.ToString();
-        txtEmail.Text = as2.Email.ToString();
-        txtTelefono.Text = as2.Telefono.ToString();
+        txtCedula.Text = _as2.Cedula.ToString();
+        txtNombre.Text = _as2.Nombre.ToString();
+        txtApellido.Text = _as2.Apellidos.ToString();
+        txtDomicilio.Text = _as2.Domicilio.ToString();
+        txtEmail.Text = _as2.Email.ToString();
+        txtTelefono.Text = _as2.Telefono.ToString();
       } catch(FormatException ex) {
         Console.WriteLine(ex.Message);
       }
@@ -170,17 +170,17 @@ namespace Control.AdmColegiados {
     /// <param name="telefono">Telefono recogido.</param>
     public void EditarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
-      asistente2 = new Asistente();
-      asistente2.IdArbitro = idArbitro;
-      asistente2.Cedula = cedula;
-      asistente2.Nombre = nombre;
-      asistente2.Apellidos = apellido;
-      asistente2.Domicilio = domicilio;
-      asistente2.Email = email;
-      asistente2.Telefono = telefono;
+      _asistente2 = new Asistente();
+      _asistente2.IdArbitro = idArbitro;
+      _asistente2.Cedula = cedula;
+      _asistente2.Nombre = nombre;
+      _asistente2.Apellidos = apellido;
+      _asistente2.Domicilio = domicilio;
+      _asistente2.Email = email;
+      _asistente2.Telefono = telefono;
 
-      if(asistente2 != null) {
-        editarAsistente2BD(asistente2);
+      if(_asistente2 != null) {
+        editarAsistente2BD(_asistente2);
       }
     }
 
@@ -191,7 +191,7 @@ namespace Control.AdmColegiados {
     private void editarAsistente2BD(Asistente asistente2) {
       string mensaje = "";
       try {
-        datos.EditarAsistente2BD(asistente2);
+        _datos.EditarAsistente2BD(asistente2);
         MessageBox.Show("Sus datos fueron actualizados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
       } catch(FalloBDException ex) {
         mensaje = ex.Message;
@@ -212,20 +212,20 @@ namespace Control.AdmColegiados {
     /// <returns>Devuelve el último id registrado como entero.</returns>
     public int EliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
-      asistente2 = new Asistente();
-      asistente2.IdArbitro = idArbitro;
-      asistente2.Cedula = cedula;
-      asistente2.Nombre = nombre;
-      asistente2.Apellidos = apellido;
-      asistente2.Domicilio = domicilio;
-      asistente2.Email = email;
-      asistente2.Telefono = telefono;
-      asistente2.Banda = "Izquierda";
+      _asistente2 = new Asistente();
+      _asistente2.IdArbitro = idArbitro;
+      _asistente2.Cedula = cedula;
+      _asistente2.Nombre = nombre;
+      _asistente2.Apellidos = apellido;
+      _asistente2.Domicilio = domicilio;
+      _asistente2.Email = email;
+      _asistente2.Telefono = telefono;
+      _asistente2.Banda = "Izquierda";
       int idNuevo = 0;
 
-      if(asistente2 != null) {
+      if(_asistente2 != null) {
         eliminarAsistente2BD(idArbitro);
-        idNuevo = GuardarAsistente2BD(asistente2);
+        idNuevo = GuardarAsistente2BD(_asistente2);
       }
       return idNuevo;
     }
@@ -237,7 +237,7 @@ namespace Control.AdmColegiados {
     private void eliminarAsistente2BD(int idArbitro) {
       string mensaje = "";
       try {
-        datos.EliminarAsistente2BD(idArbitro);
+        _datos.EliminarAsistente2BD(idArbitro);
       } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);

@@ -82,7 +82,7 @@ namespace GestionDeColegiados {
       if(admEquipo.ObtenerCantidadEquipo() < 10) {
         AbrirFormEnPanel(new FrmNuevoEquipo());
       } else {
-        AbrirFormEnPanel(new frmListaEquipos());
+        AbrirFormEnPanel(new FrmListaEquipos());
       }
     }
 
@@ -195,7 +195,7 @@ namespace GestionDeColegiados {
       if(admEquipo.ObtenerCantidadEquipo() < 10) {
         AbrirFormEnPanel(new FrmNuevoEquipo());
       } else {
-        AbrirFormEnPanel(new frmListaEquipos());
+        AbrirFormEnPanel(new FrmListaEquipos());
       }
     }
     private void button5_Click(object sender, EventArgs e) {
