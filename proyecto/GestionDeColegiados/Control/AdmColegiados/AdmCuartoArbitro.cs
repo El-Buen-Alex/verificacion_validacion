@@ -47,7 +47,7 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Método guardar de la interface IAdm.
+    /// Método Guardar de la interface IAdm.
     /// </summary>
     /// <param name="txtcedula">Cedula recogida.</param>
     /// <param name="txtnombre">Nombre recogido.</param>
@@ -56,7 +56,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtemail">Email recogido.</param>
     /// <param name="txttelefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int guardar(TextBox txtcedula, TextBox txtnombre, TextBox txtapellido,
+    public int Guardar(TextBox txtcedula, TextBox txtnombre, TextBox txtapellido,
         TextBox txtdomicilio, TextBox txtemail, TextBox txttelefono) {
       string cedula = txtcedula.Text,
           nombre = txtnombre.Text,
@@ -93,14 +93,14 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Método obtenerDatos de la interface IAdm.
+    /// Método ObtenerDatos de la interface IAdm.
     /// </summary>
     /// <remarks>
     /// Llena <paramref name="dgvListarColegiados"/> con los datos del <paramref name="id"/> buscado.
     /// </remarks>
     /// <param name="id">ID de un Cuarto Árbitro.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
-    public void obtenerDatos(int id, DataGridView dgvListarColegiados) {
+    public void ObtenerDatos(int id, DataGridView dgvListarColegiados) {
       listaCuartoArbitro = datos.consultarCuartoArbitro(id);
       foreach(CuartoArbitro datosCA in listaCuartoArbitro) {
         dgvListarColegiados.Rows.Add("Cuarto Árbitro", datosCA.Cedula, datosCA.Nombre, datosCA.Apellidos, datosCA.Domicilio, datosCA.Email, datosCA.Telefono);
@@ -113,13 +113,13 @@ namespace Control.AdmColegiados {
     CuartoArbitro CA;
 
     /// <summary>
-    /// Método recogerDatosEditar de la interface IAdm.
+    /// Método RecogerDatosEditar de la interface IAdm.
     /// </summary>
     /// <remarks>
     /// Recoge los datos que son seleccionados para editar por el usuario.
     /// </remarks>
     /// <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
-    public void recogerDatosEditar(DataGridViewRow filaSeleccionada) {
+    public void RecogerDatosEditar(DataGridViewRow filaSeleccionada) {
       foreach(CuartoArbitro cuartoArb in listaCuartoArbitro) {
         if(cuartoArb.Cedula == filaSeleccionada.Cells[1].Value.ToString() &&
             cuartoArb.Nombre == filaSeleccionada.Cells[2].Value.ToString() &&
@@ -133,7 +133,7 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Método llenarDatosFormEditar de la interface IAdm.
+    /// Método LlenarDatosFormEditar de la interface IAdm.
     /// </summary>
     /// <remarks>
     /// Llena los TexBox de Editar con los datos del Cuarto Árbitro seleccionado.
@@ -144,7 +144,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtDomicilio">Domicilio.</param>
     /// <param name="txtEmail">Email.</param>
     /// <param name="txtTelefono">Telefono.</param>
-    public void llenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido, TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
+    public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido, TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
       try {
         txtCedula.Text = CA.Cedula.ToString();
         txtNombre.Text = CA.Nombre.ToString();
@@ -158,7 +158,7 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Método editarArbitro de la interface IAdm.
+    /// Método EditarArbitro de la interface IAdm.
     /// </summary>
     /// <param name="idArbitro">ID recogido.</param>
     /// <param name="cedula">Cedula recogida.</param>
@@ -167,7 +167,7 @@ namespace Control.AdmColegiados {
     /// <param name="domicilio">Domicilio recogido.</param>
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
-    public void editarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public void EditarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
       cuartoArbitro = new CuartoArbitro();
       cuartoArbitro.IdArbitro = idArbitro;
@@ -199,7 +199,7 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Método eliminarArbitro de la interface IAdm
+    /// Método EliminarArbitro de la interface IAdm
     /// </summary>
     /// <param name="idArbitro">ID recogido.</param>
     /// <param name="cedula">Cedula recogida.</param>
@@ -209,7 +209,7 @@ namespace Control.AdmColegiados {
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int eliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public int EliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
       cuartoArbitro = new CuartoArbitro();
       cuartoArbitro.IdArbitro = idArbitro;

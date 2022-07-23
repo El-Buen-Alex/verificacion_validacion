@@ -31,7 +31,7 @@ namespace GestionDeColegiados {
       bool hayVacios = valida.validarVacios(Nombre, numJugadores, directorNombre, presidenteNombre);   //Valida campos vacios al recuperar la informacion presente en los TextBox
       if(hayVacios != true) {
         MessageBox.Show(Nombre + ", " + numJugadores + ", " + directorNombre + ", " + presidenteNombre);
-        equipo.ActualizarDatos(valida.AInt(id), Nombre, valida.AInt(numJugadores), directorNombre, presidenteNombre);       /*Se ejecuta el método que nos permitirá guardar la información*/
+        equipo.ActualizarDatos(valida.AInt(id), Nombre, valida.AInt(numJugadores), directorNombre, presidenteNombre);       /*Se ejecuta el método que nos permitirá Guardar la información*/
 
       } else {
         MessageBox.Show("Hay ciertos campos vacios");

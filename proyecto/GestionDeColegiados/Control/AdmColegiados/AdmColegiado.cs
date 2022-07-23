@@ -136,7 +136,7 @@ namespace Control.AdmColegiados {
       contexto = new Contexto(AdmJuezCentral.getAdmJ());
       contexto.datos(id, dgvListarColegiados);
 
-      contexto = new Contexto(AdmAsistente1.getAdmA1());
+      contexto = new Contexto(AdmAsistente1.GetAdmA1());
       contexto.datos(id, dgvListarColegiados);
 
       contexto = new Contexto(AdmAsistente2.getAdmA2());
@@ -226,7 +226,7 @@ namespace Control.AdmColegiados {
         contextoArbitro = new Contexto(AdmJuezCentral.getAdmJ());
       }
       if(arbitro == "Asistente 1") {
-        contextoArbitro = new Contexto(AdmAsistente1.getAdmA1());
+        contextoArbitro = new Contexto(AdmAsistente1.GetAdmA1());
       }
       if(arbitro == "Asistente 2") {
         contextoArbitro = new Contexto(AdmAsistente2.getAdmA2());

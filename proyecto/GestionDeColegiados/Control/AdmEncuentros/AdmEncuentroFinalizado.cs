@@ -180,7 +180,7 @@ namespace Control.AdmEncuentros {
     }
 
     /// <summary>
-    /// Metodo encargado de guardar un encuentro finalizado
+    /// Metodo encargado de Guardar un encuentro finalizado
     /// </summary>
     /// <param name="index">la posicion del encuentro finalizado respecto a una lista</param>
     /// <param name="golesLocal">cantidad de goles de local que se han actualizado</param>

@@ -155,7 +155,7 @@ namespace Control.AdmEncuentrosGenerados {
 
       return lista;
     }
-    /*metodo necesario para guardar encuentros aleaorias a través
+    /*metodo necesario para Guardar encuentros aleaorias a través
      de una lista de encuentrosGenerados previamente instanciada
     con ayuda de las listas: idsEquipolocal y idsEquipovisitante que
     fueron creadas previamente*/
@@ -168,7 +168,7 @@ namespace Control.AdmEncuentrosGenerados {
         if(guardo) {
           mensaje = "Se ha guardado con exito los encuentros generados";
         } else {
-          mensaje = "No se logro guardar con exito. Intente nuevamente.";
+          mensaje = "No se logro Guardar con exito. Intente nuevamente.";
           throw new generarEncuentrosException("Error en guardarEncuentrosAleatorios-AdmGenerarEncuentros");
         }
       } catch(Exception ex) {

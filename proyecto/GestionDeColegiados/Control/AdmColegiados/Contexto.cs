@@ -16,7 +16,7 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Obtener los datos de los arbitros a guardar
+    /// Obtener los datos de los arbitros a Guardar
     /// </summary>
     /// <param name="txtcedula">Cedula recogida.</param>
     /// <param name="txtnombre">Nombre recogido.</param>
@@ -28,7 +28,7 @@ namespace Control.AdmColegiados {
     public int obtenerDatos(TextBox txtcedula, TextBox txtnombre, TextBox txtapellido,
         TextBox txtdomicilio, TextBox txtemail, TextBox txttelefono) {
 
-      return this.adm.guardar(txtcedula, txtnombre, txtapellido,
+      return this.adm.Guardar(txtcedula, txtnombre, txtapellido,
       txtdomicilio, txtemail, txttelefono);
     }
 
@@ -38,7 +38,7 @@ namespace Control.AdmColegiados {
     /// <param name="id">ID de un árbitro.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
     public void datos(int id, DataGridView dgvListarColegiados) {
-      adm.obtenerDatos(id, dgvListarColegiados);
+      adm.ObtenerDatos(id, dgvListarColegiados);
     }
 
     /// <summary>
@@ -49,7 +49,7 @@ namespace Control.AdmColegiados {
     /// </remarks>
     /// <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
     public void recogerDatosEditar(DataGridViewRow filaSeleccionada) {
-      adm.recogerDatosEditar(filaSeleccionada);
+      adm.RecogerDatosEditar(filaSeleccionada);
     }
 
     /// <summary>
@@ -66,7 +66,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtTelefono">Telefono.</param>
     public void llenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido,
         TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
-      adm.llenarDatosFormEditar(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
+      adm.LlenarDatosFormEditar(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
     }
 
     /// <summary>
@@ -81,11 +81,11 @@ namespace Control.AdmColegiados {
     /// <param name="telefono">Telefono recogido.</param>
     public void editarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
-      adm.editarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
+      adm.EditarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
     }
 
     /// <summary>
-    /// Método eliminarArbitro de la interface IAdm.
+    /// Método EliminarArbitro de la interface IAdm.
     /// </summary>
     /// <param name="idArbitro">ID recogido.</param>
     /// <param name="cedula">Cedula recogida.</param>
@@ -97,7 +97,7 @@ namespace Control.AdmColegiados {
     /// <returns>Devuelve el último id registrado como entero.</returns>
     public int eliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
-      return this.adm.eliminarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
+      return this.adm.EliminarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
     }
   }
 }
