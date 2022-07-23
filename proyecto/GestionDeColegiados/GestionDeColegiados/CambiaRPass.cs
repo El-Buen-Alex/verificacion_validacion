@@ -13,15 +13,15 @@ namespace GestionDeColegiados {
 
     }
 
-    private void pictureBox5_Click(object sender, EventArgs e) {
+    private void _pictureBox5_Click(object sender, EventArgs e) {
       this.WindowState = FormWindowState.Minimized;
     }
 
-    private void pictureBox6_Click(object sender, EventArgs e) {
+    private void _pictureBox6_Click(object sender, EventArgs e) {
       Application.Exit();
     }
 
-    private void btnChangePass_Click(object sender, EventArgs e) {
+    private void _btnChangePass_Click(object sender, EventArgs e) {
       string newPass = txtPass.Text.Trim();
       string cambiar = gestionLogin.CambiarPass(newPass, this.idUser);
       if(cambiar.StartsWith("EXITO")) {
@@ -33,15 +33,15 @@ namespace GestionDeColegiados {
         MessageBox.Show(cambiar, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
     }
-    private void habilitarButton() {
+    private void _habilitarButton() {
       string newPass = txtPass.Text.Trim();
       string confPass = textRepeatPass.Text.Trim();
 
       if(!string.IsNullOrEmpty(newPass) && !string.IsNullOrEmpty(confPass)) {
         if(newPass == confPass) {
-          controlarVisibilidad(true, false);
+          _controlarVisibilidad(true, false);
         } else {
-          controlarVisibilidad(false, true);
+          _controlarVisibilidad(false, true);
         }
       } else {
         btnChangePass.Enabled = false;
@@ -49,13 +49,13 @@ namespace GestionDeColegiados {
 
     }
 
-    private void controlarVisibilidad(bool estadoBtn, bool estadoLbl) {
+    private void _controlarVisibilidad(bool estadoBtn, bool estadoLbl) {
       btnChangePass.Enabled = estadoBtn;
       lblAviso.Visible = estadoLbl;
     }
 
-    private void textRepeatPass_TextChanged(object sender, EventArgs e) {
-      habilitarButton();
+    private void _textRepeatPass_TextChanged(object sender, EventArgs e) {
+      _habilitarButton();
 
     }
 

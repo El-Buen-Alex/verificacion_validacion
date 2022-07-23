@@ -56,6 +56,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtemailAs1">Email recogido.</param>
     /// <param name="txttelefonoAs1">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
+
     public int Guardar(TextBox txtcedulaAs1, TextBox txtnombreAs1,
                        TextBox txtapellidoAs1, TextBox txtdomicilioAs1,
                        TextBox txtemailAs1, TextBox txttelefonoAs1) {
@@ -101,7 +102,7 @@ namespace Control.AdmColegiados {
     /// <param name="id">ID de un Asistente1.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
     public void ObtenerDatos(int id, DataGridView dgvListarColegiados) {
-      _listaAsistente1 = _datos.consultarAsistente1(id);
+      _listaAsistente1 = _datos.ConsultarAsistente1(id);
       foreach(Asistente datosAs1 in _listaAsistente1) {
         dgvListarColegiados.Rows.Add("Asistente 1", datosAs1.Cedula, datosAs1.Nombre, datosAs1.Apellidos, datosAs1.Domicilio, datosAs1.Email, datosAs1.Telefono);
       }
@@ -196,9 +197,9 @@ namespace Control.AdmColegiados {
     private void EditarAsistente1BD(Asistente asistente1) {
       string mensaje = "";
       try {
-        _datos.editarAsistente1BD(asistente1);
+        _datos.EditarAsistente1BD(asistente1);
         MessageBox.Show("Sus datos fueron actualizados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -245,7 +246,7 @@ namespace Control.AdmColegiados {
     private void EliminarAsistente1BD(int idArbitro) {
       string mensaje = "";
       try {
-        _datos.eliminarAsistente1BD(idArbitro);
+        _datos.EliminarAsistente1BD(idArbitro);
       } catch(falloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);

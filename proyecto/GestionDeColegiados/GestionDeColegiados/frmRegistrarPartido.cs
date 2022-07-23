@@ -50,7 +50,7 @@ namespace GestionDeColegiados {
         //si guarda se bloquea la capacidad de editar algun encuentro ya definido
         CambiarAccesibilidadControlesGraficos(false);
       }
-      if(_admGenerarEncuentros.obtnerNumeroEncuentrosGeneradosPendientes() == 0) {
+      if(_admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes() == 0) {
         //Si ya no existen encuentros pedientes por definir colegiados, estado y fecha
         //se bloquea la capacidad de interactuar completamente con esta interfaz
         ControladoresGUINoDisponibles();

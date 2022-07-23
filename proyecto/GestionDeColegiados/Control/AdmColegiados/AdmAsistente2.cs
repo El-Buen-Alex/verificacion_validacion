@@ -85,7 +85,7 @@ namespace Control.AdmColegiados {
       string mensaje = "";
       try {
         id = datos.InsertarAsistente2(asistente2);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -101,7 +101,7 @@ namespace Control.AdmColegiados {
     /// <param name="id">ID de un Asistente2.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
     public void ObtenerDatos(int id, DataGridView dgvListarColegiados) {
-      listaAsistente2 = datos.consultarAsistente2(id);
+      listaAsistente2 = datos.ConsultarAsistente2(id);
       foreach(Asistente datosAs2 in listaAsistente2) {
         dgvListarColegiados.Rows.Add("Asistente 2", datosAs2.Cedula, datosAs2.Nombre, datosAs2.Apellidos, datosAs2.Domicilio, datosAs2.Email, datosAs2.Telefono);
       }
@@ -191,9 +191,9 @@ namespace Control.AdmColegiados {
     private void editarAsistente2BD(Asistente asistente2) {
       string mensaje = "";
       try {
-        datos.editarAsistente2BD(asistente2);
+        datos.EditarAsistente2BD(asistente2);
         MessageBox.Show("Sus datos fueron actualizados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -237,8 +237,8 @@ namespace Control.AdmColegiados {
     private void eliminarAsistente2BD(int idArbitro) {
       string mensaje = "";
       try {
-        datos.eliminarAsistente2BD(idArbitro);
-      } catch(falloBDException ex) {
+        datos.EliminarAsistente2BD(idArbitro);
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }

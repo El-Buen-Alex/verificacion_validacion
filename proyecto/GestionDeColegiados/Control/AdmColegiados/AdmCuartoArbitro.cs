@@ -47,7 +47,7 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Método Guardar de la interface IAdm.
+    /// Método guardar de la interface IAdm.
     /// </summary>
     /// <param name="txtcedula">Cedula recogida.</param>
     /// <param name="txtnombre">Nombre recogido.</param>
@@ -85,7 +85,7 @@ namespace Control.AdmColegiados {
       string mensaje = "";
       try {
         id = datos.InsertarCuartoArbitro(cuartoArbitro);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -93,7 +93,7 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Método ObtenerDatos de la interface IAdm.
+    /// Método obtenerDatos de la interface IAdm.
     /// </summary>
     /// <remarks>
     /// Llena <paramref name="dgvListarColegiados"/> con los datos del <paramref name="id"/> buscado.
@@ -101,7 +101,7 @@ namespace Control.AdmColegiados {
     /// <param name="id">ID de un Cuarto Árbitro.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
     public void ObtenerDatos(int id, DataGridView dgvListarColegiados) {
-      listaCuartoArbitro = datos.consultarCuartoArbitro(id);
+      listaCuartoArbitro = datos.ConsultarCuartoArbitro(id);
       foreach(CuartoArbitro datosCA in listaCuartoArbitro) {
         dgvListarColegiados.Rows.Add("Cuarto Árbitro", datosCA.Cedula, datosCA.Nombre, datosCA.Apellidos, datosCA.Domicilio, datosCA.Email, datosCA.Telefono);
       }
@@ -113,7 +113,7 @@ namespace Control.AdmColegiados {
     CuartoArbitro CA;
 
     /// <summary>
-    /// Método RecogerDatosEditar de la interface IAdm.
+    /// Método recogerDatosEditar de la interface IAdm.
     /// </summary>
     /// <remarks>
     /// Recoge los datos que son seleccionados para editar por el usuario.
@@ -133,7 +133,7 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Método LlenarDatosFormEditar de la interface IAdm.
+    /// Método llenarDatosFormEditar de la interface IAdm.
     /// </summary>
     /// <remarks>
     /// Llena los TexBox de Editar con los datos del Cuarto Árbitro seleccionado.
@@ -158,7 +158,7 @@ namespace Control.AdmColegiados {
     }
 
     /// <summary>
-    /// Método EditarArbitro de la interface IAdm.
+    /// Método editarArbitro de la interface IAdm.
     /// </summary>
     /// <param name="idArbitro">ID recogido.</param>
     /// <param name="cedula">Cedula recogida.</param>
@@ -190,16 +190,16 @@ namespace Control.AdmColegiados {
     private void editarCuartoArbitroBD(CuartoArbitro cuartoArbitro) {
       string mensaje = "";
       try {
-        datos.editarCuartoArbitro(cuartoArbitro);
+        datos.EditarCuartoArbitro(cuartoArbitro);
         MessageBox.Show("Sus datos fueron actualizados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
     }
 
     /// <summary>
-    /// Método EliminarArbitro de la interface IAdm
+    /// Método eliminarArbitro de la interface IAdm
     /// </summary>
     /// <param name="idArbitro">ID recogido.</param>
     /// <param name="cedula">Cedula recogida.</param>
@@ -235,8 +235,8 @@ namespace Control.AdmColegiados {
     private void eliminarCuartoArbitroBD(int idArbitro) {
       string mensaje = "";
       try {
-        datos.eliminarCuartoArbitroBD(idArbitro);
-      } catch(falloBDException ex) {
+        datos.EliminarCuartoArbitroBD(idArbitro);
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }

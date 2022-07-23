@@ -115,7 +115,7 @@ namespace Control.AdmEncuentrosGenerados {
       return genero;
     }
 
-    public int obtnerNumeroEncuentrosGeneradosPendientes() {
+    public int ObtnerNumeroEncuentrosGeneradosPendientes() {
       int numeroEncuentros = 0;
       try {
         numeroEncuentros = datosEncuentrosGenerados.ObetnerNumeroEncuentrosPendientes();

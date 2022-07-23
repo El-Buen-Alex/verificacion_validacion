@@ -128,7 +128,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
     private void BtnActualizar_Click(object sender, EventArgs e) {
-      bool vacio = _validacionGUI.validarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
+      bool vacio = _validacionGUI.ValidarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
       bool cedulaRepetida = _admColegiado.validarCedula(txtCedula);
       if(vacio == true) {
 

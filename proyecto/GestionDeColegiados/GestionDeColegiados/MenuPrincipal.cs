@@ -99,7 +99,7 @@ namespace GestionDeColegiados {
     }
 
     private void ExaminarAccesibilidadGenerarEncuentros() {
-      if(admGenerarEncuentros.obtnerNumeroEncuentrosGeneradosPendientes() == 0) {
+      if(admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes() == 0) {
         AbrirFormEnPanel(new frmGenerarEncuentros(false));
       } else {
         MessageBox.Show("Ya se han generado y registrados los encuentros");
@@ -118,7 +118,7 @@ namespace GestionDeColegiados {
     }
 
     private void btnAsignarColegiados_Click(object sender, EventArgs e) {
-      int numeroEncuentros = admGenerarEncuentros.obtnerNumeroEncuentrosGeneradosPendientes();
+      int numeroEncuentros = admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes();
       if(numeroEncuentros == 0) {
         MessageBox.Show("No hay encuentros disponibles para asignar fecha y colegiados ");
       } else {
@@ -203,7 +203,7 @@ namespace GestionDeColegiados {
     }
 
     private void ExaminarAccesibilidadEditarEquipoPorEncuentrosGenerados() {
-      if(admGenerarEncuentros.obtnerNumeroEncuentrosGeneradosPendientes() == 0 && admEncuentroFinalizado.GetCantidadEncuentrosFinalizados() == 0 && admEncuentrosDefinidos.ObtenerCantidadEncuentrosDefinidos() == 0) {
+      if(admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes() == 0 && admEncuentroFinalizado.GetCantidadEncuentrosFinalizados() == 0 && admEncuentrosDefinidos.ObtenerCantidadEncuentrosDefinidos() == 0) {
         AbrirFormEnPanel(new frmVerTodos());
       } else {
         MessageBox.Show("Existen encuentros generados o definidos. No se pueden eliminar o editar equipos.");

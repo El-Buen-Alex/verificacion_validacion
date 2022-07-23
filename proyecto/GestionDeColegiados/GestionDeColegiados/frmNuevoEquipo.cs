@@ -24,7 +24,7 @@ namespace GestionDeColegiados {
           directorNombre = director.Text,
           presidenteNombre = presidente.Text;
 
-      bool hayVacios = _validacionGUI.validarVacios(Nombre, numJugadores, directorNombre, presidenteNombre);   //Valida campos vacios al recuperar la informacion presente en los TextBox
+      bool hayVacios = _validacionGUI.ValidarVacios(Nombre, numJugadores, directorNombre, presidenteNombre);   //Valida campos vacios al recuperar la informacion presente en los TextBox
       try {
         if(_admEquipo.CantidadEquiposRegistrados() < 10) {
 

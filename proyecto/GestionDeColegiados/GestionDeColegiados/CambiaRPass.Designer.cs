@@ -141,7 +141,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.pictureBox5.Click += new System.EventHandler(this._pictureBox5_Click);
             // 
             // pbMinimizar
             // 
@@ -166,7 +166,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.pictureBox6.Click += new System.EventHandler(this._pictureBox6_Click);
             // 
             // pbCerrar
             // 
@@ -204,7 +204,7 @@
             this.btnChangePass.TabIndex = 58;
             this.btnChangePass.Text = "GUARDAR";
             this.btnChangePass.UseVisualStyleBackColor = false;
-            this.btnChangePass.Click += new System.EventHandler(this.btnChangePass_Click);
+            this.btnChangePass.Click += new System.EventHandler(this._btnChangePass_Click);
             // 
             // lblGolLocal
             // 
@@ -240,7 +240,7 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(175, 27);
             this.txtPass.TabIndex = 64;
-            this.txtPass.TextChanged += new System.EventHandler(this.textRepeatPass_TextChanged);
+            this.txtPass.TextChanged += new System.EventHandler(this._textRepeatPass_TextChanged);
             // 
             // textRepeatPass
             // 
@@ -254,7 +254,7 @@
             this.textRepeatPass.PasswordChar = '*';
             this.textRepeatPass.Size = new System.Drawing.Size(175, 27);
             this.textRepeatPass.TabIndex = 65;
-            this.textRepeatPass.TextChanged += new System.EventHandler(this.textRepeatPass_TextChanged);
+            this.textRepeatPass.TextChanged += new System.EventHandler(this._textRepeatPass_TextChanged);
             // 
             // lblAviso
             // 

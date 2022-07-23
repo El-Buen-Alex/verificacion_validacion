@@ -13,13 +13,13 @@ namespace GestionDeColegiados.FrmsArbitro {
     private AdmEstadio admEstadio = AdmEstadio.GetAdmEstadio();
     public FrmVerCompeticion(bool puedeAdministrar) {
       InitializeComponent();
-      competenciaLlenar();
+      CompetenciaLlenar();
       if(puedeAdministrar) {
         msAdmin.Visible = puedeAdministrar;
-        gestionarAccesibilidadMsAdmin();
+        GestionarAccesibilidadMsAdmin();
       }
     }
-    private void gestionarAccesibilidadFinalizarCompetencia(int cantEncFin) {
+    private void GestionarAccesibilidadFinalizarCompetencia(int cantEncFin) {
       bool accesibilidad = false;
       if(cantEncFin % 5 == 0) {
         accesibilidad = true;
@@ -56,25 +56,25 @@ namespace GestionDeColegiados.FrmsArbitro {
       }
     }
 
-    private void gestionarAccesibilidadMsAdmin() {
-      int cantidadGenerado = admGenerarEncuentros.obtnerNumeroEncuentrosGeneradosPendientes();
+    private void GestionarAccesibilidadMsAdmin() {
+      int cantidadGenerado = admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes();
       int cantidadDefinido = admEncuentroDefinido.ObtenerCantidadEncuentrosDefinidos();
       int cantidadEncuentrosFinalizados = admEncuentroFinalizado.GetCantidadEncuentrosFinalizados();
       ExaminarDisponibilidadPorEncuentrosGenerados(cantidadGenerado);
       ExaminarDisponibilidadPorEncuentrosDefinidos(cantidadDefinido);
       ExaminarDisponibilidadPorEncuentrosFinalizados(cantidadEncuentrosFinalizados);
-      gestionarAccesibilidadFinalizarCompetencia(cantidadEncuentrosFinalizados);
+      GestionarAccesibilidadFinalizarCompetencia(cantidadEncuentrosFinalizados);
     }
 
-    private void competenciaLlenar() {
+    private void CompetenciaLlenar() {
       bool existe = admEncuentroFinalizado.LlenarDgv(dgvCompeticion);
       lblAdvertencia.Visible = !existe;
     }
 
-    private void mostrarMensajeFinalizar(bool respuesta, string mensaje) {
+    private void MostrarMensajeFinalizar(bool respuesta, string mensaje) {
       if(respuesta) {
         admEstadio.PonerEstadiosDisponibles();
-        gestionarAccesibilidadMsAdmin();
+        GestionarAccesibilidadMsAdmin();
       } else {
         mensaje = "NO SE PUDO ELIMINAR";
       }
@@ -96,12 +96,12 @@ namespace GestionDeColegiados.FrmsArbitro {
             resultado = admGenerarEncuentros.DarBajaEncuentros();
           }
         }
-        mostrarMensajeFinalizar(resultado, mensajeExito);
+        MostrarMensajeFinalizar(resultado, mensajeExito);
       }
 
     }
 
-    private void fINALIZARCOMPETENCIAToolStripMenuItem_Click(object sender, EventArgs e) {
+    private void FINALIZARCOMPETENCIAToolStripMenuItem_Click(object sender, EventArgs e) {
       string pregunta = "¿Seguro que quieres FINALIZAR la competición?\n";
       string mensaje = "Esto Hará que se vuelva a generar y definir encuentros en una nueva copa.";
       string reaccion = " Se podrá visualizar en futuras busquedas.";
@@ -109,7 +109,7 @@ namespace GestionDeColegiados.FrmsArbitro {
       DialogResult res = MessageBox.Show(pregunta + mensaje + reaccion, "CUIDADO", MessageBoxButtons.YesNo);
       if(res == DialogResult.Yes) {
         bool resultado = admEncuentroFinalizado.FinalizarCompetencia();
-        mostrarMensajeFinalizar(resultado, mensajeExito);
+        MostrarMensajeFinalizar(resultado, mensajeExito);
       }
     }
     private void ReiniciarTodaCompetencia() {
@@ -127,21 +127,21 @@ namespace GestionDeColegiados.FrmsArbitro {
         if(cantidadED > 0) {
           resultado = admEncuentroDefinido.ReinicarCompetencia();
         }
-        mostrarMensajeFinalizar(resultado, mensajeExito);
+        MostrarMensajeFinalizar(resultado, mensajeExito);
       }
     }
-    private void rEINICIARTODALACOMPETENCIAToolStripMenuItem_Click(object sender, EventArgs e) {
+    private void REINICIARTODALACOMPETENCIAToolStripMenuItem_Click(object sender, EventArgs e) {
       ReiniciarTodaCompetencia();
     }
 
-    private void rEINICIARRESULTADOSToolStripMenuItem_Click(object sender, EventArgs e) {
+    private void REINICIARRESULTADOSToolStripMenuItem_Click(object sender, EventArgs e) {
       string pregunta = "¿Seguro que quieres REINICIAR LOS RESULTADOS de la competición?\n";
       string mensaje = "Esto Hará que se elimine todo menos los encuentros que esten GENERADOS y DEFINIDOS";
       string mensajeExito = "Se Reinicio los resultados de la competencia con exito";
       DialogResult res = MessageBox.Show(pregunta + mensaje, "ALERTA", MessageBoxButtons.YesNo);
       if(res == DialogResult.Yes) {
         bool resultado = admEncuentroFinalizado.ReinicarCompetencia();
-        mostrarMensajeFinalizar(resultado, mensajeExito);
+        MostrarMensajeFinalizar(resultado, mensajeExito);
       }
     }
   }

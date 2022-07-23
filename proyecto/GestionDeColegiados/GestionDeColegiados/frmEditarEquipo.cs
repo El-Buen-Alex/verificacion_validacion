@@ -28,8 +28,7 @@ namespace GestionDeColegiados {
          directorNombre = director.Text,
          presidenteNombre = presidente.Text,
          id = idEquipo.Text;
-
-      bool hayVacios = _valida.validarVacios(Nombre, numJugadores, directorNombre, presidenteNombre);   //Valida campos vacios al recuperar la informacion presente en los TextBox
+      bool hayVacios = _valida.ValidarVacios(Nombre, numJugadores, directorNombre, presidenteNombre);   //Valida campos vacios al recuperar la informacion presente en los TextBox
       if(hayVacios != true) {
 
         MessageBox.Show(Nombre + ", " + numJugadores + ", " + directorNombre + ", " + presidenteNombre);
@@ -42,9 +41,7 @@ namespace GestionDeColegiados {
 
     private void BtnRegresar_Click(object sender, EventArgs e) {
       DialogResult resultado;
-
-
-      bool hayVacios = _valida.validarVacios(nombre.Text.Trim(), numjugadores.Text, director.Text, presidente.Text);
+      bool hayVacios = _valida.ValidarVacios(nombre.Text.Trim(), numjugadores.Text, director.Text, presidente.Text);
       if(hayVacios != true) {
 
         resultado = MessageBox.Show("¡Está seguro de regresar al apartado anterior, \n Si no ha dado clic en el botón Actualizar se perderán sus datos!", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);

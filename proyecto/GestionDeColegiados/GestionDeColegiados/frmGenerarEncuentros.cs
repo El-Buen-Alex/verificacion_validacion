@@ -37,7 +37,7 @@ namespace GestionDeColegiados {
         lblTitulo.Text = "ENCUENTROS PENDIENTES" +
             "\r\n DE FECHA Y COLEGIADOS";
         int limiteInferiorPb = 0, limiteSuperiorPb = 0;
-        for(int x = 0; x < _admGenerarEncuentros.obtnerNumeroEncuentrosGeneradosPendientes(); x++) {
+        for(int x = 0; x < _admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes(); x++) {
 
           _admGenerarEncuentros.LlenarTuplas(_listaContenedoresLocal[x], _listaContenedoresVisitante[x], x);
           _listaContenedoresLocal[x].Visible = true;

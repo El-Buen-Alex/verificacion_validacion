@@ -103,7 +103,7 @@ namespace Control.AdmColegiados {
     /// <param name="id">ID de un Juez Central.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
     public void ObtenerDatos(int id, DataGridView dgvListarColegiados) {
-      _listaJuezCentral = _datos.consultarJuezCentral(id);
+      _listaJuezCentral = _datos.ConsultarJuezCentral(id);
       foreach(JuezCentral datosJC in _listaJuezCentral) {
         dgvListarColegiados.Rows.Add("Juez Central", datosJC.Cedula, datosJC.Nombre,
             datosJC.Apellidos, datosJC.Domicilio, datosJC.Email, datosJC.Telefono);
@@ -199,7 +199,7 @@ namespace Control.AdmColegiados {
       try {
         _datos.EditarJuezCentralBD(juezCentral);
         MessageBox.Show("Sus datos fueron actualizados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -242,7 +242,7 @@ namespace Control.AdmColegiados {
     private void EliminarJuezCentralBD(int idArbitro) {
       string mensaje = "";
       try {
-        _datos.eliminarJuezCentralBD(idArbitro);
+        _datos.EliminarJuezCentralBD(idArbitro);
       } catch(falloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
