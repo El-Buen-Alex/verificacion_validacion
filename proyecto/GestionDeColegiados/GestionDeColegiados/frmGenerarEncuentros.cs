@@ -127,7 +127,7 @@ namespace GestionDeColegiados {
       string guardo = _admGenerarEncuentros.guardarEncuentrosAleatorios();
       MessageBox.Show(guardo);
       if(guardo[0] == 'S') {
-       
+
         btnGenerarEncuentros.Enabled = false;
         btnGuardarEncuentros.Enabled = false;
         btnGenerarEncuentros.Visible = false;

@@ -112,14 +112,14 @@ ademas del estadio*/
 
 
 
-    public void LlenarMatchDefinidosFinalizados(int index, 
-                                                Label lblEquipoLocal, 
+    public void LlenarMatchDefinidosFinalizados(int index,
+                                                Label lblEquipoLocal,
                                                 Label lblEquipoVisitante) {
       string anio = DateTime.Now.Year.ToString();
       _listaEncuentrosDefinidos = _datosEncuentroDefinido.GetEncuentrosDefinidosFinalizados(anio);
       LlenarMatchEnParLabel(index, lblEquipoLocal, lblEquipoVisitante);
     }
-    private void LlenarMatchEnParLabel(int indexEncuentroSeleccionado, 
+    private void LlenarMatchEnParLabel(int indexEncuentroSeleccionado,
                                        Label lblEquipoLocal, Label lblEquipoVisitante) {
       EncuentroDefinido encuentroDefinido = _listaEncuentrosDefinidos[indexEncuentroSeleccionado];
       LlenarDatosPartido(indexEncuentroSeleccionado, lblEquipoLocal, lblEquipoVisitante, encuentroDefinido);
@@ -131,16 +131,16 @@ ademas del estadio*/
      *fecha
      *y grupo de colegiados
      */
-    public void LlenarMatch(int indexEncuentroSeleccionado, 
-                            Label lblEquipoLocal, 
+    public void LlenarMatch(int indexEncuentroSeleccionado,
+                            Label lblEquipoLocal,
                             Label lblEquipoVisitante) {
       _listaEncuentrosDefinidos = _datosEncuentroDefinido.ObtenerEncuentros();
       EncuentroDefinido encuentroDefinido = _listaEncuentrosDefinidos[indexEncuentroSeleccionado];
       LlenarDatosPartido(indexEncuentroSeleccionado, lblEquipoLocal, lblEquipoVisitante, encuentroDefinido);
     }
-    private void LlenarDatosPartido(int indexEncuentroSeleccionado, 
-                                    Label lblEquipoLocal, 
-                                    Label lblEquipoVisitante, 
+    private void LlenarDatosPartido(int indexEncuentroSeleccionado,
+                                    Label lblEquipoLocal,
+                                    Label lblEquipoVisitante,
                                     EncuentroDefinido encuentroDefinido) {
       EncuentroGenerado encuentroGenerado = ObtenerEncuentroGenerado(encuentroDefinido.IdEncuentroGeneradoPendiente);
       Equipo local;
@@ -151,7 +151,7 @@ ademas del estadio*/
       lblEquipoVisitante.Text = visitante.NombreEquipo;
     }
 
-    private void LlenarFechaHoraPartido(Label lblFecha, 
+    private void LlenarFechaHoraPartido(Label lblFecha,
                                         EncuentroDefinido encuentroDefinido) {
       lblFecha.Text = "FECHA: " + encuentroDefinido.FechaDeEncuentro.ToShortDateString() + " HORA: " + encuentroDefinido.Hora.ToShortTimeString();
     }
@@ -166,12 +166,12 @@ ademas del estadio*/
     /// <param name="lblFecha">Controlador ui encargado de pintar la fecha asignada</param>
     /// <param name="lblColegiado">Controlador ui encargado de pintar el colegiado encargado del partido</param>
     public void LlenarInformacíonPartidoCompleta(
-      int indexEncuentroSeleccionado, Label lblEquipoLocal, Label lblEquipoVisitante, 
+      int indexEncuentroSeleccionado, Label lblEquipoLocal, Label lblEquipoVisitante,
       Label lblEstadio, Label lblFecha, Label lblColegiado) {
       _listaEncuentrosDefinidos = _datosEncuentroDefinido.ObtenerEncuentros();
       EncuentroDefinido encuentroDefinido = _listaEncuentrosDefinidos[indexEncuentroSeleccionado];
       LlenarDatosPartido(
-        indexEncuentroSeleccionado, lblEquipoLocal, 
+        indexEncuentroSeleccionado, lblEquipoLocal,
         lblEquipoVisitante, encuentroDefinido);
       LlenarFechaHoraPartido(lblFecha, encuentroDefinido);
       lblEstadio.Text = ObtenerNombreEstadioDelPartido(indexEncuentroSeleccionado);
@@ -194,9 +194,9 @@ ademas del estadio*/
     /// <param name="txtColegiado">Se llena la informacion del grupo de colegiados</param>
     /// <returns></returns>
     public bool LlenarInformacíonPartidoCompleta(
-      int indexEncuentroSeleccionado, Label lblEquipoLocal, 
-      Label lblEquipoVisitante, ComboBox cmbEstadios, 
-      DateTimePicker dtpFechaEncuentro, DateTimePicker dtpHora, 
+      int indexEncuentroSeleccionado, Label lblEquipoLocal,
+      Label lblEquipoVisitante, ComboBox cmbEstadios,
+      DateTimePicker dtpFechaEncuentro, DateTimePicker dtpHora,
       ComboBox cmbGrupoColegiado, TextBox txtColegiado) {
 
       bool respuesta = false;
@@ -220,7 +220,7 @@ ademas del estadio*/
       return respuesta;
     }
     public bool ActualizarEncuentroDefinido(
-      int indexEncuentro, int indexEstadio, int indexColegiados, 
+      int indexEncuentro, int indexEstadio, int indexColegiados,
       DateTime fecha, DateTime hora) {
       bool actualizo = false;
       EncuentroDefinido auxiliar = _listaEncuentrosDefinidos[indexEncuentro];
@@ -288,11 +288,8 @@ ademas del estadio*/
             guardo = false;
             Console.WriteLine(ex.Message);
           }
-
         }
-
       }
-
       return guardo;
     }
   }

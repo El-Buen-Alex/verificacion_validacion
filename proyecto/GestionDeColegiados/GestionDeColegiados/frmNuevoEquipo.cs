@@ -26,7 +26,7 @@ namespace GestionDeColegiados {
 
       bool hayVacios = _validacionGUI.validarVacios(Nombre, numJugadores, directorNombre, presidenteNombre);   //Valida campos vacios al recuperar la informacion presente en los TextBox
       try {
-        if(_admEquipo.cantidadEquiposRegistrados() < 10){
+        if(_admEquipo.cantidadEquiposRegistrados() < 10) {
 
           if(hayVacios != true) {
 
@@ -39,14 +39,14 @@ namespace GestionDeColegiados {
         } else {
           throw new RegistroEquipoMaximoException("EL registro máximo de equipos es de 10");
         }
-      } catch(RegistroEquipoMaximoException){
+      } catch(RegistroEquipoMaximoException) {
         MessageBox.Show("EL registro máximo de equipos es de 10");
       }
     }
     /*Evento que permite el tecleo de palabras, uso de la tecla de borrado, la barra espaciadora y usar punto*/
     private void Nombre_KeyPress(object sender, KeyPressEventArgs e) {
       if(!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space) && e.KeyChar != '.') {
-        
+
         MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         e.Handled = true;
         return;
@@ -66,7 +66,7 @@ namespace GestionDeColegiados {
     /*Evento que permite el tecleo de palabras, uso de la tecla de borrado y la barra espaciadora*/
     private void director_KeyPress(object sender, KeyPressEventArgs e) {
       if(!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space)) {
-        
+
         MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         e.Handled = true;
         return;
