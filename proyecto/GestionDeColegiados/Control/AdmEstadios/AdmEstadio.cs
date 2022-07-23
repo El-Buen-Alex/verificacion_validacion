@@ -8,45 +8,47 @@ using Model;
 
 namespace Control.AdmEstadios {
   public class AdmEstadio {
-    private static AdmEstadio admEstadio = null;
-    private List<Estadio> listaEstadiosDisponibles;
-    private DatosEstadios datosEstadios = new DatosEstadios();
+    private static AdmEstadio _admEstadio = null;
+    private List<Estadio> _listaEstadiosDisponibles;
+    private DatosEstadios _datosEstadios = new DatosEstadios();
 
     private AdmEstadio() {
-      listaEstadiosDisponibles = new List<Estadio>();
+      _listaEstadiosDisponibles = new List<Estadio>();
     }
 
-    public List<Estadio> ListaEstadiosDisponibles { get => listaEstadiosDisponibles; set => listaEstadiosDisponibles = value; }
+    public List<Estadio> ListaEstadiosDisponibles { get => _listaEstadiosDisponibles; set => _listaEstadiosDisponibles = value; }
 
     public static AdmEstadio GetAdmEstadio() {
-      if(admEstadio == null) {
-        admEstadio = new AdmEstadio();
+      if(_admEstadio == null) {
+
+        _admEstadio = new AdmEstadio();
       }
-      return admEstadio;
+      return _admEstadio;
     }
-    public void refrezcarListaEstadiosDisponibles() {
-      listaEstadiosDisponibles = datosEstadios.obtenerEstadiosDisponibles();
+    public void RefrezcarListaEstadiosDisponibles() {
+      _listaEstadiosDisponibles = _datosEstadios.ObtenerEstadiosDisponibles();
     }
     public void LlenarEstadiosCmb(ComboBox cmbEstadio) {
       cmbEstadio.DataSource = null;
-      listaEstadiosDisponibles = datosEstadios.obtenerEstadiosDisponibles();
+      _listaEstadiosDisponibles = _datosEstadios.ObtenerEstadiosDisponibles();
       cmbEstadio.DisplayMember = "nombre";
-      cmbEstadio.DataSource = listaEstadiosDisponibles;
+      cmbEstadio.DataSource = _listaEstadiosDisponibles;
     }
     public void LlenarEstadiosCmb(ComboBox cmbEstadio, Estadio estadio) {
       cmbEstadio.DataSource = null;
-      listaEstadiosDisponibles = datosEstadios.obtenerEstadiosDisponibles();
-      listaEstadiosDisponibles.Insert(0, estadio);
+      _listaEstadiosDisponibles = _datosEstadios.ObtenerEstadiosDisponibles();
+      _listaEstadiosDisponibles.Insert(0, estadio);
       cmbEstadio.DisplayMember = "nombre";
-      cmbEstadio.DataSource = listaEstadiosDisponibles;
+      cmbEstadio.DataSource = _listaEstadiosDisponibles;
     }
     public Estadio ObtenerEstadioPorId(int idEstadio) {
-      return datosEstadios.ObtenerEstadioPorId(idEstadio);
+      return _datosEstadios.ObtenerEstadioPorId(idEstadio);
     }
     public bool CambiarEstadoEstadio(int idEsadio, string estado) {
       bool cambio = false;
-      cambio = datosEstadios.CambiarEstado(idEsadio, estado);
+      cambio = _datosEstadios.CambiarEstado(idEsadio, estado);
       if(!cambio) {
+
         throw new ErrorActualizarEstadioException("Error en CambiarEstadoEstadio-AdmEstadio");
       }
 
@@ -54,7 +56,7 @@ namespace Control.AdmEstadios {
     }
 
     public void PonerEstadiosDisponibles() {
-      bool respuesta = datosEstadios.PutEstadiosDisponibles();
+      bool respuesta = _datosEstadios.PutEstadiosDisponibles();
     }
 
     public void SeleccionarEstadio(ComboBox cmbEstadios, Estadio estadio) {

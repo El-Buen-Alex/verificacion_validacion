@@ -80,7 +80,7 @@ namespace GestionDeColegiados {
 
     private void btnAnadirEquipo_Click(object sender, EventArgs e) {
       if(admEquipo.ObtenerCantidadEquipo() < 10) {
-        AbrirFormEnPanel(new frmNuevoEquipo());
+        AbrirFormEnPanel(new FrmNuevoEquipo());
       } else {
         AbrirFormEnPanel(new frmListaEquipos());
       }
@@ -94,7 +94,7 @@ namespace GestionDeColegiados {
             "\n\rExisten: " + admEquipo.ObtenerCantidadEquipo() + " Equipos registrados." +
             " Por favor ingrese: " + (10 - admEquipo.ObtenerCantidadEquipo()) + " más";
         MessageBox.Show(faltaEquipo, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        AbrirFormEnPanel(new frmNuevoEquipo());
+        AbrirFormEnPanel(new FrmNuevoEquipo());
       }
     }
 
@@ -193,7 +193,7 @@ namespace GestionDeColegiados {
     }
     public void abrirFormNuevoEquipo() {
       if(admEquipo.ObtenerCantidadEquipo() < 10) {
-        AbrirFormEnPanel(new frmNuevoEquipo());
+        AbrirFormEnPanel(new FrmNuevoEquipo());
       } else {
         AbrirFormEnPanel(new frmListaEquipos());
       }
@@ -214,7 +214,7 @@ namespace GestionDeColegiados {
         ExaminarAccesibilidadEditarEquipoPorEncuentrosGenerados();
       } else {
         MessageBox.Show("Ingrese primero algunos equipos");
-        AbrirFormEnPanel(new frmNuevoEquipo());
+        AbrirFormEnPanel(new FrmNuevoEquipo());
       }
     }
   }

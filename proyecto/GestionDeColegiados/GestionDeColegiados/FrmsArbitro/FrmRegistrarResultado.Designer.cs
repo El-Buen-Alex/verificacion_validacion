@@ -95,7 +95,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.cmbEncuentros.Name = "cmbEncuentros";
             this.cmbEncuentros.Size = new System.Drawing.Size(373, 24);
             this.cmbEncuentros.TabIndex = 33;
-            this.cmbEncuentros.SelectedIndexChanged += new System.EventHandler(this.cmbEncuentros_SelectedIndexChanged);
+            this.cmbEncuentros.SelectedIndexChanged += new System.EventHandler(this.CmbEncuentros_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -131,7 +131,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.btnGuardarCambios.TabIndex = 39;
             this.btnGuardarCambios.Text = "GUARDAR";
             this.btnGuardarCambios.UseVisualStyleBackColor = false;
-            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
+            this.btnGuardarCambios.Click += new System.EventHandler(this.BtnGuardarCambios_Click);
             // 
             // lblGolVisitante
             // 
@@ -194,7 +194,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.txtGolesLocal.Name = "txtGolesLocal";
             this.txtGolesLocal.Size = new System.Drawing.Size(71, 22);
             this.txtGolesLocal.TabIndex = 45;
-            this.txtGolesLocal.TextChanged += new System.EventHandler(this.txtGolesLocal_TextChanged);
+            this.txtGolesLocal.TextChanged += new System.EventHandler(this.TxtGolesLocal_TextChanged);
             // 
             // txtGolesVisitante
             // 
@@ -202,7 +202,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.txtGolesVisitante.Name = "txtGolesVisitante";
             this.txtGolesVisitante.Size = new System.Drawing.Size(72, 22);
             this.txtGolesVisitante.TabIndex = 46;
-            this.txtGolesVisitante.TextChanged += new System.EventHandler(this.txtGolesVisitante_TextChanged);
+            this.txtGolesVisitante.TextChanged += new System.EventHandler(this.TxtGolesVisitante_TextChanged);
             // 
             // lblPuntosLocalResultado
             // 

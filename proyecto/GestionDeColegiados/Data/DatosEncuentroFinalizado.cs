@@ -10,16 +10,16 @@ using Sistema;
 
 namespace Data {
   public class DatosEncuentroFinalizado {
-    private MySqlConnection conexion = null;
-    private MySqlTransaction trans = null;
+    private MySqlConnection _conexion = null;
+    private MySqlTransaction _trans = null;
 
     public bool AddEncuentroFinalizado(EncuentroFinalizado encuentroFinalizado) {
       bool guardado = false;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-      trans = conexion.BeginTransaction();
+      _conexion = ConexionBD.getConexion();
+      _conexion.Open();
+      _trans = _conexion.BeginTransaction();
       try {
-        MySqlCommand cmd = new MySqlCommand("guardarPartidoFinalizado", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("guardarPartidoFinalizado", _conexion, _trans);
 
         cmd.CommandType = CommandType.StoredProcedure;
 
@@ -33,14 +33,14 @@ namespace Data {
 
         cmd.ExecuteNonQuery();
 
-        trans.Commit();
+        _trans.Commit();
 
         guardado = true;
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new Exception(ex.ToString());
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
 
       return guardado;
@@ -48,11 +48,11 @@ namespace Data {
 
     public bool FinalizarCompetencia(string anio, string estado) {
       bool respuesta = false;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-      trans = conexion.BeginTransaction();
+      _conexion = ConexionBD.getConexion();
+      _conexion.Open();
+      _trans = _conexion.BeginTransaction();
       try {
-        MySqlCommand cmd = new MySqlCommand("finalizarCompetencia", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("finalizarCompetencia", _conexion, _trans);
 
         cmd.CommandType = CommandType.StoredProcedure;
 
@@ -60,16 +60,16 @@ namespace Data {
         cmd.Parameters.AddWithValue("_estado", estado[0]);
         cmd.ExecuteNonQuery();
 
-        trans.Commit();
+        _trans.Commit();
 
         respuesta = true;
 
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
 
         throw new Exception(ex.ToString());
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
       return respuesta;
     }
@@ -77,10 +77,10 @@ namespace Data {
     public List<EncuentroFinalizado> GetEncuentrosFinalizados(string anio) {
       List<EncuentroFinalizado> posiciones = new List<EncuentroFinalizado>();
       EncuentroFinalizado encuentroFinalizado = null;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.getConexion();
+      _conexion.Open();
       try {
-        MySqlCommand cmd = new MySqlCommand("obtenerCompetencia", conexion);
+        MySqlCommand cmd = new MySqlCommand("obtenerCompetencia", _conexion);
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.AddWithValue("@_anio", anio);
         MySqlDataReader reader = cmd.ExecuteReader();
@@ -99,17 +99,17 @@ namespace Data {
       } catch(MySqlException ex) {
         throw new Exception(ex.ToString());
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
       return posiciones;
     }
 
     public EncuentroFinalizado GetEncuentroFinalizadoByIDefinidoEquipo(int idDefinido, int idEquipoLocal) {
       EncuentroFinalizado encuentroFinalizado = null;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.getConexion();
+      _conexion.Open();
       try {
-        MySqlCommand cmd = new MySqlCommand("obtenerEncuentroFinalizadoById", conexion);
+        MySqlCommand cmd = new MySqlCommand("obtenerEncuentroFinalizadoById", _conexion);
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.AddWithValue("_idDefinido", idDefinido);
         cmd.Parameters.AddWithValue("_idEquipo", idEquipoLocal);
@@ -127,18 +127,18 @@ namespace Data {
       } catch(MySqlException ex) {
         throw new Exception(ex.ToString());
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
       return encuentroFinalizado;
     }
 
     public bool UpdateEncuentroFinalizado(EncuentroFinalizado encuentroResultado) {
       bool respuesta = false;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-      trans = conexion.BeginTransaction();
+      _conexion = ConexionBD.getConexion();
+      _conexion.Open();
+      _trans = _conexion.BeginTransaction();
       try {
-        MySqlCommand comando = new MySqlCommand("actulizarEncuentroFinalizado", conexion, trans);
+        MySqlCommand comando = new MySqlCommand("actulizarEncuentroFinalizado", _conexion, _trans);
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("@_idDefinido", encuentroResultado.IdEncuentroDefinido);
         comando.Parameters.AddWithValue("@_idEquipo", encuentroResultado.IdEquipo);
@@ -147,13 +147,13 @@ namespace Data {
         comando.Parameters.AddWithValue("@_golDiferencia", encuentroResultado.GolesDiferencia);
         comando.Parameters.AddWithValue("@_puntos", encuentroResultado.Puntos);
         comando.ExecuteNonQuery();
-        trans.Commit();
+        _trans.Commit();
         respuesta = true;
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         Console.WriteLine(ex.Message);
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
 
       return respuesta;
@@ -161,14 +161,15 @@ namespace Data {
 
     public int GetCantidadEncuentrosFinalizados(string anio) {
       int cantidad = 0;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.getConexion();
+      _conexion.Open();
       try {
-        MySqlCommand comando = new MySqlCommand("cantidadEncuentrosFinalizados", conexion);
+        MySqlCommand comando = new MySqlCommand("cantidadEncuentrosFinalizados", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("@_copa", anio);
         MySqlDataReader reader = comando.ExecuteReader();
         if(reader.Read()) {
+
           cantidad = Convert.ToInt32(reader["cantidadEncuentros"].ToString());
         }
 
@@ -176,7 +177,7 @@ namespace Data {
         Console.WriteLine(ex.Message);
         cantidad = -1;
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
       return cantidad;
 

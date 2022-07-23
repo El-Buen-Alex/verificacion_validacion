@@ -268,7 +268,7 @@ ademas del estadio*/
       bool guardo = false;
       _admEncuentrosGenerados.llenarListaEncuentrosGeneradosPendientes();
       _admColegiados.llenarListaColegiados();
-      _admEstadio.refrezcarListaEstadiosDisponibles();
+      _admEstadio.RefrezcarListaEstadiosDisponibles();
       int idEncuentroGeneradoPendiente = _admEncuentrosGenerados.ListaEncuentrosGeneradosPendientes[posicion].Id;
       int idColegiado = _admColegiados.ListaintegColeg[grupoColegiado].IdGrupoColegiado;
       int idEsadio = _admEstadio.ListaEstadiosDisponibles[estadioSeleccionado].Id;

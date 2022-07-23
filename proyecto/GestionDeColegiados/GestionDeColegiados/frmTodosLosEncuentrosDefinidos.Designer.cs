@@ -62,7 +62,7 @@ namespace GestionDeColegiados
             this.cmbEncuentros.Name = "cmbEncuentros";
             this.cmbEncuentros.Size = new System.Drawing.Size(318, 24);
             this.cmbEncuentros.TabIndex = 6;
-            this.cmbEncuentros.SelectedIndexChanged += new System.EventHandler(this.cmbEncuentros_SelectedIndexChanged);
+            this.cmbEncuentros.SelectedIndexChanged += new System.EventHandler(this.CmbEncuentros_SelectedIndexChanged);
             // 
             // label2
             // 

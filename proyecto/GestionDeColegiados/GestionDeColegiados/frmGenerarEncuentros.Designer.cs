@@ -102,7 +102,7 @@ namespace GestionDeColegiados
             this.btnGenerarEncuentros.TabIndex = 16;
             this.btnGenerarEncuentros.Text = "Generar encuentros";
             this.btnGenerarEncuentros.UseVisualStyleBackColor = false;
-            this.btnGenerarEncuentros.Click += new System.EventHandler(this.generarEncuentros_Click);
+            this.btnGenerarEncuentros.Click += new System.EventHandler(this.GenerarEncuentros_Click);
             // 
             // label7
             // 
@@ -140,7 +140,7 @@ namespace GestionDeColegiados
             this.btnGuardarEncuentros.TabIndex = 22;
             this.btnGuardarEncuentros.Text = "Registrar encuentros";
             this.btnGuardarEncuentros.UseVisualStyleBackColor = false;
-            this.btnGuardarEncuentros.Click += new System.EventHandler(this.guardarDatos_Click);
+            this.btnGuardarEncuentros.Click += new System.EventHandler(this.GuardarDatos_Click);
             // 
             // pictureBox1
             // 

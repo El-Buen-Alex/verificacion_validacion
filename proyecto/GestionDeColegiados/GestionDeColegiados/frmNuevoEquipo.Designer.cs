@@ -1,7 +1,7 @@
 ﻿
 namespace GestionDeColegiados
 {
-    partial class frmNuevoEquipo
+    partial class FrmNuevoEquipo
     {
         /// <summary>
         /// Required designer variable.
@@ -59,7 +59,7 @@ namespace GestionDeColegiados
             this.presidente.Name = "presidente";
             this.presidente.Size = new System.Drawing.Size(209, 22);
             this.presidente.TabIndex = 18;
-            this.presidente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.presidente_KeyPress);
+            this.presidente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Presidente_KeyPress);
             // 
             // director
             // 
@@ -78,7 +78,7 @@ namespace GestionDeColegiados
             this.numjugadores.Name = "numjugadores";
             this.numjugadores.Size = new System.Drawing.Size(213, 22);
             this.numjugadores.TabIndex = 16;
-            this.numjugadores.TextChanged += new System.EventHandler(this.numjugadores_TextChanged);
+            this.numjugadores.TextChanged += new System.EventHandler(this.Numjugadores_TextChanged);
             this.numjugadores.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numjugadores_KeyPress);
             // 
             // nombre
@@ -88,7 +88,7 @@ namespace GestionDeColegiados
             this.nombre.Name = "nombre";
             this.nombre.Size = new System.Drawing.Size(213, 22);
             this.nombre.TabIndex = 15;
-            this.nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nombre_KeyPress);
+            this.nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Nombre_KeyPress);
             // 
             // label4
             // 
@@ -145,7 +145,7 @@ namespace GestionDeColegiados
             this.registrar.TabIndex = 10;
             this.registrar.Text = "Registrar";
             this.registrar.UseVisualStyleBackColor = false;
-            this.registrar.Click += new System.EventHandler(this.registrar_Click);
+            this.registrar.Click += new System.EventHandler(this.Registrar_Click);
             // 
             // frmNuevoEquipo
             // 
