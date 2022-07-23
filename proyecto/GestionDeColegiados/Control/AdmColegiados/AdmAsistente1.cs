@@ -86,7 +86,7 @@ namespace Control.AdmColegiados {
       string mensaje = "";
       try {
         id = _datos.InsertarAsistente1(asistente1);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -247,7 +247,7 @@ namespace Control.AdmColegiados {
       string mensaje = "";
       try {
         _datos.EliminarAsistente1BD(idArbitro);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }

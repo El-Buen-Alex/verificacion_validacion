@@ -87,7 +87,7 @@ namespace Control.AdmColegiados {
       string mensaje = "";
       try {
         id = _datos.InsertarJuezCentral(juezCentral);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -243,7 +243,7 @@ namespace Control.AdmColegiados {
       string mensaje = "";
       try {
         _datos.EliminarJuezCentralBD(idArbitro);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
