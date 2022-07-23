@@ -16,7 +16,7 @@ namespace Control.AdmEncuentrosGenerados {
     private List<EncuentroGenerado> listaEncuentrosGeneradosPendientes;
     private EncuentroGenerado encuentroAuxiliar = null;
     private static AdmGenerarEncuentros admGenerarEncuentros = null;
-    private AdmEquipo admEquipo = AdmEquipo.getEquipo();
+    private AdmEquipo admEquipo = AdmEquipo.GetEquipo();
     private List<Equipo> listaEquipos;
     private DatosEnuenctrosGenerados datosEncuentrosGenerados = new DatosEnuenctrosGenerados();
     private List<int> idsEquiposLocales = new List<int>();
@@ -81,7 +81,7 @@ namespace Control.AdmEncuentrosGenerados {
       bool respuesta = false;
       numerosAleatoriosLocal = generListaAleatoria(1, 6);
       numerosAleatoriosVisitante = generListaAleatoria(6, 11);
-      listaEquipos = admEquipo.extraerEquipos();
+      listaEquipos = admEquipo.ExtraerEquipos();
       //aqui se generan encuentros aleatorios y los ids se guardan acorde a su ubicacion
       //en su lista respectiva:idsequiposLocal idsEquipoVisitante
       try {

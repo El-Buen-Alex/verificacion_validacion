@@ -1,7 +1,7 @@
 ﻿
 namespace GestionDeColegiados
 {
-    partial class frmRegistrarPartido
+    partial class FrmRegistrarPartido
     {
         /// <summary>
         /// Required designer variable.
@@ -107,7 +107,7 @@ namespace GestionDeColegiados
             this.btnSiguiente.TabIndex = 11;
             this.btnSiguiente.Text = "SIGUIENTE";
             this.btnSiguiente.UseVisualStyleBackColor = false;
-            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
+            this.btnSiguiente.Click += new System.EventHandler(this.BtnSiguiente_Click);
             // 
             // btnRegistrar
             // 
@@ -120,7 +120,7 @@ namespace GestionDeColegiados
             this.btnRegistrar.TabIndex = 12;
             this.btnRegistrar.Text = "REGISTRAR";
             this.btnRegistrar.UseVisualStyleBackColor = false;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            this.btnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // dtpFechaEncuentro
             // 

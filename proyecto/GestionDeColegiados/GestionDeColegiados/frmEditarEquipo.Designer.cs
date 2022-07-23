@@ -1,7 +1,7 @@
 ﻿
 namespace GestionDeColegiados
 {
-    partial class frmEditarEquipo
+    partial class FrmEditarEquipo
     {
         /// <summary>
         /// Required designer variable.
@@ -144,7 +144,7 @@ namespace GestionDeColegiados
             this.btnActualizar.TabIndex = 43;
             this.btnActualizar.Text = "Actualizar Datos";
             this.btnActualizar.UseVisualStyleBackColor = false;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            this.btnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // btnCancelar
             // 
@@ -157,7 +157,7 @@ namespace GestionDeColegiados
             this.btnCancelar.TabIndex = 44;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // idEquipo
             // 
@@ -191,7 +191,7 @@ namespace GestionDeColegiados
             this.btnRegresar.TabIndex = 47;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            this.btnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
             // 
             // frmEditarEquipo
             // 

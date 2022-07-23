@@ -133,17 +133,17 @@ namespace Control.AdmColegiados {
       string[] cadena = colegiadoSeleccionado.Split(delimitador);
       int id = Convert.ToInt32(cadena[1]);
 
-      contexto = new Contexto(AdmJuezCentral.getAdmJ());
-      contexto.datos(id, dgvListarColegiados);
+      contexto = new Contexto(AdmJuezCentral.GetAdmJ());
+      contexto.Datos(id, dgvListarColegiados);
 
       contexto = new Contexto(AdmAsistente1.GetAdmA1());
-      contexto.datos(id, dgvListarColegiados);
+      contexto.Datos(id, dgvListarColegiados);
 
       contexto = new Contexto(AdmAsistente2.getAdmA2());
-      contexto.datos(id, dgvListarColegiados);
+      contexto.Datos(id, dgvListarColegiados);
 
       contexto = new Contexto(AdmCuartoArbitro.getAdmCA());
-      contexto.datos(id, dgvListarColegiados);
+      contexto.Datos(id, dgvListarColegiados);
     }
 
     /// <summary>
@@ -223,7 +223,7 @@ namespace Control.AdmColegiados {
       Contexto contextoArbitro = null;
       string arbitro = filaSeleccionada.Cells[0].Value.ToString();
       if(arbitro == "Juez Central") {
-        contextoArbitro = new Contexto(AdmJuezCentral.getAdmJ());
+        contextoArbitro = new Contexto(AdmJuezCentral.GetAdmJ());
       }
       if(arbitro == "Asistente 1") {
         contextoArbitro = new Contexto(AdmAsistente1.GetAdmA1());
@@ -244,7 +244,7 @@ namespace Control.AdmColegiados {
     public void recogerDatosEditar(DataGridView dgvListarColegiados) {
       filaSeleccionada = dgvListarColegiados.CurrentRow;
       contexto = escogerArbitro(filaSeleccionada);
-      contexto.recogerDatosEditar(filaSeleccionada);
+      contexto.RecogerDatosEditar(filaSeleccionada);
     }
 
     /// <summary>
@@ -258,7 +258,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtTelefono">Telefono.</param>
     public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido, TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
       contexto = escogerArbitro(filaSeleccionada);
-      contexto.llenarDatosFormEditar(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
+      contexto.LlenarDatosFormEditar(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
     }
 
     /// <summary>
@@ -310,7 +310,7 @@ namespace Control.AdmColegiados {
       int idColegiado = Convert.ToInt32(cadena[1]);
       int idArbitro = obtenerIDArbitro(idColegiado, filaSeleccionada);
       contexto = escogerArbitro(filaSeleccionada);
-      contexto.editarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
+      contexto.EditarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
     }
 
     /// <summary>
@@ -338,7 +338,7 @@ namespace Control.AdmColegiados {
       int idArbitro = obtenerIDArbitro(idColegiado, filaSeleccionada);
       int idNuevo = 0;
       contexto = escogerArbitro(filaSeleccionada);
-      idNuevo = contexto.eliminarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
+      idNuevo = contexto.EliminarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
       if(idNuevo != 0) {
         string arbitro = filaSeleccionada.Cells[0].Value.ToString();
         actualizarColegiadoBD(idColegiado, idNuevo, arbitro);

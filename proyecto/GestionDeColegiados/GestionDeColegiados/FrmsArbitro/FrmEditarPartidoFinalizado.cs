@@ -6,15 +6,15 @@ using Control.AdmEncuentrosGenerados;
 
 namespace GestionDeColegiados.FrmsArbitro {
   public partial class FrmEditarPartidoFinalizado : Form {
-    private AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
-    private AdmEncuentroFinalizado admEncuentroFinalizado = AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados();
+    private AdmEncuentrosDefinidos _admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
+    private AdmEncuentroFinalizado _admEncuentroFinalizado = AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados();
     public FrmEditarPartidoFinalizado() {
       InitializeComponent();
-      bool lleno = admEncuentrosDefinidos.LlenarCmbEncuentrosDefinidosFinalizados(cmbEncuentros);
-      cambiarDisponibilidadControladoresUi(false);
+      bool lleno = _admEncuentrosDefinidos.LlenarCmbEncuentrosDefinidosFinalizados(cmbEncuentros);
+      CambiarDisponibilidadControladoresUi(false);
 
     }
-    private void cambiarDisponibilidadControladoresUi(bool estado) {
+    private void CambiarDisponibilidadControladoresUi(bool estado) {
       lblEquipoLocal.Enabled = estado;
       lblEquipoVisitante.Enabled = estado;
       txtGolesLocal.Enabled = estado;
@@ -25,15 +25,15 @@ namespace GestionDeColegiados.FrmsArbitro {
       lblPuntosVisitanteResultado.Visible = estado;
     }
 
-    private void refrezcarComponentes() {
+    private void RefrezcarComponentes() {
       int index = cmbEncuentros.SelectedIndex;
-      admEncuentrosDefinidos.LlenarMatchDefinidosFinalizados(index, lblEquipoLocal, lblEquipoVisitante);
-      admEncuentroFinalizado.LlenarInformacionPartido(index, txtGolesLocal, txtGolesVisitante, lblPuntosLocalResultado, lblPuntosVisitanteResultado);
+      _admEncuentrosDefinidos.LlenarMatchDefinidosFinalizados(index, lblEquipoLocal, lblEquipoVisitante);
+      _admEncuentroFinalizado.LlenarInformacionPartido(index, txtGolesLocal, txtGolesVisitante, lblPuntosLocalResultado, lblPuntosVisitanteResultado);
     }
 
-    private void cmbEncuentros_SelectedIndexChanged(object sender, EventArgs e) {
-      refrezcarComponentes();
-      cambiarDisponibilidadControladoresUi(true);
+    private void CmbEncuentros_SelectedIndexChanged(object sender, EventArgs e) {
+      RefrezcarComponentes();
+      CambiarDisponibilidadControladoresUi(true);
       btnGuardarCambios.Enabled = false;
     }
 
@@ -44,10 +44,11 @@ namespace GestionDeColegiados.FrmsArbitro {
       string golesLocal = txtGolesLocal.Text;
       string golesVisitante = txtGolesVisitante.Text;
       if(String.IsNullOrEmpty(golesLocal) || String.IsNullOrEmpty(golesVisitante)) {
+
         MessageBox.Show("Ingrese la cantidad de Goles realizado por los equipos correctamente");
       } else {
         int index = cmbEncuentros.SelectedIndex;
-        bool actualizo = admEncuentroFinalizado.UpdateEncuentroFinalizado(index, golesLocal, golesVisitante);
+        bool actualizo = _admEncuentroFinalizado.UpdateEncuentroFinalizado(index, golesLocal, golesVisitante);
         Actualizado(actualizo);
       }
 
@@ -55,17 +56,17 @@ namespace GestionDeColegiados.FrmsArbitro {
     private void ActualizarPuntos() {
       string golLocal = txtGolesLocal.Text;
       string golVisitante = txtGolesVisitante.Text;
-      admEncuentroFinalizado.CalcularPuntos(lblPuntosLocalResultado, golLocal, golVisitante);
-      admEncuentroFinalizado.CalcularPuntos(lblPuntosVisitanteResultado, golVisitante, golLocal);
+      _admEncuentroFinalizado.CalcularPuntos(lblPuntosLocalResultado, golLocal, golVisitante);
+      _admEncuentroFinalizado.CalcularPuntos(lblPuntosVisitanteResultado, golVisitante, golLocal);
 
     }
 
-    private void txtGoles_TextChanged(object sender, EventArgs e) {
+    private void TxtGoles_TextChanged(object sender, EventArgs e) {
       btnGuardarCambios.Enabled = true;
       ActualizarPuntos();
     }
 
-    private void btnGuardarCambios_Click(object sender, EventArgs e) {
+    private void BtnGuardarCambios_Click(object sender, EventArgs e) {
       Actualizar();
     }
   }

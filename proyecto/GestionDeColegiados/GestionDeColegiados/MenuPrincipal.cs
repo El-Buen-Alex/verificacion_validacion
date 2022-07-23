@@ -23,7 +23,7 @@ namespace GestionDeColegiados {
     private Color colorDefaultMin;
     private AdmEncuentroFinalizado admEncuentroFinalizado = AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados();
     private AdmGenerarEncuentros admGenerarEncuentros = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
-    private AdmEquipo admEquipo = AdmEquipo.getEquipo();
+    private AdmEquipo admEquipo = AdmEquipo.GetEquipo();
     private AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
     private AdmColegiado admColegiado = AdmColegiado.getAdmCol();
 
@@ -122,7 +122,7 @@ namespace GestionDeColegiados {
       if(numeroEncuentros == 0) {
         MessageBox.Show("No hay encuentros disponibles para asignar fecha y colegiados ");
       } else {
-        AbrirFormEnPanel(new frmRegistrarPartido());
+        AbrirFormEnPanel(new FrmRegistrarPartido());
       }
 
     }

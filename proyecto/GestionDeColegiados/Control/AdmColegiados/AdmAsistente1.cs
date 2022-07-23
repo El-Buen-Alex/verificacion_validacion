@@ -56,8 +56,8 @@ namespace Control.AdmColegiados {
     /// <param name="txtemailAs1">Email recogido.</param>
     /// <param name="txttelefonoAs1">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int Guardar(TextBox txtcedulaAs1, TextBox txtnombreAs1, 
-                       TextBox txtapellidoAs1,TextBox txtdomicilioAs1, 
+    public int Guardar(TextBox txtcedulaAs1, TextBox txtnombreAs1,
+                       TextBox txtapellidoAs1, TextBox txtdomicilioAs1,
                        TextBox txtemailAs1, TextBox txttelefonoAs1) {
       string cedula = txtcedulaAs1.Text;
       string nombre = txtnombreAs1.Text;
@@ -145,8 +145,8 @@ namespace Control.AdmColegiados {
     /// <param name="txtDomicilio">Domicilio.</param>
     /// <param name="txtEmail">Email.</param>
     /// <param name="txtTelefono">Telefono.</param>
-    public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, 
-                                      TextBox txtApellido, TextBox txtDomicilio, 
+    public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre,
+                                      TextBox txtApellido, TextBox txtDomicilio,
                                       TextBox txtEmail, TextBox txtTelefono) {
       try {
         txtCedula.Text = _as1.Cedula.ToString();
@@ -170,9 +170,9 @@ namespace Control.AdmColegiados {
     /// <param name="domicilio">Domicilio recogido.</param>
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
-    public void EditarArbitro(int idArbitro, string cedula, 
+    public void EditarArbitro(int idArbitro, string cedula,
                               string nombre, string apellido,
-                              string domicilio, string email, 
+                              string domicilio, string email,
                               string telefono) {
       _asistente1 = new Asistente();
       _asistente1.IdArbitro = idArbitro;
@@ -215,7 +215,7 @@ namespace Control.AdmColegiados {
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int EliminarArbitro(int idArbitro, string cedula, 
+    public int EliminarArbitro(int idArbitro, string cedula,
                                string nombre, string apellido,
                                string domicilio, string email,
                                string telefono) {

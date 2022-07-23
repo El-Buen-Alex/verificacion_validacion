@@ -21,7 +21,7 @@ namespace Control.AdmEncuentrosGenerados {
     private AdmColegiado _admColegiados = AdmColegiado.getAdmCol();
 
 
-    private AdmEquipo _admEquipos = AdmEquipo.getEquipo();
+    private AdmEquipo _admEquipos = AdmEquipo.GetEquipo();
     private AdmEstadio _admEstadios = AdmEstadio.GetAdmEstadio();
     private AdmEstadio _admEstadio = AdmEstadio.GetAdmEstadio();
 

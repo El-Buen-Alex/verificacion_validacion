@@ -5,14 +5,14 @@ namespace Control.AdmColegiados {
   /// Clase contexto para aplicar patrón de diseño Strategy.
   /// </summary>
   public class Contexto {
-    private IAdm adm;
+    private IAdm _adm;
 
     /// <summary>
     /// Constructor de la clase contexto.
     /// </summary>
     /// <param name="adm">Instacia de la clase adm.</param>
     public Contexto(IAdm adm) {
-      this.adm = adm;
+      this._adm = adm;
     }
 
     /// <summary>
@@ -25,10 +25,10 @@ namespace Control.AdmColegiados {
     /// <param name="txtemail">Email recogido.</param>
     /// <param name="txttelefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int obtenerDatos(TextBox txtcedula, TextBox txtnombre, TextBox txtapellido,
+    public int ObtenerDatos(TextBox txtcedula, TextBox txtnombre, TextBox txtapellido,
         TextBox txtdomicilio, TextBox txtemail, TextBox txttelefono) {
 
-      return this.adm.Guardar(txtcedula, txtnombre, txtapellido,
+      return this._adm.Guardar(txtcedula, txtnombre, txtapellido,
       txtdomicilio, txtemail, txttelefono);
     }
 
@@ -37,8 +37,8 @@ namespace Control.AdmColegiados {
     /// </summary>
     /// <param name="id">ID de un árbitro.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
-    public void datos(int id, DataGridView dgvListarColegiados) {
-      adm.ObtenerDatos(id, dgvListarColegiados);
+    public void Datos(int id, DataGridView dgvListarColegiados) {
+      _adm.ObtenerDatos(id, dgvListarColegiados);
     }
 
     /// <summary>
@@ -48,8 +48,8 @@ namespace Control.AdmColegiados {
     /// Recoge los datos que son seleccionados para editar por el usuario.
     /// </remarks>
     /// <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
-    public void recogerDatosEditar(DataGridViewRow filaSeleccionada) {
-      adm.RecogerDatosEditar(filaSeleccionada);
+    public void RecogerDatosEditar(DataGridViewRow filaSeleccionada) {
+      _adm.RecogerDatosEditar(filaSeleccionada);
     }
 
     /// <summary>
@@ -64,9 +64,9 @@ namespace Control.AdmColegiados {
     /// <param name="txtDomicilio">Domicilio.</param>
     /// <param name="txtEmail">Email.</param>
     /// <param name="txtTelefono">Telefono.</param>
-    public void llenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido,
+    public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido,
         TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
-      adm.LlenarDatosFormEditar(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
+      _adm.LlenarDatosFormEditar(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
     }
 
     /// <summary>
@@ -79,9 +79,9 @@ namespace Control.AdmColegiados {
     /// <param name="domicilio">Domicilio recogido.</param>
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
-    public void editarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public void EditarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
-      adm.EditarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
+      _adm.EditarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
     }
 
     /// <summary>
@@ -95,9 +95,9 @@ namespace Control.AdmColegiados {
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int eliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public int EliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
-      return this.adm.EliminarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
+      return this._adm.EliminarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
     }
   }
 }

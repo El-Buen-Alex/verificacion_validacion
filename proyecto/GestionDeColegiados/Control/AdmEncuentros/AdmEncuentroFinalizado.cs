@@ -18,7 +18,7 @@ namespace Control.AdmEncuentros {
     private List<EncuentroFinalizado> encuentrosFinalizados;
     private AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
     private AdmGenerarEncuentros admEncuentrosGenerados = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
-    private AdmEquipo admEquipos = AdmEquipo.getEquipo();
+    private AdmEquipo admEquipos = AdmEquipo.GetEquipo();
     private ValidacionGUI validaciones = new ValidacionGUI();
     private DatosEncuentroFinalizado datosEncuentroFinalizado = new DatosEncuentroFinalizado();
 
