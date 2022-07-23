@@ -76,11 +76,11 @@ namespace GestionDeColegiados {
     }
 
     private void cmb_SelectedIndexChanged(object sender, EventArgs e) {
-      //si se selecciona un nuevo estadio, habilitará la opcion de guardar
+      //si se selecciona un nuevo estadio, habilitará la opcion de Guardar
       btnGuardarCambios.Enabled = true;
     }
     private void cmbColegiados_SelectedIndexChanged(object sender, EventArgs e) {
-      //si se selecciona un nuevo estadio, habilitará la opcion de guardar
+      //si se selecciona un nuevo estadio, habilitará la opcion de Guardar
       int indexColegiados = cmbGrupoColegiado.SelectedIndex;
       string s = admColegiado.ObtenerNombreDeColegiadosIndex(indexColegiados);
       txtColegiados.Text = s;

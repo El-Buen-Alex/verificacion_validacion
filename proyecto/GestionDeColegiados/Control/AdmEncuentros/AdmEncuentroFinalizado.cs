@@ -18,7 +18,7 @@ namespace Control.AdmEncuentros {
     private List<EncuentroFinalizado> encuentrosFinalizados;
     private AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
     private AdmGenerarEncuentros admEncuentrosGenerados = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
-    private AdmEquipo admEquipos = AdmEquipo.getEquipo();
+    private AdmEquipo admEquipos = AdmEquipo.GetEquipo();
     private ValidacionGUI validaciones = new ValidacionGUI();
     private DatosEncuentroFinalizado datosEncuentroFinalizado = new DatosEncuentroFinalizado();
 
@@ -180,7 +180,7 @@ namespace Control.AdmEncuentros {
     }
 
     /// <summary>
-    /// Metodo encargado de guardar un encuentro finalizado
+    /// Metodo encargado de Guardar un encuentro finalizado
     /// </summary>
     /// <param name="index">la posicion del encuentro finalizado respecto a una lista</param>
     /// <param name="golesLocal">cantidad de goles de local que se han actualizado</param>

@@ -15,15 +15,15 @@ namespace GestionDeColegiados {
 
     //dll y variables necesarios para poder mover de lugar la barra de titulo 
     [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-    private extern static void ReleaseCapture();
+    private static extern void ReleaseCapture();
     [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-    private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+    private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
     private Color colorDefaultClose;
     private Color colorDefaultMin;
     private AdmEncuentroFinalizado admEncuentroFinalizado = AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados();
     private AdmGenerarEncuentros admGenerarEncuentros = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
-    private AdmEquipo admEquipo = AdmEquipo.getEquipo();
+    private AdmEquipo admEquipo = AdmEquipo.GetEquipo();
     private AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
     private AdmColegiado admColegiado = AdmColegiado.getAdmCol();
 
@@ -122,7 +122,7 @@ namespace GestionDeColegiados {
       if(numeroEncuentros == 0) {
         MessageBox.Show("No hay encuentros disponibles para asignar fecha y colegiados ");
       } else {
-        AbrirFormEnPanel(new frmRegistrarPartido());
+        AbrirFormEnPanel(new FrmRegistrarPartido());
       }
 
     }

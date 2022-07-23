@@ -10,25 +10,25 @@ namespace GestionDeColegiados.FrmsColegiado {
   /// <summary>
   /// Formulario para editar Áribtros.
   /// </summary>
-  public partial class frmEditarArbitro : Form {
+  public partial class FrmEditarArbitro : Form {
     /// <summary>
     /// DLL y variables necesarias para poder mover el formulario.
     /// </summary>
     [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-    private extern static void ReleaseCapture();
+    private static extern void ReleaseCapture();
     [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-    private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+    private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-    private Color colorDefaultClose;
-    ValidacionGUI validacionGUI = new ValidacionGUI();
-    AdmColegiado admColegiado = AdmColegiado.getAdmCol();
+    private Color _colorDefaultClose;
+    ValidacionGUI _validacionGUI = new ValidacionGUI();
+    AdmColegiado _admColegiado = AdmColegiado.getAdmCol();
 
     /// <summary>
     /// Constructor del formulario.
     /// </summary>
     /// <param name="arbitro">Tipo de árbitro.</param>
     /// <param name="idColegiado">ID del colegiado.</param>
-    public frmEditarArbitro(string arbitro, string idColegiado) {
+    public FrmEditarArbitro(string arbitro, string idColegiado) {
       InitializeComponent();
       lblEditar.Text += arbitro;
       lblID.Text = idColegiado;
@@ -39,8 +39,8 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void frmEditarArbitro_Load(object sender, EventArgs e) {
-      admColegiado.LlenarDatosFormEditar(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
+    private void FrmEditarArbitro_Load(object sender, EventArgs e) {
+      _admColegiado.LlenarDatosFormEditar(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
     }
 
     /// <summary>
@@ -58,7 +58,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void pbCerrar_Click(object sender, EventArgs e) {
+    private void PbCerrar_Click(object sender, EventArgs e) {
       Close();
     }
 
@@ -67,8 +67,8 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void pbCerrar_MouseEnter(object sender, EventArgs e) {
-      colorDefaultClose = pbCerrar.BackColor;
+    private void PbCerrar_MouseEnter(object sender, EventArgs e) {
+      _colorDefaultClose = pbCerrar.BackColor;
       pbCerrar.BackColor = Color.FromArgb(202, 49, 32);
     }
 
@@ -77,8 +77,8 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void pbCerrar_MouseLeave(object sender, EventArgs e) {
-      pbCerrar.BackColor = colorDefaultClose;
+    private void PbCerrar_MouseLeave(object sender, EventArgs e) {
+      pbCerrar.BackColor = _colorDefaultClose;
     }
 
     /// <summary>
@@ -86,8 +86,9 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void validarNumeros_KeyPress(object sender, KeyPressEventArgs e) {
+    private void ValidarNumeros_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsNumber(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back))) {
+
         e.Handled = true;
         return;
       }
@@ -98,9 +99,10 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void validarLetras_KeyPress(object sender, KeyPressEventArgs e) {
+    private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsLetter(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back)) &&
           (e.KeyChar != Convert.ToChar(Keys.Space))) {
+
         e.Handled = true;
         return;
       }
@@ -111,8 +113,9 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void chbxHabilitar_CheckedChanged(object sender, EventArgs e) {
+    private void ChbxHabilitar_CheckedChanged(object sender, EventArgs e) {
       if(chbxHabilitar.Checked == true) {
+
         txtCedula.Enabled = true;
       } else {
         txtCedula.Enabled = false;
@@ -124,20 +127,24 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnActualizar_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.validarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
-      bool cedulaRepetida = admColegiado.validarCedula(txtCedula);
+    private void BtnActualizar_Click(object sender, EventArgs e) {
+      bool vacio = _validacionGUI.validarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
+      bool cedulaRepetida = _admColegiado.validarCedula(txtCedula);
       if(vacio == true) {
+
         MessageBox.Show("Hay ciertos campos vacios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
       if(txtCedula.Enabled == false) {
-        actualiza();
+
+        Actualiza();
       } else {
         if(cedulaRepetida == true) {
+
           MessageBox.Show("El árbitro que ingresó ya se encuentra registrado!!\nIngrese uno nuevo", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         if(vacio != true && cedulaRepetida != true) {
-          actualiza();
+
+          Actualiza();
         }
       }
     }
@@ -147,7 +154,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnCancelar_Click(object sender, EventArgs e) {
+    private void BtnCancelar_Click(object sender, EventArgs e) {
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de cancelar!", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
       if(resultado == DialogResult.Yes) {
@@ -158,7 +165,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// <summary>
     /// Método para actualizar y enviar los datos ingresados del formulario.
     /// </summary>
-    private void actualiza() {
+    private void Actualiza() {
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de actualizar!", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
       if(resultado == DialogResult.Yes) {
@@ -168,7 +175,7 @@ namespace GestionDeColegiados.FrmsColegiado {
             domicilio = txtDomicilio.Text,
             email = txtEmail.Text,
             telefono = txtTelefono.Text;
-        admColegiado.editarArbitro(lblID.Text, cedula, nombre, apellido, domicilio, email, telefono);
+        _admColegiado.editarArbitro(lblID.Text, cedula, nombre, apellido, domicilio, email, telefono);
         Close();
       }
     }

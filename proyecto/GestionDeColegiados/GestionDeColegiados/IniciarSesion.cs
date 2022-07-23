@@ -12,9 +12,9 @@ namespace GestionDeColegiados {
   public partial class btnIniciarSesion : Form {
     //dlly variables necesarios para poder mover de lugar la barra de titulo 
     [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-    private extern static void ReleaseCapture();
+    private static extern void ReleaseCapture();
     [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-    private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+    private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
     /*variables necesarias para gestionar efectos visuales cuando el mouse se posiciona
         dentro de un controlador previamente determinado

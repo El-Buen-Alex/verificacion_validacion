@@ -242,7 +242,7 @@ namespace GestionDeColegiados {
     }
 
     /// <summary>
-    /// Envia los datos para guardar Juez Central.
+    /// Envia los datos para Guardar Juez Central.
     /// </summary>
     /// <remarks>
     /// Usa la clase contexto para asignarle el árbitro.
@@ -250,13 +250,13 @@ namespace GestionDeColegiados {
     /// <returns>Devuelve el id del último Juez Central ingresado como entero.</returns>
     private int obtenerIdJuezCentral() {
       int id = 0;
-      contexto = new Contexto(AdmJuezCentral.getAdmJ());
-      id = contexto.obtenerDatos(txtcedulaJC, txtnombreJC, txtapellidoJC, txtdomicilioJC, txtemailJC, txttelefonoJC);
+      contexto = new Contexto(AdmJuezCentral.GetAdmJ());
+      id = contexto.ObtenerDatos(txtcedulaJC, txtnombreJC, txtapellidoJC, txtdomicilioJC, txtemailJC, txttelefonoJC);
       return id;
     }
 
     /// <summary>
-    /// Envia los datos para guardar Asistente 1.
+    /// Envia los datos para Guardar Asistente 1.
     /// </summary>
     /// <remarks>
     /// Usa la clase contexto para asignarle el árbitro.
@@ -264,13 +264,13 @@ namespace GestionDeColegiados {
     /// <returns>Devuelve el id del último Asistente 1 ingresado como entero.</returns>
     private int obtenerIdAsistente1() {
       int id = 0;
-      contexto = new Contexto(AdmAsistente1.getAdmA1());
-      id = contexto.obtenerDatos(txtcedulaAs1, txtnombreAs1, txtapellidoAs1, txtdomicilioAs1, txtemailAs1, txttelefonoAs1);
+      contexto = new Contexto(AdmAsistente1.GetAdmA1());
+      id = contexto.ObtenerDatos(txtcedulaAs1, txtnombreAs1, txtapellidoAs1, txtdomicilioAs1, txtemailAs1, txttelefonoAs1);
       return id;
     }
 
     /// <summary>
-    /// Envia los datos para guardar Asistente 2.
+    /// Envia los datos para Guardar Asistente 2.
     /// </summary>
     /// <remarks>
     /// Usa la clase contexto para asignarle el árbitro.
@@ -279,12 +279,12 @@ namespace GestionDeColegiados {
     private int obtenerIdAsistente2() {
       int id = 0;
       contexto = new Contexto(AdmAsistente2.getAdmA2());
-      id = contexto.obtenerDatos(txtcedulaAs2, txtnombreAs2, txtapellidoAs2, txtdomicilioAs2, txtemailAs2, txttelefonoAs2);
+      id = contexto.ObtenerDatos(txtcedulaAs2, txtnombreAs2, txtapellidoAs2, txtdomicilioAs2, txtemailAs2, txttelefonoAs2);
       return id;
     }
 
     /// <summary>
-    /// Envia los datos para guardar Cuarto Árbitro.
+    /// Envia los datos para Guardar Cuarto Árbitro.
     /// </summary>
     /// <remarks>
     /// Usa la clase contexto para asignarle el árbitro.
@@ -293,7 +293,7 @@ namespace GestionDeColegiados {
     private int obtenerIdCuartoArbitro() {
       int id = 0;
       contexto = new Contexto(AdmCuartoArbitro.getAdmCA());
-      id = contexto.obtenerDatos(txtcedulaCA, txtnombreCA, txtapellidoCA, txtdomicilioCA, txtemailCA, txttelefonoCA);
+      id = contexto.ObtenerDatos(txtcedulaCA, txtnombreCA, txtapellidoCA, txtdomicilioCA, txtemailCA, txttelefonoCA);
       return id;
     }
 

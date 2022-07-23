@@ -1,5 +1,5 @@
 ﻿namespace GestionDeColegiados.FrmsColegiado {
-    partial class frmEditarArbitro {
+    partial class FrmEditarArbitro {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -70,9 +70,9 @@
             this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCerrar.TabIndex = 2;
             this.pbCerrar.TabStop = false;
-            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
-            this.pbCerrar.MouseEnter += new System.EventHandler(this.pbCerrar_MouseEnter);
-            this.pbCerrar.MouseLeave += new System.EventHandler(this.pbCerrar_MouseLeave);
+            this.pbCerrar.Click += new System.EventHandler(this.PbCerrar_Click);
+            this.pbCerrar.MouseEnter += new System.EventHandler(this.PbCerrar_MouseEnter);
+            this.pbCerrar.MouseLeave += new System.EventHandler(this.PbCerrar_MouseLeave);
             // 
             // label2
             // 
@@ -92,7 +92,7 @@
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(222, 20);
             this.txtCedula.TabIndex = 66;
-            this.txtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarNumeros_KeyPress);
+            this.txtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarNumeros_KeyPress);
             // 
             // txtNombre
             // 
@@ -101,7 +101,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(222, 20);
             this.txtNombre.TabIndex = 67;
-            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarLetras_KeyPress);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarLetras_KeyPress);
             // 
             // txtApellido
             // 
@@ -110,7 +110,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(223, 20);
             this.txtApellido.TabIndex = 68;
-            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarLetras_KeyPress);
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarLetras_KeyPress);
             // 
             // txtDomicilio
             // 
@@ -119,7 +119,7 @@
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(223, 20);
             this.txtDomicilio.TabIndex = 69;
-            this.txtDomicilio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarLetras_KeyPress);
+            this.txtDomicilio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarLetras_KeyPress);
             // 
             // txtEmail
             // 
@@ -136,7 +136,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(222, 20);
             this.txtTelefono.TabIndex = 71;
-            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarNumeros_KeyPress);
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarNumeros_KeyPress);
             // 
             // label6
             // 
@@ -212,7 +212,7 @@
             this.btnActualizar.TabIndex = 78;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            this.btnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // lblEditar
             // 
@@ -248,7 +248,7 @@
             this.btnCancelar.TabIndex = 81;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // chbxHabilitar
             // 
@@ -259,9 +259,9 @@
             this.chbxHabilitar.TabIndex = 82;
             this.chbxHabilitar.Text = "Habilitar";
             this.chbxHabilitar.UseVisualStyleBackColor = true;
-            this.chbxHabilitar.CheckedChanged += new System.EventHandler(this.chbxHabilitar_CheckedChanged);
+            this.chbxHabilitar.CheckedChanged += new System.EventHandler(this.ChbxHabilitar_CheckedChanged);
             // 
-            // frmEditarArbitro
+            // FrmEditarArbitro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -288,10 +288,10 @@
             this.Controls.Add(this.PanelBarraTitulo);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmEditarArbitro";
+            this.Name = "FrmEditarArbitro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmEditarArbitro";
-            this.Load += new System.EventHandler(this.frmEditarArbitro_Load);
+            this.Text = "FrmEditarArbitro";
+            this.Load += new System.EventHandler(this.FrmEditarArbitro_Load);
             this.PanelBarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
             this.ResumeLayout(false);

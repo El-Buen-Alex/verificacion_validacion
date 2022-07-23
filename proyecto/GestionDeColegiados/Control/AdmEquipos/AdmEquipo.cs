@@ -8,10 +8,10 @@ using Model.Equipo;
 
 namespace Control.AdmEquipos {
   public class AdmEquipo {
-    Equipo equipo = null;
-    List<Equipo> listaEquipo = new List<Equipo>();
-    private static AdmEquipo admEquipo = null;
-    DatosEquipos datos = new DatosEquipos();
+    private Equipo _equipo = null;
+    private List<Equipo> _listaEquipo = new List<Equipo>();
+    private static AdmEquipo _admEquipo = null;
+    private DatosEquipos _datos = new DatosEquipos();
 
     /// <summary>
     /// Paso para el uso de Singleton
@@ -22,9 +22,10 @@ namespace Control.AdmEquipos {
 
 
     public void LlenarCampos(TextBox idEquipo, TextBox nombre, TextBox numjugadores, TextBox director, TextBox presidente, string id) {
-      listaEquipo = datos.consultarEquiposTabla();
-      foreach(Equipo equipo in listaEquipo) {
+      _listaEquipo = _datos.consultarEquiposTabla();
+      foreach(Equipo equipo in _listaEquipo) {
         if(equipo.IdEquipo.Equals(Convert.ToInt32(id))) {
+
           idEquipo.Text += equipo.IdEquipo;
           nombre.Text = equipo.NombreEquipo;
           numjugadores.Text += equipo.NumeroJugadores;
@@ -34,27 +35,30 @@ namespace Control.AdmEquipos {
       }
     }
 
-    public static AdmEquipo getEquipo() {
-      if(admEquipo == null) {
-        admEquipo = new AdmEquipo();
+    public static AdmEquipo GetEquipo() {
+      if(_admEquipo == null) {
+
+        _admEquipo = new AdmEquipo();
       }
-      return admEquipo;
+      return _admEquipo;
     }
 
     /// <summary>
     /// Método que consulta la cantidad de equipos que están presentes en la lista donde se agregan los equipos para llevar un control de registro en ella
     /// </summary>
     /// <returns>Devuelve la cantidad de equipos</returns>
-    public int cantidadEquiposRegistrados() {
-      extraerEquipos();
-      return listaEquipo.Count;
+    public int CantidadEquiposRegistrados() {
+      ExtraerEquipos();
+      return _listaEquipo.Count;
     }
 
     public void EliminarRegistro(string id) {
       int identificador = 0;
       if(id.CompareTo("") != 0) {
-        identificador = datos.EliminarEquipo(id);
+
+        identificador = _datos.EliminarEquipo(id);
         if(identificador != 0) {
+
           MessageBox.Show("Registro Eliminado con Éxito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         } else {
           MessageBox.Show("Error al Eliminar los datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -64,15 +68,17 @@ namespace Control.AdmEquipos {
     }
 
     public void ActualizarDatos(int id, string nombre, int numjugadores, string directorNombre, string presidenteNombre) {
-      equipo = new Equipo(id, nombre, numjugadores, directorNombre, presidenteNombre);
-      ActualizarRegistroEquipo(equipo);
+      _equipo = new Equipo(id, nombre, numjugadores, directorNombre, presidenteNombre);
+      ActualizarRegistroEquipo(_equipo);
     }
 
     private void ActualizarRegistroEquipo(Equipo equipo) {
       int id = 0;
       if(equipo != null) {
-        id = datos.EditarEquipo(equipo);
+
+        id = _datos.EditarEquipo(equipo);
         if(id != 0) {
+
           MessageBox.Show("Actualización de datos exitosa", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         } else {
           MessageBox.Show("Error al actualizar los datos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -90,9 +96,10 @@ namespace Control.AdmEquipos {
     public void LlenaTabla(DataGridView tablaDatos, string nombre) {
       int i = 1;
       tablaDatos.Rows.Clear();
-      listaEquipo = datos.consultarEquiposTabla();
-      foreach(Equipo equipo in listaEquipo) {
+      _listaEquipo = _datos.consultarEquiposTabla();
+      foreach(Equipo equipo in _listaEquipo) {
         if(equipo.NombreEquipo.ToLower().Contains(nombre.ToLower())) {
+
           tablaDatos.Rows.Add(i++, equipo.IdEquipo, equipo.NombreEquipo, equipo.NumeroJugadores, equipo.NombreDirectoTecnico, equipo.PresidenteEquipo);
         }
       }
@@ -106,10 +113,11 @@ namespace Control.AdmEquipos {
     /// <param name="directorNombre"></param>
     /// <param name="presidenteNombre"></param>
     public void GuardarDatos(string nombre, int numJugadores, string directorNombre, string presidenteNombre) {
-      equipo = new Equipo(0, nombre, numJugadores, directorNombre, presidenteNombre);
-      if(equipo != null) {
-        listaEquipo.Add(equipo);
-        registrarEquipo(equipo);
+      _equipo = new Equipo(0, nombre, numJugadores, directorNombre, presidenteNombre);
+      if(_equipo != null) {
+
+        _listaEquipo.Add(_equipo);
+        RegistrarEquipo(_equipo);
       }
     }
 
@@ -118,9 +126,9 @@ namespace Control.AdmEquipos {
     /// </summary>
     /// <param name="listaContenedores"></param>
     public void LlenarEquipos(List<Label> listaContenedores) {
-      extraerEquipos();
-      for(int x = 0; x < listaEquipo.Count; x++) {
-        listaContenedores[x].Text = listaEquipo[x].NombreEquipo;
+      ExtraerEquipos();
+      for(int x = 0; x < _listaEquipo.Count; x++) {
+        listaContenedores[x].Text = _listaEquipo[x].NombreEquipo;
       }
     }
 
@@ -129,7 +137,7 @@ namespace Control.AdmEquipos {
     /// </summary>
     /// <returns></returns>
     public int ObtenerCantidadEquipo() {
-      return datos.ObtenerCantidadEquipoRegistrados();
+      return _datos.ObtenerCantidadEquipoRegistrados();
     }
 
     /// <summary>
@@ -138,17 +146,18 @@ namespace Control.AdmEquipos {
     /// <param name="id"></param>
     /// <returns>Retorna el equipo mediante su ID</returns>
     public Equipo ObtenerEquipoPorId(int id) {
-      return datos.ObtenerEquipoPorId(id);
+      return _datos.ObtenerEquipoPorId(id);
     }
 
     /// <summary>
     /// Método encargado de funcionar como puente entre los métodos de control con el método de data para el registro en la base de datos
     /// </summary>
     /// <param name="equipo"></param>
-    private void registrarEquipo(Equipo equipo) {
+    private void RegistrarEquipo(Equipo equipo) {
       int id = 0;
-      id = datos.InsertarEquipo(equipo);
+      id = _datos.InsertarEquipo(equipo);
       if(id == 0) {
+
         MessageBox.Show("Error al registrar el equipo");
       } else {
         MessageBox.Show("Registro exitoso!");
@@ -159,9 +168,9 @@ namespace Control.AdmEquipos {
     /// Solicita los campos de la base de datos a otro metodo que hace la funcionalidad de extraerlos de  la BD
     /// </summary>
     /// <returns>Retorna algun equipo</returns>
-    public List<Equipo> extraerEquipos() {
-      listaEquipo = datos.consultarEquipos();
-      return listaEquipo;
+    public List<Equipo> ExtraerEquipos() {
+      _listaEquipo = _datos.consultarEquipos();
+      return _listaEquipo;
 
     }
 
@@ -174,10 +183,11 @@ namespace Control.AdmEquipos {
         cmbEquipos.SelectedIndex = -1;
       }
     }
-    private int seleccionarEquipoCmb(string equipo, List<Equipo> equiposAux) {
+    private int SeleccionarEquipoCmb(string equipo, List<Equipo> equiposAux) {
       int index = 0, iterador = 0;
       foreach(Equipo e in equiposAux) {
         if(e.NombreEquipo == equipo) {
+
           index = iterador;
         }
         iterador++;
@@ -186,17 +196,18 @@ namespace Control.AdmEquipos {
     }
 
     public void ObserverCmbEquipos(ComboBox cmbEquipos, string equipo, string equipoSelect) {
-      List<Equipo> equiposAux = extraerEquipos();
+      List<Equipo> equiposAux = ExtraerEquipos();
       int index = 0, iterador = 0;
       foreach(Equipo e in equiposAux) {
         if(e.NombreEquipo == equipo) {
+
           index = iterador;
         }
         iterador++;
       }
       equiposAux.RemoveAt(index);
       LlenarEquiposCmb(cmbEquipos, equiposAux);
-      cmbEquipos.SelectedIndex = seleccionarEquipoCmb(equipoSelect, equiposAux);
+      cmbEquipos.SelectedIndex = SeleccionarEquipoCmb(equipoSelect, equiposAux);
     }
 
 

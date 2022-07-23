@@ -7,7 +7,7 @@ using Control.AdmEquipos;
 
 namespace GestionDeColegiados {
   public partial class frmGenerarEncuentros : Form {
-    AdmEquipo _admEquipo = AdmEquipo.getEquipo();
+    AdmEquipo _admEquipo = AdmEquipo.GetEquipo();
     AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
     private List<Label> _listaContenedoresLocal = new List<Label>();
     private List<Label> _listaContenedoresVisitante = new List<Label>();
@@ -113,7 +113,7 @@ namespace GestionDeColegiados {
       CambiarAccesibilidad(_listaContenedoresVisitante, true);
       CambiarAccesibilidadPictureBox(_listaPictureBox, true);
       bool genero = _admGenerarEncuentros.generarEncuentrosAleatorios(_listaContenedoresLocal, _listaContenedoresVisitante);
-      //una vez generado los encuentros se activa la opcion de guardar encuentros
+      //una vez generado los encuentros se activa la opcion de Guardar encuentros
       if(genero) {
 
         btnGuardarEncuentros.Enabled = true;
@@ -123,7 +123,7 @@ namespace GestionDeColegiados {
     }
 
     private void GuardarDatos_Click(object sender, EventArgs e) {
-      //se guarda los encuentos y retorna un mensaje respuesta a la acción de guardar
+      //se guarda los encuentos y retorna un mensaje respuesta a la acción de Guardar
       string guardo = _admGenerarEncuentros.guardarEncuentrosAleatorios();
       MessageBox.Show(guardo);
       if(guardo[0] == 'S') {

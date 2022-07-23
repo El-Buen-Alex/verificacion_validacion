@@ -5,7 +5,7 @@ using Control.AdmEquipos;
 
 namespace GestionDeColegiados {
   public partial class frmVerTodos : Form {
-    AdmEquipo equipo = AdmEquipo.getEquipo();
+    AdmEquipo equipo = AdmEquipo.GetEquipo();
     public frmVerTodos() {
       InitializeComponent();
       btnEditar.Visible = false;
@@ -16,7 +16,7 @@ namespace GestionDeColegiados {
       DataGridViewRow filaSeleccionada = tablaDatos.CurrentRow;
       string id = filaSeleccionada.Cells[1].Value.ToString();
       if(id.CompareTo("") != 0) {
-        frmEditarEquipo editar = new frmEditarEquipo(id);
+        FrmEditarEquipo editar = new FrmEditarEquipo(id);
         editar.ShowDialog();
       }
 
