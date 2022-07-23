@@ -56,7 +56,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtemailJC">Email recogido.</param>
     /// <param name="txttelefonoJC">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int guardar(TextBox txtcedulaJC, TextBox txtnombreJC, TextBox txtapellidoJC,
+    public int Guardar(TextBox txtcedulaJC, TextBox txtnombreJC, TextBox txtapellidoJC,
         TextBox txtdomicilioJC, TextBox txtemailJC, TextBox txttelefonoJC) {
       string cedula = txtcedulaJC.Text,
           nombre = txtnombreJC.Text,
@@ -85,7 +85,7 @@ namespace Control.AdmColegiados {
       string mensaje = "";
       try {
         id = datos.InsertarJuezCentral(juezCentral);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -100,8 +100,8 @@ namespace Control.AdmColegiados {
     /// </remarks>
     /// <param name="id">ID de un Juez Central.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
-    public void obtenerDatos(int id, DataGridView dgvListarColegiados) {
-      listaJuezCentral = datos.consultarJuezCentral(id);
+    public void ObtenerDatos(int id, DataGridView dgvListarColegiados) {
+      listaJuezCentral = datos.ConsultarJuezCentral(id);
       foreach(JuezCentral datosJC in listaJuezCentral) {
         dgvListarColegiados.Rows.Add("Juez Central", datosJC.Cedula, datosJC.Nombre,
             datosJC.Apellidos, datosJC.Domicilio, datosJC.Email, datosJC.Telefono);
@@ -120,7 +120,7 @@ namespace Control.AdmColegiados {
     /// Recoge los datos que son seleccionados para editar por el usuario.
     /// </remarks>
     /// <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
-    public void recogerDatosEditar(DataGridViewRow filaSeleccionada) {
+    public void RecogerDatosEditar(DataGridViewRow filaSeleccionada) {
       foreach(JuezCentral juezCentral in listaJuezCentral) {
         if(juezCentral.Cedula == filaSeleccionada.Cells[1].Value.ToString() &&
             juezCentral.Nombre == filaSeleccionada.Cells[2].Value.ToString() &&
@@ -145,7 +145,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtDomicilio">Domicilio.</param>
     /// <param name="txtEmail">Email.</param>
     /// <param name="txtTelefono">Telefono.</param>
-    public void llenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido,
+    public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido,
         TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
       try {
         txtCedula.Text = JC.Cedula.ToString();
@@ -169,7 +169,7 @@ namespace Control.AdmColegiados {
     /// <param name="domicilio">Domicilio recogido.</param>
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
-    public void editarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public void EditarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
       juezCentral = new JuezCentral();
       juezCentral.IdArbitro = idArbitro;
@@ -194,7 +194,7 @@ namespace Control.AdmColegiados {
       try {
         datos.EditarJuezCentralBD(juezCentral);
         MessageBox.Show("Sus datos fueron actualizados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -211,7 +211,7 @@ namespace Control.AdmColegiados {
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int eliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public int EliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
       juezCentral = new JuezCentral();
       juezCentral.IdArbitro = idArbitro;
@@ -237,8 +237,8 @@ namespace Control.AdmColegiados {
     private void eliminarJuezCentralBD(int idArbitro) {
       string mensaje = "";
       try {
-        datos.eliminarJuezCentralBD(idArbitro);
-      } catch(falloBDException ex) {
+        datos.EliminarJuezCentralBD(idArbitro);
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }

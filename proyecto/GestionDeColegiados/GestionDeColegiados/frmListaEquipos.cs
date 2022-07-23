@@ -6,7 +6,7 @@ using Control.AdmEquipos;
 namespace GestionDeColegiados {
   public partial class frmListaEquipos : Form {
     private List<Label> listaContenedores = new List<Label>();
-    private AdmEquipo admEquipo = AdmEquipo.getEquipo();
+    private AdmEquipo admEquipo = AdmEquipo.GetEquipo();
     public frmListaEquipos() {
       InitializeComponent();
       /*se llenan los labels a una lista 

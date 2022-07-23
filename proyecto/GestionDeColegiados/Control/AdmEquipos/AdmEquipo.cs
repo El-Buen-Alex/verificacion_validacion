@@ -34,7 +34,7 @@ namespace Control.AdmEquipos {
       }
     }
 
-    public static AdmEquipo getEquipo() {
+    public static AdmEquipo GetEquipo() {
       if(admEquipo == null) {
         admEquipo = new AdmEquipo();
       }

@@ -125,7 +125,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
     private void btnActualizar_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.validarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
+      bool vacio = validacionGUI.ValidarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
       bool cedulaRepetida = admColegiado.validarCedula(txtCedula);
       if(vacio == true) {
         MessageBox.Show("Hay ciertos campos vacios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);

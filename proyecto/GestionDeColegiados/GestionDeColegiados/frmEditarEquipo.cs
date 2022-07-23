@@ -6,7 +6,7 @@ using Control.AdmEquipos;
 
 namespace GestionDeColegiados {
   public partial class frmEditarEquipo : Form {
-    AdmEquipo equipo = AdmEquipo.getEquipo();
+    AdmEquipo equipo = AdmEquipo.GetEquipo();
     ValidacionGUI valida = new ValidacionGUI();
     public frmEditarEquipo(String id) {
       InitializeComponent();
@@ -28,7 +28,7 @@ namespace GestionDeColegiados {
          presidenteNombre = presidente.Text,
          id = idEquipo.Text;
 
-      bool hayVacios = valida.validarVacios(Nombre, numJugadores, directorNombre, presidenteNombre);   //Valida campos vacios al recuperar la informacion presente en los TextBox
+      bool hayVacios = valida.ValidarVacios(Nombre, numJugadores, directorNombre, presidenteNombre);   //Valida campos vacios al recuperar la informacion presente en los TextBox
       if(hayVacios != true) {
         MessageBox.Show(Nombre + ", " + numJugadores + ", " + directorNombre + ", " + presidenteNombre);
         equipo.ActualizarDatos(valida.AInt(id), Nombre, valida.AInt(numJugadores), directorNombre, presidenteNombre);       /*Se ejecuta el método que nos permitirá guardar la información*/
@@ -43,7 +43,7 @@ namespace GestionDeColegiados {
       DialogResult resultado;
 
 
-      bool hayVacios = valida.validarVacios(nombre.Text.Trim(), numjugadores.Text, director.Text, presidente.Text);
+      bool hayVacios = valida.ValidarVacios(nombre.Text.Trim(), numjugadores.Text, director.Text, presidente.Text);
       if(hayVacios != true) {
         resultado = MessageBox.Show("¡Está seguro de regresar al apartado anterior, \n Si no ha dado clic en el botón Actualizar se perderán sus datos!", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
         if(resultado == DialogResult.Yes) {

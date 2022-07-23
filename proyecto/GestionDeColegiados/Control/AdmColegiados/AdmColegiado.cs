@@ -95,7 +95,7 @@ namespace Control.AdmColegiados {
       try {
         datos.InsertarColegiado(colegiado);
         MessageBox.Show("Se ha guardado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         MessageBox.Show("No se ha guardado el colegiado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -111,7 +111,7 @@ namespace Control.AdmColegiados {
       cmbIdArbitro.Items.Clear();
 
       List<int> listaIdArbitro = new List<int>();
-      listaIdArbitro = datos.consultarIdColegiado();
+      listaIdArbitro = datos.ConsultarIdColegiado();
       foreach(int datosId in listaIdArbitro) {
         cmbIdArbitro.Items.Add("Grupo " + datosId);
       }
@@ -136,7 +136,7 @@ namespace Control.AdmColegiados {
       contexto = new Contexto(AdmJuezCentral.getAdmJ());
       contexto.datos(id, dgvListarColegiados);
 
-      contexto = new Contexto(AdmAsistente1.getAdmA1());
+      contexto = new Contexto(AdmAsistente1.GetAdmA1());
       contexto.datos(id, dgvListarColegiados);
 
       contexto = new Contexto(AdmAsistente2.getAdmA2());
@@ -226,7 +226,7 @@ namespace Control.AdmColegiados {
         contextoArbitro = new Contexto(AdmJuezCentral.getAdmJ());
       }
       if(arbitro == "Asistente 1") {
-        contextoArbitro = new Contexto(AdmAsistente1.getAdmA1());
+        contextoArbitro = new Contexto(AdmAsistente1.GetAdmA1());
       }
       if(arbitro == "Asistente 2") {
         contextoArbitro = new Contexto(AdmAsistente2.getAdmA2());
@@ -269,7 +269,7 @@ namespace Control.AdmColegiados {
     /// <returns>Devuelve el id del arbitro seleccionado como entero.</returns>
     private int obtenerIDArbitro(int idColegiado, DataGridViewRow filaSeleccionada) {
       int idArbitro = 0;
-      listaColegiado = datos.obtenerTodosIdColegiado(idColegiado);
+      listaColegiado = datos.ObtenerTodosIdColegiado(idColegiado);
       string arbitro = filaSeleccionada.Cells[0].Value.ToString();
       if(arbitro == "Juez Central") {
         foreach(Colegiado col in listaColegiado) {
@@ -354,9 +354,9 @@ namespace Control.AdmColegiados {
     private void actualizarColegiadoBD(int idColegiado, int idNuevo, string arbitro) {
       string mensaje = "";
       try {
-        datos.actualizarColegiadoBD(idColegiado, idNuevo, arbitro);
+        datos.ActualizarColegiadoBD(idColegiado, idNuevo, arbitro);
         MessageBox.Show("Sus datos fueron agregados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -406,9 +406,9 @@ namespace Control.AdmColegiados {
     private void eliminarColegiadoBD(int idColegiado) {
       string mensaje = "";
       try {
-        datos.eliminarColegiado(idColegiado);
+        datos.EliminarColegiado(idColegiado);
         MessageBox.Show("Se eliminó el colegiado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }

@@ -5,7 +5,7 @@ using Control.AdmEquipos;
 
 namespace GestionDeColegiados {
   public partial class frmVerTodos : Form {
-    AdmEquipo equipo = AdmEquipo.getEquipo();
+    AdmEquipo equipo = AdmEquipo.GetEquipo();
     public frmVerTodos() {
       InitializeComponent();
       btnEditar.Visible = false;

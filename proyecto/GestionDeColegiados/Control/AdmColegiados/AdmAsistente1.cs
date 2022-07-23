@@ -40,7 +40,7 @@ namespace Control.AdmColegiados {
     /// Creando atributo estático de la clase AdmAistente1.
     /// </remarks>
     /// <returns>Devuelve una instancia de AdmAsistente1.</returns>
-    public static AdmAsistente1 getAdmA1() {
+    public static AdmAsistente1 GetAdmA1() {
       if(admA1 == null)
         admA1 = new AdmAsistente1();
       return admA1;
@@ -56,7 +56,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtemailAs1">Email recogido.</param>
     /// <param name="txttelefonoAs1">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int guardar(TextBox txtcedulaAs1, TextBox txtnombreAs1, TextBox txtapellidoAs1,
+    public int Guardar(TextBox txtcedulaAs1, TextBox txtnombreAs1, TextBox txtapellidoAs1,
         TextBox txtdomicilioAs1, TextBox txtemailAs1, TextBox txttelefonoAs1) {
       string cedula = txtcedulaAs1.Text,
           nombre = txtnombreAs1.Text,
@@ -85,7 +85,7 @@ namespace Control.AdmColegiados {
       string mensaje = "";
       try {
         id = datos.InsertarAsistente1(asistente1);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -100,8 +100,8 @@ namespace Control.AdmColegiados {
     /// </remarks>
     /// <param name="id">ID de un Asistente1.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
-    public void obtenerDatos(int id, DataGridView dgvListarColegiados) {
-      listaAsistente1 = datos.consultarAsistente1(id);
+    public void ObtenerDatos(int id, DataGridView dgvListarColegiados) {
+      listaAsistente1 = datos.ConsultarAsistente1(id);
       foreach(Asistente datosAs1 in listaAsistente1) {
         dgvListarColegiados.Rows.Add("Asistente 1", datosAs1.Cedula, datosAs1.Nombre, datosAs1.Apellidos, datosAs1.Domicilio, datosAs1.Email, datosAs1.Telefono);
       }
@@ -119,7 +119,7 @@ namespace Control.AdmColegiados {
     /// Recoge los datos que son seleccionados para editar por el usuario.
     /// </remarks>
     /// <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
-    public void recogerDatosEditar(DataGridViewRow filaSeleccionada) {
+    public void RecogerDatosEditar(DataGridViewRow filaSeleccionada) {
       foreach(Asistente asistente in listaAsistente1) {
         if(asistente.Cedula == filaSeleccionada.Cells[1].Value.ToString() &&
             asistente.Nombre == filaSeleccionada.Cells[2].Value.ToString() &&
@@ -144,7 +144,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtDomicilio">Domicilio.</param>
     /// <param name="txtEmail">Email.</param>
     /// <param name="txtTelefono">Telefono.</param>
-    public void llenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido, TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
+    public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido, TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
       try {
         txtCedula.Text = as1.Cedula.ToString();
         txtNombre.Text = as1.Nombre.ToString();
@@ -167,7 +167,7 @@ namespace Control.AdmColegiados {
     /// <param name="domicilio">Domicilio recogido.</param>
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
-    public void editarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public void EditarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
       asistente1 = new Asistente();
       asistente1.IdArbitro = idArbitro;
@@ -179,7 +179,7 @@ namespace Control.AdmColegiados {
       asistente1.Telefono = telefono;
 
       if(asistente1 != null) {
-        editarAsistente1BD(asistente1);
+        EditarAsistente1BD(asistente1);
       }
     }
 
@@ -187,12 +187,12 @@ namespace Control.AdmColegiados {
     /// Modificar datos de Asistente1 en la BD.
     /// </summary>
     /// <param name="asistente1">Objeto Asistente1.</param>
-    private void editarAsistente1BD(Asistente asistente1) {
+    private void EditarAsistente1BD(Asistente asistente1) {
       string mensaje = "";
       try {
-        datos.editarAsistente1BD(asistente1);
+        datos.EditarAsistente1BD(asistente1);
         MessageBox.Show("Sus datos fueron actualizados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -209,7 +209,7 @@ namespace Control.AdmColegiados {
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int eliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public int EliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
       asistente1 = new Asistente();
       asistente1.IdArbitro = idArbitro;
@@ -223,7 +223,7 @@ namespace Control.AdmColegiados {
       int idNuevo = 0;
 
       if(asistente1 != null) {
-        eliminarAsistente1BD(idArbitro);
+        EliminarAsistente1BD(idArbitro);
         idNuevo = GuardarAsistente1BD(asistente1);
       }
       return idNuevo;
@@ -233,11 +233,11 @@ namespace Control.AdmColegiados {
     /// Eliminar "lógico" en la BD.
     /// </summary>
     /// <param name="idArbitro">ID recogido.</param>
-    private void eliminarAsistente1BD(int idArbitro) {
+    private void EliminarAsistente1BD(int idArbitro) {
       string mensaje = "";
       try {
-        datos.eliminarAsistente1BD(idArbitro);
-      } catch(falloBDException ex) {
+        datos.EliminarAsistente1BD(idArbitro);
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }

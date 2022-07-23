@@ -56,7 +56,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtemail">Email recogido.</param>
     /// <param name="txttelefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int guardar(TextBox txtcedula, TextBox txtnombre, TextBox txtapellido,
+    public int Guardar(TextBox txtcedula, TextBox txtnombre, TextBox txtapellido,
         TextBox txtdomicilio, TextBox txtemail, TextBox txttelefono) {
       string cedula = txtcedula.Text,
           nombre = txtnombre.Text,
@@ -85,7 +85,7 @@ namespace Control.AdmColegiados {
       string mensaje = "";
       try {
         id = datos.InsertarCuartoArbitro(cuartoArbitro);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -100,8 +100,8 @@ namespace Control.AdmColegiados {
     /// </remarks>
     /// <param name="id">ID de un Cuarto Árbitro.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
-    public void obtenerDatos(int id, DataGridView dgvListarColegiados) {
-      listaCuartoArbitro = datos.consultarCuartoArbitro(id);
+    public void ObtenerDatos(int id, DataGridView dgvListarColegiados) {
+      listaCuartoArbitro = datos.ConsultarCuartoArbitro(id);
       foreach(CuartoArbitro datosCA in listaCuartoArbitro) {
         dgvListarColegiados.Rows.Add("Cuarto Árbitro", datosCA.Cedula, datosCA.Nombre, datosCA.Apellidos, datosCA.Domicilio, datosCA.Email, datosCA.Telefono);
       }
@@ -119,7 +119,7 @@ namespace Control.AdmColegiados {
     /// Recoge los datos que son seleccionados para editar por el usuario.
     /// </remarks>
     /// <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
-    public void recogerDatosEditar(DataGridViewRow filaSeleccionada) {
+    public void RecogerDatosEditar(DataGridViewRow filaSeleccionada) {
       foreach(CuartoArbitro cuartoArb in listaCuartoArbitro) {
         if(cuartoArb.Cedula == filaSeleccionada.Cells[1].Value.ToString() &&
             cuartoArb.Nombre == filaSeleccionada.Cells[2].Value.ToString() &&
@@ -144,7 +144,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtDomicilio">Domicilio.</param>
     /// <param name="txtEmail">Email.</param>
     /// <param name="txtTelefono">Telefono.</param>
-    public void llenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido, TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
+    public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido, TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono) {
       try {
         txtCedula.Text = CA.Cedula.ToString();
         txtNombre.Text = CA.Nombre.ToString();
@@ -167,7 +167,7 @@ namespace Control.AdmColegiados {
     /// <param name="domicilio">Domicilio recogido.</param>
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
-    public void editarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public void EditarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
       cuartoArbitro = new CuartoArbitro();
       cuartoArbitro.IdArbitro = idArbitro;
@@ -190,9 +190,9 @@ namespace Control.AdmColegiados {
     private void editarCuartoArbitroBD(CuartoArbitro cuartoArbitro) {
       string mensaje = "";
       try {
-        datos.editarCuartoArbitro(cuartoArbitro);
+        datos.EditarCuartoArbitro(cuartoArbitro);
         MessageBox.Show("Sus datos fueron actualizados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } catch(falloBDException ex) {
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }
@@ -209,7 +209,7 @@ namespace Control.AdmColegiados {
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    public int eliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    public int EliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono) {
       cuartoArbitro = new CuartoArbitro();
       cuartoArbitro.IdArbitro = idArbitro;
@@ -235,8 +235,8 @@ namespace Control.AdmColegiados {
     private void eliminarCuartoArbitroBD(int idArbitro) {
       string mensaje = "";
       try {
-        datos.eliminarCuartoArbitroBD(idArbitro);
-      } catch(falloBDException ex) {
+        datos.EliminarCuartoArbitroBD(idArbitro);
+      } catch(FalloBDException ex) {
         mensaje = ex.Message;
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
       }

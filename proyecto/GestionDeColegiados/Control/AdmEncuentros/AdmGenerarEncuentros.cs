@@ -16,7 +16,7 @@ namespace Control.AdmEncuentrosGenerados {
     private List<EncuentroGenerado> listaEncuentrosGeneradosPendientes;
     private EncuentroGenerado encuentroAuxiliar = null;
     private static AdmGenerarEncuentros admGenerarEncuentros = null;
-    private AdmEquipo admEquipo = AdmEquipo.getEquipo();
+    private AdmEquipo admEquipo = AdmEquipo.GetEquipo();
     private List<Equipo> listaEquipos;
     private DatosEnuenctrosGenerados datosEncuentrosGenerados = new DatosEnuenctrosGenerados();
     private List<int> idsEquiposLocales = new List<int>();
@@ -115,7 +115,7 @@ namespace Control.AdmEncuentrosGenerados {
       return genero;
     }
 
-    public int obtnerNumeroEncuentrosGeneradosPendientes() {
+    public int ObtnerNumeroEncuentrosGeneradosPendientes() {
       int numeroEncuentros = 0;
       try {
         numeroEncuentros = datosEncuentrosGenerados.ObetnerNumeroEncuentrosPendientes();

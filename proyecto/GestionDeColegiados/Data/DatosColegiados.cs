@@ -57,7 +57,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close(); //Cerrar conexión
       return id;
@@ -94,7 +94,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return id;
@@ -131,7 +131,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return id;
@@ -164,7 +164,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return id;
@@ -193,7 +193,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();//Cerrar conexión
     }
@@ -202,7 +202,7 @@ namespace Data {
     /// Método para obtener los id de colegiados.
     /// </summary>
     /// <returns>Devuelve una lista de entero con los id.</returns>
-    public List<int> consultarIdColegiado() {
+    public List<int> ConsultarIdColegiado() {
       List<int> listaIdColegiado = new List<int>(); //Crear lista
       MySqlDataReader reader = null;          //tabla virtual
       conexion = ConexionBD.getConexion();    //Obtener conexión
@@ -219,7 +219,7 @@ namespace Data {
         }
       } catch(MySqlException ex) {
         listaIdColegiado = null;
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return listaIdColegiado;
@@ -230,7 +230,7 @@ namespace Data {
     /// </summary>
     /// <param name="id">ID de Juez Central.</param>
     /// <returns>Devuelve una lista con objetos Juez Central.</returns>
-    public List<JuezCentral> consultarJuezCentral(int id) {
+    public List<JuezCentral> ConsultarJuezCentral(int id) {
       List<JuezCentral> listaArbitro = new List<JuezCentral>(); //Crear lista
       JuezCentral arbitro = null;
       MySqlDataReader reader = null;          //tabla virtual
@@ -255,7 +255,7 @@ namespace Data {
         }
       } catch(MySqlException ex) {
         listaArbitro = null;
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return listaArbitro;
@@ -267,7 +267,7 @@ namespace Data {
     /// <param name="id">ID de asistente.</param>
     /// <param name="procedimiento">Nombre del procedimierto a ejecutar.</param>
     /// <returns>Devuelve una lista con objetos Asistente.</returns>
-    public List<Asistente> consultarAsistente(int id, string procedimiento) {
+    public List<Asistente> ConsultarAsistente(int id, string procedimiento) {
       List<Asistente> listaAsistente = new List<Asistente>();
       Asistente asistente = null;
       MySqlDataReader reader = null;          //tabla virtual
@@ -292,7 +292,7 @@ namespace Data {
         }
       } catch(MySqlException ex) {
         listaAsistente = null;
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return listaAsistente;
@@ -303,9 +303,9 @@ namespace Data {
     /// </summary>
     /// <param name="id">ID de asistente 1.</param>
     /// <returns>Devuelve una lista con objetos Asistente 1.</returns>
-    public List<Asistente> consultarAsistente1(int id) {
+    public List<Asistente> ConsultarAsistente1(int id) {
       List<Asistente> listaAsistente1 = new List<Asistente>();
-      listaAsistente1 = consultarAsistente(id, "obtenerAsistente1");
+      listaAsistente1 = ConsultarAsistente(id, "obtenerAsistente1");
       return listaAsistente1;
     }
 
@@ -314,9 +314,9 @@ namespace Data {
     /// </summary>
     /// <param name="id">ID de asistente 2.</param>
     /// <returns>Devuelve una lista con objetos Asistente 2.</returns>
-    public List<Asistente> consultarAsistente2(int id) {
+    public List<Asistente> ConsultarAsistente2(int id) {
       List<Asistente> listaAsistente1 = new List<Asistente>();
-      listaAsistente1 = consultarAsistente(id, "obtenerAsistente2");
+      listaAsistente1 = ConsultarAsistente(id, "obtenerAsistente2");
       return listaAsistente1;
     }
 
@@ -325,7 +325,7 @@ namespace Data {
     /// </summary>
     /// <param name="id">ID de Cuarto Arbitro.</param>
     /// <returns>Devuelve una lista con objetos Cuarto Arbitro.</returns>
-    public List<CuartoArbitro> consultarCuartoArbitro(int id) {
+    public List<CuartoArbitro> ConsultarCuartoArbitro(int id) {
       List<CuartoArbitro> listaCA = new List<CuartoArbitro>(); //Crear lista
       CuartoArbitro arbitro = null;
       MySqlDataReader reader = null;          //tabla virtual
@@ -350,7 +350,7 @@ namespace Data {
         }
       } catch(MySqlException ex) {
         listaCA = null;
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return listaCA;
@@ -384,7 +384,7 @@ namespace Data {
         }
       } catch(MySqlException ex) {
         listaColegiado = null;
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return listaColegiado;
@@ -418,7 +418,7 @@ namespace Data {
         }
       } catch(MySqlException ex) {
         listaColegiado = null;
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return listaColegiado;
@@ -458,7 +458,7 @@ namespace Data {
     /// </summary>
     /// <param name="idColegiado">ID colegiado.</param>
     /// <returns>Devuelve una lista con objetos Colegiado.</returns>
-    public List<Colegiado> obtenerTodosIdColegiado(int idColegiado) {
+    public List<Colegiado> ObtenerTodosIdColegiado(int idColegiado) {
       List<Colegiado> listaIDColegiado = new List<Colegiado>();
       Colegiado colegiado = null;
       MySqlDataReader reader = null;          //tabla virtual
@@ -482,7 +482,7 @@ namespace Data {
         }
       } catch(MySqlException ex) {
         listaIDColegiado = null;
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
       return listaIDColegiado;
@@ -512,7 +512,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
     }
@@ -522,7 +522,7 @@ namespace Data {
     /// </summary>
     /// <param name="asistente">Objeto Asistente.</param>
     /// <param name="procedimiento">Nombre del procedimiento.</param>
-    public void editarAsistenteBD(Asistente asistente, string procedimiento) {
+    public void EditarAsistenteBD(Asistente asistente, string procedimiento) {
       conexion = ConexionBD.getConexion();    //Obtener conexión
       conexion.Open();                        //Abrir conexión
       trans = conexion.BeginTransaction();    //Comenzar transaccion
@@ -542,7 +542,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
     }
@@ -551,25 +551,25 @@ namespace Data {
     /// Método para editar un Asistente 1.
     /// </summary>
     /// <param name="asistente1">Objeto Asistente 1.</param>
-    public void editarAsistente1BD(Asistente asistente1) {
+    public void EditarAsistente1BD(Asistente asistente1) {
       string procedimiento = "editarAsistente1";
-      editarAsistenteBD(asistente1, procedimiento);
+      EditarAsistenteBD(asistente1, procedimiento);
     }
 
     /// <summary>
     /// Método para editar un Asistente 2.
     /// </summary>
     /// <param name="asistente2">Objeto Asistente 2.</param>
-    public void editarAsistente2BD(Asistente asistente2) {
+    public void EditarAsistente2BD(Asistente asistente2) {
       string procedimiento = "editarAsistente2";
-      editarAsistenteBD(asistente2, procedimiento);
+      EditarAsistenteBD(asistente2, procedimiento);
     }
 
     /// <summary>
     /// Método para editar un Cuarto Arbitro.
     /// </summary>
     /// <param name="cuartoArbitro">Objeto Cuarto Arbitro-</param>
-    public void editarCuartoArbitro(CuartoArbitro cuartoArbitro) {
+    public void EditarCuartoArbitro(CuartoArbitro cuartoArbitro) {
       conexion = ConexionBD.getConexion();    //Obtener conexión
       conexion.Open();                        //Abrir conexión
       trans = conexion.BeginTransaction();    //Comenzar transaccion
@@ -589,7 +589,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
     }
@@ -599,7 +599,7 @@ namespace Data {
     /// </summary>
     /// <param name="idArbitro">ID arbitro.</param>
     /// <param name="procedimiento">Nombre del procedimiento.</param>
-    public void eliminarArbitro(int idArbitro, string procedimiento) {
+    public void EliminarArbitro(int idArbitro, string procedimiento) {
       conexion = ConexionBD.getConexion();    //Obtener conexión
       conexion.Open();                        //Abrir conexión
       trans = conexion.BeginTransaction();    //Comenzar transaccion
@@ -613,7 +613,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
     }
@@ -622,45 +622,45 @@ namespace Data {
     /// Método para eliminar un Juez Central.
     /// </summary>
     /// <param name="idArbitro">ID Juez Central.</param>
-    public void eliminarJuezCentralBD(int idArbitro) {
+    public void EliminarJuezCentralBD(int idArbitro) {
       string procedimiento = "eliminarJuezCentral";
-      eliminarArbitro(idArbitro, procedimiento);
+      EliminarArbitro(idArbitro, procedimiento);
     }
 
     /// <summary>
     /// Método para eliminar un Asistente 1.
     /// </summary>
     /// <param name="idArbitro">ID Asistente 1.</param>
-    public void eliminarAsistente1BD(int idArbitro) {
+    public void EliminarAsistente1BD(int idArbitro) {
       string procedimiento = "eliminarAsistente1";
-      eliminarArbitro(idArbitro, procedimiento);
+      EliminarArbitro(idArbitro, procedimiento);
     }
 
     /// <summary>
     /// Método para eliminar un Asistente 2.
     /// </summary>
     /// <param name="idArbitro">ID Asistente 2.</param>
-    public void eliminarAsistente2BD(int idArbitro) {
+    public void EliminarAsistente2BD(int idArbitro) {
       string procedimiento = "eliminarAsistente2";
-      eliminarArbitro(idArbitro, procedimiento);
+      EliminarArbitro(idArbitro, procedimiento);
     }
 
     /// <summary>
     /// Método para eliminar un Cuarto Arbitro.
     /// </summary>
     /// <param name="idArbitro">ID Cuarto Arbitro.</param>
-    public void eliminarCuartoArbitroBD(int idArbitro) {
+    public void EliminarCuartoArbitroBD(int idArbitro) {
       string procedimiento = "eliminarCuartoArbitro";
-      eliminarArbitro(idArbitro, procedimiento);
+      EliminarArbitro(idArbitro, procedimiento);
     }
 
     /// <summary>
     /// Método para eliminar un Colegiado.
     /// </summary>
     /// <param name="idArbitro">ID Colegiado.</param>
-    public void eliminarColegiado(int idColegiado) {
+    public void EliminarColegiado(int idColegiado) {
       string procedimiento = "eliminarColegiado";
-      eliminarArbitro(idColegiado, procedimiento);
+      EliminarArbitro(idColegiado, procedimiento);
     }
 
     /// <summary>
@@ -669,7 +669,7 @@ namespace Data {
     /// <param name="idColegiado">ID Colegiado.</param>
     /// <param name="idNuevo">ID del nuevo arbitro.</param>
     /// <param name="arbitro">Tipo de árbitro.</param>
-    public void actualizarColegiadoBD(int idColegiado, int idNuevo, string arbitro) {
+    public void ActualizarColegiadoBD(int idColegiado, int idNuevo, string arbitro) {
       conexion = ConexionBD.getConexion();    //Obtener conexión
       conexion.Open();                        //Abrir conexión
       trans = conexion.BeginTransaction();    //Comenzar transaccion
@@ -685,7 +685,7 @@ namespace Data {
         trans.Commit();
       } catch(MySqlException ex) {
         trans.Rollback();
-        throw new falloBDException(ex.Message);
+        throw new FalloBDException(ex.Message);
       }
       conexion.Close();   //Cerrar conexión
     }

@@ -7,7 +7,7 @@ using Control.AdmEquipos;
 
 namespace GestionDeColegiados {
   public partial class frmGenerarEncuentros : Form {
-    AdmEquipo _admEquipo = AdmEquipo.getEquipo();
+    AdmEquipo _admEquipo = AdmEquipo.GetEquipo();
     AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
     private List<Label> _listaContenedoresLocal = new List<Label>();
     private List<Label> _listaContenedoresVisitante = new List<Label>();
@@ -37,7 +37,7 @@ namespace GestionDeColegiados {
         lblTitulo.Text = "ENCUENTROS PENDIENTES" +
             "\r\n DE FECHA Y COLEGIADOS";
         int limiteInferiorPb = 0, limiteSuperiorPb = 0;
-        for(int x = 0; x < _admGenerarEncuentros.obtnerNumeroEncuentrosGeneradosPendientes(); x++) {
+        for(int x = 0; x < _admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes(); x++) {
 
           _admGenerarEncuentros.LlenarTuplas(_listaContenedoresLocal[x], _listaContenedoresVisitante[x], x);
           _listaContenedoresLocal[x].Visible = true;

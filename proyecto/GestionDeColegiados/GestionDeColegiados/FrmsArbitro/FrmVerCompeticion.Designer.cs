@@ -215,7 +215,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.rEINICIARTODALACOMPETENCIAToolStripMenuItem.Name = "rEINICIARTODALACOMPETENCIAToolStripMenuItem";
             this.rEINICIARTODALACOMPETENCIAToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
             this.rEINICIARTODALACOMPETENCIAToolStripMenuItem.Text = "REINICIAR TODA LA COMPETENCIA";
-            this.rEINICIARTODALACOMPETENCIAToolStripMenuItem.Click += new System.EventHandler(this.rEINICIARTODALACOMPETENCIAToolStripMenuItem_Click);
+            this.rEINICIARTODALACOMPETENCIAToolStripMenuItem.Click += new System.EventHandler(this.REINICIARTODALACOMPETENCIAToolStripMenuItem_Click);
             // 
             // rEINICIARRESULTADOSToolStripMenuItem
             // 
@@ -223,7 +223,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.rEINICIARRESULTADOSToolStripMenuItem.Name = "rEINICIARRESULTADOSToolStripMenuItem";
             this.rEINICIARRESULTADOSToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
             this.rEINICIARRESULTADOSToolStripMenuItem.Text = "REINICIAR RESULTADOS";
-            this.rEINICIARRESULTADOSToolStripMenuItem.Click += new System.EventHandler(this.rEINICIARRESULTADOSToolStripMenuItem_Click);
+            this.rEINICIARRESULTADOSToolStripMenuItem.Click += new System.EventHandler(this.REINICIARRESULTADOSToolStripMenuItem_Click);
             // 
             // tERMINARCOMPETEToolStripMenuItem
             // 
@@ -239,7 +239,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.fINALIZARCOMPETENCIAToolStripMenuItem.Name = "fINALIZARCOMPETENCIAToolStripMenuItem";
             this.fINALIZARCOMPETENCIAToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.fINALIZARCOMPETENCIAToolStripMenuItem.Text = "FINALIZAR COMPETENCIA";
-            this.fINALIZARCOMPETENCIAToolStripMenuItem.Click += new System.EventHandler(this.fINALIZARCOMPETENCIAToolStripMenuItem_Click);
+            this.fINALIZARCOMPETENCIAToolStripMenuItem.Click += new System.EventHandler(this.FINALIZARCOMPETENCIAToolStripMenuItem_Click);
             // 
             // dARBAJAToolStripMenuItem
             // 

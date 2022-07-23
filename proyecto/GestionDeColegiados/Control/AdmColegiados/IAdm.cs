@@ -15,7 +15,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtemail">Email recogido.</param>
     /// <param name="txttelefono">Telefono recogido.</param>
     /// <returns>Devolverá el último id registrado como entero.</returns>
-    int guardar(TextBox txtcedula, TextBox txtnombre, TextBox txtapellido,
+    int Guardar(TextBox txtcedula, TextBox txtnombre, TextBox txtapellido,
         TextBox txtdomicilio, TextBox txtemail, TextBox txttelefono);
 
     /// <summary>
@@ -23,7 +23,7 @@ namespace Control.AdmColegiados {
     /// </summary>
     /// <param name="id">ID de un árbitro.</param>
     /// <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
-    void obtenerDatos(int id, DataGridView dgvListarColegiados);
+    void ObtenerDatos(int id, DataGridView dgvListarColegiados);
 
     /// <summary>
     /// Método recoger datos para editar.
@@ -32,7 +32,7 @@ namespace Control.AdmColegiados {
     /// Recoge los datos que son seleccionados para editar por el usuario.
     /// </remarks>
     /// <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
-    void recogerDatosEditar(DataGridViewRow filaSeleccionada);
+    void RecogerDatosEditar(DataGridViewRow filaSeleccionada);
 
     /// <summary>
     /// Método para llenar datos del FormEditar.
@@ -46,7 +46,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtDomicilio">Domicilio.</param>
     /// <param name="txtEmail">Email.</param>
     /// <param name="txtTelefono">Telefono.</param>
-    void llenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido,
+    void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre, TextBox txtApellido,
         TextBox txtDomicilio, TextBox txtEmail, TextBox txtTelefono);
 
     /// <summary>
@@ -59,7 +59,7 @@ namespace Control.AdmColegiados {
     /// <param name="domicilio">Domicilio recogido.</param>
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
-    void editarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    void EditarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono);
 
     /// <summary>
@@ -73,7 +73,7 @@ namespace Control.AdmColegiados {
     /// <param name="email">Email recogido.</param>
     /// <param name="telefono">Telefono recogido.</param>
     /// <returns>Devuelve el último id registrado como entero.</returns>
-    int eliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
+    int EliminarArbitro(int idArbitro, string cedula, string nombre, string apellido,
         string domicilio, string email, string telefono);
   }
 }

@@ -54,7 +54,7 @@ namespace GestionDeColegiados {
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
     private void btnsiguiente1_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.validarVacios(txtcedulaJC, txtnombreJC, txtapellidoJC, txtdomicilioJC, txtemailJC, txttelefonoJC);
+      bool vacio = validacionGUI.ValidarVacios(txtcedulaJC, txtnombreJC, txtapellidoJC, txtdomicilioJC, txtemailJC, txttelefonoJC);
       bool cedulaRepetida = admColegiado.validarCedula(txtcedulaJC);
       bool txtcedulaRepetida = (txtcedulaJC.Text == txtcedulaAs1.Text) || (txtcedulaJC.Text == txtcedulaAs2.Text) || (txtcedulaJC.Text == txtcedulaCA.Text);
       if(vacio != true) {
@@ -78,7 +78,7 @@ namespace GestionDeColegiados {
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
     private void btnsiguiente2_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.validarVacios(txtcedulaAs1, txtnombreAs1, txtapellidoAs1, txtdomicilioAs1, txtemailAs1, txttelefonoAs1);
+      bool vacio = validacionGUI.ValidarVacios(txtcedulaAs1, txtnombreAs1, txtapellidoAs1, txtdomicilioAs1, txtemailAs1, txttelefonoAs1);
       bool cedulaRepetida = admColegiado.validarCedula(txtcedulaAs1);
       bool txtcedulaRepetida = (txtcedulaAs1.Text == txtcedulaJC.Text) || (txtcedulaAs1.Text == txtcedulaAs2.Text) || (txtcedulaAs1.Text == txtcedulaCA.Text);
       if(vacio != true) {
@@ -115,7 +115,7 @@ namespace GestionDeColegiados {
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
     private void btnsiguiente3_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.validarVacios(txtcedulaAs2, txtnombreAs2, txtapellidoAs2, txtdomicilioAs2, txtemailAs2, txttelefonoAs2);
+      bool vacio = validacionGUI.ValidarVacios(txtcedulaAs2, txtnombreAs2, txtapellidoAs2, txtdomicilioAs2, txtemailAs2, txttelefonoAs2);
       bool cedulaRepetida = admColegiado.validarCedula(txtcedulaAs2);
       bool txtcedulaRepetida = (txtcedulaAs2.Text == txtcedulaJC.Text) || (txtcedulaAs2.Text == txtcedulaAs1.Text) || (txtcedulaAs2.Text == txtcedulaCA.Text);
       if(vacio != true) {
@@ -152,7 +152,7 @@ namespace GestionDeColegiados {
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
     private void btnRegistrar_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.validarVacios(txtcedulaCA, txtnombreCA, txtapellidoCA, txtdomicilioCA, txtemailCA, txttelefonoCA);
+      bool vacio = validacionGUI.ValidarVacios(txtcedulaCA, txtnombreCA, txtapellidoCA, txtdomicilioCA, txtemailCA, txttelefonoCA);
       bool cedulaRepetida = admColegiado.validarCedula(txtcedulaCA);
       bool txtcedulaRepetida = (txtcedulaCA.Text == txtcedulaJC.Text) || (txtcedulaCA.Text == txtcedulaAs1.Text) || (txtcedulaCA.Text == txtcedulaAs2.Text);
       if(vacio != true) {
@@ -219,7 +219,7 @@ namespace GestionDeColegiados {
           idAsistente1 = obtenerIdAsistente1(),
           idAsistente2 = obtenerIdAsistente2(),
           idCuartoArbitro = obtenerIdCuartoArbitro();
-      bool vacio = validacionGUI.validarnum(idJuezCentral, idAsistente1, idAsistente2, idCuartoArbitro);
+      bool vacio = validacionGUI.ValidarNum(idJuezCentral, idAsistente1, idAsistente2, idCuartoArbitro);
       if(vacio != true) {
         admColegiado.Guardar(idJuezCentral, idAsistente1, idAsistente2, idCuartoArbitro);
       } else {
@@ -264,7 +264,7 @@ namespace GestionDeColegiados {
     /// <returns>Devuelve el id del último Asistente 1 ingresado como entero.</returns>
     private int obtenerIdAsistente1() {
       int id = 0;
-      contexto = new Contexto(AdmAsistente1.getAdmA1());
+      contexto = new Contexto(AdmAsistente1.GetAdmA1());
       id = contexto.obtenerDatos(txtcedulaAs1, txtnombreAs1, txtapellidoAs1, txtdomicilioAs1, txtemailAs1, txttelefonoAs1);
       return id;
     }
