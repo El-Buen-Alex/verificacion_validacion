@@ -10,7 +10,7 @@ namespace GestionDeColegiados {
   public partial class frmCambiarEstadioPartido : Form {
     AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
     AdmEstadio admEstadio = AdmEstadio.GetAdmEstadio();
-    AdmColegiado admColegiado = AdmColegiado.getAdmCol();
+    AdmColegiado admColegiado = AdmColegiado.GetAdmCol();
     private bool muestraInfo;
     private ValidacionGUI validacionGUI = new ValidacionGUI();
     public frmCambiarEstadioPartido() {

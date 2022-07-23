@@ -7,7 +7,7 @@ using Control.AdmEstadios;
 
 namespace GestionDeColegiados {
   public partial class FrmRegistrarPartido : Form {
-    private AdmColegiado _admColegiado = AdmColegiado.getAdmCol();
+    private AdmColegiado _admColegiado = AdmColegiado.GetAdmCol();
     private AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
     private AdmEncuentrosDefinidos _admGenerarEncuentroDefinido = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
     private AdmEstadio _admEstadio = AdmEstadio.GetAdmEstadio();

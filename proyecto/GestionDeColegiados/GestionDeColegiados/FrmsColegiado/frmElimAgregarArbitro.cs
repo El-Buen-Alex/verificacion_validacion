@@ -21,7 +21,7 @@ namespace GestionDeColegiados.FrmsColegiado {
 
     private Color colorDefaultClose;
     ValidacionGUI validacionGUI = new ValidacionGUI();
-    AdmColegiado admColegiado = AdmColegiado.getAdmCol();
+    AdmColegiado admColegiado = AdmColegiado.GetAdmCol();
 
     /// <summary>
     /// Constructor del formulario.
@@ -104,7 +104,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// <param name="e">Evento.</param>
     private void btnAgregar_Click(object sender, EventArgs e) {
       bool vacio = validacionGUI.ValidarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
-      bool cedulaRepetida = admColegiado.validarCedula(txtCedula);
+      bool cedulaRepetida = admColegiado.ValidarCedula(txtCedula);
       if(vacio == true) {
         MessageBox.Show("Hay ciertos campos vacios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
@@ -118,7 +118,7 @@ namespace GestionDeColegiados.FrmsColegiado {
             domicilio = txtDomicilio.Text,
             email = txtEmail.Text,
             telefono = txtTelefono.Text;
-        admColegiado.eliminarArbitro(lblID.Text, cedula, nombre, apellido, domicilio, email, telefono);
+        admColegiado.EliminarArbitro(lblID.Text, cedula, nombre, apellido, domicilio, email, telefono);
         Close();
       }
     }

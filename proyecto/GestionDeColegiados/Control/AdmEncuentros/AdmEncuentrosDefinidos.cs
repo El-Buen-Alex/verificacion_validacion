@@ -18,7 +18,7 @@ namespace Control.AdmEncuentrosGenerados {
     private List<EncuentroGenerado> _listaEncuentrosGenerados = new List<EncuentroGenerado>();
     private DatosEncuentroDefinido _datosEncuentroDefinido = new DatosEncuentroDefinido();
     private AdmGenerarEncuentros _admEncuentrosGenerados = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
-    private AdmColegiado _admColegiados = AdmColegiado.getAdmCol();
+    private AdmColegiado _admColegiados = AdmColegiado.GetAdmCol();
 
 
     private AdmEquipo _admEquipos = AdmEquipo.GetEquipo();
@@ -267,7 +267,7 @@ ademas del estadio*/
     public bool GuardarEncuentroDefinido(int grupoColegiado, DateTime fechaPartido, DateTime horaPartido, int estadioSeleccionado, int posicion) {
       bool guardo = false;
       _admEncuentrosGenerados.llenarListaEncuentrosGeneradosPendientes();
-      _admColegiados.llenarListaColegiados();
+      _admColegiados.LlenarListaColegiados();
       _admEstadio.RefrezcarListaEstadiosDisponibles();
       int idEncuentroGeneradoPendiente = _admEncuentrosGenerados.ListaEncuentrosGeneradosPendientes[posicion].Id;
       int idColegiado = _admColegiados.ListaintegColeg[grupoColegiado].IdGrupoColegiado;

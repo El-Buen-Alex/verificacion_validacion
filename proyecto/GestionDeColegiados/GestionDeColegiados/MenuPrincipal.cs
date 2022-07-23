@@ -25,7 +25,7 @@ namespace GestionDeColegiados {
     private AdmGenerarEncuentros admGenerarEncuentros = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
     private AdmEquipo admEquipo = AdmEquipo.GetEquipo();
     private AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
-    private AdmColegiado admColegiado = AdmColegiado.getAdmCol();
+    private AdmColegiado admColegiado = AdmColegiado.GetAdmCol();
 
     public MenuPrincipal() {
       InitializeComponent();
@@ -69,7 +69,7 @@ namespace GestionDeColegiados {
     }
 
     private void btnVerTodosColegiados_Click(object sender, EventArgs e) {
-      if(admColegiado.obtenerCantidadColegiado() == 0) {
+      if(admColegiado.ObtenerCantidadColegiado() == 0) {
         MessageBox.Show("No se han registrado colegiados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         AbrirFormEnPanel(new frmNuevoGrupoColegiado());
       } else {

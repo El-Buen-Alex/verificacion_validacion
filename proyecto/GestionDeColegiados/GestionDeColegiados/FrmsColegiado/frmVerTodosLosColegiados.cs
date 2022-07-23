@@ -20,14 +20,14 @@ namespace GestionDeColegiados {
     private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
     private Color colorDefaultClose;
-    AdmColegiado admColegiado = AdmColegiado.getAdmCol();
+    AdmColegiado admColegiado = AdmColegiado.GetAdmCol();
 
     /// <summary>
     /// Constructor del formulario.
     /// </summary>
     public frmVerTodosLosColegiados() {
       InitializeComponent();
-      admColegiado.llenarComboIdColegiado(cmbIdArbitro);
+      admColegiado.LlenarComboIdColegiado(cmbIdArbitro);
     }
 
     /// <summary>
@@ -75,7 +75,7 @@ namespace GestionDeColegiados {
     /// <param name="e">Evento.</param>
     private void btnBuscar_Click(object sender, System.EventArgs e) {
       if(cmbIdArbitro.Text.CompareTo("") != 0) {
-        admColegiado.llenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
+        admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
         btnEditar.Enabled = true;
         btnEliminarArbitro.Enabled = true;
         btnEliminarColegiado.Enabled = true;
@@ -93,9 +93,9 @@ namespace GestionDeColegiados {
       DataGridViewRow filaSeleccionada = dgvListarColegiados.CurrentRow;
       string arbitro = filaSeleccionada.Cells[0].Value.ToString();
       FrmEditarArbitro frmEditar = new FrmEditarArbitro(arbitro, cmbIdArbitro.Text);
-      admColegiado.recogerDatosEditar(dgvListarColegiados);
+      admColegiado.RecogerDatosEditar(dgvListarColegiados);
       frmEditar.ShowDialog();
-      admColegiado.llenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
+      admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
     }
 
     /// <summary>
@@ -110,9 +110,9 @@ namespace GestionDeColegiados {
         DataGridViewRow row = dgvListarColegiados.CurrentRow;
         string arbitro = row.Cells[0].Value.ToString();
         frmElimAgregarArbitro frmAgregar = new frmElimAgregarArbitro(arbitro, cmbIdArbitro.Text);
-        admColegiado.recogerDatosEliminar(dgvListarColegiados);
+        admColegiado.RecogerDatosEliminar(dgvListarColegiados);
         frmAgregar.ShowDialog();
-        admColegiado.llenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
+        admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
       }
     }
 
@@ -126,9 +126,9 @@ namespace GestionDeColegiados {
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de eliminar el " + cmbIdArbitro.Text + " de colegiados!", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
       if(resultado == DialogResult.Yes) {
-        eliminado = admColegiado.eliminarColegiado(cmbIdArbitro.Text);
+        eliminado = admColegiado.EliminarColegiado(cmbIdArbitro.Text);
         if(eliminado == true) {
-          admColegiado.llenarComboIdColegiado(cmbIdArbitro);
+          admColegiado.LlenarComboIdColegiado(cmbIdArbitro);
           dgvListarColegiados.Rows.Clear();
         }
       }
