@@ -12,7 +12,7 @@ namespace Control {
       try {
         Administrador nuevoUsuario = ObtenerUsuario(usuario, password);
         if(nuevoUsuario == null) {
-    
+
           respuesta = "ERROR: ";
           throw new UsuarioNoRegistradoException(usuario);
         } else {
@@ -40,7 +40,7 @@ namespace Control {
         usuario = gestionUsuario.ExisteUsuario(username.Trim(), password);
 
         if(usuario == null) {
-   
+
           throw new UsuarioNoRegistradoException(username);
         }
       } catch(Exception ex) {

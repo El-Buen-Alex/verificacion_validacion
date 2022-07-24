@@ -149,7 +149,7 @@ namespace Control.AdmColegiados {
     /// <param name="txtEmail">Email.</param>
     /// <param name="txtTelefono">Telefono.</param>
     public void LlenarDatosFormEditar(TextBox txtCedula, TextBox txtNombre,
-                                      TextBox txtApellido,TextBox txtDomicilio, 
+                                      TextBox txtApellido, TextBox txtDomicilio,
                                       TextBox txtEmail, TextBox txtTelefono) {
       try {
         txtCedula.Text = _jC.Cedula.ToString();
