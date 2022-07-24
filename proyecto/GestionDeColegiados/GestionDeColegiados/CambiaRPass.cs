@@ -23,14 +23,14 @@ namespace GestionDeColegiados {
 
     private void BtnChangePass_Click(object sender, EventArgs e) {
       string newPass = txtPass.Text.Trim();
-      string cambiar = _gestionLogin.CambiarPass(newPass, this._idUser);
-      if(cambiar.StartsWith("EXITO")) {
+      bool cambiar = _gestionLogin.CambiarPass(newPass, this._idUser);
+      if(cambiar) {
 
         this.Close();
         BtnIniciarSesion iniciar = new BtnIniciarSesion();
         iniciar.Show();
       } else {
-        MessageBox.Show(cambiar, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        MessageBox.Show("Error al cambiar contraseña", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
     }
     private void HabilitarButton() {

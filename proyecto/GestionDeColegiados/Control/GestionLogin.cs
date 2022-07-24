@@ -25,10 +25,17 @@ namespace Control {
       return respuesta;
     }
 
-    public string CambiarPass(string newPass, int idUser) {
+    public bool CambiarPass(string newPass, int idUser) {
+      bool cambioPass;
       string cambio = _gestionUsuario.CambiarPassword(newPass, idUser);
+      if(cambio.StartsWith("EXITO")) {
 
-      return cambio;
+        cambioPass = true;
+      } else {
+        cambioPass = false;
+      }
+
+      return cambioPass;
     }
 
     private Administrador ObtenerUsuario(string username, string password) {

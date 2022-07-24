@@ -11,6 +11,7 @@ namespace GestionDeColegiados.FrmsArbitro {
     private AdmEncuentrosDefinidos _admEncuentroDefinido = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
     private AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.GetAdmadmGenerarEncuentros();
     private AdmEstadio _admEstadio = AdmEstadio.GetAdmEstadio();
+   
     public FrmVerCompeticion(bool puedeAdministrar) {
       InitializeComponent();
       CompetenciaLlenar();
@@ -118,7 +119,7 @@ namespace GestionDeColegiados.FrmsArbitro {
       DialogResult res = MessageBox.Show(pregunta + mensaje + reaccion, "CUIDADO", MessageBoxButtons.YesNo);
       if(res == DialogResult.Yes) {
 
-        bool resultado = _admEncuentroFinalizado.FinalizarCompetencia();
+        bool resultado = _admEncuentroFinalizado.FinalizarCompetencia("");
         MostrarMensajeFinalizar(resultado, mensajeExito);
       }
     }

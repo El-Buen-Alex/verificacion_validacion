@@ -37,11 +37,15 @@ namespace Control.AdmEncuentros {
     /// Usado para finalizar una competencia
     /// </summary>
     /// <returns> Un booleano que indica si la acción se completo con exito o no</returns>
-    public bool FinalizarCompetencia() {
+    public bool FinalizarCompetencia(string yearSelected) {
       bool respuesta = false;
-
+      string anio;
       //respuesta = DarBajaCompetencia();
-      string anio = DateTime.Now.Year.ToString();
+      if( yearSelected.Trim().Length != 4 || _validaciones.AInt(yearSelected)==0) {
+        anio = DateTime.Now.Year.ToString();
+      } else {
+        anio = yearSelected;
+      }
       respuesta = _datosEncuentroFinalizado.FinalizarCompetencia(anio, "F");
       return respuesta;
     }

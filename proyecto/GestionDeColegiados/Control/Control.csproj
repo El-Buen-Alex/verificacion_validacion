@@ -59,11 +59,11 @@
     <Compile Include="AdmEquipos\AdmEquipo.cs" />
     <Compile Include="AdmEstadios\AdmEstadio.cs" />
     <Compile Include="ErrorActualizarEstadioException.cs" />
-    <Compile Include="generarEncuentrosException.cs" />
+    <Compile Include="GenerarEncuentrosException.cs" />
     <Compile Include="GestionLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="registroEquipoMaximoException.cs" />
-    <Compile Include="usuarioNoRegistradoException.cs" />
+    <Compile Include="RegistroEquipoMaximoException.cs" />
+    <Compile Include="UsuarioNoRegistradoException.cs" />
     <Compile Include="ValidacionGUI.cs" />
   </ItemGroup>
   <ItemGroup>
