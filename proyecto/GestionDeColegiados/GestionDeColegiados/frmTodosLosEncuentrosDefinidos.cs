@@ -4,9 +4,9 @@ using System.Windows.Forms;
 using Control.AdmEncuentrosGenerados;
 
 namespace GestionDeColegiados {
-  public partial class frmTodosLosEncuentrosDefinidos : Form {
+  public partial class FrmTodosLosEncuentrosDefinidos : Form {
     private AdmEncuentrosDefinidos _admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
-    public frmTodosLosEncuentrosDefinidos() {
+    public FrmTodosLosEncuentrosDefinidos() {
       InitializeComponent();
       //llenamos el combobox con los encuentros definidos disponibles
       _admEncuentrosDefinidos.LlenarPartidosCmb(cmbEncuentros);

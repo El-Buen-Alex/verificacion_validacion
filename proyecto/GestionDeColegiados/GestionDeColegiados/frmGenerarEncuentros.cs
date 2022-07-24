@@ -6,7 +6,7 @@ using Control.AdmEncuentrosGenerados;
 using Control.AdmEquipos;
 
 namespace GestionDeColegiados {
-  public partial class frmGenerarEncuentros : Form {
+  public partial class FrmGenerarEncuentros : Form {
     AdmEquipo _admEquipo = AdmEquipo.GetEquipo();
     AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.GetAdmadmGenerarEncuentros();
     private List<Label> _listaContenedoresLocal = new List<Label>();
@@ -22,7 +22,7 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <remarks>Si el parametro ingresado es falso, se puede generar, caso contrario se muestran los encuentros</remarks>
     /// <param name="estado">Define si los encuentros ya han sido generados o aún no</param>
-    public frmGenerarEncuentros(bool estado) {
+    public FrmGenerarEncuentros(bool estado) {
       InitializeComponent();
       InciarContenedores();
       AgregarPbaLista();

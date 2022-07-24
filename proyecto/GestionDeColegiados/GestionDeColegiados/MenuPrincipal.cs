@@ -63,15 +63,15 @@ namespace GestionDeColegiados {
     }
 
     private void BtnNuevoGrupoColegiados_Click(object sender, EventArgs e) {
-      AbrirFormEnPanel(new frmNuevoGrupoColegiado());
+      AbrirFormEnPanel(new FrmNuevoGrupoColegiado());
     }
 
     private void BtnVerTodosColegiados_Click(object sender, EventArgs e) {
       if(_admColegiado.ObtenerCantidadColegiado() == 0) {
         MessageBox.Show("No se han registrado colegiados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        AbrirFormEnPanel(new frmNuevoGrupoColegiado());
+        AbrirFormEnPanel(new FrmNuevoGrupoColegiado());
       } else {
-        frmVerTodosLosColegiados verColegiados = new frmVerTodosLosColegiados();
+        FrmVerTodosLosColegiados verColegiados = new FrmVerTodosLosColegiados();
         verColegiados.ShowDialog();
       }
     }
@@ -98,10 +98,10 @@ namespace GestionDeColegiados {
 
     private void ExaminarAccesibilidadGenerarEncuentros() {
       if(_admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes() == 0) {
-        AbrirFormEnPanel(new frmGenerarEncuentros(false));
+        AbrirFormEnPanel(new FrmGenerarEncuentros(false));
       } else {
         MessageBox.Show("Ya se han generado y registrados los encuentros");
-        AbrirFormEnPanel(new frmGenerarEncuentros(true));
+        AbrirFormEnPanel(new FrmGenerarEncuentros(true));
       }
     }
     private void BtnGenerarEncuentros_Click(object sender, EventArgs e) {
@@ -110,7 +110,7 @@ namespace GestionDeColegiados {
         ExaminarAccesibilidadGenerarEncuentrosPorCantidadEquipo();
       } else {
         MessageBox.Show("Existen: " + cantEncuentrosDefinidos + " Por jugar, no se puede Generar Encuentros");
-        AbrirFormEnPanel(new frmTodosLosEncuentrosDefinidos());
+        AbrirFormEnPanel(new FrmTodosLosEncuentrosDefinidos());
       }
 
     }
@@ -171,7 +171,7 @@ namespace GestionDeColegiados {
       if(_admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar() == 0) {
         MessageBox.Show("No hay Partidos por definir. Por favor, genere encuentros primero");
       } else {
-        AbrirFormEnPanel(new frmTodosLosEncuentrosDefinidos());
+        AbrirFormEnPanel(new FrmTodosLosEncuentrosDefinidos());
       }
     }
 

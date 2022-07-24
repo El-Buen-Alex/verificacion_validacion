@@ -62,65 +62,65 @@
     <Compile Include="CambiarPass.Designer.cs">
       <DependentUpon>CambiarPass.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmActualizarPartido.cs">
+    <Compile Include="FrmActualizarPartido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmActualizarPartido.Designer.cs">
-      <DependentUpon>frmActualizarPartido.cs</DependentUpon>
+    <Compile Include="FrmActualizarPartido.Designer.cs">
+      <DependentUpon>FrmActualizarPartido.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEditarEquipo.cs">
+    <Compile Include="FrmEditarEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEditarEquipo.Designer.cs">
-      <DependentUpon>frmEditarEquipo.cs</DependentUpon>
+    <Compile Include="FrmEditarEquipo.Designer.cs">
+      <DependentUpon>FrmEditarEquipo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmVerTodos.cs">
+    <Compile Include="FrmVerTodos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmVerTodos.Designer.cs">
-      <DependentUpon>frmVerTodos.cs</DependentUpon>
+    <Compile Include="FrmVerTodos.Designer.cs">
+      <DependentUpon>FrmVerTodos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGenerarEncuentros.cs">
+    <Compile Include="FrmGenerarEncuentros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGenerarEncuentros.Designer.cs">
-      <DependentUpon>frmGenerarEncuentros.cs</DependentUpon>
+    <Compile Include="FrmGenerarEncuentros.Designer.cs">
+      <DependentUpon>FrmGenerarEncuentros.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListaEquipos.cs">
+    <Compile Include="FrmListaEquipos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListaEquipos.Designer.cs">
-      <DependentUpon>frmListaEquipos.cs</DependentUpon>
+    <Compile Include="FrmListaEquipos.Designer.cs">
+      <DependentUpon>FrmListaEquipos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNuevoEquipo.cs">
+    <Compile Include="FrmNuevoEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNuevoEquipo.Designer.cs">
-      <DependentUpon>frmNuevoEquipo.cs</DependentUpon>
+    <Compile Include="FrmNuevoEquipo.Designer.cs">
+      <DependentUpon>FrmNuevoEquipo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsColegiado\frmEditarArbitro.cs">
+    <Compile Include="FrmsColegiado\FrmEditarArbitro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsColegiado\frmEditarArbitro.Designer.cs">
-      <DependentUpon>frmEditarArbitro.cs</DependentUpon>
+    <Compile Include="FrmsColegiado\FrmEditarArbitro.Designer.cs">
+      <DependentUpon>FrmEditarArbitro.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsColegiado\frmElimAgregarArbitro.cs">
+    <Compile Include="FrmsColegiado\FrmElimAgregarArbitro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsColegiado\frmElimAgregarArbitro.Designer.cs">
-      <DependentUpon>frmElimAgregarArbitro.cs</DependentUpon>
+    <Compile Include="FrmsColegiado\FrmElimAgregarArbitro.Designer.cs">
+      <DependentUpon>FrmElimAgregarArbitro.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsColegiado\frmNuevoGrupoColegiado.cs">
+    <Compile Include="FrmsColegiado\FrmNuevoGrupoColegiado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsColegiado\frmNuevoGrupoColegiado.Designer.cs">
-      <DependentUpon>frmNuevoGrupoColegiado.cs</DependentUpon>
+    <Compile Include="FrmsColegiado\FrmNuevoGrupoColegiado.Designer.cs">
+      <DependentUpon>FrmNuevoGrupoColegiado.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegistrarPartido.cs">
+    <Compile Include="FrmRegistrarPartido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegistrarPartido.Designer.cs">
-      <DependentUpon>frmRegistrarPartido.cs</DependentUpon>
+    <Compile Include="FrmRegistrarPartido.Designer.cs">
+      <DependentUpon>FrmRegistrarPartido.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmsArbitro\FrmEditarPartidoFinalizado.cs">
       <SubType>Form</SubType>
@@ -146,17 +146,17 @@
     <Compile Include="FrmsArbitro\FrmVerCompeticion.Designer.cs">
       <DependentUpon>FrmVerCompeticion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTodosLosEncuentrosDefinidos.cs">
+    <Compile Include="FrmTodosLosEncuentrosDefinidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTodosLosEncuentrosDefinidos.Designer.cs">
-      <DependentUpon>frmTodosLosEncuentrosDefinidos.cs</DependentUpon>
+    <Compile Include="FrmTodosLosEncuentrosDefinidos.Designer.cs">
+      <DependentUpon>FrmTodosLosEncuentrosDefinidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsColegiado\frmVerTodosLosColegiados.cs">
+    <Compile Include="FrmsColegiado\FrmVerTodosLosColegiados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsColegiado\frmVerTodosLosColegiados.Designer.cs">
-      <DependentUpon>frmVerTodosLosColegiados.cs</DependentUpon>
+    <Compile Include="FrmsColegiado\FrmVerTodosLosColegiados.Designer.cs">
+      <DependentUpon>FrmVerTodosLosColegiados.cs</DependentUpon>
     </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
@@ -175,35 +175,35 @@
     <EmbeddedResource Include="CambiarPass.resx">
       <DependentUpon>CambiarPass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmActualizarPartido.resx">
-      <DependentUpon>frmActualizarPartido.cs</DependentUpon>
+    <EmbeddedResource Include="FrmActualizarPartido.resx">
+      <DependentUpon>FrmActualizarPartido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEditarEquipo.resx">
-      <DependentUpon>frmEditarEquipo.cs</DependentUpon>
+    <EmbeddedResource Include="FrmEditarEquipo.resx">
+      <DependentUpon>FrmEditarEquipo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmVerTodos.resx">
-      <DependentUpon>frmVerTodos.cs</DependentUpon>
+    <EmbeddedResource Include="FrmVerTodos.resx">
+      <DependentUpon>FrmVerTodos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGenerarEncuentros.resx">
-      <DependentUpon>frmGenerarEncuentros.cs</DependentUpon>
+    <EmbeddedResource Include="FrmGenerarEncuentros.resx">
+      <DependentUpon>FrmGenerarEncuentros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListaEquipos.resx">
-      <DependentUpon>frmListaEquipos.cs</DependentUpon>
+    <EmbeddedResource Include="FrmListaEquipos.resx">
+      <DependentUpon>FrmListaEquipos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoEquipo.resx">
-      <DependentUpon>frmNuevoEquipo.cs</DependentUpon>
+    <EmbeddedResource Include="FrmNuevoEquipo.resx">
+      <DependentUpon>FrmNuevoEquipo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsColegiado\frmEditarArbitro.resx">
-      <DependentUpon>frmEditarArbitro.cs</DependentUpon>
+    <EmbeddedResource Include="FrmsColegiado\FrmEditarArbitro.resx">
+      <DependentUpon>FrmEditarArbitro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsColegiado\frmElimAgregarArbitro.resx">
-      <DependentUpon>frmElimAgregarArbitro.cs</DependentUpon>
+    <EmbeddedResource Include="FrmsColegiado\FrmElimAgregarArbitro.resx">
+      <DependentUpon>FrmElimAgregarArbitro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsColegiado\frmNuevoGrupoColegiado.resx">
-      <DependentUpon>frmNuevoGrupoColegiado.cs</DependentUpon>
+    <EmbeddedResource Include="FrmsColegiado\FrmNuevoGrupoColegiado.resx">
+      <DependentUpon>FrmNuevoGrupoColegiado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegistrarPartido.resx">
-      <DependentUpon>frmRegistrarPartido.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRegistrarPartido.resx">
+      <DependentUpon>FrmRegistrarPartido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmsArbitro\FrmEditarPartidoFinalizado.resx">
       <DependentUpon>FrmEditarPartidoFinalizado.cs</DependentUpon>
@@ -217,11 +217,11 @@
     <EmbeddedResource Include="FrmsArbitro\FrmVerCompeticion.resx">
       <DependentUpon>FrmVerCompeticion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTodosLosEncuentrosDefinidos.resx">
-      <DependentUpon>frmTodosLosEncuentrosDefinidos.cs</DependentUpon>
+    <EmbeddedResource Include="FrmTodosLosEncuentrosDefinidos.resx">
+      <DependentUpon>FrmTodosLosEncuentrosDefinidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsColegiado\frmVerTodosLosColegiados.resx">
-      <DependentUpon>frmVerTodosLosColegiados.cs</DependentUpon>
+    <EmbeddedResource Include="FrmsColegiado\FrmVerTodosLosColegiados.resx">
+      <DependentUpon>FrmVerTodosLosColegiados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IniciarSesion.resx">
       <DependentUpon>IniciarSesion.cs</DependentUpon>

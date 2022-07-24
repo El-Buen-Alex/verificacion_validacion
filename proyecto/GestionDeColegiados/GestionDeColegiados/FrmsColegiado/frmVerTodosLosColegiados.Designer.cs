@@ -1,7 +1,7 @@
 ﻿
 namespace GestionDeColegiados
 {
-    partial class frmVerTodosLosColegiados
+    partial class FrmVerTodosLosColegiados
     {
         /// <summary>
         /// Required designer variable.

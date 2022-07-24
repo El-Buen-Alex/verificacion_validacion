@@ -1,7 +1,7 @@
 ﻿
 namespace GestionDeColegiados
 {
-    partial class frmGenerarEncuentros
+    partial class FrmGenerarEncuentros
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace GestionDeColegiados
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGenerarEncuentros));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGenerarEncuentros));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnGenerarEncuentros = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();

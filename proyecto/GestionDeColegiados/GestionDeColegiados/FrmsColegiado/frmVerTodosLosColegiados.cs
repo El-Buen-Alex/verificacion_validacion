@@ -10,7 +10,7 @@ namespace GestionDeColegiados {
   /// <summary>
   /// Formulario para ver, editar y eliminar (Áribtros y colegiado).
   /// </summary>
-  public partial class frmVerTodosLosColegiados : Form {
+  public partial class FrmVerTodosLosColegiados : Form {
     /// <summary>
     /// DLL y variables necesarias para poder mover el formulario.
     /// </summary>
@@ -25,7 +25,7 @@ namespace GestionDeColegiados {
     /// <summary>
     /// Constructor del formulario.
     /// </summary>
-    public frmVerTodosLosColegiados() {
+    public FrmVerTodosLosColegiados() {
       InitializeComponent();
       _admColegiado.LlenarComboIdColegiado(cmbIdArbitro);
     }

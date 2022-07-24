@@ -8,7 +8,7 @@ namespace GestionDeColegiados {
   /// <summary>
   /// Formulario para agregar Áribtros.
   /// </summary>
-  public partial class frmNuevoGrupoColegiado : Form {
+  public partial class FrmNuevoGrupoColegiado : Form {
     ValidacionGUI _validacionGUI = new ValidacionGUI();
     Contexto _contexto = null;
     AdmColegiado _admColegiado = AdmColegiado.GetAdmCol();
@@ -16,7 +16,7 @@ namespace GestionDeColegiados {
     /// <summary>
     /// Constructor del formulario.
     /// </summary>
-    public frmNuevoGrupoColegiado() {
+    public FrmNuevoGrupoColegiado() {
       InitializeComponent();
     }
 
