@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>View</name>
+  </assembly>
+  <members>
+    <member name="M:GestionDeColegiados.FrmGenerarEncuentros.#ctor(System.Boolean)">
+      <summary>
+   Constructor del form de Generar encuentro
+   </summary>
+      <remarks>Si el parametro ingresado es falso, se puede generar, caso contrario se muestran los encuentros</remarks>
+      <param name="estado">Define si los encuentros ya han sido generados o aún no</param>
+    </member>
+    <member name="T:GestionDeColegiados.FrmsColegiado.FrmEditarArbitro">
+      <summary> Formulario para editar Áribtros. </summary>
+    </member>
+    <member name="M:GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.#ctor(System.String,System.String)">
+      <summary>
+   Constructor del formulario.
+   </summary>
+      <param name="arbitro">Tipo de árbitro.</param>
+      <param name="idColegiado">ID del colegiado.</param>
+    </member>
+    <member name="T:GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro">
+      <summary> Formulario para eliminar y agregar Áribtros. </summary>
+    </member>
+    <member name="M:GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.#ctor(System.String,System.String)">
+      <summary>
+   Constructor del formulario.
+   </summary>
+      <param name="arbitro">Tipo de árbitro.</param>
+      <param name="idColegiado">ID del colegiado.</param>
+    </member>
+    <member name="T:GestionDeColegiados.FrmNuevoGrupoColegiado">
+      <summary> Formulario para agregar Áribtros. </summary>
+    </member>
+    <member name="M:GestionDeColegiados.FrmNuevoGrupoColegiado.#ctor">
+      <summary>
+   Constructor del formulario.
+   </summary>
+    </member>
+    <member name="T:GestionDeColegiados.FrmVerTodosLosColegiados">
+      <summary> Formulario para ver, editar y eliminar (Áribtros y colegiado). </summary>
+    </member>
+    <member name="M:GestionDeColegiados.FrmVerTodosLosColegiados.#ctor">
+      <summary>
+   Constructor del formulario.
+   </summary>
+    </member>
+  </members>
+</doc>

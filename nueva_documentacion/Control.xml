@@ -1,0 +1,850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Control</name>
+  </assembly>
+  <members>
+    <member name="T:Control.AdmColegiados.AdmAsistente1">
+      <summary>
+   Clase para la gestión de Asistente1.
+   </summary>
+      <remarks>
+   Crea las listas, instancias y validaciones para obtener los datos de Asistente1.
+   </remarks>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente1.GetAdmA1">
+      <summary>
+   Paso para el uso de Singleton.
+   </summary>
+      <remarks>
+   Creando atributo estático de la clase AdmAistente1.
+   </remarks>
+      <returns>Devuelve una instancia de AdmAsistente1.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente1.Guardar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método Guardar de la interface IAdm.
+   </summary>
+      <param name="txtcedulaAs1">Cedula recogida.</param>
+      <param name="txtnombreAs1">Nombre recogido.</param>
+      <param name="txtapellidoAs1">Apellido recogido.</param>
+      <param name="txtdomicilioAs1">Domicilio recogido.</param>
+      <param name="txtemailAs1">Email recogido.</param>
+      <param name="txttelefonoAs1">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente1.ObtenerDatos(System.Int32,DataGridView)">
+      <summary>
+   Método ObtenerDatos de la interface IAdm.
+   </summary>
+      <remarks>
+   Llena <paramref name="dgvListarColegiados" /> con los datos del <paramref name="id" /> buscado.
+   </remarks>
+      <param name="id">ID de un Asistente1.</param>
+      <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente1.RecogerDatosEditar(DataGridViewRow)">
+      <summary>
+   Método RecogerDatosEditar de la interface IAdm.
+   </summary>
+      <remarks>
+   Recoge los datos que son seleccionados para editar por el usuario.
+   </remarks>
+      <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente1.LlenarDatosFormEditar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método LlenarDatosFormEditar de la interface IAdm.
+   </summary>
+      <remarks>
+   Llena los TexBox de Editar con los datos del Asistente1 seleccionado.
+   </remarks>
+      <param name="txtCedula">Cedula.</param>
+      <param name="txtNombre">Nombre.</param>
+      <param name="txtApellido">Apellido.</param>
+      <param name="txtDomicilio">Domicilio.</param>
+      <param name="txtEmail">Email.</param>
+      <param name="txtTelefono">Telefono.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente1.EditarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método EditarArbitro de la interface IAdm.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente1.EliminarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método EliminarArbitro de la interface IAdm.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="T:Control.AdmColegiados.AdmAsistente2">
+      <summary>
+   Clase para la gestión de Asistente2.
+   </summary>
+      <remarks>
+   Crea las listas, instancias y validaciones para obtener los datos de Asistente2.
+   </remarks>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente2.GetAdmA2">
+      <summary>
+   Paso para el uso de Singleton.
+   </summary>
+      <remarks>
+   Creando atributo estático de la clase AdmAistente2.
+   </remarks>
+      <returns>Devuelve una instancia de AdmAsistente2.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente2.Guardar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método Guardar de la interface IAdm.
+   </summary>
+      <param name="txtcedulaAs2">Cedula recogida.</param>
+      <param name="txtnombreAs2">Nombre recogido.</param>
+      <param name="txtapellidoAs2">Apellido recogido.</param>
+      <param name="txtdomicilioAs2">Domicilio recogido.</param>
+      <param name="txtemailAs2">Email recogido.</param>
+      <param name="txttelefonoAs2">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente2.ObtenerDatos(System.Int32,DataGridView)">
+      <summary>
+   Método ObtenerDatos de la interface IAdm.
+   </summary>
+      <remarks>
+   Llena <paramref name="dgvListarColegiados" /> con los datos del <paramref name="id" /> buscado.
+   </remarks>
+      <param name="id">ID de un Asistente2.</param>
+      <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente2.RecogerDatosEditar(DataGridViewRow)">
+      <summary>
+   Método RecogerDatosEditar de la interface IAdm.
+   </summary>
+      <remarks>
+   Recoge los datos que son seleccionados para editar por el usuario.
+   </remarks>
+      <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente2.LlenarDatosFormEditar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método LlenarDatosFormEditar de la interface IAdm.
+   </summary>
+      <remarks>
+   Llena los TexBox de Editar con los datos del Asistente2 seleccionado.
+   </remarks>
+      <param name="txtCedula">Cedula.</param>
+      <param name="txtNombre">Nombre.</param>
+      <param name="txtApellido">Apellido.</param>
+      <param name="txtDomicilio">Domicilio.</param>
+      <param name="txtEmail">Email.</param>
+      <param name="txtTelefono">Telefono.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente2.EditarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método EditarArbitro de la interface IAdm.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmAsistente2.EliminarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método EliminarArbitro de la interface IAdm
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="T:Control.AdmColegiados.AdmColegiado">
+      <summary>
+   Clase para la gestión de Colegiados.
+   </summary>
+      <remarks>
+   Crea las listas, instancias y validaciones para obtener los datos de Colegiados.
+   </remarks>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.GetAdmCol">
+      <summary>
+   Paso para el uso de Singleton.
+   </summary>
+      <remarks>
+   Creando atributo estático de la clase AdmColegiado.
+   </remarks>
+      <returns>Devuelve una instancia de AdmColegiado.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.LlenarColegiadosCmb(ComboBox)">
+      <summary>
+   Llenar ComboBox con nombres de Juez Central.
+   </summary>
+      <param name="cmbGrupoColegiado"> ComboBox recogido.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.LlenarListaColegiados">
+      <summary>
+   LLenar lista de integrantes de colegiados.
+   </summary>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.Guardar(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>
+   Guardar id de todos los arbitros.
+   </summary>
+      <param name="idjuezcentral">ID del juez central.</param>
+      <param name="idasistente1">ID del asistente 1.</param>
+      <param name="idasistente2">ID del asistente 2.</param>
+      <param name="idcuartoarbitro">ID del cuarto arbitro.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.LlenarComboIdColegiado(ComboBox)">
+      <summary>
+   Listar datos con los nombres de los colegiados.
+   </summary>
+      <param name="cmbIdArbitro">ComboBox seleccionado de colegiado.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.LlenarDatosGrivColegiado(DataGridView,ComboBox)">
+      <summary>
+   Llenar el DataGridView con los datos de los árbitros.
+   </summary>
+      <remarks>
+   Se llena el DataGridView de acuerdo a un contexto de árbitros determinado.
+   </remarks>
+      <param name="dgvListarColegiados">DataGridView que se va a llenar con los datos de los árbitros.</param>
+      <param name="cmbIdArbitro">Combobox o grupo de colegiado seleccionado.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.ObtenerNombreDeColegiadosIndex(System.Int32)">
+      <summary>
+   Obtener nombres indexados de colegiados.
+   </summary>
+      <param name="indexColegiados">Numero index de colegiado.</param>
+      <returns>Devuelve el id del colegiado consultado como entero.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.ObtenerNombreDeColegiados(System.Int32)">
+      <summary>
+   Obtener nombres de colegiado consultado.
+   </summary>
+      <param name="idColegiado">ID del colegiado que se va a buscar.</param>
+      <returns>Delvuelve el nombre del colegiado consultado como string.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.ObtenerCantidadColegiado">
+      <summary>
+   Obtener Cantidad de Colegiados.
+   </summary>
+      <returns>Devuelve la cantidad de colegiados registrados.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.ValidarCedula(TextBox)">
+      <summary>
+   Consulta para validar si el arbitro ya está registrado.
+   </summary>
+      <param name="txtcedula">Cedula que se va a validar.</param>
+      <returns>Devuelve true si la cedula está repetida o false si es una nueva.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.LlenarColegiadosCmb(ComboBox,System.Int32)">
+      <summary>
+   Llenar ComboBox con los nombres de arbitros registrados como colegiado.
+   </summary>
+      <param name="cmbGrupoColegiado">
+      </param>
+      <param name="idColegiados">
+      </param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.RecogerDatosEditar(DataGridView)">
+      <summary>
+   Método para recoger los datos del colegiado seleccionado.
+   </summary>
+      <param name="dgvListarColegiados">Datos obtenidos del DataGridView de colegiados.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.LlenarDatosFormEditar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Llenar FrmEditar con datos.
+   </summary>
+      <param name="txtCedula">Cedula.</param>
+      <param name="txtNombre">Nombre.</param>
+      <param name="txtApellido">Apellido.</param>
+      <param name="txtDomicilio">Domicilio.</param>
+      <param name="txtEmail">Email.</param>
+      <param name="txtTelefono">Telefono.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.EditarArbitro(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método para editar el árbitro seleccionado.
+   </summary>
+      <param name="lblID">ID del colegiado al que pertenece el árbitro.</param>
+      <param name="cedula">Cedula.</param>
+      <param name="nombre">Nombre.</param>
+      <param name="apellido">Apellido.</param>
+      <param name="domicilio">Domicilio.</param>
+      <param name="email">Email.</param>
+      <param name="telefono">Teléfono.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.RecogerDatosEliminar(DataGridView)">
+      <summary>
+   Recoger datos para eliminar el árbitro seleccionado.
+   </summary>
+      <param name="dgvListarColegiados">Datos del DataGridView.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.EliminarArbitro(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método eliminar árbitro
+   </summary>
+      <param name="lblID">ID del colegiado al que pertenece el árbitro.</param>
+      <param name="cedula">Cedula.</param>
+      <param name="nombre">Nombre.</param>
+      <param name="apellido">Apellido.</param>
+      <param name="domicilio">Domicilio.</param>
+      <param name="email">Email.</param>
+      <param name="telefono">Teléfono.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmColegiado.EliminarColegiado(System.String)">
+      <summary>
+   Método para eliminar colegiado completo.
+   </summary>
+      <param name="colegiadoSeleccionado">Obtener el colegiado seleccionado.</param>
+      <returns>Devuelve true si fue eliminado o false si ocurrió algún error.</returns>
+    </member>
+    <member name="T:Control.AdmColegiados.AdmCuartoArbitro">
+      <summary>
+   Clase para la gestión de Cuarto Árbitro.
+   </summary>
+      <remarks>
+   Crea las listas, instancias y validaciones para obtener los datos de Cuarto Árbitro.
+   </remarks>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmCuartoArbitro.GetAdmCA">
+      <summary>
+   Paso para el uso de Singleton.
+   </summary>
+      <remarks>
+   Creando atributo estático de la clase Cuarto Árbitro.
+   </remarks>
+      <returns>Devuelve una instancia de AdmCuartoArbitro.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmCuartoArbitro.Guardar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método guardar de la interface IAdm.
+   </summary>
+      <param name="txtcedula">Cedula recogida.</param>
+      <param name="txtnombre">Nombre recogido.</param>
+      <param name="txtapellido">Apellido recogido.</param>
+      <param name="txtdomicilio">Domicilio recogido.</param>
+      <param name="txtemail">Email recogido.</param>
+      <param name="txttelefono">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmCuartoArbitro.ObtenerDatos(System.Int32,DataGridView)">
+      <summary>
+   Método obtenerDatos de la interface IAdm.
+   </summary>
+      <remarks>
+   Llena <paramref name="dgvListarColegiados" /> con los datos del <paramref name="id" /> buscado.
+   </remarks>
+      <param name="id">ID de un Cuarto Árbitro.</param>
+      <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmCuartoArbitro.RecogerDatosEditar(DataGridViewRow)">
+      <summary>
+   Método recogerDatosEditar de la interface IAdm.
+   </summary>
+      <remarks>
+   Recoge los datos que son seleccionados para editar por el usuario.
+   </remarks>
+      <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmCuartoArbitro.LlenarDatosFormEditar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método llenarDatosFormEditar de la interface IAdm.
+   </summary>
+      <remarks>
+   Llena los TexBox de Editar con los datos del Cuarto Árbitro seleccionado.
+   </remarks>
+      <param name="txtCedula">Cedula.</param>
+      <param name="txtNombre">Nombre.</param>
+      <param name="txtApellido">Apellido.</param>
+      <param name="txtDomicilio">Domicilio.</param>
+      <param name="txtEmail">Email.</param>
+      <param name="txtTelefono">Telefono.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmCuartoArbitro.EditarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método editarArbitro de la interface IAdm.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmCuartoArbitro.EliminarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método eliminarArbitro de la interface IAdm
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="T:Control.AdmColegiados.AdmJuezCentral">
+      <summary>
+   Clase para la gestión de Juez Central.
+   </summary>
+      <remarks>
+   Crea las listas, instancias y validaciones para obtener los datos de Juez Central.
+   </remarks>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmJuezCentral.GetAdmJ">
+      <summary>
+   Paso para el uso de Singleton.
+   </summary>
+      <remarks>
+   Creando atributo estático de la clase Juez Central.
+   </remarks>
+      <returns>Devuelve una instancia de AdmJuezCentral.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmJuezCentral.Guardar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método Guardar de la interface IAdm.
+   </summary>
+      <param name="txtcedulaJC">Cedula recogida.</param>
+      <param name="txtnombreJC">Nombre recogido.</param>
+      <param name="txtapellidoJC">Apellido recogido.</param>
+      <param name="txtdomicilioJC">Domicilio recogido.</param>
+      <param name="txtemailJC">Email recogido.</param>
+      <param name="txttelefonoJC">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmJuezCentral.ObtenerDatos(System.Int32,DataGridView)">
+      <summary>
+   Método ObtenerDatos de la interface IAdm.
+   </summary>
+      <remarks>
+   Llena <paramref name="dgvListarColegiados" /> con los datos del <paramref name="id" /> buscado.
+   </remarks>
+      <param name="id">ID de un Juez Central.</param>
+      <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmJuezCentral.RecogerDatosEditar(DataGridViewRow)">
+      <summary>
+   Método RecogerDatosEditar de la interface IAdm.
+   </summary>
+      <remarks>
+   Recoge los datos que son seleccionados para editar por el usuario.
+   </remarks>
+      <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmJuezCentral.LlenarDatosFormEditar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método LlenarDatosFormEditar de la interface IAdm.
+   </summary>
+      <remarks>
+   Llena los TexBox de Editar con los datos del Juez Central seleccionado.
+   </remarks>
+      <param name="txtCedula">Cedula.</param>
+      <param name="txtNombre">Nombre.</param>
+      <param name="txtApellido">Apellido.</param>
+      <param name="txtDomicilio">Domicilio.</param>
+      <param name="txtEmail">Email.</param>
+      <param name="txtTelefono">Telefono.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmJuezCentral.EditarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método EditarArbitro de la interface IAdm.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.AdmJuezCentral.EliminarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método EliminarArbitro de la interface IAdm.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="T:Control.AdmColegiados.Contexto">
+      <summary>
+   Clase contexto para aplicar patrón de diseño Strategy.
+   </summary>
+    </member>
+    <member name="M:Control.AdmColegiados.Contexto.#ctor(IAdm)">
+      <summary>
+   Constructor de la clase contexto.
+   </summary>
+      <param name="adm">Instacia de la clase adm.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.Contexto.ObtenerDatos(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Obtener los datos de los arbitros a Guardar
+   </summary>
+      <param name="txtcedula">Cedula recogida.</param>
+      <param name="txtnombre">Nombre recogido.</param>
+      <param name="txtapellido">Apellido recogido.</param>
+      <param name="txtdomicilio">Domicilio recogido.</param>
+      <param name="txtemail">Email recogido.</param>
+      <param name="txttelefono">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.Contexto.Datos(System.Int32,DataGridView)">
+      <summary>
+   Método para obtener datos del colegiado seleccionado.
+   </summary>
+      <param name="id">ID de un árbitro.</param>
+      <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.Contexto.RecogerDatosEditar(DataGridViewRow)">
+      <summary>
+   Método recoger datos para editar.
+   </summary>
+      <remarks>
+   Recoge los datos que son seleccionados para editar por el usuario.
+   </remarks>
+      <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.Contexto.LlenarDatosFormEditar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método para llenar datos del FormEditar.
+   </summary>
+      <remarks>
+   Llena los TexBox de Editar con los datos del árbitro seleccionado.
+   </remarks>
+      <param name="txtCedula">Cedula.</param>
+      <param name="txtNombre">Nombre.</param>
+      <param name="txtApellido">Apellido.</param>
+      <param name="txtDomicilio">Domicilio.</param>
+      <param name="txtEmail">Email.</param>
+      <param name="txtTelefono">Telefono.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.Contexto.EditarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método para editar árbitro.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.Contexto.EliminarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método EliminarArbitro de la interface IAdm.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="T:Control.AdmColegiados.IAdm">
+      <summary>
+   Interface para gestionar los Adm de todos los árbitros.
+   </summary>
+    </member>
+    <member name="M:Control.AdmColegiados.IAdm.Guardar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Obtener los datos de los arbitros a Guardar
+   </summary>
+      <param name="txtcedula">Cedula recogida.</param>
+      <param name="txtnombre">Nombre recogido.</param>
+      <param name="txtapellido">Apellido recogido.</param>
+      <param name="txtdomicilio">Domicilio recogido.</param>
+      <param name="txtemail">Email recogido.</param>
+      <param name="txttelefono">Telefono recogido.</param>
+      <returns>Devolverá el último id registrado como entero.</returns>
+    </member>
+    <member name="M:Control.AdmColegiados.IAdm.ObtenerDatos(System.Int32,DataGridView)">
+      <summary>
+   Método para obtener datos del colegiado seleccionado.
+   </summary>
+      <param name="id">ID de un árbitro.</param>
+      <param name="dgvListarColegiados">DataGridView que va a ser llenado con datos.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.IAdm.RecogerDatosEditar(DataGridViewRow)">
+      <summary>
+   Método recoger datos para editar.
+   </summary>
+      <remarks>
+   Recoge los datos que son seleccionados para editar por el usuario.
+   </remarks>
+      <param name="filaSeleccionada">DataGridViewRow que contiene los datos seleccionado por el usuario.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.IAdm.LlenarDatosFormEditar(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Método para llenar datos del FormEditar.
+   </summary>
+      <remarks>
+   Llena los TexBox de Editar con los datos del árbitro seleccionado.
+   </remarks>
+      <param name="txtCedula">Cedula.</param>
+      <param name="txtNombre">Nombre.</param>
+      <param name="txtApellido">Apellido.</param>
+      <param name="txtDomicilio">Domicilio.</param>
+      <param name="txtEmail">Email.</param>
+      <param name="txtTelefono">Telefono.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.IAdm.EditarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método para editar árbitro.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+    </member>
+    <member name="M:Control.AdmColegiados.IAdm.EliminarArbitro(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Método EliminarArbitro de la interface IAdm.
+   </summary>
+      <param name="idArbitro">ID recogido.</param>
+      <param name="cedula">Cedula recogida.</param>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="apellido">Apellido recogido.</param>
+      <param name="domicilio">Domicilio recogido.</param>
+      <param name="email">Email recogido.</param>
+      <param name="telefono">Telefono recogido.</param>
+      <returns>Devuelve el último id registrado como entero.</returns>
+    </member>
+    <member name="M:Control.AdmEncuentros.AdmEncuentroFinalizado.FinalizarCompetencia(System.String)">
+      <summary>
+   Usado para finalizar una competencia
+   </summary>
+      <returns> Un booleano que indica si la acción se completo con exito o no</returns>
+    </member>
+    <member name="M:Control.AdmEncuentros.AdmEncuentroFinalizado.ReinicarCompetencia">
+      <summary>
+   Usado para finalizar la competencia
+   </summary>
+      <returns>Un booleano que indica si la acción se completo con exito o no</returns>
+    </member>
+    <member name="M:Control.AdmEncuentros.AdmEncuentroFinalizado.DarBajaCompetencia">
+      <summary>
+   Metodo usado para dar baja a la competencia
+   </summary>
+      <remarks>Se necesita existir encuentros finalizados para poder realizarse</remarks>
+      <returns>Un booleano que indica si la acción se completo con exito o no</returns>
+    </member>
+    <member name="M:Control.AdmEncuentros.AdmEncuentroFinalizado.LlenarDgv(DataGridView)">
+      <summary>
+   Se encarga de llenar la tabla de posiciones de los resultados de encuentros finalizados
+   </summary>
+      <param name="dgvCompeticion">DataGridView encargado de mostrar una simulada tabla de posiciones</param>
+      <returns>un booleano en respuesta de si se logró llenar con exito la tabla</returns>
+    </member>
+    <member name="M:Control.AdmEncuentros.AdmEncuentroFinalizado.LlenarInformacionPartido(System.Int32,TextBox,TextBox,Label,Label)">
+      <summary>
+   llena la información de encuentro finalizado seleccionado de un combobox
+   </summary>
+      <param name="index">La posicion en el combobox del cual se escogio el encuentro</param>
+      <param name="txtGolesLocal">Conttrolador de UI encargado de pintar los Goles locales de un encuentro</param>
+      <param name="txtGolesVisitante">Conttrolador de UI encargado de pintar los Golesde visitante de un encuentro</param>
+      <param name="lblPuntosLocalResultado">Cantidad de puntos para el equipo local, acorde al resultado de goles</param>
+      <param name="lblPuntosVisitanteResultado">Cantidad de puntos para el equipo visitante, acorde al resultado de goles</param>
+    </member>
+    <member name="M:Control.AdmEncuentros.AdmEncuentroFinalizado.UpdateEncuentroFinalizado(System.Int32,System.String,System.String)">
+      <summary>
+   Metdodo utilizado para actualizar un encuentro Finalizado
+   </summary>
+      <param name="index">la posicion del encuentro finalizado respecto a una lista</param>
+      <param name="golesLocal">cantidad de goles de local que se han actualizado</param>
+      <param name="golesVisitante">cantidad de goles de visitante que se registran</param>
+      <returns>regresa un booleano que hace referencia a si la acción se logró con exito o no</returns>
+    </member>
+    <member name="M:Control.AdmEncuentros.AdmEncuentroFinalizado.GuardarEncuentroFinalizado(System.Int32,System.String,System.String)">
+      <summary>
+   Metodo encargado de guardar un encuentro finalizado
+   </summary>
+      <param name="index">la posicion del encuentro finalizado respecto a una lista</param>
+      <param name="golesLocal">cantidad de goles de local que se han actualizado</param>
+      <param name="golesVisitante">cantidad de goles de visitante que se registran</param>
+      <returns>regresa un booleano que hace referencia a si la acción se logró con exito o no</returns>
+    </member>
+    <member name="M:Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarInformacíonPartidoCompleta(System.Int32,Label,Label,Label,Label,Label)">
+      <summary>
+   Llena la informacion de un encuentro definido, para visualizar
+   </summary>
+      <param name="indexEncuentroSeleccionado">Ubicacion del encuentro definido acorde a una lista</param>
+      <param name="lblEquipoLocal">Controlador ui encargado de pintar el nombre del equipo local</param>
+      <param name="lblEquipoVisitante">Controlador ui encargado de pintar el nombre del equipo visitante</param>
+      <param name="lblEstadio"> Controlador ui encargado de pintar el nombre del estadio</param>
+      <param name="lblFecha">Controlador ui encargado de pintar la fecha asignada</param>
+      <param name="lblColegiado">Controlador ui encargado de pintar el colegiado encargado del partido</param>
+    </member>
+    <member name="M:Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarInformacíonPartidoCompleta(System.Int32,Label,Label,ComboBox,DateTimePicker,DateTimePicker,ComboBox,TextBox)">
+      <summary>
+   Llena informacion de un encuentro definido para poder actualizarlo
+   </summary>
+      <param name="indexEncuentroSeleccionado">Ubicacion del encuentro definido acorde a una lista</param>
+      <param name="lblEquipoLocal">Controlador ui encargado de pintar el nombre del equipo local</param>
+      <param name="lblEquipoVisitante">Controlador ui encargado de pintar el nombre del equipo visitante</param>
+      <param name="cmbEstadios">Controlador ui encargado de llenar los estadios disponibles y seleccionar el correspodiente al encuentro</param>
+      <param name="dtpFechaEncuentro">Controlador ui encargado de llenar la fecha del encuentro</param>
+      <param name="dtpHora">Controlador ui encargado de llenar la hora del encuentro</param>
+      <param name="cmbGrupoColegiado">Controlador ui encargado de llenar los colegiados y seleccionar el correspodiente al encuentro</param>
+      <param name="txtColegiado">Se llena la informacion del grupo de colegiados</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Control.AdmEquipos.AdmEquipo.CantidadEquiposRegistrados">
+      <summary>
+   Método que consulta la cantidad de equipos que están presentes en la lista donde se agregan los equipos para llevar un control de registro en ella
+   </summary>
+      <returns>Devuelve la cantidad de equipos</returns>
+    </member>
+    <member name="M:Control.AdmEquipos.AdmEquipo.LlenaTabla(DataGridView,System.String)">
+      <summary>
+   Método encargado de llenar un el datagridview que es usado para editar o eliminar un equipo previamente ya registrado
+   </summary>
+      <param name="tablaDatos">
+      </param>
+      <param name="nombre">
+      </param>
+    </member>
+    <member name="M:Control.AdmEquipos.AdmEquipo.GuardarDatos(System.String,System.Int32,System.String,System.String)">
+      <summary>
+   Método que hace uso del constructor de la clase equipo, agrega a la lista y hace el llamado al método que conecta a la base de datos para facilitar el registros de nuevos equipos
+   </summary>
+      <param name="nombre">
+      </param>
+      <param name="numJugadores">
+      </param>
+      <param name="directorNombre">
+      </param>
+      <param name="presidenteNombre">
+      </param>
+    </member>
+    <member name="M:Control.AdmEquipos.AdmEquipo.LlenarEquipos(List{Label})">
+      <summary>
+   Método encargado de llenar los labels con informacion para ser presentada al usuario donde sea invocado
+   </summary>
+      <param name="listaContenedores">
+      </param>
+    </member>
+    <member name="M:Control.AdmEquipos.AdmEquipo.ObtenerCantidadEquipo">
+      <summary>
+   método encargado de funcionar como puente entre los métodos de control con el método de data para obtener la cantidad de equipos registrados en la base de datos
+   </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Control.AdmEquipos.AdmEquipo.ObtenerEquipoPorId(System.Int32)">
+      <summary>
+   Método encargado de funcionar como puente entre los métodos de control con el método de data para solicitar el id en la base de datos
+   </summary>
+      <param name="id">
+      </param>
+      <returns>Retorna el equipo mediante su ID</returns>
+    </member>
+    <member name="M:Control.AdmEquipos.AdmEquipo.ExtraerEquipos">
+      <summary>
+   Solicita los campos de la base de datos a otro metodo que hace la funcionalidad de extraerlos de  la BD
+   </summary>
+      <returns>Retorna algun equipo</returns>
+    </member>
+    <member name="T:Control.ValidacionGUI">
+      <summary>
+   Clase para validar datos.
+   </summary>
+    </member>
+    <member name="M:Control.ValidacionGUI.AInt(System.String)">
+      <summary>
+   Convierte un string en entero.
+   </summary>
+      <param name="valor">Cadena para convertir.</param>
+      <returns>Devuelve el numero como entero.</returns>
+    </member>
+    <member name="M:Control.ValidacionGUI.EsDouble(System.String)">
+      <summary>
+   Convierte un string en double.
+   </summary>
+      <param name="valor">Cadena para convertir.</param>
+      <returns>Devuelve el numero como double.</returns>
+    </member>
+    <member name="M:Control.ValidacionGUI.EsFloat(System.String)">
+      <summary>
+   Convierte un string en float.
+   </summary>
+      <param name="valor">Cadena para convertir.</param>
+      <returns>Devuelve el numero como float.</returns>
+    </member>
+    <member name="M:Control.ValidacionGUI.ValidarVacios(TextBox,TextBox,TextBox,TextBox,TextBox,TextBox)">
+      <summary>
+   Valida TexBox vacios de árbitros.
+   </summary>
+      <param name="txtcedula">Cedula recogida.</param>
+      <param name="txtnombre">Nombre recogido.</param>
+      <param name="txtapellido">Apellido recogido.</param>
+      <param name="txtdomicilio">Domicilio recogido.</param>
+      <param name="txtemail">Email recogido.</param>
+      <param name="txttelefono">Telefono recogido.</param>
+      <returns>Devuelve true si hay espacios vacios o false si no los hay.</returns>
+    </member>
+    <member name="M:Control.ValidacionGUI.ValidarNum(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>
+   Valida que los id de los árbitros no sean 0.
+   </summary>
+      <param name="idJuezCentral">ID Juez Central.</param>
+      <param name="idAsistente1">ID Asistente 1.</param>
+      <param name="idAsistente2">ID Asistente 2.</param>
+      <param name="idCuartoArbitro">ID Cuarto Árbitro.</param>
+      <returns>Devuelve true si cualquiera de los campos son 0 o false si son diferentes de 0.</returns>
+    </member>
+    <member name="M:Control.ValidacionGUI.ValidarVacios(System.String,System.String,System.String,System.String)">
+      <summary>
+   Valida los campos vacios de Equipo.
+   </summary>
+      <param name="nombre">Nombre recogido.</param>
+      <param name="numjugadores">Numero de jugadores recogido.</param>
+      <param name="director">Director recogido.</param>
+      <param name="presidente">Presidente recogido.</param>
+      <returns>Devuelve true si existe algún campo vacio o false si no los hay.</returns>
+    </member>
+    <member name="M:Control.ValidacionGUI.ValidarFecha(DateTime)">
+      <summary>
+   Validar fecha elegida.
+   </summary>
+      <param name="fechaElegida">Fecha recogida.</param>
+      <returns>Devuelve false si la <c>fechaElegida</c> es menor a la fecha actual o true si es mayor.</returns>
+    </member>
+  </members>
+</doc>

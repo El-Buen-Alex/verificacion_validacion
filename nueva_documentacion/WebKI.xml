@@ -1,0 +1,1195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="AbrirFormNuevoEquipo method" Url="html/M-GestionDeColegiados.MenuPrincipal.AbrirFormNuevoEquipo.htm" />
+  <HelpKINode Title="ActualizarColegiadoBD method" Url="html/M-Data.DatosColegiados.ActualizarColegiadoBD.htm" />
+  <HelpKINode Title="ActualizarDatos method" Url="html/M-Control.AdmEquipos.AdmEquipo.ActualizarDatos.htm" />
+  <HelpKINode Title="ActualizarEncuentroDefinido method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ActualizarEncuentroDefinido.htm" />
+  <HelpKINode Title="ActualizarEstadio method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ActualizarEstadio.htm" />
+  <HelpKINode Title="ActualizarEstadioDePartido method" Url="html/M-Data.DatosEncuentroDefinido.ActualizarEstadioDePartido.htm" />
+  <HelpKINode Title="ActualizarFechaHoraDEPartido method" Url="html/M-Data.DatosEncuentroDefinido.ActualizarFechaHoraDEPartido.htm" />
+  <HelpKINode Title="AddEncuentroFinalizado method" Url="html/M-Data.DatosEncuentroFinalizado.AddEncuentroFinalizado.htm" />
+  <HelpKINode Title="AdmAsistente1 class" Url="html/AllMembers.T-Control.AdmColegiados.AdmAsistente1.htm" />
+  <HelpKINode Title="AdmAsistente1 class" Url="html/T-Control.AdmColegiados.AdmAsistente1.htm" />
+  <HelpKINode Title="AdmAsistente1 class">
+    <HelpKINode Title="about AdmAsistente1 class" Url="html/T-Control.AdmColegiados.AdmAsistente1.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmColegiados.AdmAsistente1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmColegiados.AdmAsistente1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.AdmColegiados.AdmAsistente1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmAsistente1.EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmAsistente1.EditarArbitro.htm" />
+  <HelpKINode Title="AdmAsistente1.EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmAsistente1.EliminarArbitro.htm" />
+  <HelpKINode Title="AdmAsistente1.GetAdmA1 method" Url="html/M-Control.AdmColegiados.AdmAsistente1.GetAdmA1.htm" />
+  <HelpKINode Title="AdmAsistente1.Guardar method" Url="html/M-Control.AdmColegiados.AdmAsistente1.Guardar.htm" />
+  <HelpKINode Title="AdmAsistente1.ListaAsistente1 property" Url="html/P-Control.AdmColegiados.AdmAsistente1.ListaAsistente1.htm" />
+  <HelpKINode Title="AdmAsistente1.LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmAsistente1.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="AdmAsistente1.ObtenerDatos method" Url="html/M-Control.AdmColegiados.AdmAsistente1.ObtenerDatos.htm" />
+  <HelpKINode Title="AdmAsistente1.RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmAsistente1.RecogerDatosEditar.htm" />
+  <HelpKINode Title="AdmAsistente2 class" Url="html/AllMembers.T-Control.AdmColegiados.AdmAsistente2.htm" />
+  <HelpKINode Title="AdmAsistente2 class" Url="html/T-Control.AdmColegiados.AdmAsistente2.htm" />
+  <HelpKINode Title="AdmAsistente2 class">
+    <HelpKINode Title="about AdmAsistente2 class" Url="html/T-Control.AdmColegiados.AdmAsistente2.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmColegiados.AdmAsistente2.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmColegiados.AdmAsistente2.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.AdmColegiados.AdmAsistente2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmAsistente2.EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmAsistente2.EditarArbitro.htm" />
+  <HelpKINode Title="AdmAsistente2.EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmAsistente2.EliminarArbitro.htm" />
+  <HelpKINode Title="AdmAsistente2.GetAdmA2 method" Url="html/M-Control.AdmColegiados.AdmAsistente2.GetAdmA2.htm" />
+  <HelpKINode Title="AdmAsistente2.Guardar method" Url="html/M-Control.AdmColegiados.AdmAsistente2.Guardar.htm" />
+  <HelpKINode Title="AdmAsistente2.ListaAsistente2 property" Url="html/P-Control.AdmColegiados.AdmAsistente2.ListaAsistente2.htm" />
+  <HelpKINode Title="AdmAsistente2.LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmAsistente2.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="AdmAsistente2.ObtenerDatos method" Url="html/M-Control.AdmColegiados.AdmAsistente2.ObtenerDatos.htm" />
+  <HelpKINode Title="AdmAsistente2.RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmAsistente2.RecogerDatosEditar.htm" />
+  <HelpKINode Title="AdmColegiado class" Url="html/AllMembers.T-Control.AdmColegiados.AdmColegiado.htm" />
+  <HelpKINode Title="AdmColegiado class" Url="html/T-Control.AdmColegiados.AdmColegiado.htm" />
+  <HelpKINode Title="AdmColegiado class">
+    <HelpKINode Title="about AdmColegiado class" Url="html/T-Control.AdmColegiados.AdmColegiado.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmColegiados.AdmColegiado.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmColegiados.AdmColegiado.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.AdmColegiados.AdmColegiado.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmColegiado.EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmColegiado.EditarArbitro.htm" />
+  <HelpKINode Title="AdmColegiado.EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmColegiado.EliminarArbitro.htm" />
+  <HelpKINode Title="AdmColegiado.EliminarColegiado method" Url="html/M-Control.AdmColegiados.AdmColegiado.EliminarColegiado.htm" />
+  <HelpKINode Title="AdmColegiado.GetAdmCol method" Url="html/M-Control.AdmColegiados.AdmColegiado.GetAdmCol.htm" />
+  <HelpKINode Title="AdmColegiado.Guardar method" Url="html/M-Control.AdmColegiados.AdmColegiado.Guardar.htm" />
+  <HelpKINode Title="AdmColegiado.ListaColegiado property" Url="html/P-Control.AdmColegiados.AdmColegiado.ListaColegiado.htm" />
+  <HelpKINode Title="AdmColegiado.ListaintegColeg property" Url="html/P-Control.AdmColegiados.AdmColegiado.ListaintegColeg.htm" />
+  <HelpKINode Title="AdmColegiado.LlenarColegiadosCmb method" Url="html/Overload-Control.AdmColegiados.AdmColegiado.LlenarColegiadosCmb.htm" />
+  <HelpKINode Title="AdmColegiado.LlenarComboIdColegiado method" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarComboIdColegiado.htm" />
+  <HelpKINode Title="AdmColegiado.LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="AdmColegiado.LlenarDatosGrivColegiado method" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarDatosGrivColegiado.htm" />
+  <HelpKINode Title="AdmColegiado.LlenarListaColegiados method" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarListaColegiados.htm" />
+  <HelpKINode Title="AdmColegiado.ObtenerCantidadColegiado method" Url="html/M-Control.AdmColegiados.AdmColegiado.ObtenerCantidadColegiado.htm" />
+  <HelpKINode Title="AdmColegiado.ObtenerNombreDeColegiados method" Url="html/M-Control.AdmColegiados.AdmColegiado.ObtenerNombreDeColegiados.htm" />
+  <HelpKINode Title="AdmColegiado.ObtenerNombreDeColegiadosIndex method" Url="html/M-Control.AdmColegiados.AdmColegiado.ObtenerNombreDeColegiadosIndex.htm" />
+  <HelpKINode Title="AdmColegiado.RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmColegiado.RecogerDatosEditar.htm" />
+  <HelpKINode Title="AdmColegiado.RecogerDatosEliminar method" Url="html/M-Control.AdmColegiados.AdmColegiado.RecogerDatosEliminar.htm" />
+  <HelpKINode Title="AdmColegiado.ValidarCedula method" Url="html/M-Control.AdmColegiados.AdmColegiado.ValidarCedula.htm" />
+  <HelpKINode Title="AdmCuartoArbitro class" Url="html/AllMembers.T-Control.AdmColegiados.AdmCuartoArbitro.htm" />
+  <HelpKINode Title="AdmCuartoArbitro class" Url="html/T-Control.AdmColegiados.AdmCuartoArbitro.htm" />
+  <HelpKINode Title="AdmCuartoArbitro class">
+    <HelpKINode Title="about AdmCuartoArbitro class" Url="html/T-Control.AdmColegiados.AdmCuartoArbitro.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmColegiados.AdmCuartoArbitro.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmColegiados.AdmCuartoArbitro.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.AdmColegiados.AdmCuartoArbitro.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmCuartoArbitro.EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.EditarArbitro.htm" />
+  <HelpKINode Title="AdmCuartoArbitro.EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.EliminarArbitro.htm" />
+  <HelpKINode Title="AdmCuartoArbitro.GetAdmCA method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.GetAdmCA.htm" />
+  <HelpKINode Title="AdmCuartoArbitro.Guardar method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.Guardar.htm" />
+  <HelpKINode Title="AdmCuartoArbitro.ListaCuartoArbitro property" Url="html/P-Control.AdmColegiados.AdmCuartoArbitro.ListaCuartoArbitro.htm" />
+  <HelpKINode Title="AdmCuartoArbitro.LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="AdmCuartoArbitro.ObtenerDatos method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.ObtenerDatos.htm" />
+  <HelpKINode Title="AdmCuartoArbitro.RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.RecogerDatosEditar.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado class" Url="html/AllMembers.T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado class" Url="html/T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado class">
+    <HelpKINode Title="about AdmEncuentroFinalizado class" Url="html/T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmEncuentroFinalizado.CalcularPuntos method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.CalcularPuntos.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado.DarBajaCompetencia method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.DarBajaCompetencia.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado.FinalizarCompetencia method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.FinalizarCompetencia.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado.GetCantidadEncuentrosFinalizados method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.GetCantidadEncuentrosFinalizados.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado.GuardarEncuentroFinalizado method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.GuardarEncuentroFinalizado.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado.LlenarDgv method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.LlenarDgv.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado.LlenarInformacionPartido method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.LlenarInformacionPartido.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado.ReinicarCompetencia method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.ReinicarCompetencia.htm" />
+  <HelpKINode Title="AdmEncuentroFinalizado.UpdateEncuentroFinalizado method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.UpdateEncuentroFinalizado.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos class" Url="html/AllMembers.T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos class" Url="html/T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos class">
+    <HelpKINode Title="about AdmEncuentrosDefinidos class" Url="html/T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmEncuentrosDefinidos.ActualizarEncuentroDefinido method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ActualizarEncuentroDefinido.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.ActualizarEstadio method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ActualizarEstadio.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.DarBajaEncuentrosDefinidos method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.DarBajaEncuentrosDefinidos.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.GetEncuentroDefinidoByIndex method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.GetEncuentroDefinidoByIndex.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.GuardarEncuentroDefinido method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.GuardarEncuentroDefinido.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.ListaEncuentrosDefinidos property" Url="html/P-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ListaEncuentrosDefinidos.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.LlenarCmbEncuentrosDefinidosFinalizados method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarCmbEncuentrosDefinidosFinalizados.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.LlenarInformac&#237;onPartidoCompleta method" Url="html/Overload-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarInformacíonPartidoCompleta.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.LlenarMatch method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarMatch.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.LlenarMatchDefinidosFinalizados method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarMatchDefinidosFinalizados.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.LlenarPartidosCmb method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarPartidosCmb.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.ObtenerCantidadEncuentrosDefinidos method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ObtenerCantidadEncuentrosDefinidos.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.ObtenerNombreEstadioDelPartido method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ObtenerNombreEstadioDelPartido.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar.htm" />
+  <HelpKINode Title="AdmEncuentrosDefinidos.ReinicarCompetencia method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ReinicarCompetencia.htm" />
+  <HelpKINode Title="AdmEquipo class" Url="html/AllMembers.T-Control.AdmEquipos.AdmEquipo.htm" />
+  <HelpKINode Title="AdmEquipo class" Url="html/T-Control.AdmEquipos.AdmEquipo.htm" />
+  <HelpKINode Title="AdmEquipo class">
+    <HelpKINode Title="about AdmEquipo class" Url="html/T-Control.AdmEquipos.AdmEquipo.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmEquipos.AdmEquipo.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmEquipos.AdmEquipo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmEquipo.ActualizarDatos method" Url="html/M-Control.AdmEquipos.AdmEquipo.ActualizarDatos.htm" />
+  <HelpKINode Title="AdmEquipo.CantidadEquiposRegistrados method" Url="html/M-Control.AdmEquipos.AdmEquipo.CantidadEquiposRegistrados.htm" />
+  <HelpKINode Title="AdmEquipo.EliminarRegistro method" Url="html/M-Control.AdmEquipos.AdmEquipo.EliminarRegistro.htm" />
+  <HelpKINode Title="AdmEquipo.ExtraerEquipos method" Url="html/M-Control.AdmEquipos.AdmEquipo.ExtraerEquipos.htm" />
+  <HelpKINode Title="AdmEquipo.GetEquipo method" Url="html/M-Control.AdmEquipos.AdmEquipo.GetEquipo.htm" />
+  <HelpKINode Title="AdmEquipo.GuardarDatos method" Url="html/M-Control.AdmEquipos.AdmEquipo.GuardarDatos.htm" />
+  <HelpKINode Title="AdmEquipo.LlenarCampos method" Url="html/M-Control.AdmEquipos.AdmEquipo.LlenarCampos.htm" />
+  <HelpKINode Title="AdmEquipo.LlenarEquipos method" Url="html/M-Control.AdmEquipos.AdmEquipo.LlenarEquipos.htm" />
+  <HelpKINode Title="AdmEquipo.LlenarEquiposCmb method" Url="html/M-Control.AdmEquipos.AdmEquipo.LlenarEquiposCmb.htm" />
+  <HelpKINode Title="AdmEquipo.LlenaTabla method" Url="html/M-Control.AdmEquipos.AdmEquipo.LlenaTabla.htm" />
+  <HelpKINode Title="AdmEquipo.ObserverCmbEquipos method" Url="html/M-Control.AdmEquipos.AdmEquipo.ObserverCmbEquipos.htm" />
+  <HelpKINode Title="AdmEquipo.ObtenerCantidadEquipo method" Url="html/M-Control.AdmEquipos.AdmEquipo.ObtenerCantidadEquipo.htm" />
+  <HelpKINode Title="AdmEquipo.ObtenerEquipoPorId method" Url="html/M-Control.AdmEquipos.AdmEquipo.ObtenerEquipoPorId.htm" />
+  <HelpKINode Title="AdmEstadio class" Url="html/AllMembers.T-Control.AdmEstadios.AdmEstadio.htm" />
+  <HelpKINode Title="AdmEstadio class" Url="html/T-Control.AdmEstadios.AdmEstadio.htm" />
+  <HelpKINode Title="AdmEstadio class">
+    <HelpKINode Title="about AdmEstadio class" Url="html/T-Control.AdmEstadios.AdmEstadio.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmEstadios.AdmEstadio.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmEstadios.AdmEstadio.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.AdmEstadios.AdmEstadio.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmEstadio.CambiarEstadoEstadio method" Url="html/M-Control.AdmEstadios.AdmEstadio.CambiarEstadoEstadio.htm" />
+  <HelpKINode Title="AdmEstadio.GetAdmEstadio method" Url="html/M-Control.AdmEstadios.AdmEstadio.GetAdmEstadio.htm" />
+  <HelpKINode Title="AdmEstadio.ListaEstadiosDisponibles property" Url="html/P-Control.AdmEstadios.AdmEstadio.ListaEstadiosDisponibles.htm" />
+  <HelpKINode Title="AdmEstadio.LlenarEstadiosCmb method" Url="html/Overload-Control.AdmEstadios.AdmEstadio.LlenarEstadiosCmb.htm" />
+  <HelpKINode Title="AdmEstadio.ObtenerEstadioPorId method" Url="html/M-Control.AdmEstadios.AdmEstadio.ObtenerEstadioPorId.htm" />
+  <HelpKINode Title="AdmEstadio.PonerEstadiosDisponibles method" Url="html/M-Control.AdmEstadios.AdmEstadio.PonerEstadiosDisponibles.htm" />
+  <HelpKINode Title="AdmEstadio.RefrezcarListaEstadiosDisponibles method" Url="html/M-Control.AdmEstadios.AdmEstadio.RefrezcarListaEstadiosDisponibles.htm" />
+  <HelpKINode Title="AdmEstadio.SeleccionarEstadio method" Url="html/M-Control.AdmEstadios.AdmEstadio.SeleccionarEstadio.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros class" Url="html/AllMembers.T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros class" Url="html/T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros class">
+    <HelpKINode Title="about AdmGenerarEncuentros class" Url="html/T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmGenerarEncuentros.CambiarEstadoEncuentro method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.CambiarEstadoEncuentro.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.DarBajaEncuentros method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.DarBajaEncuentros.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.GenerarEncuentrosAleatorios method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.GenerarEncuentrosAleatorios.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.GetAdmadmGenerarEncuentros method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.GetAdmadmGenerarEncuentros.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.GuardarEncuentrosAleatorios method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.GuardarEncuentrosAleatorios.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.ListaEncuentrosGenerados property" Url="html/P-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ListaEncuentrosGenerados.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.ListaEncuentrosGeneradosPendientes property" Url="html/P-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ListaEncuentrosGeneradosPendientes.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.LlenarListaEncuentrosGeneradosPendientes method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.LlenarListaEncuentrosGeneradosPendientes.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.LlenarTuplas method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.LlenarTuplas.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.ObtenerEncuentroPorID method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ObtenerEncuentroPorID.htm" />
+  <HelpKINode Title="AdmGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes.htm" />
+  <HelpKINode Title="Administrador class" Url="html/AllMembers.T-Model.Administrador.htm" />
+  <HelpKINode Title="Administrador class" Url="html/T-Model.Administrador.htm" />
+  <HelpKINode Title="Administrador class">
+    <HelpKINode Title="about Administrador class" Url="html/T-Model.Administrador.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Administrador.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Administrador.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Administrador.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Administrador.Id property" Url="html/P-Model.Administrador.Id.htm" />
+  <HelpKINode Title="Administrador.Nombre property" Url="html/P-Model.Administrador.Nombre.htm" />
+  <HelpKINode Title="Administrador.Nombre1 property" Url="html/P-Model.Administrador.Nombre1.htm" />
+  <HelpKINode Title="Administrador.Password property" Url="html/P-Model.Administrador.Password.htm" />
+  <HelpKINode Title="Administrador.Password1 property" Url="html/P-Model.Administrador.Password1.htm" />
+  <HelpKINode Title="Administrador.PrimerAcceso property" Url="html/P-Model.Administrador.PrimerAcceso.htm" />
+  <HelpKINode Title="Administrador.Rol property" Url="html/P-Model.Administrador.Rol.htm" />
+  <HelpKINode Title="AdmJuezCentral class" Url="html/AllMembers.T-Control.AdmColegiados.AdmJuezCentral.htm" />
+  <HelpKINode Title="AdmJuezCentral class" Url="html/T-Control.AdmColegiados.AdmJuezCentral.htm" />
+  <HelpKINode Title="AdmJuezCentral class">
+    <HelpKINode Title="about AdmJuezCentral class" Url="html/T-Control.AdmColegiados.AdmJuezCentral.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmColegiados.AdmJuezCentral.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmColegiados.AdmJuezCentral.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.AdmColegiados.AdmJuezCentral.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdmJuezCentral.EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.EditarArbitro.htm" />
+  <HelpKINode Title="AdmJuezCentral.EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.EliminarArbitro.htm" />
+  <HelpKINode Title="AdmJuezCentral.GetAdmJ method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.GetAdmJ.htm" />
+  <HelpKINode Title="AdmJuezCentral.Guardar method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.Guardar.htm" />
+  <HelpKINode Title="AdmJuezCentral.ListaJuezCentral property" Url="html/P-Control.AdmColegiados.AdmJuezCentral.ListaJuezCentral.htm" />
+  <HelpKINode Title="AdmJuezCentral.LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="AdmJuezCentral.ObtenerDatos method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.ObtenerDatos.htm" />
+  <HelpKINode Title="AdmJuezCentral.RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.RecogerDatosEditar.htm" />
+  <HelpKINode Title="AInt method" Url="html/M-Control.ValidacionGUI.AInt.htm" />
+  <HelpKINode Title="Apellidos property" Url="html/P-Model.Arbitro.Apellidos.htm" />
+  <HelpKINode Title="Arbitro class" Url="html/AllMembers.T-Model.Arbitro.htm" />
+  <HelpKINode Title="Arbitro class" Url="html/T-Model.Arbitro.htm" />
+  <HelpKINode Title="Arbitro class">
+    <HelpKINode Title="about Arbitro class" Url="html/T-Model.Arbitro.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Arbitro.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.Arbitro.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Arbitro.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Arbitro.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Arbitro property" Url="html/P-Data.FalloBDException.Arbitro.htm" />
+  <HelpKINode Title="Arbitro.Apellidos property" Url="html/P-Model.Arbitro.Apellidos.htm" />
+  <HelpKINode Title="Arbitro.Arbitro constructor" Url="html/Overload-Model.Arbitro.-ctor.htm" />
+  <HelpKINode Title="Arbitro.Cedula property" Url="html/P-Model.Arbitro.Cedula.htm" />
+  <HelpKINode Title="Arbitro.Domicilio property" Url="html/P-Model.Arbitro.Domicilio.htm" />
+  <HelpKINode Title="Arbitro.Email property" Url="html/P-Model.Arbitro.Email.htm" />
+  <HelpKINode Title="Arbitro.IdArbitro property" Url="html/P-Model.Arbitro.IdArbitro.htm" />
+  <HelpKINode Title="Arbitro.Nombre property" Url="html/P-Model.Arbitro.Nombre.htm" />
+  <HelpKINode Title="Arbitro.Telefono property" Url="html/P-Model.Arbitro.Telefono.htm" />
+  <HelpKINode Title="Arbitro.ToString method" Url="html/M-Model.Arbitro.ToString.htm" />
+  <HelpKINode Title="Asignacion property" Url="html/P-Model.EncuentroGenerado.Asignacion.htm" />
+  <HelpKINode Title="Asignacion property" Url="html/P-Model.Estadio.Asignacion.htm" />
+  <HelpKINode Title="Asistente class" Url="html/AllMembers.T-Model.Colegiados.Asistente.htm" />
+  <HelpKINode Title="Asistente class" Url="html/T-Model.Colegiados.Asistente.htm" />
+  <HelpKINode Title="Asistente class">
+    <HelpKINode Title="about Asistente class" Url="html/T-Model.Colegiados.Asistente.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Colegiados.Asistente.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.Colegiados.Asistente.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Colegiados.Asistente.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Colegiados.Asistente.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Asistente.Asistente constructor" Url="html/Overload-Model.Colegiados.Asistente.-ctor.htm" />
+  <HelpKINode Title="Asistente.Banda property" Url="html/P-Model.Colegiados.Asistente.Banda.htm" />
+  <HelpKINode Title="Asistente.ToString method" Url="html/M-Model.Colegiados.Asistente.ToString.htm" />
+  <HelpKINode Title="Banda property" Url="html/P-Model.Colegiados.Asistente.Banda.htm" />
+  <HelpKINode Title="BtnIniciarSesion class" Url="html/AllMembers.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+  <HelpKINode Title="BtnIniciarSesion class" Url="html/T-GestionDeColegiados.BtnIniciarSesion.htm" />
+  <HelpKINode Title="BtnIniciarSesion class">
+    <HelpKINode Title="about BtnIniciarSesion class" Url="html/T-GestionDeColegiados.BtnIniciarSesion.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.BtnIniciarSesion.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BtnIniciarSesion.BtnIniciarSesion constructor" Url="html/M-GestionDeColegiados.BtnIniciarSesion.-ctor.htm" />
+  <HelpKINode Title="CalcularPuntos method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.CalcularPuntos.htm" />
+  <HelpKINode Title="CambiarEstado method" Url="html/M-Data.DatosEstadios.CambiarEstado.htm" />
+  <HelpKINode Title="CambiarEstadoEncuentro method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.CambiarEstadoEncuentro.htm" />
+  <HelpKINode Title="CambiarEstadoEncuentro method" Url="html/M-Data.DatosEnuenctrosGenerados.CambiarEstadoEncuentro.htm" />
+  <HelpKINode Title="CambiarEstadoEncuentros method" Url="html/M-Data.DatosEnuenctrosGenerados.CambiarEstadoEncuentros.htm" />
+  <HelpKINode Title="CambiarEstadoEnucentroDefinido method" Url="html/M-Data.DatosEncuentroDefinido.CambiarEstadoEnucentroDefinido.htm" />
+  <HelpKINode Title="CambiarEstadoEstadio method" Url="html/M-Control.AdmEstadios.AdmEstadio.CambiarEstadoEstadio.htm" />
+  <HelpKINode Title="CambiarPass class" Url="html/AllMembers.T-GestionDeColegiados.CambiarPass.htm" />
+  <HelpKINode Title="CambiarPass class" Url="html/T-GestionDeColegiados.CambiarPass.htm" />
+  <HelpKINode Title="CambiarPass class">
+    <HelpKINode Title="about CambiarPass class" Url="html/T-GestionDeColegiados.CambiarPass.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.CambiarPass.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.CambiarPass.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.CambiarPass.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.CambiarPass.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.CambiarPass.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CambiarPass method" Url="html/M-Control.GestionLogin.CambiarPass.htm" />
+  <HelpKINode Title="CambiarPass.CambiarPass constructor" Url="html/M-GestionDeColegiados.CambiarPass.-ctor.htm" />
+  <HelpKINode Title="CambiarPassword method" Url="html/M-Model.ConexionUsuarioBD.CambiarPassword.htm" />
+  <HelpKINode Title="CantidadEquiposRegistrados method" Url="html/M-Control.AdmEquipos.AdmEquipo.CantidadEquiposRegistrados.htm" />
+  <HelpKINode Title="Cedula property" Url="html/P-Model.Arbitro.Cedula.htm" />
+  <HelpKINode Title="CmbEncuentros property" Url="html/P-GestionDeColegiados.FrmCambiarEstadioPartido.CmbEncuentros.htm" />
+  <HelpKINode Title="Colegiado class" Url="html/AllMembers.T-Model.Colegiados.Colegiado.htm" />
+  <HelpKINode Title="Colegiado class" Url="html/T-Model.Colegiados.Colegiado.htm" />
+  <HelpKINode Title="Colegiado class">
+    <HelpKINode Title="about Colegiado class" Url="html/T-Model.Colegiados.Colegiado.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Colegiados.Colegiado.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.Colegiados.Colegiado.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Colegiados.Colegiado.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Colegiados.Colegiado.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Colegiado.Colegiado constructor" Url="html/Overload-Model.Colegiados.Colegiado.-ctor.htm" />
+  <HelpKINode Title="Colegiado.Idasistente1 property" Url="html/P-Model.Colegiados.Colegiado.Idasistente1.htm" />
+  <HelpKINode Title="Colegiado.Idasistente2 property" Url="html/P-Model.Colegiados.Colegiado.Idasistente2.htm" />
+  <HelpKINode Title="Colegiado.Idcolegiado property" Url="html/P-Model.Colegiados.Colegiado.Idcolegiado.htm" />
+  <HelpKINode Title="Colegiado.Idcuartoarbitro property" Url="html/P-Model.Colegiados.Colegiado.Idcuartoarbitro.htm" />
+  <HelpKINode Title="Colegiado.Idjuezcentral property" Url="html/P-Model.Colegiados.Colegiado.Idjuezcentral.htm" />
+  <HelpKINode Title="Colegiado.ToString method" Url="html/M-Model.Colegiados.Colegiado.ToString.htm" />
+  <HelpKINode Title="ConexionBD class" Url="html/AllMembers.T-Sistema.ConexionBD.htm" />
+  <HelpKINode Title="ConexionBD class" Url="html/T-Sistema.ConexionBD.htm" />
+  <HelpKINode Title="ConexionBD class">
+    <HelpKINode Title="about ConexionBD class" Url="html/T-Sistema.ConexionBD.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Sistema.ConexionBD.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Sistema.ConexionBD.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConexionBD.GetConexion method" Url="html/M-Sistema.ConexionBD.GetConexion.htm" />
+  <HelpKINode Title="ConexionUsuarioBD class" Url="html/AllMembers.T-Model.ConexionUsuarioBD.htm" />
+  <HelpKINode Title="ConexionUsuarioBD class" Url="html/T-Model.ConexionUsuarioBD.htm" />
+  <HelpKINode Title="ConexionUsuarioBD class">
+    <HelpKINode Title="about ConexionUsuarioBD class" Url="html/T-Model.ConexionUsuarioBD.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.ConexionUsuarioBD.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.ConexionUsuarioBD.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConexionUsuarioBD.CambiarPassword method" Url="html/M-Model.ConexionUsuarioBD.CambiarPassword.htm" />
+  <HelpKINode Title="ConexionUsuarioBD.ExisteUsuario method" Url="html/M-Model.ConexionUsuarioBD.ExisteUsuario.htm" />
+  <HelpKINode Title="ConsultarAsistente method" Url="html/M-Data.DatosColegiados.ConsultarAsistente.htm" />
+  <HelpKINode Title="ConsultarAsistente1 method" Url="html/M-Data.DatosColegiados.ConsultarAsistente1.htm" />
+  <HelpKINode Title="ConsultarAsistente2 method" Url="html/M-Data.DatosColegiados.ConsultarAsistente2.htm" />
+  <HelpKINode Title="ConsultarCedulaColegiado method" Url="html/M-Data.DatosColegiados.ConsultarCedulaColegiado.htm" />
+  <HelpKINode Title="ConsultarColegiado method" Url="html/M-Data.DatosColegiados.ConsultarColegiado.htm" />
+  <HelpKINode Title="ConsultarCuartoArbitro method" Url="html/M-Data.DatosColegiados.ConsultarCuartoArbitro.htm" />
+  <HelpKINode Title="ConsultarEquipos method" Url="html/M-Data.DatosEquipos.ConsultarEquipos.htm" />
+  <HelpKINode Title="ConsultarEquiposTabla method" Url="html/M-Data.DatosEquipos.ConsultarEquiposTabla.htm" />
+  <HelpKINode Title="ConsultarIdColegiado method" Url="html/M-Data.DatosColegiados.ConsultarIdColegiado.htm" />
+  <HelpKINode Title="ConsultarJuezCentral method" Url="html/M-Data.DatosColegiados.ConsultarJuezCentral.htm" />
+  <HelpKINode Title="Contexto class" Url="html/AllMembers.T-Control.AdmColegiados.Contexto.htm" />
+  <HelpKINode Title="Contexto class" Url="html/T-Control.AdmColegiados.Contexto.htm" />
+  <HelpKINode Title="Contexto class">
+    <HelpKINode Title="about Contexto class" Url="html/T-Control.AdmColegiados.Contexto.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmColegiados.Contexto.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Control.AdmColegiados.Contexto.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmColegiados.Contexto.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Contexto.Contexto constructor" Url="html/M-Control.AdmColegiados.Contexto.-ctor.htm" />
+  <HelpKINode Title="Contexto.Datos method" Url="html/M-Control.AdmColegiados.Contexto.Datos.htm" />
+  <HelpKINode Title="Contexto.EditarArbitro method" Url="html/M-Control.AdmColegiados.Contexto.EditarArbitro.htm" />
+  <HelpKINode Title="Contexto.EliminarArbitro method" Url="html/M-Control.AdmColegiados.Contexto.EliminarArbitro.htm" />
+  <HelpKINode Title="Contexto.LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.Contexto.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="Contexto.ObtenerDatos method" Url="html/M-Control.AdmColegiados.Contexto.ObtenerDatos.htm" />
+  <HelpKINode Title="Contexto.RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.Contexto.RecogerDatosEditar.htm" />
+  <HelpKINode Title="Control namespace" Url="html/N-Control.htm" />
+  <HelpKINode Title="Control.AdmColegiados namespace" Url="html/N-Control.AdmColegiados.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmAsistente1 class" Url="html/AllMembers.T-Control.AdmColegiados.AdmAsistente1.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmAsistente1 class" Url="html/T-Control.AdmColegiados.AdmAsistente1.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmAsistente2 class" Url="html/AllMembers.T-Control.AdmColegiados.AdmAsistente2.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmAsistente2 class" Url="html/T-Control.AdmColegiados.AdmAsistente2.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmColegiado class" Url="html/AllMembers.T-Control.AdmColegiados.AdmColegiado.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmColegiado class" Url="html/T-Control.AdmColegiados.AdmColegiado.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmCuartoArbitro class" Url="html/AllMembers.T-Control.AdmColegiados.AdmCuartoArbitro.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmCuartoArbitro class" Url="html/T-Control.AdmColegiados.AdmCuartoArbitro.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmJuezCentral class" Url="html/AllMembers.T-Control.AdmColegiados.AdmJuezCentral.htm" />
+  <HelpKINode Title="Control.AdmColegiados.AdmJuezCentral class" Url="html/T-Control.AdmColegiados.AdmJuezCentral.htm" />
+  <HelpKINode Title="Control.AdmColegiados.Contexto class" Url="html/AllMembers.T-Control.AdmColegiados.Contexto.htm" />
+  <HelpKINode Title="Control.AdmColegiados.Contexto class" Url="html/T-Control.AdmColegiados.Contexto.htm" />
+  <HelpKINode Title="Control.AdmColegiados.IAdm interface" Url="html/AllMembers.T-Control.AdmColegiados.IAdm.htm" />
+  <HelpKINode Title="Control.AdmColegiados.IAdm interface" Url="html/T-Control.AdmColegiados.IAdm.htm" />
+  <HelpKINode Title="Control.AdmEncuentros namespace" Url="html/N-Control.AdmEncuentros.htm" />
+  <HelpKINode Title="Control.AdmEncuentros.AdmEncuentroFinalizado class" Url="html/AllMembers.T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm" />
+  <HelpKINode Title="Control.AdmEncuentros.AdmEncuentroFinalizado class" Url="html/T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm" />
+  <HelpKINode Title="Control.AdmEncuentrosGenerados namespace" Url="html/N-Control.AdmEncuentrosGenerados.htm" />
+  <HelpKINode Title="Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos class" Url="html/AllMembers.T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm" />
+  <HelpKINode Title="Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos class" Url="html/T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm" />
+  <HelpKINode Title="Control.AdmEncuentrosGenerados.AdmGenerarEncuentros class" Url="html/AllMembers.T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm" />
+  <HelpKINode Title="Control.AdmEncuentrosGenerados.AdmGenerarEncuentros class" Url="html/T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm" />
+  <HelpKINode Title="Control.AdmEquipos namespace" Url="html/N-Control.AdmEquipos.htm" />
+  <HelpKINode Title="Control.AdmEquipos.AdmEquipo class" Url="html/AllMembers.T-Control.AdmEquipos.AdmEquipo.htm" />
+  <HelpKINode Title="Control.AdmEquipos.AdmEquipo class" Url="html/T-Control.AdmEquipos.AdmEquipo.htm" />
+  <HelpKINode Title="Control.AdmEstadios namespace" Url="html/N-Control.AdmEstadios.htm" />
+  <HelpKINode Title="Control.AdmEstadios.AdmEstadio class" Url="html/AllMembers.T-Control.AdmEstadios.AdmEstadio.htm" />
+  <HelpKINode Title="Control.AdmEstadios.AdmEstadio class" Url="html/T-Control.AdmEstadios.AdmEstadio.htm" />
+  <HelpKINode Title="Control.ErrorActualizarEstadioException class" Url="html/AllMembers.T-Control.ErrorActualizarEstadioException.htm" />
+  <HelpKINode Title="Control.ErrorActualizarEstadioException class" Url="html/T-Control.ErrorActualizarEstadioException.htm" />
+  <HelpKINode Title="Control.GenerarEncuentrosException class" Url="html/AllMembers.T-Control.GenerarEncuentrosException.htm" />
+  <HelpKINode Title="Control.GenerarEncuentrosException class" Url="html/T-Control.GenerarEncuentrosException.htm" />
+  <HelpKINode Title="Control.GestionLogin class" Url="html/AllMembers.T-Control.GestionLogin.htm" />
+  <HelpKINode Title="Control.GestionLogin class" Url="html/T-Control.GestionLogin.htm" />
+  <HelpKINode Title="Control.RegistroEquipoMaximoException class" Url="html/AllMembers.T-Control.RegistroEquipoMaximoException.htm" />
+  <HelpKINode Title="Control.RegistroEquipoMaximoException class" Url="html/T-Control.RegistroEquipoMaximoException.htm" />
+  <HelpKINode Title="Control.UsuarioNoRegistradoException class" Url="html/AllMembers.T-Control.UsuarioNoRegistradoException.htm" />
+  <HelpKINode Title="Control.UsuarioNoRegistradoException class" Url="html/T-Control.UsuarioNoRegistradoException.htm" />
+  <HelpKINode Title="Control.ValidacionGUI class" Url="html/AllMembers.T-Control.ValidacionGUI.htm" />
+  <HelpKINode Title="Control.ValidacionGUI class" Url="html/T-Control.ValidacionGUI.htm" />
+  <HelpKINode Title="ControlLogin method" Url="html/M-Control.GestionLogin.ControlLogin.htm" />
+  <HelpKINode Title="Copa property" Url="html/P-Model.Partido.EncuentroFinalizado.Copa.htm" />
+  <HelpKINode Title="CuartoArbitro class" Url="html/AllMembers.T-Model.Colegiados.CuartoArbitro.htm" />
+  <HelpKINode Title="CuartoArbitro class" Url="html/T-Model.Colegiados.CuartoArbitro.htm" />
+  <HelpKINode Title="CuartoArbitro class">
+    <HelpKINode Title="about CuartoArbitro class" Url="html/T-Model.Colegiados.CuartoArbitro.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Colegiados.CuartoArbitro.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.Colegiados.CuartoArbitro.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Colegiados.CuartoArbitro.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Colegiados.CuartoArbitro.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CuartoArbitro.CuartoArbitro constructor" Url="html/Overload-Model.Colegiados.CuartoArbitro.-ctor.htm" />
+  <HelpKINode Title="CuartoArbitro.ToString method" Url="html/M-Model.Colegiados.CuartoArbitro.ToString.htm" />
+  <HelpKINode Title="DarBajaCompetencia method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.DarBajaCompetencia.htm" />
+  <HelpKINode Title="DarBajaEncuentros method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.DarBajaEncuentros.htm" />
+  <HelpKINode Title="DarBajaEncuentrosDefinidos method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.DarBajaEncuentrosDefinidos.htm" />
+  <HelpKINode Title="Data namespace" Url="html/N-Data.htm" />
+  <HelpKINode Title="Data.DatosColegiados class" Url="html/AllMembers.T-Data.DatosColegiados.htm" />
+  <HelpKINode Title="Data.DatosColegiados class" Url="html/T-Data.DatosColegiados.htm" />
+  <HelpKINode Title="Data.DatosEncuentroDefinido class" Url="html/AllMembers.T-Data.DatosEncuentroDefinido.htm" />
+  <HelpKINode Title="Data.DatosEncuentroDefinido class" Url="html/T-Data.DatosEncuentroDefinido.htm" />
+  <HelpKINode Title="Data.DatosEncuentroFinalizado class" Url="html/AllMembers.T-Data.DatosEncuentroFinalizado.htm" />
+  <HelpKINode Title="Data.DatosEncuentroFinalizado class" Url="html/T-Data.DatosEncuentroFinalizado.htm" />
+  <HelpKINode Title="Data.DatosEnuenctrosGenerados class" Url="html/AllMembers.T-Data.DatosEnuenctrosGenerados.htm" />
+  <HelpKINode Title="Data.DatosEnuenctrosGenerados class" Url="html/T-Data.DatosEnuenctrosGenerados.htm" />
+  <HelpKINode Title="Data.DatosEquipos class" Url="html/AllMembers.T-Data.DatosEquipos.htm" />
+  <HelpKINode Title="Data.DatosEquipos class" Url="html/T-Data.DatosEquipos.htm" />
+  <HelpKINode Title="Data.DatosEstadios class" Url="html/AllMembers.T-Data.DatosEstadios.htm" />
+  <HelpKINode Title="Data.DatosEstadios class" Url="html/T-Data.DatosEstadios.htm" />
+  <HelpKINode Title="Data.FalloBDException class" Url="html/AllMembers.T-Data.FalloBDException.htm" />
+  <HelpKINode Title="Data.FalloBDException class" Url="html/T-Data.FalloBDException.htm" />
+  <HelpKINode Title="Datos method" Url="html/M-Control.AdmColegiados.Contexto.Datos.htm" />
+  <HelpKINode Title="DatosColegiados class" Url="html/AllMembers.T-Data.DatosColegiados.htm" />
+  <HelpKINode Title="DatosColegiados class" Url="html/T-Data.DatosColegiados.htm" />
+  <HelpKINode Title="DatosColegiados class">
+    <HelpKINode Title="about DatosColegiados class" Url="html/T-Data.DatosColegiados.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Data.DatosColegiados.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Data.DatosColegiados.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatosColegiados.ActualizarColegiadoBD method" Url="html/M-Data.DatosColegiados.ActualizarColegiadoBD.htm" />
+  <HelpKINode Title="DatosColegiados.ConsultarAsistente method" Url="html/M-Data.DatosColegiados.ConsultarAsistente.htm" />
+  <HelpKINode Title="DatosColegiados.ConsultarAsistente1 method" Url="html/M-Data.DatosColegiados.ConsultarAsistente1.htm" />
+  <HelpKINode Title="DatosColegiados.ConsultarAsistente2 method" Url="html/M-Data.DatosColegiados.ConsultarAsistente2.htm" />
+  <HelpKINode Title="DatosColegiados.ConsultarCedulaColegiado method" Url="html/M-Data.DatosColegiados.ConsultarCedulaColegiado.htm" />
+  <HelpKINode Title="DatosColegiados.ConsultarColegiado method" Url="html/M-Data.DatosColegiados.ConsultarColegiado.htm" />
+  <HelpKINode Title="DatosColegiados.ConsultarCuartoArbitro method" Url="html/M-Data.DatosColegiados.ConsultarCuartoArbitro.htm" />
+  <HelpKINode Title="DatosColegiados.ConsultarIdColegiado method" Url="html/M-Data.DatosColegiados.ConsultarIdColegiado.htm" />
+  <HelpKINode Title="DatosColegiados.ConsultarJuezCentral method" Url="html/M-Data.DatosColegiados.ConsultarJuezCentral.htm" />
+  <HelpKINode Title="DatosColegiados.EditarAsistente1BD method" Url="html/M-Data.DatosColegiados.EditarAsistente1BD.htm" />
+  <HelpKINode Title="DatosColegiados.EditarAsistente2BD method" Url="html/M-Data.DatosColegiados.EditarAsistente2BD.htm" />
+  <HelpKINode Title="DatosColegiados.EditarAsistenteBD method" Url="html/M-Data.DatosColegiados.EditarAsistenteBD.htm" />
+  <HelpKINode Title="DatosColegiados.EditarCuartoArbitro method" Url="html/M-Data.DatosColegiados.EditarCuartoArbitro.htm" />
+  <HelpKINode Title="DatosColegiados.EditarJuezCentralBD method" Url="html/M-Data.DatosColegiados.EditarJuezCentralBD.htm" />
+  <HelpKINode Title="DatosColegiados.EliminarArbitro method" Url="html/M-Data.DatosColegiados.EliminarArbitro.htm" />
+  <HelpKINode Title="DatosColegiados.EliminarAsistente1BD method" Url="html/M-Data.DatosColegiados.EliminarAsistente1BD.htm" />
+  <HelpKINode Title="DatosColegiados.EliminarAsistente2BD method" Url="html/M-Data.DatosColegiados.EliminarAsistente2BD.htm" />
+  <HelpKINode Title="DatosColegiados.EliminarColegiado method" Url="html/M-Data.DatosColegiados.EliminarColegiado.htm" />
+  <HelpKINode Title="DatosColegiados.EliminarCuartoArbitroBD method" Url="html/M-Data.DatosColegiados.EliminarCuartoArbitroBD.htm" />
+  <HelpKINode Title="DatosColegiados.EliminarJuezCentralBD method" Url="html/M-Data.DatosColegiados.EliminarJuezCentralBD.htm" />
+  <HelpKINode Title="DatosColegiados.InsertarAsistente1 method" Url="html/M-Data.DatosColegiados.InsertarAsistente1.htm" />
+  <HelpKINode Title="DatosColegiados.InsertarAsistente2 method" Url="html/M-Data.DatosColegiados.InsertarAsistente2.htm" />
+  <HelpKINode Title="DatosColegiados.InsertarColegiado method" Url="html/M-Data.DatosColegiados.InsertarColegiado.htm" />
+  <HelpKINode Title="DatosColegiados.InsertarCuartoArbitro method" Url="html/M-Data.DatosColegiados.InsertarCuartoArbitro.htm" />
+  <HelpKINode Title="DatosColegiados.InsertarJuezCentral method" Url="html/M-Data.DatosColegiados.InsertarJuezCentral.htm" />
+  <HelpKINode Title="DatosColegiados.ObtenerNombreDeColegiados method" Url="html/M-Data.DatosColegiados.ObtenerNombreDeColegiados.htm" />
+  <HelpKINode Title="DatosColegiados.ObtenerTodosIdColegiado method" Url="html/M-Data.DatosColegiados.ObtenerTodosIdColegiado.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido class" Url="html/AllMembers.T-Data.DatosEncuentroDefinido.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido class" Url="html/T-Data.DatosEncuentroDefinido.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido class">
+    <HelpKINode Title="about DatosEncuentroDefinido class" Url="html/T-Data.DatosEncuentroDefinido.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Data.DatosEncuentroDefinido.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Data.DatosEncuentroDefinido.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatosEncuentroDefinido.ActualizarEstadioDePartido method" Url="html/M-Data.DatosEncuentroDefinido.ActualizarEstadioDePartido.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido.ActualizarFechaHoraDEPartido method" Url="html/M-Data.DatosEncuentroDefinido.ActualizarFechaHoraDEPartido.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido.CambiarEstadoEnucentroDefinido method" Url="html/M-Data.DatosEncuentroDefinido.CambiarEstadoEnucentroDefinido.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido.GetEncuentrosDefinidosFinalizados method" Url="html/M-Data.DatosEncuentroDefinido.GetEncuentrosDefinidosFinalizados.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido.GuardarEncuentroDefinido method" Url="html/M-Data.DatosEncuentroDefinido.GuardarEncuentroDefinido.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido.ObtenerCantidadEncuentrosDefinidos method" Url="html/M-Data.DatosEncuentroDefinido.ObtenerCantidadEncuentrosDefinidos.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido.ObtenerCantidadEncuentrosPorJugar method" Url="html/M-Data.DatosEncuentroDefinido.ObtenerCantidadEncuentrosPorJugar.htm" />
+  <HelpKINode Title="DatosEncuentroDefinido.ObtenerEncuentros method" Url="html/M-Data.DatosEncuentroDefinido.ObtenerEncuentros.htm" />
+  <HelpKINode Title="DatosEncuentroFinalizado class" Url="html/AllMembers.T-Data.DatosEncuentroFinalizado.htm" />
+  <HelpKINode Title="DatosEncuentroFinalizado class" Url="html/T-Data.DatosEncuentroFinalizado.htm" />
+  <HelpKINode Title="DatosEncuentroFinalizado class">
+    <HelpKINode Title="about DatosEncuentroFinalizado class" Url="html/T-Data.DatosEncuentroFinalizado.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Data.DatosEncuentroFinalizado.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Data.DatosEncuentroFinalizado.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatosEncuentroFinalizado.AddEncuentroFinalizado method" Url="html/M-Data.DatosEncuentroFinalizado.AddEncuentroFinalizado.htm" />
+  <HelpKINode Title="DatosEncuentroFinalizado.FinalizarCompetencia method" Url="html/M-Data.DatosEncuentroFinalizado.FinalizarCompetencia.htm" />
+  <HelpKINode Title="DatosEncuentroFinalizado.GetCantidadEncuentrosFinalizados method" Url="html/M-Data.DatosEncuentroFinalizado.GetCantidadEncuentrosFinalizados.htm" />
+  <HelpKINode Title="DatosEncuentroFinalizado.GetEncuentroFinalizadoByIDefinidoEquipo method" Url="html/M-Data.DatosEncuentroFinalizado.GetEncuentroFinalizadoByIDefinidoEquipo.htm" />
+  <HelpKINode Title="DatosEncuentroFinalizado.GetEncuentrosFinalizados method" Url="html/M-Data.DatosEncuentroFinalizado.GetEncuentrosFinalizados.htm" />
+  <HelpKINode Title="DatosEncuentroFinalizado.UpdateEncuentroFinalizado method" Url="html/M-Data.DatosEncuentroFinalizado.UpdateEncuentroFinalizado.htm" />
+  <HelpKINode Title="DatosEnuenctrosGenerados class" Url="html/AllMembers.T-Data.DatosEnuenctrosGenerados.htm" />
+  <HelpKINode Title="DatosEnuenctrosGenerados class" Url="html/T-Data.DatosEnuenctrosGenerados.htm" />
+  <HelpKINode Title="DatosEnuenctrosGenerados class">
+    <HelpKINode Title="about DatosEnuenctrosGenerados class" Url="html/T-Data.DatosEnuenctrosGenerados.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Data.DatosEnuenctrosGenerados.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Data.DatosEnuenctrosGenerados.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatosEnuenctrosGenerados.CambiarEstadoEncuentro method" Url="html/M-Data.DatosEnuenctrosGenerados.CambiarEstadoEncuentro.htm" />
+  <HelpKINode Title="DatosEnuenctrosGenerados.CambiarEstadoEncuentros method" Url="html/M-Data.DatosEnuenctrosGenerados.CambiarEstadoEncuentros.htm" />
+  <HelpKINode Title="DatosEnuenctrosGenerados.GuardarEncuentrosGenerados method" Url="html/M-Data.DatosEnuenctrosGenerados.GuardarEncuentrosGenerados.htm" />
+  <HelpKINode Title="DatosEnuenctrosGenerados.ObetnerNumeroEncuentrosPendientes method" Url="html/M-Data.DatosEnuenctrosGenerados.ObetnerNumeroEncuentrosPendientes.htm" />
+  <HelpKINode Title="DatosEnuenctrosGenerados.ObtenerEncuentroPendiente method" Url="html/M-Data.DatosEnuenctrosGenerados.ObtenerEncuentroPendiente.htm" />
+  <HelpKINode Title="DatosEnuenctrosGenerados.ObtenerEncuentrosPendientes method" Url="html/M-Data.DatosEnuenctrosGenerados.ObtenerEncuentrosPendientes.htm" />
+  <HelpKINode Title="DatosEquipos class" Url="html/AllMembers.T-Data.DatosEquipos.htm" />
+  <HelpKINode Title="DatosEquipos class" Url="html/T-Data.DatosEquipos.htm" />
+  <HelpKINode Title="DatosEquipos class">
+    <HelpKINode Title="about DatosEquipos class" Url="html/T-Data.DatosEquipos.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Data.DatosEquipos.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Data.DatosEquipos.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatosEquipos.ConsultarEquipos method" Url="html/M-Data.DatosEquipos.ConsultarEquipos.htm" />
+  <HelpKINode Title="DatosEquipos.ConsultarEquiposTabla method" Url="html/M-Data.DatosEquipos.ConsultarEquiposTabla.htm" />
+  <HelpKINode Title="DatosEquipos.EditarEquipo method" Url="html/M-Data.DatosEquipos.EditarEquipo.htm" />
+  <HelpKINode Title="DatosEquipos.EliminarEquipo method" Url="html/M-Data.DatosEquipos.EliminarEquipo.htm" />
+  <HelpKINode Title="DatosEquipos.InsertarEquipo method" Url="html/M-Data.DatosEquipos.InsertarEquipo.htm" />
+  <HelpKINode Title="DatosEquipos.ObtenerCantidadEquipoRegistrados method" Url="html/M-Data.DatosEquipos.ObtenerCantidadEquipoRegistrados.htm" />
+  <HelpKINode Title="DatosEquipos.ObtenerEquipoPorId method" Url="html/M-Data.DatosEquipos.ObtenerEquipoPorId.htm" />
+  <HelpKINode Title="DatosEstadios class" Url="html/AllMembers.T-Data.DatosEstadios.htm" />
+  <HelpKINode Title="DatosEstadios class" Url="html/T-Data.DatosEstadios.htm" />
+  <HelpKINode Title="DatosEstadios class">
+    <HelpKINode Title="about DatosEstadios class" Url="html/T-Data.DatosEstadios.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Data.DatosEstadios.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Data.DatosEstadios.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatosEstadios.CambiarEstado method" Url="html/M-Data.DatosEstadios.CambiarEstado.htm" />
+  <HelpKINode Title="DatosEstadios.ObtenerEstadioPorId method" Url="html/M-Data.DatosEstadios.ObtenerEstadioPorId.htm" />
+  <HelpKINode Title="DatosEstadios.ObtenerEstadiosDisponibles method" Url="html/M-Data.DatosEstadios.ObtenerEstadiosDisponibles.htm" />
+  <HelpKINode Title="DatosEstadios.PutEstadiosDisponibles method" Url="html/M-Data.DatosEstadios.PutEstadiosDisponibles.htm" />
+  <HelpKINode Title="Domicilio property" Url="html/P-Model.Arbitro.Domicilio.htm" />
+  <HelpKINode Title="EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmAsistente1.EditarArbitro.htm" />
+  <HelpKINode Title="EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmAsistente2.EditarArbitro.htm" />
+  <HelpKINode Title="EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmColegiado.EditarArbitro.htm" />
+  <HelpKINode Title="EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.EditarArbitro.htm" />
+  <HelpKINode Title="EditarArbitro method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.EditarArbitro.htm" />
+  <HelpKINode Title="EditarArbitro method" Url="html/M-Control.AdmColegiados.Contexto.EditarArbitro.htm" />
+  <HelpKINode Title="EditarArbitro method" Url="html/M-Control.AdmColegiados.IAdm.EditarArbitro.htm" />
+  <HelpKINode Title="EditarAsistente1BD method" Url="html/M-Data.DatosColegiados.EditarAsistente1BD.htm" />
+  <HelpKINode Title="EditarAsistente2BD method" Url="html/M-Data.DatosColegiados.EditarAsistente2BD.htm" />
+  <HelpKINode Title="EditarAsistenteBD method" Url="html/M-Data.DatosColegiados.EditarAsistenteBD.htm" />
+  <HelpKINode Title="EditarCuartoArbitro method" Url="html/M-Data.DatosColegiados.EditarCuartoArbitro.htm" />
+  <HelpKINode Title="EditarEquipo method" Url="html/M-Data.DatosEquipos.EditarEquipo.htm" />
+  <HelpKINode Title="EditarJuezCentralBD method" Url="html/M-Data.DatosColegiados.EditarJuezCentralBD.htm" />
+  <HelpKINode Title="EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmAsistente1.EliminarArbitro.htm" />
+  <HelpKINode Title="EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmAsistente2.EliminarArbitro.htm" />
+  <HelpKINode Title="EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmColegiado.EliminarArbitro.htm" />
+  <HelpKINode Title="EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.EliminarArbitro.htm" />
+  <HelpKINode Title="EliminarArbitro method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.EliminarArbitro.htm" />
+  <HelpKINode Title="EliminarArbitro method" Url="html/M-Control.AdmColegiados.Contexto.EliminarArbitro.htm" />
+  <HelpKINode Title="EliminarArbitro method" Url="html/M-Control.AdmColegiados.IAdm.EliminarArbitro.htm" />
+  <HelpKINode Title="EliminarArbitro method" Url="html/M-Data.DatosColegiados.EliminarArbitro.htm" />
+  <HelpKINode Title="EliminarAsistente1BD method" Url="html/M-Data.DatosColegiados.EliminarAsistente1BD.htm" />
+  <HelpKINode Title="EliminarAsistente2BD method" Url="html/M-Data.DatosColegiados.EliminarAsistente2BD.htm" />
+  <HelpKINode Title="EliminarColegiado method" Url="html/M-Control.AdmColegiados.AdmColegiado.EliminarColegiado.htm" />
+  <HelpKINode Title="EliminarColegiado method" Url="html/M-Data.DatosColegiados.EliminarColegiado.htm" />
+  <HelpKINode Title="EliminarCuartoArbitroBD method" Url="html/M-Data.DatosColegiados.EliminarCuartoArbitroBD.htm" />
+  <HelpKINode Title="EliminarEquipo method" Url="html/M-Data.DatosEquipos.EliminarEquipo.htm" />
+  <HelpKINode Title="EliminarJuezCentralBD method" Url="html/M-Data.DatosColegiados.EliminarJuezCentralBD.htm" />
+  <HelpKINode Title="EliminarRegistro method" Url="html/M-Control.AdmEquipos.AdmEquipo.EliminarRegistro.htm" />
+  <HelpKINode Title="Email property" Url="html/P-Model.Arbitro.Email.htm" />
+  <HelpKINode Title="EncuentroDefinido class" Url="html/AllMembers.T-Model.EncuentroDefinido.htm" />
+  <HelpKINode Title="EncuentroDefinido class" Url="html/T-Model.EncuentroDefinido.htm" />
+  <HelpKINode Title="EncuentroDefinido class">
+    <HelpKINode Title="about EncuentroDefinido class" Url="html/T-Model.EncuentroDefinido.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.EncuentroDefinido.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.EncuentroDefinido.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.EncuentroDefinido.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.EncuentroDefinido.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EncuentroDefinido.EncuentroDefinido constructor" Url="html/Overload-Model.EncuentroDefinido.-ctor.htm" />
+  <HelpKINode Title="EncuentroDefinido.Estado property" Url="html/P-Model.EncuentroDefinido.Estado.htm" />
+  <HelpKINode Title="EncuentroDefinido.FechaDeEncuentro property" Url="html/P-Model.EncuentroDefinido.FechaDeEncuentro.htm" />
+  <HelpKINode Title="EncuentroDefinido.Hora property" Url="html/P-Model.EncuentroDefinido.Hora.htm" />
+  <HelpKINode Title="EncuentroDefinido.Id property" Url="html/P-Model.EncuentroDefinido.Id.htm" />
+  <HelpKINode Title="EncuentroDefinido.IdColegiado property" Url="html/P-Model.EncuentroDefinido.IdColegiado.htm" />
+  <HelpKINode Title="EncuentroDefinido.IdEncuentroGeneradoPendiente property" Url="html/P-Model.EncuentroDefinido.IdEncuentroGeneradoPendiente.htm" />
+  <HelpKINode Title="EncuentroDefinido.IdEstadio property" Url="html/P-Model.EncuentroDefinido.IdEstadio.htm" />
+  <HelpKINode Title="EncuentroFinalizado class" Url="html/AllMembers.T-Model.Partido.EncuentroFinalizado.htm" />
+  <HelpKINode Title="EncuentroFinalizado class" Url="html/T-Model.Partido.EncuentroFinalizado.htm" />
+  <HelpKINode Title="EncuentroFinalizado class">
+    <HelpKINode Title="about EncuentroFinalizado class" Url="html/T-Model.Partido.EncuentroFinalizado.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Partido.EncuentroFinalizado.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.Partido.EncuentroFinalizado.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Partido.EncuentroFinalizado.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Partido.EncuentroFinalizado.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EncuentroFinalizado.Copa property" Url="html/P-Model.Partido.EncuentroFinalizado.Copa.htm" />
+  <HelpKINode Title="EncuentroFinalizado.EncuentroFinalizado constructor" Url="html/Overload-Model.Partido.EncuentroFinalizado.-ctor.htm" />
+  <HelpKINode Title="EncuentroFinalizado.Estado property" Url="html/P-Model.Partido.EncuentroFinalizado.Estado.htm" />
+  <HelpKINode Title="EncuentroFinalizado.GolesContra property" Url="html/P-Model.Partido.EncuentroFinalizado.GolesContra.htm" />
+  <HelpKINode Title="EncuentroFinalizado.GolesDiferencia property" Url="html/P-Model.Partido.EncuentroFinalizado.GolesDiferencia.htm" />
+  <HelpKINode Title="EncuentroFinalizado.GolesFavor property" Url="html/P-Model.Partido.EncuentroFinalizado.GolesFavor.htm" />
+  <HelpKINode Title="EncuentroFinalizado.Id property" Url="html/P-Model.Partido.EncuentroFinalizado.Id.htm" />
+  <HelpKINode Title="EncuentroFinalizado.IdEncuentroDefinido property" Url="html/P-Model.Partido.EncuentroFinalizado.IdEncuentroDefinido.htm" />
+  <HelpKINode Title="EncuentroFinalizado.IdEquipo property" Url="html/P-Model.Partido.EncuentroFinalizado.IdEquipo.htm" />
+  <HelpKINode Title="EncuentroFinalizado.Puntos property" Url="html/P-Model.Partido.EncuentroFinalizado.Puntos.htm" />
+  <HelpKINode Title="EncuentroGenerado class" Url="html/AllMembers.T-Model.EncuentroGenerado.htm" />
+  <HelpKINode Title="EncuentroGenerado class" Url="html/T-Model.EncuentroGenerado.htm" />
+  <HelpKINode Title="EncuentroGenerado class">
+    <HelpKINode Title="about EncuentroGenerado class" Url="html/T-Model.EncuentroGenerado.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.EncuentroGenerado.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.EncuentroGenerado.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.EncuentroGenerado.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.EncuentroGenerado.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EncuentroGenerado.Asignacion property" Url="html/P-Model.EncuentroGenerado.Asignacion.htm" />
+  <HelpKINode Title="EncuentroGenerado.EncuentroGenerado constructor" Url="html/Overload-Model.EncuentroGenerado.-ctor.htm" />
+  <HelpKINode Title="EncuentroGenerado.Estado property" Url="html/P-Model.EncuentroGenerado.Estado.htm" />
+  <HelpKINode Title="EncuentroGenerado.Id property" Url="html/P-Model.EncuentroGenerado.Id.htm" />
+  <HelpKINode Title="EncuentroGenerado.IdEquipoLocal property" Url="html/P-Model.EncuentroGenerado.IdEquipoLocal.htm" />
+  <HelpKINode Title="EncuentroGenerado.IdEquipoVisitante property" Url="html/P-Model.EncuentroGenerado.IdEquipoVisitante.htm" />
+  <HelpKINode Title="Equipo class" Url="html/AllMembers.T-Model.Equipo.Equipo.htm" />
+  <HelpKINode Title="Equipo class" Url="html/T-Model.Equipo.Equipo.htm" />
+  <HelpKINode Title="Equipo class">
+    <HelpKINode Title="about Equipo class" Url="html/T-Model.Equipo.Equipo.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Equipo.Equipo.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.Equipo.Equipo.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Equipo.Equipo.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Equipo.Equipo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Equipo.Equipo constructor" Url="html/Overload-Model.Equipo.Equipo.-ctor.htm" />
+  <HelpKINode Title="Equipo.IdEquipo property" Url="html/P-Model.Equipo.Equipo.IdEquipo.htm" />
+  <HelpKINode Title="Equipo.NombreDirectoTecnico property" Url="html/P-Model.Equipo.Equipo.NombreDirectoTecnico.htm" />
+  <HelpKINode Title="Equipo.NombreEquipo property" Url="html/P-Model.Equipo.Equipo.NombreEquipo.htm" />
+  <HelpKINode Title="Equipo.NumeroJugadores property" Url="html/P-Model.Equipo.Equipo.NumeroJugadores.htm" />
+  <HelpKINode Title="Equipo.PresidenteEquipo property" Url="html/P-Model.Equipo.Equipo.PresidenteEquipo.htm" />
+  <HelpKINode Title="Equipo.ToString method" Url="html/M-Model.Equipo.Equipo.ToString.htm" />
+  <HelpKINode Title="ErrorActualizarEstadioException class" Url="html/AllMembers.T-Control.ErrorActualizarEstadioException.htm" />
+  <HelpKINode Title="ErrorActualizarEstadioException class" Url="html/T-Control.ErrorActualizarEstadioException.htm" />
+  <HelpKINode Title="ErrorActualizarEstadioException class">
+    <HelpKINode Title="about ErrorActualizarEstadioException class" Url="html/T-Control.ErrorActualizarEstadioException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.ErrorActualizarEstadioException.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Control.ErrorActualizarEstadioException.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-Control.ErrorActualizarEstadioException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.ErrorActualizarEstadioException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.ErrorActualizarEstadioException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ErrorActualizarEstadioException.ErrorActualizarEstadioException constructor" Url="html/Overload-Control.ErrorActualizarEstadioException.-ctor.htm" />
+  <HelpKINode Title="EsDouble method" Url="html/M-Control.ValidacionGUI.EsDouble.htm" />
+  <HelpKINode Title="EsFloat method" Url="html/M-Control.ValidacionGUI.EsFloat.htm" />
+  <HelpKINode Title="Estadio class" Url="html/AllMembers.T-Model.Estadio.htm" />
+  <HelpKINode Title="Estadio class" Url="html/T-Model.Estadio.htm" />
+  <HelpKINode Title="Estadio class">
+    <HelpKINode Title="about Estadio class" Url="html/T-Model.Estadio.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Estadio.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.Estadio.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Estadio.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Estadio.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Estadio.Asignacion property" Url="html/P-Model.Estadio.Asignacion.htm" />
+  <HelpKINode Title="Estadio.Estadio constructor" Url="html/Overload-Model.Estadio.-ctor.htm" />
+  <HelpKINode Title="Estadio.Id property" Url="html/P-Model.Estadio.Id.htm" />
+  <HelpKINode Title="Estadio.Nombre property" Url="html/P-Model.Estadio.Nombre.htm" />
+  <HelpKINode Title="Estado property" Url="html/P-Model.EncuentroDefinido.Estado.htm" />
+  <HelpKINode Title="Estado property" Url="html/P-Model.EncuentroGenerado.Estado.htm" />
+  <HelpKINode Title="Estado property" Url="html/P-Model.Partido.EncuentroFinalizado.Estado.htm" />
+  <HelpKINode Title="ExisteUsuario method" Url="html/M-Model.ConexionUsuarioBD.ExisteUsuario.htm" />
+  <HelpKINode Title="ExtraerEquipos method" Url="html/M-Control.AdmEquipos.AdmEquipo.ExtraerEquipos.htm" />
+  <HelpKINode Title="FalloBDException class" Url="html/AllMembers.T-Data.FalloBDException.htm" />
+  <HelpKINode Title="FalloBDException class" Url="html/T-Data.FalloBDException.htm" />
+  <HelpKINode Title="FalloBDException class">
+    <HelpKINode Title="about FalloBDException class" Url="html/T-Data.FalloBDException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Data.FalloBDException.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Data.FalloBDException.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-Data.FalloBDException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Data.FalloBDException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Data.FalloBDException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FalloBDException.Arbitro property" Url="html/P-Data.FalloBDException.Arbitro.htm" />
+  <HelpKINode Title="FalloBDException.FalloBDException constructor" Url="html/Overload-Data.FalloBDException.-ctor.htm" />
+  <HelpKINode Title="FechaDeEncuentro property" Url="html/P-Model.EncuentroDefinido.FechaDeEncuentro.htm" />
+  <HelpKINode Title="FinalizarCompetencia method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.FinalizarCompetencia.htm" />
+  <HelpKINode Title="FinalizarCompetencia method" Url="html/M-Data.DatosEncuentroFinalizado.FinalizarCompetencia.htm" />
+  <HelpKINode Title="FrmCambiarEstadioPartido class" Url="html/AllMembers.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+  <HelpKINode Title="FrmCambiarEstadioPartido class" Url="html/T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+  <HelpKINode Title="FrmCambiarEstadioPartido class">
+    <HelpKINode Title="about FrmCambiarEstadioPartido class" Url="html/T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmCambiarEstadioPartido.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmCambiarEstadioPartido.CmbEncuentros property" Url="html/P-GestionDeColegiados.FrmCambiarEstadioPartido.CmbEncuentros.htm" />
+  <HelpKINode Title="FrmCambiarEstadioPartido.FrmCambiarEstadioPartido constructor" Url="html/M-GestionDeColegiados.FrmCambiarEstadioPartido.-ctor.htm" />
+  <HelpKINode Title="FrmEditarArbitro class" Url="html/AllMembers.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+  <HelpKINode Title="FrmEditarArbitro class" Url="html/T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+  <HelpKINode Title="FrmEditarArbitro class">
+    <HelpKINode Title="about FrmEditarArbitro class" Url="html/T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmEditarArbitro.FrmEditarArbitro constructor" Url="html/M-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.-ctor.htm" />
+  <HelpKINode Title="FrmEditarEquipo class" Url="html/AllMembers.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+  <HelpKINode Title="FrmEditarEquipo class" Url="html/T-GestionDeColegiados.FrmEditarEquipo.htm" />
+  <HelpKINode Title="FrmEditarEquipo class">
+    <HelpKINode Title="about FrmEditarEquipo class" Url="html/T-GestionDeColegiados.FrmEditarEquipo.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmEditarEquipo.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmEditarEquipo.FrmEditarEquipo constructor" Url="html/M-GestionDeColegiados.FrmEditarEquipo.-ctor.htm" />
+  <HelpKINode Title="FrmEditarPartidoFinalizado class" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+  <HelpKINode Title="FrmEditarPartidoFinalizado class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+  <HelpKINode Title="FrmEditarPartidoFinalizado class">
+    <HelpKINode Title="about FrmEditarPartidoFinalizado class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmEditarPartidoFinalizado.FrmEditarPartidoFinalizado constructor" Url="html/M-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.-ctor.htm" />
+  <HelpKINode Title="FrmElimAgregarArbitro class" Url="html/AllMembers.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+  <HelpKINode Title="FrmElimAgregarArbitro class" Url="html/T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+  <HelpKINode Title="FrmElimAgregarArbitro class">
+    <HelpKINode Title="about FrmElimAgregarArbitro class" Url="html/T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmElimAgregarArbitro.FrmElimAgregarArbitro constructor" Url="html/M-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.-ctor.htm" />
+  <HelpKINode Title="FrmGenerarEncuentros class" Url="html/AllMembers.T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+  <HelpKINode Title="FrmGenerarEncuentros class" Url="html/T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+  <HelpKINode Title="FrmGenerarEncuentros class">
+    <HelpKINode Title="about FrmGenerarEncuentros class" Url="html/T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmGenerarEncuentros.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmGenerarEncuentros.FrmGenerarEncuentros constructor" Url="html/M-GestionDeColegiados.FrmGenerarEncuentros.-ctor.htm" />
+  <HelpKINode Title="FrmGenerarEncuentros.ListaContenedoresLocal property" Url="html/P-GestionDeColegiados.FrmGenerarEncuentros.ListaContenedoresLocal.htm" />
+  <HelpKINode Title="FrmGenerarEncuentros.ListaContenedoresVisitante property" Url="html/P-GestionDeColegiados.FrmGenerarEncuentros.ListaContenedoresVisitante.htm" />
+  <HelpKINode Title="FrmListaEquipos class" Url="html/AllMembers.T-GestionDeColegiados.FrmListaEquipos.htm" />
+  <HelpKINode Title="FrmListaEquipos class" Url="html/T-GestionDeColegiados.FrmListaEquipos.htm" />
+  <HelpKINode Title="FrmListaEquipos class">
+    <HelpKINode Title="about FrmListaEquipos class" Url="html/T-GestionDeColegiados.FrmListaEquipos.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmListaEquipos.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmListaEquipos.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmListaEquipos.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmListaEquipos.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmListaEquipos.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmListaEquipos.FrmListaEquipos constructor" Url="html/M-GestionDeColegiados.FrmListaEquipos.-ctor.htm" />
+  <HelpKINode Title="FrmMenuArbitro class" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+  <HelpKINode Title="FrmMenuArbitro class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+  <HelpKINode Title="FrmMenuArbitro class">
+    <HelpKINode Title="about FrmMenuArbitro class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmMenuArbitro.FrmMenuArbitro constructor" Url="html/M-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.-ctor.htm" />
+  <HelpKINode Title="FrmNuevoEquipo class" Url="html/AllMembers.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+  <HelpKINode Title="FrmNuevoEquipo class" Url="html/T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+  <HelpKINode Title="FrmNuevoEquipo class">
+    <HelpKINode Title="about FrmNuevoEquipo class" Url="html/T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmNuevoEquipo.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmNuevoEquipo.FrmNuevoEquipo constructor" Url="html/M-GestionDeColegiados.FrmNuevoEquipo.-ctor.htm" />
+  <HelpKINode Title="FrmNuevoGrupoColegiado class" Url="html/AllMembers.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+  <HelpKINode Title="FrmNuevoGrupoColegiado class" Url="html/T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+  <HelpKINode Title="FrmNuevoGrupoColegiado class">
+    <HelpKINode Title="about FrmNuevoGrupoColegiado class" Url="html/T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmNuevoGrupoColegiado.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmNuevoGrupoColegiado.FrmNuevoGrupoColegiado constructor" Url="html/M-GestionDeColegiados.FrmNuevoGrupoColegiado.-ctor.htm" />
+  <HelpKINode Title="FrmRegistrarPartido class" Url="html/AllMembers.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+  <HelpKINode Title="FrmRegistrarPartido class" Url="html/T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+  <HelpKINode Title="FrmRegistrarPartido class">
+    <HelpKINode Title="about FrmRegistrarPartido class" Url="html/T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmRegistrarPartido.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmRegistrarPartido.FrmRegistrarPartido constructor" Url="html/M-GestionDeColegiados.FrmRegistrarPartido.-ctor.htm" />
+  <HelpKINode Title="FrmRegistrarResultado class" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+  <HelpKINode Title="FrmRegistrarResultado class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+  <HelpKINode Title="FrmRegistrarResultado class">
+    <HelpKINode Title="about FrmRegistrarResultado class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmRegistrarResultado.FrmRegistrarResultado constructor" Url="html/M-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.-ctor.htm" />
+  <HelpKINode Title="FrmTodosLosEncuentrosDefinidos class" Url="html/AllMembers.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+  <HelpKINode Title="FrmTodosLosEncuentrosDefinidos class" Url="html/T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+  <HelpKINode Title="FrmTodosLosEncuentrosDefinidos class">
+    <HelpKINode Title="about FrmTodosLosEncuentrosDefinidos class" Url="html/T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmTodosLosEncuentrosDefinidos.FrmTodosLosEncuentrosDefinidos constructor" Url="html/M-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.-ctor.htm" />
+  <HelpKINode Title="FrmVerCompeticion class" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+  <HelpKINode Title="FrmVerCompeticion class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+  <HelpKINode Title="FrmVerCompeticion class">
+    <HelpKINode Title="about FrmVerCompeticion class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmVerCompeticion.FrmVerCompeticion constructor" Url="html/M-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.-ctor.htm" />
+  <HelpKINode Title="FrmVerTodos class" Url="html/AllMembers.T-GestionDeColegiados.FrmVerTodos.htm" />
+  <HelpKINode Title="FrmVerTodos class" Url="html/T-GestionDeColegiados.FrmVerTodos.htm" />
+  <HelpKINode Title="FrmVerTodos class">
+    <HelpKINode Title="about FrmVerTodos class" Url="html/T-GestionDeColegiados.FrmVerTodos.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmVerTodos.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmVerTodos.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmVerTodos.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmVerTodos.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmVerTodos.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmVerTodos.FrmVerTodos constructor" Url="html/M-GestionDeColegiados.FrmVerTodos.-ctor.htm" />
+  <HelpKINode Title="FrmVerTodosLosColegiados class" Url="html/AllMembers.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+  <HelpKINode Title="FrmVerTodosLosColegiados class" Url="html/T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+  <HelpKINode Title="FrmVerTodosLosColegiados class">
+    <HelpKINode Title="about FrmVerTodosLosColegiados class" Url="html/T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.FrmVerTodosLosColegiados.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FrmVerTodosLosColegiados.FrmVerTodosLosColegiados constructor" Url="html/M-GestionDeColegiados.FrmVerTodosLosColegiados.-ctor.htm" />
+  <HelpKINode Title="GenerarEncuentrosAleatorios method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.GenerarEncuentrosAleatorios.htm" />
+  <HelpKINode Title="GenerarEncuentrosException class" Url="html/AllMembers.T-Control.GenerarEncuentrosException.htm" />
+  <HelpKINode Title="GenerarEncuentrosException class" Url="html/T-Control.GenerarEncuentrosException.htm" />
+  <HelpKINode Title="GenerarEncuentrosException class">
+    <HelpKINode Title="about GenerarEncuentrosException class" Url="html/T-Control.GenerarEncuentrosException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.GenerarEncuentrosException.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Control.GenerarEncuentrosException.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-Control.GenerarEncuentrosException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.GenerarEncuentrosException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.GenerarEncuentrosException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GenerarEncuentrosException.GenerarEncuentrosException constructor" Url="html/M-Control.GenerarEncuentrosException.-ctor.htm" />
+  <HelpKINode Title="GestionDeColegiados namespace" Url="html/N-GestionDeColegiados.htm" />
+  <HelpKINode Title="GestionDeColegiados.BtnIniciarSesion class" Url="html/AllMembers.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+  <HelpKINode Title="GestionDeColegiados.BtnIniciarSesion class" Url="html/T-GestionDeColegiados.BtnIniciarSesion.htm" />
+  <HelpKINode Title="GestionDeColegiados.CambiarPass class" Url="html/AllMembers.T-GestionDeColegiados.CambiarPass.htm" />
+  <HelpKINode Title="GestionDeColegiados.CambiarPass class" Url="html/T-GestionDeColegiados.CambiarPass.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmCambiarEstadioPartido class" Url="html/AllMembers.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmCambiarEstadioPartido class" Url="html/T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmEditarEquipo class" Url="html/AllMembers.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmEditarEquipo class" Url="html/T-GestionDeColegiados.FrmEditarEquipo.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmGenerarEncuentros class" Url="html/AllMembers.T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmGenerarEncuentros class" Url="html/T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmListaEquipos class" Url="html/AllMembers.T-GestionDeColegiados.FrmListaEquipos.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmListaEquipos class" Url="html/T-GestionDeColegiados.FrmListaEquipos.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmNuevoEquipo class" Url="html/AllMembers.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmNuevoEquipo class" Url="html/T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmNuevoGrupoColegiado class" Url="html/AllMembers.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmNuevoGrupoColegiado class" Url="html/T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmRegistrarPartido class" Url="html/AllMembers.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmRegistrarPartido class" Url="html/T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsArbitro namespace" Url="html/N-GestionDeColegiados.FrmsArbitro.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado class" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsArbitro.FrmMenuArbitro class" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsArbitro.FrmMenuArbitro class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado class" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsArbitro.FrmVerCompeticion class" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsArbitro.FrmVerCompeticion class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsColegiado namespace" Url="html/N-GestionDeColegiados.FrmsColegiado.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsColegiado.FrmEditarArbitro class" Url="html/AllMembers.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsColegiado.FrmEditarArbitro class" Url="html/T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro class" Url="html/AllMembers.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro class" Url="html/T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmTodosLosEncuentrosDefinidos class" Url="html/AllMembers.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmTodosLosEncuentrosDefinidos class" Url="html/T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmVerTodos class" Url="html/AllMembers.T-GestionDeColegiados.FrmVerTodos.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmVerTodos class" Url="html/T-GestionDeColegiados.FrmVerTodos.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmVerTodosLosColegiados class" Url="html/AllMembers.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+  <HelpKINode Title="GestionDeColegiados.FrmVerTodosLosColegiados class" Url="html/T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+  <HelpKINode Title="GestionDeColegiados.MenuPrincipal class" Url="html/AllMembers.T-GestionDeColegiados.MenuPrincipal.htm" />
+  <HelpKINode Title="GestionDeColegiados.MenuPrincipal class" Url="html/T-GestionDeColegiados.MenuPrincipal.htm" />
+  <HelpKINode Title="GestionLogin class" Url="html/AllMembers.T-Control.GestionLogin.htm" />
+  <HelpKINode Title="GestionLogin class" Url="html/T-Control.GestionLogin.htm" />
+  <HelpKINode Title="GestionLogin class">
+    <HelpKINode Title="about GestionLogin class" Url="html/T-Control.GestionLogin.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.GestionLogin.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.GestionLogin.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GestionLogin.CambiarPass method" Url="html/M-Control.GestionLogin.CambiarPass.htm" />
+  <HelpKINode Title="GestionLogin.ControlLogin method" Url="html/M-Control.GestionLogin.ControlLogin.htm" />
+  <HelpKINode Title="GestionLogin.ObtenerId method" Url="html/M-Control.GestionLogin.ObtenerId.htm" />
+  <HelpKINode Title="GestionLogin.ValidarUltimoAcceso method" Url="html/M-Control.GestionLogin.ValidarUltimoAcceso.htm" />
+  <HelpKINode Title="GetAdmA1 method" Url="html/M-Control.AdmColegiados.AdmAsistente1.GetAdmA1.htm" />
+  <HelpKINode Title="GetAdmA2 method" Url="html/M-Control.AdmColegiados.AdmAsistente2.GetAdmA2.htm" />
+  <HelpKINode Title="GetAdmadmGenerarEncuentros method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.GetAdmadmGenerarEncuentros.htm" />
+  <HelpKINode Title="GetAdmCA method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.GetAdmCA.htm" />
+  <HelpKINode Title="GetAdmCol method" Url="html/M-Control.AdmColegiados.AdmColegiado.GetAdmCol.htm" />
+  <HelpKINode Title="GetAdmEncuentrosFinalizados method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados.htm" />
+  <HelpKINode Title="GetAdmEstadio method" Url="html/M-Control.AdmEstadios.AdmEstadio.GetAdmEstadio.htm" />
+  <HelpKINode Title="GetAdmGenerarEncuentrosDefinidos method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos.htm" />
+  <HelpKINode Title="GetAdmJ method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.GetAdmJ.htm" />
+  <HelpKINode Title="GetCantidadEncuentrosFinalizados method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.GetCantidadEncuentrosFinalizados.htm" />
+  <HelpKINode Title="GetCantidadEncuentrosFinalizados method" Url="html/M-Data.DatosEncuentroFinalizado.GetCantidadEncuentrosFinalizados.htm" />
+  <HelpKINode Title="GetConexion method" Url="html/M-Sistema.ConexionBD.GetConexion.htm" />
+  <HelpKINode Title="GetEncuentroDefinidoByIndex method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.GetEncuentroDefinidoByIndex.htm" />
+  <HelpKINode Title="GetEncuentroFinalizadoByIDefinidoEquipo method" Url="html/M-Data.DatosEncuentroFinalizado.GetEncuentroFinalizadoByIDefinidoEquipo.htm" />
+  <HelpKINode Title="GetEncuentrosDefinidosFinalizados method" Url="html/M-Data.DatosEncuentroDefinido.GetEncuentrosDefinidosFinalizados.htm" />
+  <HelpKINode Title="GetEncuentrosFinalizados method" Url="html/M-Data.DatosEncuentroFinalizado.GetEncuentrosFinalizados.htm" />
+  <HelpKINode Title="GetEquipo method" Url="html/M-Control.AdmEquipos.AdmEquipo.GetEquipo.htm" />
+  <HelpKINode Title="GolesContra property" Url="html/P-Model.Partido.EncuentroFinalizado.GolesContra.htm" />
+  <HelpKINode Title="GolesDiferencia property" Url="html/P-Model.Partido.EncuentroFinalizado.GolesDiferencia.htm" />
+  <HelpKINode Title="GolesFavor property" Url="html/P-Model.Partido.EncuentroFinalizado.GolesFavor.htm" />
+  <HelpKINode Title="Guardar method" Url="html/M-Control.AdmColegiados.AdmAsistente1.Guardar.htm" />
+  <HelpKINode Title="Guardar method" Url="html/M-Control.AdmColegiados.AdmAsistente2.Guardar.htm" />
+  <HelpKINode Title="Guardar method" Url="html/M-Control.AdmColegiados.AdmColegiado.Guardar.htm" />
+  <HelpKINode Title="Guardar method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.Guardar.htm" />
+  <HelpKINode Title="Guardar method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.Guardar.htm" />
+  <HelpKINode Title="Guardar method" Url="html/M-Control.AdmColegiados.IAdm.Guardar.htm" />
+  <HelpKINode Title="GuardarDatos method" Url="html/M-Control.AdmEquipos.AdmEquipo.GuardarDatos.htm" />
+  <HelpKINode Title="GuardarEncuentroDefinido method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.GuardarEncuentroDefinido.htm" />
+  <HelpKINode Title="GuardarEncuentroDefinido method" Url="html/M-Data.DatosEncuentroDefinido.GuardarEncuentroDefinido.htm" />
+  <HelpKINode Title="GuardarEncuentroFinalizado method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.GuardarEncuentroFinalizado.htm" />
+  <HelpKINode Title="GuardarEncuentrosAleatorios method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.GuardarEncuentrosAleatorios.htm" />
+  <HelpKINode Title="GuardarEncuentrosGenerados method" Url="html/M-Data.DatosEnuenctrosGenerados.GuardarEncuentrosGenerados.htm" />
+  <HelpKINode Title="Hora property" Url="html/P-Model.EncuentroDefinido.Hora.htm" />
+  <HelpKINode Title="IAdm interface" Url="html/AllMembers.T-Control.AdmColegiados.IAdm.htm" />
+  <HelpKINode Title="IAdm interface" Url="html/T-Control.AdmColegiados.IAdm.htm" />
+  <HelpKINode Title="IAdm interface">
+    <HelpKINode Title="about IAdm interface" Url="html/T-Control.AdmColegiados.IAdm.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.AdmColegiados.IAdm.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.AdmColegiados.IAdm.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAdm.EditarArbitro method" Url="html/M-Control.AdmColegiados.IAdm.EditarArbitro.htm" />
+  <HelpKINode Title="IAdm.EliminarArbitro method" Url="html/M-Control.AdmColegiados.IAdm.EliminarArbitro.htm" />
+  <HelpKINode Title="IAdm.Guardar method" Url="html/M-Control.AdmColegiados.IAdm.Guardar.htm" />
+  <HelpKINode Title="IAdm.LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.IAdm.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="IAdm.ObtenerDatos method" Url="html/M-Control.AdmColegiados.IAdm.ObtenerDatos.htm" />
+  <HelpKINode Title="IAdm.RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.IAdm.RecogerDatosEditar.htm" />
+  <HelpKINode Title="Id property" Url="html/P-Model.Administrador.Id.htm" />
+  <HelpKINode Title="Id property" Url="html/P-Model.EncuentroDefinido.Id.htm" />
+  <HelpKINode Title="Id property" Url="html/P-Model.EncuentroGenerado.Id.htm" />
+  <HelpKINode Title="Id property" Url="html/P-Model.Estadio.Id.htm" />
+  <HelpKINode Title="Id property" Url="html/P-Model.Partido.EncuentroFinalizado.Id.htm" />
+  <HelpKINode Title="IdArbitro property" Url="html/P-Model.Arbitro.IdArbitro.htm" />
+  <HelpKINode Title="Idasistente1 property" Url="html/P-Model.Colegiados.Colegiado.Idasistente1.htm" />
+  <HelpKINode Title="Idasistente2 property" Url="html/P-Model.Colegiados.Colegiado.Idasistente2.htm" />
+  <HelpKINode Title="IdColegiado property" Url="html/P-Model.EncuentroDefinido.IdColegiado.htm" />
+  <HelpKINode Title="Idcolegiado property" Url="html/P-Model.Colegiados.Colegiado.Idcolegiado.htm" />
+  <HelpKINode Title="Idcuartoarbitro property" Url="html/P-Model.Colegiados.Colegiado.Idcuartoarbitro.htm" />
+  <HelpKINode Title="IdEncuentroDefinido property" Url="html/P-Model.Partido.EncuentroFinalizado.IdEncuentroDefinido.htm" />
+  <HelpKINode Title="IdEncuentroGeneradoPendiente property" Url="html/P-Model.EncuentroDefinido.IdEncuentroGeneradoPendiente.htm" />
+  <HelpKINode Title="IdEquipo property" Url="html/P-Model.Equipo.Equipo.IdEquipo.htm" />
+  <HelpKINode Title="IdEquipo property" Url="html/P-Model.Partido.EncuentroFinalizado.IdEquipo.htm" />
+  <HelpKINode Title="IdEquipoLocal property" Url="html/P-Model.EncuentroGenerado.IdEquipoLocal.htm" />
+  <HelpKINode Title="IdEquipoVisitante property" Url="html/P-Model.EncuentroGenerado.IdEquipoVisitante.htm" />
+  <HelpKINode Title="IdEstadio property" Url="html/P-Model.EncuentroDefinido.IdEstadio.htm" />
+  <HelpKINode Title="IdGrupoColegiado property" Url="html/P-Model.Colegiados.IntegrantesColegiados.IdGrupoColegiado.htm" />
+  <HelpKINode Title="Idjuezcentral property" Url="html/P-Model.Colegiados.Colegiado.Idjuezcentral.htm" />
+  <HelpKINode Title="InsertarAsistente1 method" Url="html/M-Data.DatosColegiados.InsertarAsistente1.htm" />
+  <HelpKINode Title="InsertarAsistente2 method" Url="html/M-Data.DatosColegiados.InsertarAsistente2.htm" />
+  <HelpKINode Title="InsertarColegiado method" Url="html/M-Data.DatosColegiados.InsertarColegiado.htm" />
+  <HelpKINode Title="InsertarCuartoArbitro method" Url="html/M-Data.DatosColegiados.InsertarCuartoArbitro.htm" />
+  <HelpKINode Title="InsertarEquipo method" Url="html/M-Data.DatosEquipos.InsertarEquipo.htm" />
+  <HelpKINode Title="InsertarJuezCentral method" Url="html/M-Data.DatosColegiados.InsertarJuezCentral.htm" />
+  <HelpKINode Title="IntegrantesColegiados class" Url="html/AllMembers.T-Model.Colegiados.IntegrantesColegiados.htm" />
+  <HelpKINode Title="IntegrantesColegiados class" Url="html/T-Model.Colegiados.IntegrantesColegiados.htm" />
+  <HelpKINode Title="IntegrantesColegiados class">
+    <HelpKINode Title="about IntegrantesColegiados class" Url="html/T-Model.Colegiados.IntegrantesColegiados.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Colegiados.IntegrantesColegiados.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Colegiados.IntegrantesColegiados.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Colegiados.IntegrantesColegiados.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IntegrantesColegiados.IdGrupoColegiado property" Url="html/P-Model.Colegiados.IntegrantesColegiados.IdGrupoColegiado.htm" />
+  <HelpKINode Title="IntegrantesColegiados.Nombreasistente1 property" Url="html/P-Model.Colegiados.IntegrantesColegiados.Nombreasistente1.htm" />
+  <HelpKINode Title="IntegrantesColegiados.Nombreasistente2 property" Url="html/P-Model.Colegiados.IntegrantesColegiados.Nombreasistente2.htm" />
+  <HelpKINode Title="IntegrantesColegiados.NombrecuartoArbitro property" Url="html/P-Model.Colegiados.IntegrantesColegiados.NombrecuartoArbitro.htm" />
+  <HelpKINode Title="IntegrantesColegiados.NombrejuezCentral property" Url="html/P-Model.Colegiados.IntegrantesColegiados.NombrejuezCentral.htm" />
+  <HelpKINode Title="IntegrantesColegiados.ToString method" Url="html/M-Model.Colegiados.IntegrantesColegiados.ToString.htm" />
+  <HelpKINode Title="JuezCentral class" Url="html/AllMembers.T-Model.Colegiados.JuezCentral.htm" />
+  <HelpKINode Title="JuezCentral class" Url="html/T-Model.Colegiados.JuezCentral.htm" />
+  <HelpKINode Title="JuezCentral class">
+    <HelpKINode Title="about JuezCentral class" Url="html/T-Model.Colegiados.JuezCentral.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Model.Colegiados.JuezCentral.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Model.Colegiados.JuezCentral.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Model.Colegiados.JuezCentral.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Model.Colegiados.JuezCentral.htm" />
+  </HelpKINode>
+  <HelpKINode Title="JuezCentral.JuezCentral constructor" Url="html/Overload-Model.Colegiados.JuezCentral.-ctor.htm" />
+  <HelpKINode Title="JuezCentral.ToString method" Url="html/M-Model.Colegiados.JuezCentral.ToString.htm" />
+  <HelpKINode Title="ListaAsistente1 property" Url="html/P-Control.AdmColegiados.AdmAsistente1.ListaAsistente1.htm" />
+  <HelpKINode Title="ListaAsistente2 property" Url="html/P-Control.AdmColegiados.AdmAsistente2.ListaAsistente2.htm" />
+  <HelpKINode Title="ListaColegiado property" Url="html/P-Control.AdmColegiados.AdmColegiado.ListaColegiado.htm" />
+  <HelpKINode Title="ListaContenedoresLocal property" Url="html/P-GestionDeColegiados.FrmGenerarEncuentros.ListaContenedoresLocal.htm" />
+  <HelpKINode Title="ListaContenedoresVisitante property" Url="html/P-GestionDeColegiados.FrmGenerarEncuentros.ListaContenedoresVisitante.htm" />
+  <HelpKINode Title="ListaCuartoArbitro property" Url="html/P-Control.AdmColegiados.AdmCuartoArbitro.ListaCuartoArbitro.htm" />
+  <HelpKINode Title="ListaEncuentrosDefinidos property" Url="html/P-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ListaEncuentrosDefinidos.htm" />
+  <HelpKINode Title="ListaEncuentrosGenerados property" Url="html/P-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ListaEncuentrosGenerados.htm" />
+  <HelpKINode Title="ListaEncuentrosGeneradosPendientes property" Url="html/P-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ListaEncuentrosGeneradosPendientes.htm" />
+  <HelpKINode Title="ListaEstadiosDisponibles property" Url="html/P-Control.AdmEstadios.AdmEstadio.ListaEstadiosDisponibles.htm" />
+  <HelpKINode Title="ListaintegColeg property" Url="html/P-Control.AdmColegiados.AdmColegiado.ListaintegColeg.htm" />
+  <HelpKINode Title="ListaJuezCentral property" Url="html/P-Control.AdmColegiados.AdmJuezCentral.ListaJuezCentral.htm" />
+  <HelpKINode Title="LlenarCampos method" Url="html/M-Control.AdmEquipos.AdmEquipo.LlenarCampos.htm" />
+  <HelpKINode Title="LlenarCmbEncuentrosDefinidosFinalizados method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarCmbEncuentrosDefinidosFinalizados.htm" />
+  <HelpKINode Title="LlenarColegiadosCmb method" Url="html/Overload-Control.AdmColegiados.AdmColegiado.LlenarColegiadosCmb.htm" />
+  <HelpKINode Title="LlenarComboIdColegiado method" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarComboIdColegiado.htm" />
+  <HelpKINode Title="LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmAsistente1.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmAsistente2.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.Contexto.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="LlenarDatosFormEditar method" Url="html/M-Control.AdmColegiados.IAdm.LlenarDatosFormEditar.htm" />
+  <HelpKINode Title="LlenarDatosGrivColegiado method" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarDatosGrivColegiado.htm" />
+  <HelpKINode Title="LlenarDgv method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.LlenarDgv.htm" />
+  <HelpKINode Title="LlenarEquipos method" Url="html/M-Control.AdmEquipos.AdmEquipo.LlenarEquipos.htm" />
+  <HelpKINode Title="LlenarEquiposCmb method" Url="html/M-Control.AdmEquipos.AdmEquipo.LlenarEquiposCmb.htm" />
+  <HelpKINode Title="LlenarEstadiosCmb method" Url="html/Overload-Control.AdmEstadios.AdmEstadio.LlenarEstadiosCmb.htm" />
+  <HelpKINode Title="LlenarInformacionPartido method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.LlenarInformacionPartido.htm" />
+  <HelpKINode Title="LlenarInformac&#237;onPartidoCompleta method" Url="html/Overload-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarInformacíonPartidoCompleta.htm" />
+  <HelpKINode Title="LlenarListaColegiados method" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarListaColegiados.htm" />
+  <HelpKINode Title="LlenarListaEncuentrosGeneradosPendientes method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.LlenarListaEncuentrosGeneradosPendientes.htm" />
+  <HelpKINode Title="LlenarMatch method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarMatch.htm" />
+  <HelpKINode Title="LlenarMatchDefinidosFinalizados method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarMatchDefinidosFinalizados.htm" />
+  <HelpKINode Title="LlenarPartidosCmb method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarPartidosCmb.htm" />
+  <HelpKINode Title="LlenarTuplas method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.LlenarTuplas.htm" />
+  <HelpKINode Title="LlenaTabla method" Url="html/M-Control.AdmEquipos.AdmEquipo.LlenaTabla.htm" />
+  <HelpKINode Title="MenuPrincipal class" Url="html/AllMembers.T-GestionDeColegiados.MenuPrincipal.htm" />
+  <HelpKINode Title="MenuPrincipal class" Url="html/T-GestionDeColegiados.MenuPrincipal.htm" />
+  <HelpKINode Title="MenuPrincipal class">
+    <HelpKINode Title="about MenuPrincipal class" Url="html/T-GestionDeColegiados.MenuPrincipal.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-GestionDeColegiados.MenuPrincipal.htm" />
+    <HelpKINode Title="constructor" Url="html/M-GestionDeColegiados.MenuPrincipal.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-GestionDeColegiados.MenuPrincipal.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-GestionDeColegiados.MenuPrincipal.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-GestionDeColegiados.MenuPrincipal.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MenuPrincipal.AbrirFormNuevoEquipo method" Url="html/M-GestionDeColegiados.MenuPrincipal.AbrirFormNuevoEquipo.htm" />
+  <HelpKINode Title="MenuPrincipal.MenuPrincipal constructor" Url="html/M-GestionDeColegiados.MenuPrincipal.-ctor.htm" />
+  <HelpKINode Title="Model namespace" Url="html/N-Model.htm" />
+  <HelpKINode Title="Model.Administrador class" Url="html/AllMembers.T-Model.Administrador.htm" />
+  <HelpKINode Title="Model.Administrador class" Url="html/T-Model.Administrador.htm" />
+  <HelpKINode Title="Model.Arbitro class" Url="html/AllMembers.T-Model.Arbitro.htm" />
+  <HelpKINode Title="Model.Arbitro class" Url="html/T-Model.Arbitro.htm" />
+  <HelpKINode Title="Model.Colegiados namespace" Url="html/N-Model.Colegiados.htm" />
+  <HelpKINode Title="Model.Colegiados.Asistente class" Url="html/AllMembers.T-Model.Colegiados.Asistente.htm" />
+  <HelpKINode Title="Model.Colegiados.Asistente class" Url="html/T-Model.Colegiados.Asistente.htm" />
+  <HelpKINode Title="Model.Colegiados.Colegiado class" Url="html/AllMembers.T-Model.Colegiados.Colegiado.htm" />
+  <HelpKINode Title="Model.Colegiados.Colegiado class" Url="html/T-Model.Colegiados.Colegiado.htm" />
+  <HelpKINode Title="Model.Colegiados.CuartoArbitro class" Url="html/AllMembers.T-Model.Colegiados.CuartoArbitro.htm" />
+  <HelpKINode Title="Model.Colegiados.CuartoArbitro class" Url="html/T-Model.Colegiados.CuartoArbitro.htm" />
+  <HelpKINode Title="Model.Colegiados.IntegrantesColegiados class" Url="html/AllMembers.T-Model.Colegiados.IntegrantesColegiados.htm" />
+  <HelpKINode Title="Model.Colegiados.IntegrantesColegiados class" Url="html/T-Model.Colegiados.IntegrantesColegiados.htm" />
+  <HelpKINode Title="Model.Colegiados.JuezCentral class" Url="html/AllMembers.T-Model.Colegiados.JuezCentral.htm" />
+  <HelpKINode Title="Model.Colegiados.JuezCentral class" Url="html/T-Model.Colegiados.JuezCentral.htm" />
+  <HelpKINode Title="Model.ConexionUsuarioBD class" Url="html/AllMembers.T-Model.ConexionUsuarioBD.htm" />
+  <HelpKINode Title="Model.ConexionUsuarioBD class" Url="html/T-Model.ConexionUsuarioBD.htm" />
+  <HelpKINode Title="Model.EncuentroDefinido class" Url="html/AllMembers.T-Model.EncuentroDefinido.htm" />
+  <HelpKINode Title="Model.EncuentroDefinido class" Url="html/T-Model.EncuentroDefinido.htm" />
+  <HelpKINode Title="Model.EncuentroGenerado class" Url="html/AllMembers.T-Model.EncuentroGenerado.htm" />
+  <HelpKINode Title="Model.EncuentroGenerado class" Url="html/T-Model.EncuentroGenerado.htm" />
+  <HelpKINode Title="Model.Equipo namespace" Url="html/N-Model.Equipo.htm" />
+  <HelpKINode Title="Model.Equipo.Equipo class" Url="html/AllMembers.T-Model.Equipo.Equipo.htm" />
+  <HelpKINode Title="Model.Equipo.Equipo class" Url="html/T-Model.Equipo.Equipo.htm" />
+  <HelpKINode Title="Model.Estadio class" Url="html/AllMembers.T-Model.Estadio.htm" />
+  <HelpKINode Title="Model.Estadio class" Url="html/T-Model.Estadio.htm" />
+  <HelpKINode Title="Model.Partido namespace" Url="html/N-Model.Partido.htm" />
+  <HelpKINode Title="Model.Partido.EncuentroFinalizado class" Url="html/AllMembers.T-Model.Partido.EncuentroFinalizado.htm" />
+  <HelpKINode Title="Model.Partido.EncuentroFinalizado class" Url="html/T-Model.Partido.EncuentroFinalizado.htm" />
+  <HelpKINode Title="Nombre property" Url="html/P-Model.Administrador.Nombre.htm" />
+  <HelpKINode Title="Nombre property" Url="html/P-Model.Arbitro.Nombre.htm" />
+  <HelpKINode Title="Nombre property" Url="html/P-Model.Estadio.Nombre.htm" />
+  <HelpKINode Title="Nombre1 property" Url="html/P-Model.Administrador.Nombre1.htm" />
+  <HelpKINode Title="Nombreasistente1 property" Url="html/P-Model.Colegiados.IntegrantesColegiados.Nombreasistente1.htm" />
+  <HelpKINode Title="Nombreasistente2 property" Url="html/P-Model.Colegiados.IntegrantesColegiados.Nombreasistente2.htm" />
+  <HelpKINode Title="NombrecuartoArbitro property" Url="html/P-Model.Colegiados.IntegrantesColegiados.NombrecuartoArbitro.htm" />
+  <HelpKINode Title="NombreDirectoTecnico property" Url="html/P-Model.Equipo.Equipo.NombreDirectoTecnico.htm" />
+  <HelpKINode Title="NombreEquipo property" Url="html/P-Control.RegistroEquipoMaximoException.NombreEquipo.htm" />
+  <HelpKINode Title="NombreEquipo property" Url="html/P-Model.Equipo.Equipo.NombreEquipo.htm" />
+  <HelpKINode Title="NombrejuezCentral property" Url="html/P-Model.Colegiados.IntegrantesColegiados.NombrejuezCentral.htm" />
+  <HelpKINode Title="NumeroJugadores property" Url="html/P-Model.Equipo.Equipo.NumeroJugadores.htm" />
+  <HelpKINode Title="ObetnerNumeroEncuentrosPendientes method" Url="html/M-Data.DatosEnuenctrosGenerados.ObetnerNumeroEncuentrosPendientes.htm" />
+  <HelpKINode Title="ObserverCmbEquipos method" Url="html/M-Control.AdmEquipos.AdmEquipo.ObserverCmbEquipos.htm" />
+  <HelpKINode Title="ObtenerCantidadColegiado method" Url="html/M-Control.AdmColegiados.AdmColegiado.ObtenerCantidadColegiado.htm" />
+  <HelpKINode Title="ObtenerCantidadEncuentrosDefinidos method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ObtenerCantidadEncuentrosDefinidos.htm" />
+  <HelpKINode Title="ObtenerCantidadEncuentrosDefinidos method" Url="html/M-Data.DatosEncuentroDefinido.ObtenerCantidadEncuentrosDefinidos.htm" />
+  <HelpKINode Title="ObtenerCantidadEncuentrosPorJugar method" Url="html/M-Data.DatosEncuentroDefinido.ObtenerCantidadEncuentrosPorJugar.htm" />
+  <HelpKINode Title="ObtenerCantidadEquipo method" Url="html/M-Control.AdmEquipos.AdmEquipo.ObtenerCantidadEquipo.htm" />
+  <HelpKINode Title="ObtenerCantidadEquipoRegistrados method" Url="html/M-Data.DatosEquipos.ObtenerCantidadEquipoRegistrados.htm" />
+  <HelpKINode Title="ObtenerDatos method" Url="html/M-Control.AdmColegiados.AdmAsistente1.ObtenerDatos.htm" />
+  <HelpKINode Title="ObtenerDatos method" Url="html/M-Control.AdmColegiados.AdmAsistente2.ObtenerDatos.htm" />
+  <HelpKINode Title="ObtenerDatos method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.ObtenerDatos.htm" />
+  <HelpKINode Title="ObtenerDatos method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.ObtenerDatos.htm" />
+  <HelpKINode Title="ObtenerDatos method" Url="html/M-Control.AdmColegiados.Contexto.ObtenerDatos.htm" />
+  <HelpKINode Title="ObtenerDatos method" Url="html/M-Control.AdmColegiados.IAdm.ObtenerDatos.htm" />
+  <HelpKINode Title="ObtenerEncuentroPendiente method" Url="html/M-Data.DatosEnuenctrosGenerados.ObtenerEncuentroPendiente.htm" />
+  <HelpKINode Title="ObtenerEncuentroPorID method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ObtenerEncuentroPorID.htm" />
+  <HelpKINode Title="ObtenerEncuentros method" Url="html/M-Data.DatosEncuentroDefinido.ObtenerEncuentros.htm" />
+  <HelpKINode Title="ObtenerEncuentrosPendientes method" Url="html/M-Data.DatosEnuenctrosGenerados.ObtenerEncuentrosPendientes.htm" />
+  <HelpKINode Title="ObtenerEquipoPorId method" Url="html/M-Control.AdmEquipos.AdmEquipo.ObtenerEquipoPorId.htm" />
+  <HelpKINode Title="ObtenerEquipoPorId method" Url="html/M-Data.DatosEquipos.ObtenerEquipoPorId.htm" />
+  <HelpKINode Title="ObtenerEstadioPorId method" Url="html/M-Control.AdmEstadios.AdmEstadio.ObtenerEstadioPorId.htm" />
+  <HelpKINode Title="ObtenerEstadioPorId method" Url="html/M-Data.DatosEstadios.ObtenerEstadioPorId.htm" />
+  <HelpKINode Title="ObtenerEstadiosDisponibles method" Url="html/M-Data.DatosEstadios.ObtenerEstadiosDisponibles.htm" />
+  <HelpKINode Title="ObtenerId method" Url="html/M-Control.GestionLogin.ObtenerId.htm" />
+  <HelpKINode Title="ObtenerNombreDeColegiados method" Url="html/M-Control.AdmColegiados.AdmColegiado.ObtenerNombreDeColegiados.htm" />
+  <HelpKINode Title="ObtenerNombreDeColegiados method" Url="html/M-Data.DatosColegiados.ObtenerNombreDeColegiados.htm" />
+  <HelpKINode Title="ObtenerNombreDeColegiadosIndex method" Url="html/M-Control.AdmColegiados.AdmColegiado.ObtenerNombreDeColegiadosIndex.htm" />
+  <HelpKINode Title="ObtenerNombreEstadioDelPartido method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ObtenerNombreEstadioDelPartido.htm" />
+  <HelpKINode Title="ObtenerNumeroPartidosPorJugar method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar.htm" />
+  <HelpKINode Title="ObtenerTodosIdColegiado method" Url="html/M-Data.DatosColegiados.ObtenerTodosIdColegiado.htm" />
+  <HelpKINode Title="ObtnerNumeroEncuentrosGeneradosPendientes method" Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes.htm" />
+  <HelpKINode Title="Password property" Url="html/P-Model.Administrador.Password.htm" />
+  <HelpKINode Title="Password1 property" Url="html/P-Model.Administrador.Password1.htm" />
+  <HelpKINode Title="PonerEstadiosDisponibles method" Url="html/M-Control.AdmEstadios.AdmEstadio.PonerEstadiosDisponibles.htm" />
+  <HelpKINode Title="PresidenteEquipo property" Url="html/P-Model.Equipo.Equipo.PresidenteEquipo.htm" />
+  <HelpKINode Title="PrimerAcceso property" Url="html/P-Model.Administrador.PrimerAcceso.htm" />
+  <HelpKINode Title="Puntos property" Url="html/P-Model.Partido.EncuentroFinalizado.Puntos.htm" />
+  <HelpKINode Title="PutEstadiosDisponibles method" Url="html/M-Data.DatosEstadios.PutEstadiosDisponibles.htm" />
+  <HelpKINode Title="RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmAsistente1.RecogerDatosEditar.htm" />
+  <HelpKINode Title="RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmAsistente2.RecogerDatosEditar.htm" />
+  <HelpKINode Title="RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmColegiado.RecogerDatosEditar.htm" />
+  <HelpKINode Title="RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.RecogerDatosEditar.htm" />
+  <HelpKINode Title="RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.AdmJuezCentral.RecogerDatosEditar.htm" />
+  <HelpKINode Title="RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.Contexto.RecogerDatosEditar.htm" />
+  <HelpKINode Title="RecogerDatosEditar method" Url="html/M-Control.AdmColegiados.IAdm.RecogerDatosEditar.htm" />
+  <HelpKINode Title="RecogerDatosEliminar method" Url="html/M-Control.AdmColegiados.AdmColegiado.RecogerDatosEliminar.htm" />
+  <HelpKINode Title="RefrezcarListaEstadiosDisponibles method" Url="html/M-Control.AdmEstadios.AdmEstadio.RefrezcarListaEstadiosDisponibles.htm" />
+  <HelpKINode Title="RegistroEquipoMaximoException class" Url="html/AllMembers.T-Control.RegistroEquipoMaximoException.htm" />
+  <HelpKINode Title="RegistroEquipoMaximoException class" Url="html/T-Control.RegistroEquipoMaximoException.htm" />
+  <HelpKINode Title="RegistroEquipoMaximoException class">
+    <HelpKINode Title="about RegistroEquipoMaximoException class" Url="html/T-Control.RegistroEquipoMaximoException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.RegistroEquipoMaximoException.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Control.RegistroEquipoMaximoException.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-Control.RegistroEquipoMaximoException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.RegistroEquipoMaximoException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.RegistroEquipoMaximoException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RegistroEquipoMaximoException.NombreEquipo property" Url="html/P-Control.RegistroEquipoMaximoException.NombreEquipo.htm" />
+  <HelpKINode Title="RegistroEquipoMaximoException.RegistroEquipoMaximoException constructor" Url="html/Overload-Control.RegistroEquipoMaximoException.-ctor.htm" />
+  <HelpKINode Title="ReinicarCompetencia method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.ReinicarCompetencia.htm" />
+  <HelpKINode Title="ReinicarCompetencia method" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ReinicarCompetencia.htm" />
+  <HelpKINode Title="Rol property" Url="html/P-Model.Administrador.Rol.htm" />
+  <HelpKINode Title="SeleccionarEstadio method" Url="html/M-Control.AdmEstadios.AdmEstadio.SeleccionarEstadio.htm" />
+  <HelpKINode Title="Sistema namespace" Url="html/N-Sistema.htm" />
+  <HelpKINode Title="Sistema.ConexionBD class" Url="html/AllMembers.T-Sistema.ConexionBD.htm" />
+  <HelpKINode Title="Sistema.ConexionBD class" Url="html/T-Sistema.ConexionBD.htm" />
+  <HelpKINode Title="Telefono property" Url="html/P-Model.Arbitro.Telefono.htm" />
+  <HelpKINode Title="ToString method" Url="html/M-Model.Arbitro.ToString.htm" />
+  <HelpKINode Title="ToString method" Url="html/M-Model.Colegiados.Asistente.ToString.htm" />
+  <HelpKINode Title="ToString method" Url="html/M-Model.Colegiados.Colegiado.ToString.htm" />
+  <HelpKINode Title="ToString method" Url="html/M-Model.Colegiados.CuartoArbitro.ToString.htm" />
+  <HelpKINode Title="ToString method" Url="html/M-Model.Colegiados.IntegrantesColegiados.ToString.htm" />
+  <HelpKINode Title="ToString method" Url="html/M-Model.Colegiados.JuezCentral.ToString.htm" />
+  <HelpKINode Title="ToString method" Url="html/M-Model.Equipo.Equipo.ToString.htm" />
+  <HelpKINode Title="UpdateEncuentroFinalizado method" Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.UpdateEncuentroFinalizado.htm" />
+  <HelpKINode Title="UpdateEncuentroFinalizado method" Url="html/M-Data.DatosEncuentroFinalizado.UpdateEncuentroFinalizado.htm" />
+  <HelpKINode Title="UsuarioNoRegistradoException class" Url="html/AllMembers.T-Control.UsuarioNoRegistradoException.htm" />
+  <HelpKINode Title="UsuarioNoRegistradoException class" Url="html/T-Control.UsuarioNoRegistradoException.htm" />
+  <HelpKINode Title="UsuarioNoRegistradoException class">
+    <HelpKINode Title="about UsuarioNoRegistradoException class" Url="html/T-Control.UsuarioNoRegistradoException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.UsuarioNoRegistradoException.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Control.UsuarioNoRegistradoException.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-Control.UsuarioNoRegistradoException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.UsuarioNoRegistradoException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Control.UsuarioNoRegistradoException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UsuarioNoRegistradoException.UsuarioNoRegistradoException constructor" Url="html/Overload-Control.UsuarioNoRegistradoException.-ctor.htm" />
+  <HelpKINode Title="ValidacionGUI class" Url="html/AllMembers.T-Control.ValidacionGUI.htm" />
+  <HelpKINode Title="ValidacionGUI class" Url="html/T-Control.ValidacionGUI.htm" />
+  <HelpKINode Title="ValidacionGUI class">
+    <HelpKINode Title="about ValidacionGUI class" Url="html/T-Control.ValidacionGUI.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Control.ValidacionGUI.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Control.ValidacionGUI.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ValidacionGUI.AInt method" Url="html/M-Control.ValidacionGUI.AInt.htm" />
+  <HelpKINode Title="ValidacionGUI.EsDouble method" Url="html/M-Control.ValidacionGUI.EsDouble.htm" />
+  <HelpKINode Title="ValidacionGUI.EsFloat method" Url="html/M-Control.ValidacionGUI.EsFloat.htm" />
+  <HelpKINode Title="ValidacionGUI.ValidarFecha method" Url="html/M-Control.ValidacionGUI.ValidarFecha.htm" />
+  <HelpKINode Title="ValidacionGUI.ValidarNum method" Url="html/M-Control.ValidacionGUI.ValidarNum.htm" />
+  <HelpKINode Title="ValidacionGUI.ValidarVacios method" Url="html/Overload-Control.ValidacionGUI.ValidarVacios.htm" />
+  <HelpKINode Title="ValidarCedula method" Url="html/M-Control.AdmColegiados.AdmColegiado.ValidarCedula.htm" />
+  <HelpKINode Title="ValidarFecha method" Url="html/M-Control.ValidacionGUI.ValidarFecha.htm" />
+  <HelpKINode Title="ValidarNum method" Url="html/M-Control.ValidacionGUI.ValidarNum.htm" />
+  <HelpKINode Title="ValidarUltimoAcceso method" Url="html/M-Control.GestionLogin.ValidarUltimoAcceso.htm" />
+  <HelpKINode Title="ValidarVacios method" Url="html/Overload-Control.ValidacionGUI.ValidarVacios.htm" />
+</HelpKI>

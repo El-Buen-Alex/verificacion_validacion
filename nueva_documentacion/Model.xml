@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Model</name>
+  </assembly>
+  <members>
+    <member name="T:Model.Arbitro">
+      <summary>
+   Clase Abstracta Arbitro.
+   </summary>
+    </member>
+    <member name="M:Model.Arbitro.#ctor">
+      <summary>
+   Constructor por defecto.
+   </summary>
+    </member>
+    <member name="M:Model.Arbitro.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Constructor parametrizado.
+   </summary>
+      <param name="idArbitro">ID del arbitro.</param>
+      <param name="cedula">Cedula del arbito.</param>
+      <param name="nombre">Nombre del arbito.</param>
+      <param name="apellidos">Apellido del arbito.</param>
+      <param name="domicilio">Domicilio del arbito.</param>
+      <param name="email">Email del arbito.</param>
+      <param name="telefono">Telefono del arbito.</param>
+    </member>
+    <member name="P:Model.Arbitro.IdArbitro">
+      <summary>
+   Métodos Getter y Setter de los atributos de arbitro.
+   </summary>
+    </member>
+    <member name="M:Model.Arbitro.ToString">
+      <summary>
+   Método que “convierte” el objeto a mostrar en texto.
+   </summary>
+      <returns>Devuelve una cadena de texto.</returns>
+    </member>
+    <member name="T:Model.Colegiados.Asistente">
+      <summary>
+   Clase Asistente que hereda los atributos de arbitro.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.Asistente.#ctor">
+      <summary>
+   Constructor por defecto.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.Asistente.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Constructor parametrizado.
+   </summary>
+      <param name="idArbitro">ID del Asitente.</param>
+      <param name="cedula">Cedula del Asitente.</param>
+      <param name="nombre">Nombre del Asitente.</param>
+      <param name="apellidos">Apellido del Asitente.</param>
+      <param name="domicilio">Domicilio del Asitente.</param>
+      <param name="email">Email del Asitente.</param>
+      <param name="telefono">Telefono del Asitente.</param>
+      <param name="banda">Banda o posicion del Asitente-</param>
+    </member>
+    <member name="P:Model.Colegiados.Asistente.Banda">
+      <summary>
+   Método Getter y Setter de los atributos de asistente.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.Asistente.ToString">
+      <summary>
+   Método que “convierte” el objeto a mostrar en texto.
+   </summary>
+      <returns>Devuelve una cadena de texto.</returns>
+    </member>
+    <member name="T:Model.Colegiados.Colegiado">
+      <summary>
+   Clase Colegiado que va a registrar los id de los arbitros.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.Colegiado.#ctor">
+      <summary>
+   Constructor por defecto.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.Colegiado.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>
+   Constructor parametrizado.
+   </summary>
+      <param name="idcolegiado">ID de colegiado.</param>
+      <param name="idjuezcentral">ID de Juez Central.</param>
+      <param name="idasistente1">ID de Asistente 1.</param>
+      <param name="idasistente2">ID de Asistente 2.</param>
+      <param name="idcuartoarbitro">ID de Cuarto Arbitro.</param>
+    </member>
+    <member name="P:Model.Colegiados.Colegiado.Idcolegiado">
+      <summary>
+   Métodos Getter y Setter de los atributos de colegiado.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.Colegiado.ToString">
+      <summary>
+   Método que “convierte” el objeto a mostrar en texto.
+   </summary>
+      <returns>Devuelve una cadena de texto.</returns>
+    </member>
+    <member name="T:Model.Colegiados.CuartoArbitro">
+      <summary>
+   Clase Cuarto Arbitro que hereda los atributos de arbitro.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.CuartoArbitro.#ctor">
+      <summary>
+   Constructor por defecto.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.CuartoArbitro.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Constructor parametrizado.
+   </summary>
+      <param name="idArbitro">ID del Cuarto Arbitro.</param>
+      <param name="cedula">Cedula del Cuarto Arbitro.</param>
+      <param name="nombre">Nombre del Cuarto Arbitro.</param>
+      <param name="apellidos">Apellido del Cuarto Arbitro.</param>
+      <param name="domicilio">Domicilio del Cuarto Arbitro.</param>
+      <param name="email">Email del Cuarto Arbitro.</param>
+      <param name="telefono">Telefono del Cuarto Arbitro.</param>
+    </member>
+    <member name="M:Model.Colegiados.CuartoArbitro.ToString">
+      <summary>
+   Método que “convierte” el objeto a mostrar en texto.
+   </summary>
+      <returns>Devuelve una cadena de texto.</returns>
+    </member>
+    <member name="T:Model.Colegiados.IntegrantesColegiados">
+      <summary>
+   Clase <c>IntegrantesColegiados</c> para obtener nombre de los arbitros registrados.
+   </summary>
+    </member>
+    <member name="P:Model.Colegiados.IntegrantesColegiados.NombrejuezCentral">
+      <summary>
+   Métodos Getter y Setter de los atributos de <c>IntegrantesColegiados</c>.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.IntegrantesColegiados.ToString">
+      <summary>
+   Método que “convierte” el objeto a mostrar en texto.
+   </summary>
+      <returns>Devuelve una cadena de texto.</returns>
+    </member>
+    <member name="T:Model.Colegiados.JuezCentral">
+      <summary>
+   Clase Juez Central que hereda los atributos de arbitro.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.JuezCentral.#ctor">
+      <summary>
+   Constructor por defecto.
+   </summary>
+    </member>
+    <member name="M:Model.Colegiados.JuezCentral.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+   Constructor parametrizado.
+   </summary>
+      <param name="idArbitro">ID del Juez Central.</param>
+      <param name="cedula">Cedula del Juez Central.</param>
+      <param name="nombre">Nombre del Juez Central.</param>
+      <param name="apellidos">Apellido del Juez Central.</param>
+      <param name="domicilio">Domicilio del Juez Central.</param>
+      <param name="email">Email del Juez Central.</param>
+      <param name="telefono">Telefono del Juez Central.</param>
+    </member>
+    <member name="M:Model.Colegiados.JuezCentral.ToString">
+      <summary>
+   Método que “convierte” el objeto a mostrar en texto.
+   </summary>
+      <returns>Devuelve una cadena de texto.</returns>
+    </member>
+    <member name="T:Model.Equipo.Equipo">
+      <summary>
+   Clase Equipo
+   </summary>
+    </member>
+    <member name="M:Model.Equipo.Equipo.#ctor">
+      <summary>
+   COnstructor por defecto
+   </summary>
+    </member>
+    <member name="M:Model.Equipo.Equipo.#ctor(System.String,System.Int32,System.String,System.String)">
+      <summary>
+   Constructor sin el id del equipo
+   </summary>
+      <param name="nombreEquipo">Nombre del equipo</param>
+      <param name="numeroJugadores">Numero de jugadores</param>
+      <param name="nombreDirectoTecnico">Nombre del director Técnico del equipo</param>
+      <param name="presidenteEquipo">Presidente del equipo</param>
+    </member>
+    <member name="M:Model.Equipo.Equipo.#ctor(System.Int32,System.String,System.Int32,System.String,System.String)">
+      <summary>
+   Constructor parametrizado
+   </summary>
+      <param name="idEquipo">Identificador del equipo</param>
+      <param name="nombreEquipo">Nombre del equipo</param>
+      <param name="numeroJugadores">Numero de jugadores</param>
+      <param name="nombreDirectoTecnico">Nombre del director Técnico del equipo</param>
+      <param name="presidenteEquipo">Presidente del equipo</param>
+    </member>
+    <member name="P:Model.Equipo.Equipo.IdEquipo">
+      <summary>
+   Métodos getter y setter de los atributos de clase
+   </summary>
+    </member>
+  </members>
+</doc>

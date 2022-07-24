@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Data</name>
+  </assembly>
+  <members>
+    <member name="T:Data.DatosColegiados">
+      <summary>
+   Clase para gestionar los datos de colegiado en la BD.
+   </summary>
+      <remarks>
+   Se usa para ejecutar los procedimientos almacenados y operaciones de la BD.
+   </remarks>
+    </member>
+    <member name="M:Data.DatosColegiados.InsertarJuezCentral(JuezCentral)">
+      <summary>
+   Método para guardar Juez Central.
+   </summary>
+      <param name="juezCentral">Objeto Juez Central.</param>
+      <returns>Devuelve el último id insertado como entero.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.InsertarAsistente1(Asistente)">
+      <summary>
+   Método para guardar Asistente 1.
+   </summary>
+      <param name="asistente1">Objeto Asistente 1.</param>
+      <returns>Devuelve el último id insertado como entero.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.InsertarAsistente2(Asistente)">
+      <summary>
+   Método para guardar Asistente 2.
+   </summary>
+      <param name="asistente2">Objeto Asistente 2.</param>
+      <returns>Devuelve el último id insertado como entero.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.InsertarCuartoArbitro(CuartoArbitro)">
+      <summary>
+   Método para guardar Cuarto Arbitro.
+   </summary>
+      <param name="cuartoArbitro">Objeto Cuarto Arbitro.</param>
+      <returns>Devuelve el último id insertado como entero</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.InsertarColegiado(Colegiado)">
+      <summary>
+   Método para guardar Colegiado.
+   </summary>
+      <param name="colegiado">Objeto Colegiado.</param>
+      <returns>Devuelve el último id insertado como entero</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ConsultarIdColegiado">
+      <summary>
+   Método para obtener los id de colegiados.
+   </summary>
+      <returns>Devuelve una lista de entero con los id.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ConsultarJuezCentral(System.Int32)">
+      <summary>
+   Método para obtener los datos de Juez Central.
+   </summary>
+      <param name="id">ID de Juez Central.</param>
+      <returns>Devuelve una lista con objetos Juez Central.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ConsultarAsistente(System.Int32,System.String)">
+      <summary>
+   Método para obtener los datos de Asistente.
+   </summary>
+      <param name="id">ID de asistente.</param>
+      <param name="procedimiento">Nombre del procedimierto a ejecutar.</param>
+      <returns>Devuelve una lista con objetos Asistente.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ConsultarAsistente1(System.Int32)">
+      <summary>
+   Método para obtener los datos de Asistente 1.
+   </summary>
+      <param name="id">ID de asistente 1.</param>
+      <returns>Devuelve una lista con objetos Asistente 1.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ConsultarAsistente2(System.Int32)">
+      <summary>
+   Método para obtener los datos de Asistente 2.
+   </summary>
+      <param name="id">ID de asistente 2.</param>
+      <returns>Devuelve una lista con objetos Asistente 2.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ConsultarCuartoArbitro(System.Int32)">
+      <summary>
+   Método para obtener los datos de Cuarto Arbitro.
+   </summary>
+      <param name="id">ID de Cuarto Arbitro.</param>
+      <returns>Devuelve una lista con objetos Cuarto Arbitro.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ConsultarColegiado">
+      <summary>
+   Método para obtener nombre los arbitros.
+   </summary>
+      <returns>Devuelve una lista con objetos IntegrantesColegiados.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ConsultarCedulaColegiado">
+      <summary>
+   Método para consultar las cedula de los arbitros registrados.
+   </summary>
+      <returns>Devuelve una lista con objetos IntegrantesColegiados.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ObtenerNombreDeColegiados(System.Int32)">
+      <summary>
+   Método para obtener el nombre de los arbitros de acuerdo a un id.
+   </summary>
+      <param name="idColegiado">ID colegiado.</param>
+      <returns>Devuelve un string con los nombres.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.ObtenerTodosIdColegiado(System.Int32)">
+      <summary>
+   Método para obtener todos los id de los arbitros de acuerdo a un parametro.
+   </summary>
+      <param name="idColegiado">ID colegiado.</param>
+      <returns>Devuelve una lista con objetos Colegiado.</returns>
+    </member>
+    <member name="M:Data.DatosColegiados.EditarJuezCentralBD(JuezCentral)">
+      <summary>
+   Método para editar una Juez Central.
+   </summary>
+      <param name="juezCentral">ID de Juez Central.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EditarAsistenteBD(Asistente,System.String)">
+      <summary>
+   Método para editar un Asistente.
+   </summary>
+      <param name="asistente">Objeto Asistente.</param>
+      <param name="procedimiento">Nombre del procedimiento.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EditarAsistente1BD(Asistente)">
+      <summary>
+   Método para editar un Asistente 1.
+   </summary>
+      <param name="asistente1">Objeto Asistente 1.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EditarAsistente2BD(Asistente)">
+      <summary>
+   Método para editar un Asistente 2.
+   </summary>
+      <param name="asistente2">Objeto Asistente 2.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EditarCuartoArbitro(CuartoArbitro)">
+      <summary>
+   Método para editar un Cuarto Arbitro.
+   </summary>
+      <param name="cuartoArbitro">Objeto Cuarto Arbitro-</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EliminarArbitro(System.Int32,System.String)">
+      <summary>
+   Eliminar un arbitro "lógico".
+   </summary>
+      <param name="idArbitro">ID arbitro.</param>
+      <param name="procedimiento">Nombre del procedimiento.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EliminarJuezCentralBD(System.Int32)">
+      <summary>
+   Método para eliminar un Juez Central.
+   </summary>
+      <param name="idArbitro">ID Juez Central.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EliminarAsistente1BD(System.Int32)">
+      <summary>
+   Método para eliminar un Asistente 1.
+   </summary>
+      <param name="idArbitro">ID Asistente 1.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EliminarAsistente2BD(System.Int32)">
+      <summary>
+   Método para eliminar un Asistente 2.
+   </summary>
+      <param name="idArbitro">ID Asistente 2.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EliminarCuartoArbitroBD(System.Int32)">
+      <summary>
+   Método para eliminar un Cuarto Arbitro.
+   </summary>
+      <param name="idArbitro">ID Cuarto Arbitro.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.EliminarColegiado(System.Int32)">
+      <summary>
+   Método para eliminar un Colegiado.
+   </summary>
+      <param name="idArbitro">ID Colegiado.</param>
+    </member>
+    <member name="M:Data.DatosColegiados.ActualizarColegiadoBD(System.Int32,System.Int32,System.String)">
+      <summary>
+   Método para editar un arbitro de un colegiado.
+   </summary>
+      <param name="idColegiado">ID Colegiado.</param>
+      <param name="idNuevo">ID del nuevo arbitro.</param>
+      <param name="arbitro">Tipo de árbitro.</param>
+    </member>
+    <member name="M:Data.DatosEquipos.ObtenerEquipoPorId(System.Int32)">
+      <summary>
+   Método que permite obtener el nombre y el id de un equipos por identificador
+   </summary>
+      <param name="id">id del equipo que se quiere obtener la información</param>
+      <returns>Devuelve un arreglo de equipos con la información necesaria</returns>
+    </member>
+    <member name="M:Data.DatosEquipos.ConsultarEquiposTabla">
+      <summary>
+   Método usado para extraer los datos completos de un equipo
+   </summary>
+      <returns>Devuelve una lista con los datos recuperdos desde la bases de datos</returns>
+    </member>
+    <member name="M:Data.DatosEquipos.EliminarEquipo(System.String)">
+      <summary>
+   Método que permite eliminar un equipo, en este caso cambiar el estado de un equipo
+   </summary>
+      <param name="id">El parámetro es usado para actualizar el estado del equipo</param>
+      <returns>Se regresa una variable entera que funciona como bandera en el caso de ser éxitoso el cambio</returns>
+    </member>
+    <member name="M:Data.DatosEquipos.EditarEquipo(Equipo)">
+      <summary>
+   Método que permite editar un equipo
+   </summary>
+      <param name="equipo">objeto con los datos necesarios de un equipo</param>
+      <returns>Se regresa una variable entera que funciona como bandera en el caso de ser éxitoso el cambio</returns>
+    </member>
+    <member name="M:Data.DatosEquipos.InsertarEquipo(Equipo)">
+      <summary>
+   Método que permite insertar un equipo a la vez en la base de datos
+   </summary>
+      <param name="equipo">Objeto que contiene la información necesaria para almacenar un equipo</param>
+      <returns>Regresa el id del equipo que se ingresó</returns>
+    </member>
+    <member name="M:Data.DatosEquipos.ConsultarEquipos">
+      <summary>
+   Método para consultar el nombre de equipo y el id
+   </summary>
+      <returns>Devuelve una lista de todos los equipos registrados en la base de datos</returns>
+    </member>
+    <member name="M:Data.DatosEquipos.ObtenerCantidadEquipoRegistrados">
+      <summary>
+   Método para saber cuantos equipos han sido registrados en la base de datos
+   </summary>
+      <returns>Devuelve una variable entera con la información de la cantidad de equipos registrados </returns>
+    </member>
+    <member name="T:Data.FalloBDException">
+      <summary>
+   Excepcion para verificar fallos en la BD.
+   </summary>
+    </member>
+    <member name="P:Data.FalloBDException.Arbitro">
+      <summary>
+   Constructores predeterminados.
+   </summary>
+    </member>
+  </members>
+</doc>

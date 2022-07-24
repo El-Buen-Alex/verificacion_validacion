@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="feab4c64-5ef1-478f-aeae-0e873a31abb0" Title="Control Namespace" Url="html/N-Control.htm">
+    <HelpTOCNode Id="6a7299e6-6497-4c35-a5f5-f33915d58252" Title="ErrorActualizarEstadioException Class" Url="html/T-Control.ErrorActualizarEstadioException.htm">
+      <HelpTOCNode Title="ErrorActualizarEstadioException Members" Url="html/AllMembers.T-Control.ErrorActualizarEstadioException.htm" />
+      <HelpTOCNode Id="86ee1ae8-b396-410f-9506-1ffe4f8f8584" Title="ErrorActualizarEstadioException Constructor " Url="html/Overload-Control.ErrorActualizarEstadioException.-ctor.htm">
+        <HelpTOCNode Title="ErrorActualizarEstadioException Constructor (String)" Url="html/M-Control.ErrorActualizarEstadioException.-ctor.htm" />
+        <HelpTOCNode Title="ErrorActualizarEstadioException Constructor " Url="html/M-Control.ErrorActualizarEstadioException.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ErrorActualizarEstadioException Methods" Url="html/Methods.T-Control.ErrorActualizarEstadioException.htm" />
+      <HelpTOCNode Title="ErrorActualizarEstadioException Properties" Url="html/Properties.T-Control.ErrorActualizarEstadioException.htm" />
+      <HelpTOCNode Title="ErrorActualizarEstadioException Events" Url="html/Events.T-Control.ErrorActualizarEstadioException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0b498401-f5a3-4974-9559-88dd12e7db87" Title="GenerarEncuentrosException Class" Url="html/T-Control.GenerarEncuentrosException.htm">
+      <HelpTOCNode Title="GenerarEncuentrosException Members" Url="html/AllMembers.T-Control.GenerarEncuentrosException.htm" />
+      <HelpTOCNode Title="GenerarEncuentrosException Constructor " Url="html/M-Control.GenerarEncuentrosException.-ctor.htm" />
+      <HelpTOCNode Title="GenerarEncuentrosException Methods" Url="html/Methods.T-Control.GenerarEncuentrosException.htm" />
+      <HelpTOCNode Title="GenerarEncuentrosException Properties" Url="html/Properties.T-Control.GenerarEncuentrosException.htm" />
+      <HelpTOCNode Title="GenerarEncuentrosException Events" Url="html/Events.T-Control.GenerarEncuentrosException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="30cde174-adfd-4f73-99b5-6f102be3e16f" Title="GestionLogin Class" Url="html/T-Control.GestionLogin.htm">
+      <HelpTOCNode Title="GestionLogin Members" Url="html/AllMembers.T-Control.GestionLogin.htm" />
+      <HelpTOCNode Id="13119fd6-efb8-43fb-a409-aaa7e5070c46" Title="GestionLogin Methods" Url="html/Methods.T-Control.GestionLogin.htm">
+        <HelpTOCNode Title="CambiarPass Method " Url="html/M-Control.GestionLogin.CambiarPass.htm" />
+        <HelpTOCNode Title="ControlLogin Method " Url="html/M-Control.GestionLogin.ControlLogin.htm" />
+        <HelpTOCNode Title="ObtenerId Method " Url="html/M-Control.GestionLogin.ObtenerId.htm" />
+        <HelpTOCNode Title="ValidarUltimoAcceso Method " Url="html/M-Control.GestionLogin.ValidarUltimoAcceso.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="43b35758-cde0-494d-9a4d-3c7c58576cfe" Title="RegistroEquipoMaximoException Class" Url="html/T-Control.RegistroEquipoMaximoException.htm">
+      <HelpTOCNode Title="RegistroEquipoMaximoException Members" Url="html/AllMembers.T-Control.RegistroEquipoMaximoException.htm" />
+      <HelpTOCNode Id="56886c67-15b8-43ab-94f4-391e85b6cf7d" Title="RegistroEquipoMaximoException Constructor " Url="html/Overload-Control.RegistroEquipoMaximoException.-ctor.htm">
+        <HelpTOCNode Title="RegistroEquipoMaximoException Constructor (String)" Url="html/M-Control.RegistroEquipoMaximoException.-ctor.htm" />
+        <HelpTOCNode Title="RegistroEquipoMaximoException Constructor (String, Exception)" Url="html/M-Control.RegistroEquipoMaximoException.-ctor_1.htm" />
+        <HelpTOCNode Title="RegistroEquipoMaximoException Constructor (String, String)" Url="html/M-Control.RegistroEquipoMaximoException.-ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="RegistroEquipoMaximoException Methods" Url="html/Methods.T-Control.RegistroEquipoMaximoException.htm" />
+      <HelpTOCNode Id="6fb090ab-9ee4-4ea4-b353-c5c5bbffbeec" Title="RegistroEquipoMaximoException Properties" Url="html/Properties.T-Control.RegistroEquipoMaximoException.htm">
+        <HelpTOCNode Title="NombreEquipo Property " Url="html/P-Control.RegistroEquipoMaximoException.NombreEquipo.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="RegistroEquipoMaximoException Events" Url="html/Events.T-Control.RegistroEquipoMaximoException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="c5198d7b-deab-490d-8d4a-6e041a30fce7" Title="UsuarioNoRegistradoException Class" Url="html/T-Control.UsuarioNoRegistradoException.htm">
+      <HelpTOCNode Title="UsuarioNoRegistradoException Members" Url="html/AllMembers.T-Control.UsuarioNoRegistradoException.htm" />
+      <HelpTOCNode Id="4d8ec537-03ed-41de-95c2-bcf8c8f5048c" Title="UsuarioNoRegistradoException Constructor " Url="html/Overload-Control.UsuarioNoRegistradoException.-ctor.htm">
+        <HelpTOCNode Title="UsuarioNoRegistradoException Constructor (String)" Url="html/M-Control.UsuarioNoRegistradoException.-ctor.htm" />
+        <HelpTOCNode Title="UsuarioNoRegistradoException Constructor (String, Exception)" Url="html/M-Control.UsuarioNoRegistradoException.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="UsuarioNoRegistradoException Methods" Url="html/Methods.T-Control.UsuarioNoRegistradoException.htm" />
+      <HelpTOCNode Title="UsuarioNoRegistradoException Properties" Url="html/Properties.T-Control.UsuarioNoRegistradoException.htm" />
+      <HelpTOCNode Title="UsuarioNoRegistradoException Events" Url="html/Events.T-Control.UsuarioNoRegistradoException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f8e3c2b9-2d43-4b01-85ff-486c1b3cf6c8" Title="ValidacionGUI Class" Url="html/T-Control.ValidacionGUI.htm">
+      <HelpTOCNode Title="ValidacionGUI Members" Url="html/AllMembers.T-Control.ValidacionGUI.htm" />
+      <HelpTOCNode Id="9e8022ba-893c-439c-aa25-5d0418205809" Title="ValidacionGUI Methods" Url="html/Methods.T-Control.ValidacionGUI.htm">
+        <HelpTOCNode Title="AInt Method " Url="html/M-Control.ValidacionGUI.AInt.htm" />
+        <HelpTOCNode Title="EsDouble Method " Url="html/M-Control.ValidacionGUI.EsDouble.htm" />
+        <HelpTOCNode Title="EsFloat Method " Url="html/M-Control.ValidacionGUI.EsFloat.htm" />
+        <HelpTOCNode Title="ValidarFecha Method " Url="html/M-Control.ValidacionGUI.ValidarFecha.htm" />
+        <HelpTOCNode Title="ValidarNum Method " Url="html/M-Control.ValidacionGUI.ValidarNum.htm" />
+        <HelpTOCNode Id="3e11b11e-c0ab-4b61-a629-347eec6c4620" Title="ValidarVacios Method " Url="html/Overload-Control.ValidacionGUI.ValidarVacios.htm">
+          <HelpTOCNode Title="ValidarVacios Method (TextBox, TextBox, TextBox, TextBox, TextBox, TextBox)" Url="html/M-Control.ValidacionGUI.ValidarVacios.htm" />
+          <HelpTOCNode Title="ValidarVacios Method (String, String, String, String)" Url="html/M-Control.ValidacionGUI.ValidarVacios_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="15ca20e3-5795-4918-98dd-9c930448ebe0" Title="Control.AdmColegiados Namespace" Url="html/N-Control.AdmColegiados.htm">
+    <HelpTOCNode Id="80f37733-3b8b-41f0-8720-d0739aa20ce6" Title="AdmAsistente1 Class" Url="html/T-Control.AdmColegiados.AdmAsistente1.htm">
+      <HelpTOCNode Title="AdmAsistente1 Members" Url="html/AllMembers.T-Control.AdmColegiados.AdmAsistente1.htm" />
+      <HelpTOCNode Id="f747b422-48b5-4dba-a858-9720d374dc38" Title="AdmAsistente1 Methods" Url="html/Methods.T-Control.AdmColegiados.AdmAsistente1.htm">
+        <HelpTOCNode Title="EditarArbitro Method " Url="html/M-Control.AdmColegiados.AdmAsistente1.EditarArbitro.htm" />
+        <HelpTOCNode Title="EliminarArbitro Method " Url="html/M-Control.AdmColegiados.AdmAsistente1.EliminarArbitro.htm" />
+        <HelpTOCNode Title="GetAdmA1 Method " Url="html/M-Control.AdmColegiados.AdmAsistente1.GetAdmA1.htm" />
+        <HelpTOCNode Title="Guardar Method " Url="html/M-Control.AdmColegiados.AdmAsistente1.Guardar.htm" />
+        <HelpTOCNode Title="LlenarDatosFormEditar Method " Url="html/M-Control.AdmColegiados.AdmAsistente1.LlenarDatosFormEditar.htm" />
+        <HelpTOCNode Title="ObtenerDatos Method " Url="html/M-Control.AdmColegiados.AdmAsistente1.ObtenerDatos.htm" />
+        <HelpTOCNode Title="RecogerDatosEditar Method " Url="html/M-Control.AdmColegiados.AdmAsistente1.RecogerDatosEditar.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5447204c-9531-44b4-9ed9-b6ff005dcffa" Title="AdmAsistente1 Properties" Url="html/Properties.T-Control.AdmColegiados.AdmAsistente1.htm">
+        <HelpTOCNode Title="ListaAsistente1 Property " Url="html/P-Control.AdmColegiados.AdmAsistente1.ListaAsistente1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="84acbf9f-ddc7-4e44-a1e0-437a57ded1fe" Title="AdmAsistente2 Class" Url="html/T-Control.AdmColegiados.AdmAsistente2.htm">
+      <HelpTOCNode Title="AdmAsistente2 Members" Url="html/AllMembers.T-Control.AdmColegiados.AdmAsistente2.htm" />
+      <HelpTOCNode Id="277e6aed-4a75-4212-9cc5-1aacd444292d" Title="AdmAsistente2 Methods" Url="html/Methods.T-Control.AdmColegiados.AdmAsistente2.htm">
+        <HelpTOCNode Title="EditarArbitro Method " Url="html/M-Control.AdmColegiados.AdmAsistente2.EditarArbitro.htm" />
+        <HelpTOCNode Title="EliminarArbitro Method " Url="html/M-Control.AdmColegiados.AdmAsistente2.EliminarArbitro.htm" />
+        <HelpTOCNode Title="GetAdmA2 Method " Url="html/M-Control.AdmColegiados.AdmAsistente2.GetAdmA2.htm" />
+        <HelpTOCNode Title="Guardar Method " Url="html/M-Control.AdmColegiados.AdmAsistente2.Guardar.htm" />
+        <HelpTOCNode Title="LlenarDatosFormEditar Method " Url="html/M-Control.AdmColegiados.AdmAsistente2.LlenarDatosFormEditar.htm" />
+        <HelpTOCNode Title="ObtenerDatos Method " Url="html/M-Control.AdmColegiados.AdmAsistente2.ObtenerDatos.htm" />
+        <HelpTOCNode Title="RecogerDatosEditar Method " Url="html/M-Control.AdmColegiados.AdmAsistente2.RecogerDatosEditar.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="63467c70-1397-4340-bd0d-1dd0a3bac2b9" Title="AdmAsistente2 Properties" Url="html/Properties.T-Control.AdmColegiados.AdmAsistente2.htm">
+        <HelpTOCNode Title="ListaAsistente2 Property " Url="html/P-Control.AdmColegiados.AdmAsistente2.ListaAsistente2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a4ceb8ff-21c3-485a-8605-261663953217" Title="AdmColegiado Class" Url="html/T-Control.AdmColegiados.AdmColegiado.htm">
+      <HelpTOCNode Title="AdmColegiado Members" Url="html/AllMembers.T-Control.AdmColegiados.AdmColegiado.htm" />
+      <HelpTOCNode Id="e294fb32-e34a-46d3-be75-d4d8241e63e2" Title="AdmColegiado Methods" Url="html/Methods.T-Control.AdmColegiados.AdmColegiado.htm">
+        <HelpTOCNode Title="EditarArbitro Method " Url="html/M-Control.AdmColegiados.AdmColegiado.EditarArbitro.htm" />
+        <HelpTOCNode Title="EliminarArbitro Method " Url="html/M-Control.AdmColegiados.AdmColegiado.EliminarArbitro.htm" />
+        <HelpTOCNode Title="EliminarColegiado Method " Url="html/M-Control.AdmColegiados.AdmColegiado.EliminarColegiado.htm" />
+        <HelpTOCNode Title="GetAdmCol Method " Url="html/M-Control.AdmColegiados.AdmColegiado.GetAdmCol.htm" />
+        <HelpTOCNode Title="Guardar Method " Url="html/M-Control.AdmColegiados.AdmColegiado.Guardar.htm" />
+        <HelpTOCNode Id="518105db-16ec-42b5-bb5f-576f3db7e918" Title="LlenarColegiadosCmb Method " Url="html/Overload-Control.AdmColegiados.AdmColegiado.LlenarColegiadosCmb.htm">
+          <HelpTOCNode Title="LlenarColegiadosCmb Method (ComboBox)" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarColegiadosCmb.htm" />
+          <HelpTOCNode Title="LlenarColegiadosCmb Method (ComboBox, Int32)" Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarColegiadosCmb_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="LlenarComboIdColegiado Method " Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarComboIdColegiado.htm" />
+        <HelpTOCNode Title="LlenarDatosFormEditar Method " Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarDatosFormEditar.htm" />
+        <HelpTOCNode Title="LlenarDatosGrivColegiado Method " Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarDatosGrivColegiado.htm" />
+        <HelpTOCNode Title="LlenarListaColegiados Method " Url="html/M-Control.AdmColegiados.AdmColegiado.LlenarListaColegiados.htm" />
+        <HelpTOCNode Title="ObtenerCantidadColegiado Method " Url="html/M-Control.AdmColegiados.AdmColegiado.ObtenerCantidadColegiado.htm" />
+        <HelpTOCNode Title="ObtenerNombreDeColegiados Method " Url="html/M-Control.AdmColegiados.AdmColegiado.ObtenerNombreDeColegiados.htm" />
+        <HelpTOCNode Title="ObtenerNombreDeColegiadosIndex Method " Url="html/M-Control.AdmColegiados.AdmColegiado.ObtenerNombreDeColegiadosIndex.htm" />
+        <HelpTOCNode Title="RecogerDatosEditar Method " Url="html/M-Control.AdmColegiados.AdmColegiado.RecogerDatosEditar.htm" />
+        <HelpTOCNode Title="RecogerDatosEliminar Method " Url="html/M-Control.AdmColegiados.AdmColegiado.RecogerDatosEliminar.htm" />
+        <HelpTOCNode Title="ValidarCedula Method " Url="html/M-Control.AdmColegiados.AdmColegiado.ValidarCedula.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9e811082-0c6e-45c1-a179-736bb2d4438c" Title="AdmColegiado Properties" Url="html/Properties.T-Control.AdmColegiados.AdmColegiado.htm">
+        <HelpTOCNode Title="ListaColegiado Property " Url="html/P-Control.AdmColegiados.AdmColegiado.ListaColegiado.htm" />
+        <HelpTOCNode Title="ListaintegColeg Property " Url="html/P-Control.AdmColegiados.AdmColegiado.ListaintegColeg.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="510c9a99-8a03-48c8-a688-c46ec9129149" Title="AdmCuartoArbitro Class" Url="html/T-Control.AdmColegiados.AdmCuartoArbitro.htm">
+      <HelpTOCNode Title="AdmCuartoArbitro Members" Url="html/AllMembers.T-Control.AdmColegiados.AdmCuartoArbitro.htm" />
+      <HelpTOCNode Id="5105fe1b-c9ad-4252-a716-ec529330fec9" Title="AdmCuartoArbitro Methods" Url="html/Methods.T-Control.AdmColegiados.AdmCuartoArbitro.htm">
+        <HelpTOCNode Title="EditarArbitro Method " Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.EditarArbitro.htm" />
+        <HelpTOCNode Title="EliminarArbitro Method " Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.EliminarArbitro.htm" />
+        <HelpTOCNode Title="GetAdmCA Method " Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.GetAdmCA.htm" />
+        <HelpTOCNode Title="Guardar Method " Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.Guardar.htm" />
+        <HelpTOCNode Title="LlenarDatosFormEditar Method " Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.LlenarDatosFormEditar.htm" />
+        <HelpTOCNode Title="ObtenerDatos Method " Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.ObtenerDatos.htm" />
+        <HelpTOCNode Title="RecogerDatosEditar Method " Url="html/M-Control.AdmColegiados.AdmCuartoArbitro.RecogerDatosEditar.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b3973b4a-fdbe-43cb-98dd-cdf0123315c5" Title="AdmCuartoArbitro Properties" Url="html/Properties.T-Control.AdmColegiados.AdmCuartoArbitro.htm">
+        <HelpTOCNode Title="ListaCuartoArbitro Property " Url="html/P-Control.AdmColegiados.AdmCuartoArbitro.ListaCuartoArbitro.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="88f1885c-3b19-4efb-b7ee-4f68bd697cf0" Title="AdmJuezCentral Class" Url="html/T-Control.AdmColegiados.AdmJuezCentral.htm">
+      <HelpTOCNode Title="AdmJuezCentral Members" Url="html/AllMembers.T-Control.AdmColegiados.AdmJuezCentral.htm" />
+      <HelpTOCNode Id="fcedf0a2-a6d3-45d3-b654-ca1dbb714df4" Title="AdmJuezCentral Methods" Url="html/Methods.T-Control.AdmColegiados.AdmJuezCentral.htm">
+        <HelpTOCNode Title="EditarArbitro Method " Url="html/M-Control.AdmColegiados.AdmJuezCentral.EditarArbitro.htm" />
+        <HelpTOCNode Title="EliminarArbitro Method " Url="html/M-Control.AdmColegiados.AdmJuezCentral.EliminarArbitro.htm" />
+        <HelpTOCNode Title="GetAdmJ Method " Url="html/M-Control.AdmColegiados.AdmJuezCentral.GetAdmJ.htm" />
+        <HelpTOCNode Title="Guardar Method " Url="html/M-Control.AdmColegiados.AdmJuezCentral.Guardar.htm" />
+        <HelpTOCNode Title="LlenarDatosFormEditar Method " Url="html/M-Control.AdmColegiados.AdmJuezCentral.LlenarDatosFormEditar.htm" />
+        <HelpTOCNode Title="ObtenerDatos Method " Url="html/M-Control.AdmColegiados.AdmJuezCentral.ObtenerDatos.htm" />
+        <HelpTOCNode Title="RecogerDatosEditar Method " Url="html/M-Control.AdmColegiados.AdmJuezCentral.RecogerDatosEditar.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="63a68e3b-f8b1-46a2-9d90-0dc4dc776b5a" Title="AdmJuezCentral Properties" Url="html/Properties.T-Control.AdmColegiados.AdmJuezCentral.htm">
+        <HelpTOCNode Title="ListaJuezCentral Property " Url="html/P-Control.AdmColegiados.AdmJuezCentral.ListaJuezCentral.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1e5b99ad-0932-4f9d-a967-badb285f9a5e" Title="Contexto Class" Url="html/T-Control.AdmColegiados.Contexto.htm">
+      <HelpTOCNode Title="Contexto Members" Url="html/AllMembers.T-Control.AdmColegiados.Contexto.htm" />
+      <HelpTOCNode Title="Contexto Constructor " Url="html/M-Control.AdmColegiados.Contexto.-ctor.htm" />
+      <HelpTOCNode Id="fe7ba3b1-782b-4c23-a320-8566a26a1568" Title="Contexto Methods" Url="html/Methods.T-Control.AdmColegiados.Contexto.htm">
+        <HelpTOCNode Title="Datos Method " Url="html/M-Control.AdmColegiados.Contexto.Datos.htm" />
+        <HelpTOCNode Title="EditarArbitro Method " Url="html/M-Control.AdmColegiados.Contexto.EditarArbitro.htm" />
+        <HelpTOCNode Title="EliminarArbitro Method " Url="html/M-Control.AdmColegiados.Contexto.EliminarArbitro.htm" />
+        <HelpTOCNode Title="LlenarDatosFormEditar Method " Url="html/M-Control.AdmColegiados.Contexto.LlenarDatosFormEditar.htm" />
+        <HelpTOCNode Title="ObtenerDatos Method " Url="html/M-Control.AdmColegiados.Contexto.ObtenerDatos.htm" />
+        <HelpTOCNode Title="RecogerDatosEditar Method " Url="html/M-Control.AdmColegiados.Contexto.RecogerDatosEditar.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="912ddad5-5543-4b77-b081-d11284ebe022" Title="IAdm Interface" Url="html/T-Control.AdmColegiados.IAdm.htm">
+      <HelpTOCNode Title="IAdm Members" Url="html/AllMembers.T-Control.AdmColegiados.IAdm.htm" />
+      <HelpTOCNode Id="7a5b67bb-a417-4a95-942d-3deb1cfdb6d9" Title="IAdm Methods" Url="html/Methods.T-Control.AdmColegiados.IAdm.htm">
+        <HelpTOCNode Title="EditarArbitro Method " Url="html/M-Control.AdmColegiados.IAdm.EditarArbitro.htm" />
+        <HelpTOCNode Title="EliminarArbitro Method " Url="html/M-Control.AdmColegiados.IAdm.EliminarArbitro.htm" />
+        <HelpTOCNode Title="Guardar Method " Url="html/M-Control.AdmColegiados.IAdm.Guardar.htm" />
+        <HelpTOCNode Title="LlenarDatosFormEditar Method " Url="html/M-Control.AdmColegiados.IAdm.LlenarDatosFormEditar.htm" />
+        <HelpTOCNode Title="ObtenerDatos Method " Url="html/M-Control.AdmColegiados.IAdm.ObtenerDatos.htm" />
+        <HelpTOCNode Title="RecogerDatosEditar Method " Url="html/M-Control.AdmColegiados.IAdm.RecogerDatosEditar.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="0a288998-2334-4c05-a9e8-2a1a6553a9bb" Title="Control.AdmEncuentros Namespace" Url="html/N-Control.AdmEncuentros.htm">
+    <HelpTOCNode Id="d29ab70c-6493-4528-b8b2-32e7b146aa94" Title="AdmEncuentroFinalizado Class" Url="html/T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm">
+      <HelpTOCNode Title="AdmEncuentroFinalizado Members" Url="html/AllMembers.T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm" />
+      <HelpTOCNode Id="87257b34-390c-4599-94cb-b96b47ea23ec" Title="AdmEncuentroFinalizado Methods" Url="html/Methods.T-Control.AdmEncuentros.AdmEncuentroFinalizado.htm">
+        <HelpTOCNode Title="CalcularPuntos Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.CalcularPuntos.htm" />
+        <HelpTOCNode Title="DarBajaCompetencia Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.DarBajaCompetencia.htm" />
+        <HelpTOCNode Title="FinalizarCompetencia Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.FinalizarCompetencia.htm" />
+        <HelpTOCNode Title="GetAdmEncuentrosFinalizados Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados.htm" />
+        <HelpTOCNode Title="GetCantidadEncuentrosFinalizados Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.GetCantidadEncuentrosFinalizados.htm" />
+        <HelpTOCNode Title="GuardarEncuentroFinalizado Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.GuardarEncuentroFinalizado.htm" />
+        <HelpTOCNode Title="LlenarDgv Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.LlenarDgv.htm" />
+        <HelpTOCNode Title="LlenarInformacionPartido Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.LlenarInformacionPartido.htm" />
+        <HelpTOCNode Title="ReinicarCompetencia Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.ReinicarCompetencia.htm" />
+        <HelpTOCNode Title="UpdateEncuentroFinalizado Method " Url="html/M-Control.AdmEncuentros.AdmEncuentroFinalizado.UpdateEncuentroFinalizado.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="42a33989-b24a-477d-a826-d6700d7458ca" Title="Control.AdmEncuentrosGenerados Namespace" Url="html/N-Control.AdmEncuentrosGenerados.htm">
+    <HelpTOCNode Id="f19b60ba-cc61-4cbe-831d-dd0cfef4d077" Title="AdmEncuentrosDefinidos Class" Url="html/T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm">
+      <HelpTOCNode Title="AdmEncuentrosDefinidos Members" Url="html/AllMembers.T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm" />
+      <HelpTOCNode Id="11f9ae9f-a550-4088-a3c4-13eb0698dfde" Title="AdmEncuentrosDefinidos Methods" Url="html/Methods.T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm">
+        <HelpTOCNode Title="ActualizarEncuentroDefinido Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ActualizarEncuentroDefinido.htm" />
+        <HelpTOCNode Title="ActualizarEstadio Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ActualizarEstadio.htm" />
+        <HelpTOCNode Title="DarBajaEncuentrosDefinidos Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.DarBajaEncuentrosDefinidos.htm" />
+        <HelpTOCNode Title="GetAdmGenerarEncuentrosDefinidos Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos.htm" />
+        <HelpTOCNode Title="GetEncuentroDefinidoByIndex Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.GetEncuentroDefinidoByIndex.htm" />
+        <HelpTOCNode Title="GuardarEncuentroDefinido Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.GuardarEncuentroDefinido.htm" />
+        <HelpTOCNode Title="LlenarCmbEncuentrosDefinidosFinalizados Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarCmbEncuentrosDefinidosFinalizados.htm" />
+        <HelpTOCNode Id="bac2d6a6-242b-4597-93d6-d8e0ebddc027" Title="LlenarInformac&#237;onPartidoCompleta Method " Url="html/Overload-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarInformacíonPartidoCompleta.htm">
+          <HelpTOCNode Title="LlenarInformac&#237;onPartidoCompleta Method (Int32, Label, Label, Label, Label, Label)" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarInformacíonPartidoCompleta.htm" />
+          <HelpTOCNode Title="LlenarInformac&#237;onPartidoCompleta Method (Int32, Label, Label, ComboBox, DateTimePicker, DateTimePicker, ComboBox, TextBox)" Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarInformacíonPartidoCompleta_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="LlenarMatch Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarMatch.htm" />
+        <HelpTOCNode Title="LlenarMatchDefinidosFinalizados Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarMatchDefinidosFinalizados.htm" />
+        <HelpTOCNode Title="LlenarPartidosCmb Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.LlenarPartidosCmb.htm" />
+        <HelpTOCNode Title="ObtenerCantidadEncuentrosDefinidos Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ObtenerCantidadEncuentrosDefinidos.htm" />
+        <HelpTOCNode Title="ObtenerNombreEstadioDelPartido Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ObtenerNombreEstadioDelPartido.htm" />
+        <HelpTOCNode Title="ObtenerNumeroPartidosPorJugar Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar.htm" />
+        <HelpTOCNode Title="ReinicarCompetencia Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ReinicarCompetencia.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="348c88d3-0bb8-4456-9c0e-e9161bf4e6d4" Title="AdmEncuentrosDefinidos Properties" Url="html/Properties.T-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.htm">
+        <HelpTOCNode Title="ListaEncuentrosDefinidos Property " Url="html/P-Control.AdmEncuentrosGenerados.AdmEncuentrosDefinidos.ListaEncuentrosDefinidos.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bc06ea14-ea39-4bef-8ddd-e07794e72aca" Title="AdmGenerarEncuentros Class" Url="html/T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm">
+      <HelpTOCNode Title="AdmGenerarEncuentros Members" Url="html/AllMembers.T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm" />
+      <HelpTOCNode Id="0436859e-2494-4c35-bd4f-b2776a3d0764" Title="AdmGenerarEncuentros Methods" Url="html/Methods.T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm">
+        <HelpTOCNode Title="CambiarEstadoEncuentro Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.CambiarEstadoEncuentro.htm" />
+        <HelpTOCNode Title="DarBajaEncuentros Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.DarBajaEncuentros.htm" />
+        <HelpTOCNode Title="GenerarEncuentrosAleatorios Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.GenerarEncuentrosAleatorios.htm" />
+        <HelpTOCNode Title="GetAdmadmGenerarEncuentros Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.GetAdmadmGenerarEncuentros.htm" />
+        <HelpTOCNode Title="GuardarEncuentrosAleatorios Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.GuardarEncuentrosAleatorios.htm" />
+        <HelpTOCNode Title="LlenarListaEncuentrosGeneradosPendientes Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.LlenarListaEncuentrosGeneradosPendientes.htm" />
+        <HelpTOCNode Title="LlenarTuplas Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.LlenarTuplas.htm" />
+        <HelpTOCNode Title="ObtenerEncuentroPorID Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ObtenerEncuentroPorID.htm" />
+        <HelpTOCNode Title="ObtnerNumeroEncuentrosGeneradosPendientes Method " Url="html/M-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7328b3eb-6985-487b-97b9-381c73e9af7c" Title="AdmGenerarEncuentros Properties" Url="html/Properties.T-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.htm">
+        <HelpTOCNode Title="ListaEncuentrosGenerados Property " Url="html/P-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ListaEncuentrosGenerados.htm" />
+        <HelpTOCNode Title="ListaEncuentrosGeneradosPendientes Property " Url="html/P-Control.AdmEncuentrosGenerados.AdmGenerarEncuentros.ListaEncuentrosGeneradosPendientes.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="1ace3c16-f543-450c-bf1c-ba41302799b7" Title="Control.AdmEquipos Namespace" Url="html/N-Control.AdmEquipos.htm">
+    <HelpTOCNode Id="d0aaecf9-2cce-4cb9-9a42-206927337fd1" Title="AdmEquipo Class" Url="html/T-Control.AdmEquipos.AdmEquipo.htm">
+      <HelpTOCNode Title="AdmEquipo Members" Url="html/AllMembers.T-Control.AdmEquipos.AdmEquipo.htm" />
+      <HelpTOCNode Id="4ca33ce5-5ca5-4168-a603-b9e4070d172c" Title="AdmEquipo Methods" Url="html/Methods.T-Control.AdmEquipos.AdmEquipo.htm">
+        <HelpTOCNode Title="ActualizarDatos Method " Url="html/M-Control.AdmEquipos.AdmEquipo.ActualizarDatos.htm" />
+        <HelpTOCNode Title="CantidadEquiposRegistrados Method " Url="html/M-Control.AdmEquipos.AdmEquipo.CantidadEquiposRegistrados.htm" />
+        <HelpTOCNode Title="EliminarRegistro Method " Url="html/M-Control.AdmEquipos.AdmEquipo.EliminarRegistro.htm" />
+        <HelpTOCNode Title="ExtraerEquipos Method " Url="html/M-Control.AdmEquipos.AdmEquipo.ExtraerEquipos.htm" />
+        <HelpTOCNode Title="GetEquipo Method " Url="html/M-Control.AdmEquipos.AdmEquipo.GetEquipo.htm" />
+        <HelpTOCNode Title="GuardarDatos Method " Url="html/M-Control.AdmEquipos.AdmEquipo.GuardarDatos.htm" />
+        <HelpTOCNode Title="LlenarCampos Method " Url="html/M-Control.AdmEquipos.AdmEquipo.LlenarCampos.htm" />
+        <HelpTOCNode Title="LlenarEquipos Method " Url="html/M-Control.AdmEquipos.AdmEquipo.LlenarEquipos.htm" />
+        <HelpTOCNode Title="LlenarEquiposCmb Method " Url="html/M-Control.AdmEquipos.AdmEquipo.LlenarEquiposCmb.htm" />
+        <HelpTOCNode Title="LlenaTabla Method " Url="html/M-Control.AdmEquipos.AdmEquipo.LlenaTabla.htm" />
+        <HelpTOCNode Title="ObserverCmbEquipos Method " Url="html/M-Control.AdmEquipos.AdmEquipo.ObserverCmbEquipos.htm" />
+        <HelpTOCNode Title="ObtenerCantidadEquipo Method " Url="html/M-Control.AdmEquipos.AdmEquipo.ObtenerCantidadEquipo.htm" />
+        <HelpTOCNode Title="ObtenerEquipoPorId Method " Url="html/M-Control.AdmEquipos.AdmEquipo.ObtenerEquipoPorId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d1ad6a88-588d-4c74-85d8-3d4c3732ba3c" Title="Control.AdmEstadios Namespace" Url="html/N-Control.AdmEstadios.htm">
+    <HelpTOCNode Id="9831a21f-f5e0-452c-9907-00401ef66a15" Title="AdmEstadio Class" Url="html/T-Control.AdmEstadios.AdmEstadio.htm">
+      <HelpTOCNode Title="AdmEstadio Members" Url="html/AllMembers.T-Control.AdmEstadios.AdmEstadio.htm" />
+      <HelpTOCNode Id="d43c6d83-77a6-4726-9569-83cc7a678407" Title="AdmEstadio Methods" Url="html/Methods.T-Control.AdmEstadios.AdmEstadio.htm">
+        <HelpTOCNode Title="CambiarEstadoEstadio Method " Url="html/M-Control.AdmEstadios.AdmEstadio.CambiarEstadoEstadio.htm" />
+        <HelpTOCNode Title="GetAdmEstadio Method " Url="html/M-Control.AdmEstadios.AdmEstadio.GetAdmEstadio.htm" />
+        <HelpTOCNode Id="65020e69-60fc-4b2d-ad56-359a5988afcb" Title="LlenarEstadiosCmb Method " Url="html/Overload-Control.AdmEstadios.AdmEstadio.LlenarEstadiosCmb.htm">
+          <HelpTOCNode Title="LlenarEstadiosCmb Method (ComboBox)" Url="html/M-Control.AdmEstadios.AdmEstadio.LlenarEstadiosCmb.htm" />
+          <HelpTOCNode Title="LlenarEstadiosCmb Method (ComboBox, Estadio)" Url="html/M-Control.AdmEstadios.AdmEstadio.LlenarEstadiosCmb_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ObtenerEstadioPorId Method " Url="html/M-Control.AdmEstadios.AdmEstadio.ObtenerEstadioPorId.htm" />
+        <HelpTOCNode Title="PonerEstadiosDisponibles Method " Url="html/M-Control.AdmEstadios.AdmEstadio.PonerEstadiosDisponibles.htm" />
+        <HelpTOCNode Title="RefrezcarListaEstadiosDisponibles Method " Url="html/M-Control.AdmEstadios.AdmEstadio.RefrezcarListaEstadiosDisponibles.htm" />
+        <HelpTOCNode Title="SeleccionarEstadio Method " Url="html/M-Control.AdmEstadios.AdmEstadio.SeleccionarEstadio.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="adc28f98-8158-40e0-9eca-25560f938965" Title="AdmEstadio Properties" Url="html/Properties.T-Control.AdmEstadios.AdmEstadio.htm">
+        <HelpTOCNode Title="ListaEstadiosDisponibles Property " Url="html/P-Control.AdmEstadios.AdmEstadio.ListaEstadiosDisponibles.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="93e392f8-68ec-45f7-a483-236d2854000c" Title="Data Namespace" Url="html/N-Data.htm">
+    <HelpTOCNode Id="7e9976fa-e30c-48b0-9dcc-1cb3a6a2e3e7" Title="DatosColegiados Class" Url="html/T-Data.DatosColegiados.htm">
+      <HelpTOCNode Title="DatosColegiados Members" Url="html/AllMembers.T-Data.DatosColegiados.htm" />
+      <HelpTOCNode Id="9ad02d82-0b62-460a-b879-237978dd427d" Title="DatosColegiados Methods" Url="html/Methods.T-Data.DatosColegiados.htm">
+        <HelpTOCNode Title="ActualizarColegiadoBD Method " Url="html/M-Data.DatosColegiados.ActualizarColegiadoBD.htm" />
+        <HelpTOCNode Title="ConsultarAsistente Method " Url="html/M-Data.DatosColegiados.ConsultarAsistente.htm" />
+        <HelpTOCNode Title="ConsultarAsistente1 Method " Url="html/M-Data.DatosColegiados.ConsultarAsistente1.htm" />
+        <HelpTOCNode Title="ConsultarAsistente2 Method " Url="html/M-Data.DatosColegiados.ConsultarAsistente2.htm" />
+        <HelpTOCNode Title="ConsultarCedulaColegiado Method " Url="html/M-Data.DatosColegiados.ConsultarCedulaColegiado.htm" />
+        <HelpTOCNode Title="ConsultarColegiado Method " Url="html/M-Data.DatosColegiados.ConsultarColegiado.htm" />
+        <HelpTOCNode Title="ConsultarCuartoArbitro Method " Url="html/M-Data.DatosColegiados.ConsultarCuartoArbitro.htm" />
+        <HelpTOCNode Title="ConsultarIdColegiado Method " Url="html/M-Data.DatosColegiados.ConsultarIdColegiado.htm" />
+        <HelpTOCNode Title="ConsultarJuezCentral Method " Url="html/M-Data.DatosColegiados.ConsultarJuezCentral.htm" />
+        <HelpTOCNode Title="EditarAsistente1BD Method " Url="html/M-Data.DatosColegiados.EditarAsistente1BD.htm" />
+        <HelpTOCNode Title="EditarAsistente2BD Method " Url="html/M-Data.DatosColegiados.EditarAsistente2BD.htm" />
+        <HelpTOCNode Title="EditarAsistenteBD Method " Url="html/M-Data.DatosColegiados.EditarAsistenteBD.htm" />
+        <HelpTOCNode Title="EditarCuartoArbitro Method " Url="html/M-Data.DatosColegiados.EditarCuartoArbitro.htm" />
+        <HelpTOCNode Title="EditarJuezCentralBD Method " Url="html/M-Data.DatosColegiados.EditarJuezCentralBD.htm" />
+        <HelpTOCNode Title="EliminarArbitro Method " Url="html/M-Data.DatosColegiados.EliminarArbitro.htm" />
+        <HelpTOCNode Title="EliminarAsistente1BD Method " Url="html/M-Data.DatosColegiados.EliminarAsistente1BD.htm" />
+        <HelpTOCNode Title="EliminarAsistente2BD Method " Url="html/M-Data.DatosColegiados.EliminarAsistente2BD.htm" />
+        <HelpTOCNode Title="EliminarColegiado Method " Url="html/M-Data.DatosColegiados.EliminarColegiado.htm" />
+        <HelpTOCNode Title="EliminarCuartoArbitroBD Method " Url="html/M-Data.DatosColegiados.EliminarCuartoArbitroBD.htm" />
+        <HelpTOCNode Title="EliminarJuezCentralBD Method " Url="html/M-Data.DatosColegiados.EliminarJuezCentralBD.htm" />
+        <HelpTOCNode Title="InsertarAsistente1 Method " Url="html/M-Data.DatosColegiados.InsertarAsistente1.htm" />
+        <HelpTOCNode Title="InsertarAsistente2 Method " Url="html/M-Data.DatosColegiados.InsertarAsistente2.htm" />
+        <HelpTOCNode Title="InsertarColegiado Method " Url="html/M-Data.DatosColegiados.InsertarColegiado.htm" />
+        <HelpTOCNode Title="InsertarCuartoArbitro Method " Url="html/M-Data.DatosColegiados.InsertarCuartoArbitro.htm" />
+        <HelpTOCNode Title="InsertarJuezCentral Method " Url="html/M-Data.DatosColegiados.InsertarJuezCentral.htm" />
+        <HelpTOCNode Title="ObtenerNombreDeColegiados Method " Url="html/M-Data.DatosColegiados.ObtenerNombreDeColegiados.htm" />
+        <HelpTOCNode Title="ObtenerTodosIdColegiado Method " Url="html/M-Data.DatosColegiados.ObtenerTodosIdColegiado.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="84f40d5b-3643-43dd-a32a-6a42335d028f" Title="DatosEncuentroDefinido Class" Url="html/T-Data.DatosEncuentroDefinido.htm">
+      <HelpTOCNode Title="DatosEncuentroDefinido Members" Url="html/AllMembers.T-Data.DatosEncuentroDefinido.htm" />
+      <HelpTOCNode Id="dc2b1136-e646-4015-b1f0-f5ada70172b6" Title="DatosEncuentroDefinido Methods" Url="html/Methods.T-Data.DatosEncuentroDefinido.htm">
+        <HelpTOCNode Title="ActualizarEstadioDePartido Method " Url="html/M-Data.DatosEncuentroDefinido.ActualizarEstadioDePartido.htm" />
+        <HelpTOCNode Title="ActualizarFechaHoraDEPartido Method " Url="html/M-Data.DatosEncuentroDefinido.ActualizarFechaHoraDEPartido.htm" />
+        <HelpTOCNode Title="CambiarEstadoEnucentroDefinido Method " Url="html/M-Data.DatosEncuentroDefinido.CambiarEstadoEnucentroDefinido.htm" />
+        <HelpTOCNode Title="GetEncuentrosDefinidosFinalizados Method " Url="html/M-Data.DatosEncuentroDefinido.GetEncuentrosDefinidosFinalizados.htm" />
+        <HelpTOCNode Title="GuardarEncuentroDefinido Method " Url="html/M-Data.DatosEncuentroDefinido.GuardarEncuentroDefinido.htm" />
+        <HelpTOCNode Title="ObtenerCantidadEncuentrosDefinidos Method " Url="html/M-Data.DatosEncuentroDefinido.ObtenerCantidadEncuentrosDefinidos.htm" />
+        <HelpTOCNode Title="ObtenerCantidadEncuentrosPorJugar Method " Url="html/M-Data.DatosEncuentroDefinido.ObtenerCantidadEncuentrosPorJugar.htm" />
+        <HelpTOCNode Title="ObtenerEncuentros Method " Url="html/M-Data.DatosEncuentroDefinido.ObtenerEncuentros.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d51d8908-a461-4985-95da-f42af2bbfc46" Title="DatosEncuentroFinalizado Class" Url="html/T-Data.DatosEncuentroFinalizado.htm">
+      <HelpTOCNode Title="DatosEncuentroFinalizado Members" Url="html/AllMembers.T-Data.DatosEncuentroFinalizado.htm" />
+      <HelpTOCNode Id="35158465-b47c-47b3-8cea-712ac8ccfd78" Title="DatosEncuentroFinalizado Methods" Url="html/Methods.T-Data.DatosEncuentroFinalizado.htm">
+        <HelpTOCNode Title="AddEncuentroFinalizado Method " Url="html/M-Data.DatosEncuentroFinalizado.AddEncuentroFinalizado.htm" />
+        <HelpTOCNode Title="FinalizarCompetencia Method " Url="html/M-Data.DatosEncuentroFinalizado.FinalizarCompetencia.htm" />
+        <HelpTOCNode Title="GetCantidadEncuentrosFinalizados Method " Url="html/M-Data.DatosEncuentroFinalizado.GetCantidadEncuentrosFinalizados.htm" />
+        <HelpTOCNode Title="GetEncuentroFinalizadoByIDefinidoEquipo Method " Url="html/M-Data.DatosEncuentroFinalizado.GetEncuentroFinalizadoByIDefinidoEquipo.htm" />
+        <HelpTOCNode Title="GetEncuentrosFinalizados Method " Url="html/M-Data.DatosEncuentroFinalizado.GetEncuentrosFinalizados.htm" />
+        <HelpTOCNode Title="UpdateEncuentroFinalizado Method " Url="html/M-Data.DatosEncuentroFinalizado.UpdateEncuentroFinalizado.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="499e3341-1b29-468b-b864-6a174e98c62c" Title="DatosEnuenctrosGenerados Class" Url="html/T-Data.DatosEnuenctrosGenerados.htm">
+      <HelpTOCNode Title="DatosEnuenctrosGenerados Members" Url="html/AllMembers.T-Data.DatosEnuenctrosGenerados.htm" />
+      <HelpTOCNode Id="8445f9c0-339a-4e4f-98a6-cf28ce4cb530" Title="DatosEnuenctrosGenerados Methods" Url="html/Methods.T-Data.DatosEnuenctrosGenerados.htm">
+        <HelpTOCNode Title="CambiarEstadoEncuentro Method " Url="html/M-Data.DatosEnuenctrosGenerados.CambiarEstadoEncuentro.htm" />
+        <HelpTOCNode Title="CambiarEstadoEncuentros Method " Url="html/M-Data.DatosEnuenctrosGenerados.CambiarEstadoEncuentros.htm" />
+        <HelpTOCNode Title="GuardarEncuentrosGenerados Method " Url="html/M-Data.DatosEnuenctrosGenerados.GuardarEncuentrosGenerados.htm" />
+        <HelpTOCNode Title="ObetnerNumeroEncuentrosPendientes Method " Url="html/M-Data.DatosEnuenctrosGenerados.ObetnerNumeroEncuentrosPendientes.htm" />
+        <HelpTOCNode Title="ObtenerEncuentroPendiente Method " Url="html/M-Data.DatosEnuenctrosGenerados.ObtenerEncuentroPendiente.htm" />
+        <HelpTOCNode Title="ObtenerEncuentrosPendientes Method " Url="html/M-Data.DatosEnuenctrosGenerados.ObtenerEncuentrosPendientes.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="70cd1d3a-a709-4cc6-a67c-2e8b01a382f6" Title="DatosEquipos Class" Url="html/T-Data.DatosEquipos.htm">
+      <HelpTOCNode Title="DatosEquipos Members" Url="html/AllMembers.T-Data.DatosEquipos.htm" />
+      <HelpTOCNode Id="c9854ff5-da4f-40c4-961d-1782b23a0d9f" Title="DatosEquipos Methods" Url="html/Methods.T-Data.DatosEquipos.htm">
+        <HelpTOCNode Title="ConsultarEquipos Method " Url="html/M-Data.DatosEquipos.ConsultarEquipos.htm" />
+        <HelpTOCNode Title="ConsultarEquiposTabla Method " Url="html/M-Data.DatosEquipos.ConsultarEquiposTabla.htm" />
+        <HelpTOCNode Title="EditarEquipo Method " Url="html/M-Data.DatosEquipos.EditarEquipo.htm" />
+        <HelpTOCNode Title="EliminarEquipo Method " Url="html/M-Data.DatosEquipos.EliminarEquipo.htm" />
+        <HelpTOCNode Title="InsertarEquipo Method " Url="html/M-Data.DatosEquipos.InsertarEquipo.htm" />
+        <HelpTOCNode Title="ObtenerCantidadEquipoRegistrados Method " Url="html/M-Data.DatosEquipos.ObtenerCantidadEquipoRegistrados.htm" />
+        <HelpTOCNode Title="ObtenerEquipoPorId Method " Url="html/M-Data.DatosEquipos.ObtenerEquipoPorId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="83c3e28e-e105-4763-beec-76a2b457ee2a" Title="DatosEstadios Class" Url="html/T-Data.DatosEstadios.htm">
+      <HelpTOCNode Title="DatosEstadios Members" Url="html/AllMembers.T-Data.DatosEstadios.htm" />
+      <HelpTOCNode Id="78bd588f-e9ad-44d3-bb7e-f21845bda9e2" Title="DatosEstadios Methods" Url="html/Methods.T-Data.DatosEstadios.htm">
+        <HelpTOCNode Title="CambiarEstado Method " Url="html/M-Data.DatosEstadios.CambiarEstado.htm" />
+        <HelpTOCNode Title="ObtenerEstadioPorId Method " Url="html/M-Data.DatosEstadios.ObtenerEstadioPorId.htm" />
+        <HelpTOCNode Title="ObtenerEstadiosDisponibles Method " Url="html/M-Data.DatosEstadios.ObtenerEstadiosDisponibles.htm" />
+        <HelpTOCNode Title="PutEstadiosDisponibles Method " Url="html/M-Data.DatosEstadios.PutEstadiosDisponibles.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7f418e90-28b2-49bf-ad48-ffc4db0ca766" Title="FalloBDException Class" Url="html/T-Data.FalloBDException.htm">
+      <HelpTOCNode Title="FalloBDException Members" Url="html/AllMembers.T-Data.FalloBDException.htm" />
+      <HelpTOCNode Id="c361fd38-69db-453f-9a1f-6c5dc2e29970" Title="FalloBDException Constructor " Url="html/Overload-Data.FalloBDException.-ctor.htm">
+        <HelpTOCNode Title="FalloBDException Constructor " Url="html/M-Data.FalloBDException.-ctor.htm" />
+        <HelpTOCNode Title="FalloBDException Constructor (String)" Url="html/M-Data.FalloBDException.-ctor_1.htm" />
+        <HelpTOCNode Title="FalloBDException Constructor (String, Exception)" Url="html/M-Data.FalloBDException.-ctor_2.htm" />
+        <HelpTOCNode Title="FalloBDException Constructor (String, String)" Url="html/M-Data.FalloBDException.-ctor_3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FalloBDException Methods" Url="html/Methods.T-Data.FalloBDException.htm" />
+      <HelpTOCNode Id="d41b3e2d-253f-41fb-b15f-e1c6760346d5" Title="FalloBDException Properties" Url="html/Properties.T-Data.FalloBDException.htm">
+        <HelpTOCNode Title="Arbitro Property " Url="html/P-Data.FalloBDException.Arbitro.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FalloBDException Events" Url="html/Events.T-Data.FalloBDException.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="39a9b7dd-ab01-415f-9641-0b1bda7c2e0f" Title="GestionDeColegiados Namespace" Url="html/N-GestionDeColegiados.htm">
+    <HelpTOCNode Id="6c62ba4e-c657-4743-8c7f-8a6b76954555" Title="BtnIniciarSesion Class" Url="html/T-GestionDeColegiados.BtnIniciarSesion.htm">
+      <HelpTOCNode Title="BtnIniciarSesion Members" Url="html/AllMembers.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+      <HelpTOCNode Title="BtnIniciarSesion Constructor " Url="html/M-GestionDeColegiados.BtnIniciarSesion.-ctor.htm" />
+      <HelpTOCNode Title="BtnIniciarSesion Methods" Url="html/Methods.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+      <HelpTOCNode Title="BtnIniciarSesion Properties" Url="html/Properties.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+      <HelpTOCNode Title="BtnIniciarSesion Events" Url="html/Events.T-GestionDeColegiados.BtnIniciarSesion.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="d9a429b4-8e01-41ea-8216-8cbd27c1dcdf" Title="CambiarPass Class" Url="html/T-GestionDeColegiados.CambiarPass.htm">
+      <HelpTOCNode Title="CambiarPass Members" Url="html/AllMembers.T-GestionDeColegiados.CambiarPass.htm" />
+      <HelpTOCNode Title="CambiarPass Constructor " Url="html/M-GestionDeColegiados.CambiarPass.-ctor.htm" />
+      <HelpTOCNode Title="CambiarPass Methods" Url="html/Methods.T-GestionDeColegiados.CambiarPass.htm" />
+      <HelpTOCNode Title="CambiarPass Properties" Url="html/Properties.T-GestionDeColegiados.CambiarPass.htm" />
+      <HelpTOCNode Title="CambiarPass Events" Url="html/Events.T-GestionDeColegiados.CambiarPass.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="8ecf067c-2277-491e-bffa-9e626970f1e6" Title="FrmCambiarEstadioPartido Class" Url="html/T-GestionDeColegiados.FrmCambiarEstadioPartido.htm">
+      <HelpTOCNode Title="FrmCambiarEstadioPartido Members" Url="html/AllMembers.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+      <HelpTOCNode Title="FrmCambiarEstadioPartido Constructor " Url="html/M-GestionDeColegiados.FrmCambiarEstadioPartido.-ctor.htm" />
+      <HelpTOCNode Title="FrmCambiarEstadioPartido Methods" Url="html/Methods.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+      <HelpTOCNode Id="d6b5e761-5fe4-45c4-bcea-f953dadb8c50" Title="FrmCambiarEstadioPartido Properties" Url="html/Properties.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm">
+        <HelpTOCNode Title="CmbEncuentros Property " Url="html/P-GestionDeColegiados.FrmCambiarEstadioPartido.CmbEncuentros.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FrmCambiarEstadioPartido Events" Url="html/Events.T-GestionDeColegiados.FrmCambiarEstadioPartido.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ec8d50dc-71e6-4174-8871-ecb75915a1d4" Title="FrmEditarEquipo Class" Url="html/T-GestionDeColegiados.FrmEditarEquipo.htm">
+      <HelpTOCNode Title="FrmEditarEquipo Members" Url="html/AllMembers.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+      <HelpTOCNode Title="FrmEditarEquipo Constructor " Url="html/M-GestionDeColegiados.FrmEditarEquipo.-ctor.htm" />
+      <HelpTOCNode Title="FrmEditarEquipo Methods" Url="html/Methods.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+      <HelpTOCNode Title="FrmEditarEquipo Properties" Url="html/Properties.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+      <HelpTOCNode Title="FrmEditarEquipo Events" Url="html/Events.T-GestionDeColegiados.FrmEditarEquipo.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="abe90322-da09-4e41-85bc-83bbac04dc9e" Title="FrmGenerarEncuentros Class" Url="html/T-GestionDeColegiados.FrmGenerarEncuentros.htm">
+      <HelpTOCNode Title="FrmGenerarEncuentros Members" Url="html/AllMembers.T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+      <HelpTOCNode Title="FrmGenerarEncuentros Constructor " Url="html/M-GestionDeColegiados.FrmGenerarEncuentros.-ctor.htm" />
+      <HelpTOCNode Title="FrmGenerarEncuentros Methods" Url="html/Methods.T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+      <HelpTOCNode Id="6d7954ea-6f01-433c-bee6-a43e33e5c9ad" Title="FrmGenerarEncuentros Properties" Url="html/Properties.T-GestionDeColegiados.FrmGenerarEncuentros.htm">
+        <HelpTOCNode Title="ListaContenedoresLocal Property " Url="html/P-GestionDeColegiados.FrmGenerarEncuentros.ListaContenedoresLocal.htm" />
+        <HelpTOCNode Title="ListaContenedoresVisitante Property " Url="html/P-GestionDeColegiados.FrmGenerarEncuentros.ListaContenedoresVisitante.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FrmGenerarEncuentros Events" Url="html/Events.T-GestionDeColegiados.FrmGenerarEncuentros.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="2624ac36-4935-4d93-9035-cb6ccf5dc20b" Title="FrmListaEquipos Class" Url="html/T-GestionDeColegiados.FrmListaEquipos.htm">
+      <HelpTOCNode Title="FrmListaEquipos Members" Url="html/AllMembers.T-GestionDeColegiados.FrmListaEquipos.htm" />
+      <HelpTOCNode Title="FrmListaEquipos Constructor " Url="html/M-GestionDeColegiados.FrmListaEquipos.-ctor.htm" />
+      <HelpTOCNode Title="FrmListaEquipos Methods" Url="html/Methods.T-GestionDeColegiados.FrmListaEquipos.htm" />
+      <HelpTOCNode Title="FrmListaEquipos Properties" Url="html/Properties.T-GestionDeColegiados.FrmListaEquipos.htm" />
+      <HelpTOCNode Title="FrmListaEquipos Events" Url="html/Events.T-GestionDeColegiados.FrmListaEquipos.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="696d9b3e-fc90-4acd-be8a-c1099fc3c0cd" Title="FrmNuevoEquipo Class" Url="html/T-GestionDeColegiados.FrmNuevoEquipo.htm">
+      <HelpTOCNode Title="FrmNuevoEquipo Members" Url="html/AllMembers.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+      <HelpTOCNode Title="FrmNuevoEquipo Constructor " Url="html/M-GestionDeColegiados.FrmNuevoEquipo.-ctor.htm" />
+      <HelpTOCNode Title="FrmNuevoEquipo Methods" Url="html/Methods.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+      <HelpTOCNode Title="FrmNuevoEquipo Properties" Url="html/Properties.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+      <HelpTOCNode Title="FrmNuevoEquipo Events" Url="html/Events.T-GestionDeColegiados.FrmNuevoEquipo.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a5aa564f-0a11-4add-9177-9620c1650e62" Title="FrmNuevoGrupoColegiado Class" Url="html/T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm">
+      <HelpTOCNode Title="FrmNuevoGrupoColegiado Members" Url="html/AllMembers.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+      <HelpTOCNode Title="FrmNuevoGrupoColegiado Constructor " Url="html/M-GestionDeColegiados.FrmNuevoGrupoColegiado.-ctor.htm" />
+      <HelpTOCNode Title="FrmNuevoGrupoColegiado Methods" Url="html/Methods.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+      <HelpTOCNode Title="FrmNuevoGrupoColegiado Properties" Url="html/Properties.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+      <HelpTOCNode Title="FrmNuevoGrupoColegiado Events" Url="html/Events.T-GestionDeColegiados.FrmNuevoGrupoColegiado.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="c81cef70-09f8-45ba-b861-f7a16be6e1e0" Title="FrmRegistrarPartido Class" Url="html/T-GestionDeColegiados.FrmRegistrarPartido.htm">
+      <HelpTOCNode Title="FrmRegistrarPartido Members" Url="html/AllMembers.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+      <HelpTOCNode Title="FrmRegistrarPartido Constructor " Url="html/M-GestionDeColegiados.FrmRegistrarPartido.-ctor.htm" />
+      <HelpTOCNode Title="FrmRegistrarPartido Methods" Url="html/Methods.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+      <HelpTOCNode Title="FrmRegistrarPartido Properties" Url="html/Properties.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+      <HelpTOCNode Title="FrmRegistrarPartido Events" Url="html/Events.T-GestionDeColegiados.FrmRegistrarPartido.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="04a5793d-aea9-4bae-b6aa-31be0e125a79" Title="FrmTodosLosEncuentrosDefinidos Class" Url="html/T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm">
+      <HelpTOCNode Title="FrmTodosLosEncuentrosDefinidos Members" Url="html/AllMembers.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+      <HelpTOCNode Title="FrmTodosLosEncuentrosDefinidos Constructor " Url="html/M-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.-ctor.htm" />
+      <HelpTOCNode Title="FrmTodosLosEncuentrosDefinidos Methods" Url="html/Methods.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+      <HelpTOCNode Title="FrmTodosLosEncuentrosDefinidos Properties" Url="html/Properties.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+      <HelpTOCNode Title="FrmTodosLosEncuentrosDefinidos Events" Url="html/Events.T-GestionDeColegiados.FrmTodosLosEncuentrosDefinidos.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b0a47e73-ff87-42d4-85d9-280e15ecf0cb" Title="FrmVerTodos Class" Url="html/T-GestionDeColegiados.FrmVerTodos.htm">
+      <HelpTOCNode Title="FrmVerTodos Members" Url="html/AllMembers.T-GestionDeColegiados.FrmVerTodos.htm" />
+      <HelpTOCNode Title="FrmVerTodos Constructor " Url="html/M-GestionDeColegiados.FrmVerTodos.-ctor.htm" />
+      <HelpTOCNode Title="FrmVerTodos Methods" Url="html/Methods.T-GestionDeColegiados.FrmVerTodos.htm" />
+      <HelpTOCNode Title="FrmVerTodos Properties" Url="html/Properties.T-GestionDeColegiados.FrmVerTodos.htm" />
+      <HelpTOCNode Title="FrmVerTodos Events" Url="html/Events.T-GestionDeColegiados.FrmVerTodos.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="371bcce0-775c-43c5-8148-655f1d5f01a9" Title="FrmVerTodosLosColegiados Class" Url="html/T-GestionDeColegiados.FrmVerTodosLosColegiados.htm">
+      <HelpTOCNode Title="FrmVerTodosLosColegiados Members" Url="html/AllMembers.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+      <HelpTOCNode Title="FrmVerTodosLosColegiados Constructor " Url="html/M-GestionDeColegiados.FrmVerTodosLosColegiados.-ctor.htm" />
+      <HelpTOCNode Title="FrmVerTodosLosColegiados Methods" Url="html/Methods.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+      <HelpTOCNode Title="FrmVerTodosLosColegiados Properties" Url="html/Properties.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+      <HelpTOCNode Title="FrmVerTodosLosColegiados Events" Url="html/Events.T-GestionDeColegiados.FrmVerTodosLosColegiados.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="32595824-577f-409b-a4be-dcc097b67590" Title="MenuPrincipal Class" Url="html/T-GestionDeColegiados.MenuPrincipal.htm">
+      <HelpTOCNode Title="MenuPrincipal Members" Url="html/AllMembers.T-GestionDeColegiados.MenuPrincipal.htm" />
+      <HelpTOCNode Title="MenuPrincipal Constructor " Url="html/M-GestionDeColegiados.MenuPrincipal.-ctor.htm" />
+      <HelpTOCNode Id="14c6054b-09f5-47d9-8eba-a6bd4361a8c9" Title="MenuPrincipal Methods" Url="html/Methods.T-GestionDeColegiados.MenuPrincipal.htm">
+        <HelpTOCNode Title="AbrirFormNuevoEquipo Method " Url="html/M-GestionDeColegiados.MenuPrincipal.AbrirFormNuevoEquipo.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MenuPrincipal Properties" Url="html/Properties.T-GestionDeColegiados.MenuPrincipal.htm" />
+      <HelpTOCNode Title="MenuPrincipal Events" Url="html/Events.T-GestionDeColegiados.MenuPrincipal.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="c5847314-104e-443b-9f16-34574c3aac0a" Title="GestionDeColegiados.FrmsArbitro Namespace" Url="html/N-GestionDeColegiados.FrmsArbitro.htm">
+    <HelpTOCNode Id="ec513a25-7c3e-4a3c-a768-410b32c0499d" Title="FrmEditarPartidoFinalizado Class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm">
+      <HelpTOCNode Title="FrmEditarPartidoFinalizado Members" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+      <HelpTOCNode Title="FrmEditarPartidoFinalizado Constructor " Url="html/M-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.-ctor.htm" />
+      <HelpTOCNode Title="FrmEditarPartidoFinalizado Methods" Url="html/Methods.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+      <HelpTOCNode Title="FrmEditarPartidoFinalizado Properties" Url="html/Properties.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+      <HelpTOCNode Title="FrmEditarPartidoFinalizado Events" Url="html/Events.T-GestionDeColegiados.FrmsArbitro.FrmEditarPartidoFinalizado.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="432fd9ca-fce8-4bae-8911-1424c3b13e38" Title="FrmMenuArbitro Class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm">
+      <HelpTOCNode Title="FrmMenuArbitro Members" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+      <HelpTOCNode Title="FrmMenuArbitro Constructor " Url="html/M-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.-ctor.htm" />
+      <HelpTOCNode Title="FrmMenuArbitro Methods" Url="html/Methods.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+      <HelpTOCNode Title="FrmMenuArbitro Properties" Url="html/Properties.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+      <HelpTOCNode Title="FrmMenuArbitro Events" Url="html/Events.T-GestionDeColegiados.FrmsArbitro.FrmMenuArbitro.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="487f4e3d-203b-4342-8d90-cafc3703ba7f" Title="FrmRegistrarResultado Class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm">
+      <HelpTOCNode Title="FrmRegistrarResultado Members" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+      <HelpTOCNode Title="FrmRegistrarResultado Constructor " Url="html/M-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.-ctor.htm" />
+      <HelpTOCNode Title="FrmRegistrarResultado Methods" Url="html/Methods.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+      <HelpTOCNode Title="FrmRegistrarResultado Properties" Url="html/Properties.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+      <HelpTOCNode Title="FrmRegistrarResultado Events" Url="html/Events.T-GestionDeColegiados.FrmsArbitro.FrmRegistrarResultado.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a6a26af5-89e8-4509-96b6-307ce66127ed" Title="FrmVerCompeticion Class" Url="html/T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm">
+      <HelpTOCNode Title="FrmVerCompeticion Members" Url="html/AllMembers.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+      <HelpTOCNode Title="FrmVerCompeticion Constructor " Url="html/M-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.-ctor.htm" />
+      <HelpTOCNode Title="FrmVerCompeticion Methods" Url="html/Methods.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+      <HelpTOCNode Title="FrmVerCompeticion Properties" Url="html/Properties.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+      <HelpTOCNode Title="FrmVerCompeticion Events" Url="html/Events.T-GestionDeColegiados.FrmsArbitro.FrmVerCompeticion.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="49e8dad4-bd30-4a03-b0b0-10b41db41649" Title="GestionDeColegiados.FrmsColegiado Namespace" Url="html/N-GestionDeColegiados.FrmsColegiado.htm">
+    <HelpTOCNode Id="8a32f8c0-9f0c-4fde-a3c5-5dc467b69784" Title="FrmEditarArbitro Class" Url="html/T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm">
+      <HelpTOCNode Title="FrmEditarArbitro Members" Url="html/AllMembers.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+      <HelpTOCNode Title="FrmEditarArbitro Constructor " Url="html/M-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.-ctor.htm" />
+      <HelpTOCNode Title="FrmEditarArbitro Methods" Url="html/Methods.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+      <HelpTOCNode Title="FrmEditarArbitro Properties" Url="html/Properties.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+      <HelpTOCNode Title="FrmEditarArbitro Events" Url="html/Events.T-GestionDeColegiados.FrmsColegiado.FrmEditarArbitro.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f6fe7b7f-fce9-4249-a6c9-e206e5f9ba5b" Title="FrmElimAgregarArbitro Class" Url="html/T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm">
+      <HelpTOCNode Title="FrmElimAgregarArbitro Members" Url="html/AllMembers.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+      <HelpTOCNode Title="FrmElimAgregarArbitro Constructor " Url="html/M-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.-ctor.htm" />
+      <HelpTOCNode Title="FrmElimAgregarArbitro Methods" Url="html/Methods.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+      <HelpTOCNode Title="FrmElimAgregarArbitro Properties" Url="html/Properties.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+      <HelpTOCNode Title="FrmElimAgregarArbitro Events" Url="html/Events.T-GestionDeColegiados.FrmsColegiado.FrmElimAgregarArbitro.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="6c836c20-cec2-4db2-917c-7fe219940f29" Title="Model Namespace" Url="html/N-Model.htm">
+    <HelpTOCNode Id="944e8156-e3dd-43b5-9339-74796f792538" Title="Administrador Class" Url="html/T-Model.Administrador.htm">
+      <HelpTOCNode Title="Administrador Members" Url="html/AllMembers.T-Model.Administrador.htm" />
+      <HelpTOCNode Title="Administrador Methods" Url="html/Methods.T-Model.Administrador.htm" />
+      <HelpTOCNode Id="330d9529-df44-4d65-8918-85837fd67ff9" Title="Administrador Properties" Url="html/Properties.T-Model.Administrador.htm">
+        <HelpTOCNode Title="Id Property " Url="html/P-Model.Administrador.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-Model.Administrador.Nombre.htm" />
+        <HelpTOCNode Title="Nombre1 Property " Url="html/P-Model.Administrador.Nombre1.htm" />
+        <HelpTOCNode Title="Password Property " Url="html/P-Model.Administrador.Password.htm" />
+        <HelpTOCNode Title="Password1 Property " Url="html/P-Model.Administrador.Password1.htm" />
+        <HelpTOCNode Title="PrimerAcceso Property " Url="html/P-Model.Administrador.PrimerAcceso.htm" />
+        <HelpTOCNode Title="Rol Property " Url="html/P-Model.Administrador.Rol.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="26add84c-629b-4f85-a816-63846c161e36" Title="Arbitro Class" Url="html/T-Model.Arbitro.htm">
+      <HelpTOCNode Title="Arbitro Members" Url="html/AllMembers.T-Model.Arbitro.htm" />
+      <HelpTOCNode Id="61863b2d-d5d0-4095-849b-284dfbf85420" Title="Arbitro Constructor " Url="html/Overload-Model.Arbitro.-ctor.htm">
+        <HelpTOCNode Title="Arbitro Constructor " Url="html/M-Model.Arbitro.-ctor.htm" />
+        <HelpTOCNode Title="Arbitro Constructor (Int32, String, String, String, String, String, String)" Url="html/M-Model.Arbitro.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9bce1367-4078-49e9-a2dd-c9e385d56a14" Title="Arbitro Methods" Url="html/Methods.T-Model.Arbitro.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M-Model.Arbitro.ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="996deab9-2fa0-4fb4-b7bc-fa8b05b0d459" Title="Arbitro Properties" Url="html/Properties.T-Model.Arbitro.htm">
+        <HelpTOCNode Title="Apellidos Property " Url="html/P-Model.Arbitro.Apellidos.htm" />
+        <HelpTOCNode Title="Cedula Property " Url="html/P-Model.Arbitro.Cedula.htm" />
+        <HelpTOCNode Title="Domicilio Property " Url="html/P-Model.Arbitro.Domicilio.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/P-Model.Arbitro.Email.htm" />
+        <HelpTOCNode Title="IdArbitro Property " Url="html/P-Model.Arbitro.IdArbitro.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-Model.Arbitro.Nombre.htm" />
+        <HelpTOCNode Title="Telefono Property " Url="html/P-Model.Arbitro.Telefono.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="20eddcdd-4a94-4ca7-b8f1-f9cfa849fccc" Title="ConexionUsuarioBD Class" Url="html/T-Model.ConexionUsuarioBD.htm">
+      <HelpTOCNode Title="ConexionUsuarioBD Members" Url="html/AllMembers.T-Model.ConexionUsuarioBD.htm" />
+      <HelpTOCNode Id="b3b88c57-45f8-4011-9cbd-7969c90ad42a" Title="ConexionUsuarioBD Methods" Url="html/Methods.T-Model.ConexionUsuarioBD.htm">
+        <HelpTOCNode Title="CambiarPassword Method " Url="html/M-Model.ConexionUsuarioBD.CambiarPassword.htm" />
+        <HelpTOCNode Title="ExisteUsuario Method " Url="html/M-Model.ConexionUsuarioBD.ExisteUsuario.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b17a3068-ad1b-4fe9-a34c-234e7cc9f13c" Title="EncuentroDefinido Class" Url="html/T-Model.EncuentroDefinido.htm">
+      <HelpTOCNode Title="EncuentroDefinido Members" Url="html/AllMembers.T-Model.EncuentroDefinido.htm" />
+      <HelpTOCNode Id="574ffcab-cfae-490c-b6d3-0839344c2947" Title="EncuentroDefinido Constructor " Url="html/Overload-Model.EncuentroDefinido.-ctor.htm">
+        <HelpTOCNode Title="EncuentroDefinido Constructor " Url="html/M-Model.EncuentroDefinido.-ctor.htm" />
+        <HelpTOCNode Title="EncuentroDefinido Constructor (Int32, Int32, DateTime, DateTime, Int32)" Url="html/M-Model.EncuentroDefinido.-ctor_1.htm" />
+        <HelpTOCNode Title="EncuentroDefinido Constructor (Int32, Int32, DateTime, String, DateTime, Int32)" Url="html/M-Model.EncuentroDefinido.-ctor_2.htm" />
+        <HelpTOCNode Title="EncuentroDefinido Constructor (Int32, Int32, Int32, DateTime, String, DateTime, Int32)" Url="html/M-Model.EncuentroDefinido.-ctor_3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EncuentroDefinido Methods" Url="html/Methods.T-Model.EncuentroDefinido.htm" />
+      <HelpTOCNode Id="25dbc7a5-c548-4b48-a88b-ef0caf87bec8" Title="EncuentroDefinido Properties" Url="html/Properties.T-Model.EncuentroDefinido.htm">
+        <HelpTOCNode Title="Estado Property " Url="html/P-Model.EncuentroDefinido.Estado.htm" />
+        <HelpTOCNode Title="FechaDeEncuentro Property " Url="html/P-Model.EncuentroDefinido.FechaDeEncuentro.htm" />
+        <HelpTOCNode Title="Hora Property " Url="html/P-Model.EncuentroDefinido.Hora.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-Model.EncuentroDefinido.Id.htm" />
+        <HelpTOCNode Title="IdColegiado Property " Url="html/P-Model.EncuentroDefinido.IdColegiado.htm" />
+        <HelpTOCNode Title="IdEncuentroGeneradoPendiente Property " Url="html/P-Model.EncuentroDefinido.IdEncuentroGeneradoPendiente.htm" />
+        <HelpTOCNode Title="IdEstadio Property " Url="html/P-Model.EncuentroDefinido.IdEstadio.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6e8324b4-009d-41bb-b4fc-0d52a51a8eca" Title="EncuentroGenerado Class" Url="html/T-Model.EncuentroGenerado.htm">
+      <HelpTOCNode Title="EncuentroGenerado Members" Url="html/AllMembers.T-Model.EncuentroGenerado.htm" />
+      <HelpTOCNode Id="f51d3aef-74b1-495a-a6f9-05ccfd15ea96" Title="EncuentroGenerado Constructor " Url="html/Overload-Model.EncuentroGenerado.-ctor.htm">
+        <HelpTOCNode Title="EncuentroGenerado Constructor " Url="html/M-Model.EncuentroGenerado.-ctor.htm" />
+        <HelpTOCNode Title="EncuentroGenerado Constructor (Int32, Int32)" Url="html/M-Model.EncuentroGenerado.-ctor_1.htm" />
+        <HelpTOCNode Title="EncuentroGenerado Constructor (Int32, Int32, String)" Url="html/M-Model.EncuentroGenerado.-ctor_2.htm" />
+        <HelpTOCNode Title="EncuentroGenerado Constructor (Int32, Int32, Int32, String, String)" Url="html/M-Model.EncuentroGenerado.-ctor_3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EncuentroGenerado Methods" Url="html/Methods.T-Model.EncuentroGenerado.htm" />
+      <HelpTOCNode Id="438902e7-5062-49bc-8996-65e30e5e2870" Title="EncuentroGenerado Properties" Url="html/Properties.T-Model.EncuentroGenerado.htm">
+        <HelpTOCNode Title="Asignacion Property " Url="html/P-Model.EncuentroGenerado.Asignacion.htm" />
+        <HelpTOCNode Title="Estado Property " Url="html/P-Model.EncuentroGenerado.Estado.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-Model.EncuentroGenerado.Id.htm" />
+        <HelpTOCNode Title="IdEquipoLocal Property " Url="html/P-Model.EncuentroGenerado.IdEquipoLocal.htm" />
+        <HelpTOCNode Title="IdEquipoVisitante Property " Url="html/P-Model.EncuentroGenerado.IdEquipoVisitante.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="24add18a-7422-4b35-a10d-a274320841fb" Title="Estadio Class" Url="html/T-Model.Estadio.htm">
+      <HelpTOCNode Title="Estadio Members" Url="html/AllMembers.T-Model.Estadio.htm" />
+      <HelpTOCNode Id="20c4f912-2b38-43d3-90d4-0d0609fd20c9" Title="Estadio Constructor " Url="html/Overload-Model.Estadio.-ctor.htm">
+        <HelpTOCNode Title="Estadio Constructor " Url="html/M-Model.Estadio.-ctor.htm" />
+        <HelpTOCNode Title="Estadio Constructor (Int32, String, String)" Url="html/M-Model.Estadio.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Estadio Methods" Url="html/Methods.T-Model.Estadio.htm" />
+      <HelpTOCNode Id="aac011a4-df98-4266-90fa-a5b1b02dbd4e" Title="Estadio Properties" Url="html/Properties.T-Model.Estadio.htm">
+        <HelpTOCNode Title="Asignacion Property " Url="html/P-Model.Estadio.Asignacion.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-Model.Estadio.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-Model.Estadio.Nombre.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="01268261-e97f-46d2-bbbf-353465495db1" Title="Model.Colegiados Namespace" Url="html/N-Model.Colegiados.htm">
+    <HelpTOCNode Id="4acaa14a-9be6-48db-a9cc-53c93ff4d56c" Title="Asistente Class" Url="html/T-Model.Colegiados.Asistente.htm">
+      <HelpTOCNode Title="Asistente Members" Url="html/AllMembers.T-Model.Colegiados.Asistente.htm" />
+      <HelpTOCNode Id="e1f12893-ebc7-46a4-b25a-d1a02b44f97e" Title="Asistente Constructor " Url="html/Overload-Model.Colegiados.Asistente.-ctor.htm">
+        <HelpTOCNode Title="Asistente Constructor " Url="html/M-Model.Colegiados.Asistente.-ctor.htm" />
+        <HelpTOCNode Title="Asistente Constructor (Int32, String, String, String, String, String, String, String)" Url="html/M-Model.Colegiados.Asistente.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6b3d1b70-874e-406b-b983-ccc537977241" Title="Asistente Methods" Url="html/Methods.T-Model.Colegiados.Asistente.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M-Model.Colegiados.Asistente.ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e3187bab-37b4-46fc-8674-004621a1be94" Title="Asistente Properties" Url="html/Properties.T-Model.Colegiados.Asistente.htm">
+        <HelpTOCNode Title="Banda Property " Url="html/P-Model.Colegiados.Asistente.Banda.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="16b3a751-d11f-403f-b9b1-e3bfe07630ed" Title="Colegiado Class" Url="html/T-Model.Colegiados.Colegiado.htm">
+      <HelpTOCNode Title="Colegiado Members" Url="html/AllMembers.T-Model.Colegiados.Colegiado.htm" />
+      <HelpTOCNode Id="3d5be07d-0653-43d5-a1f0-ea859fec6b4f" Title="Colegiado Constructor " Url="html/Overload-Model.Colegiados.Colegiado.-ctor.htm">
+        <HelpTOCNode Title="Colegiado Constructor " Url="html/M-Model.Colegiados.Colegiado.-ctor.htm" />
+        <HelpTOCNode Title="Colegiado Constructor (Int32, Int32, Int32, Int32, Int32)" Url="html/M-Model.Colegiados.Colegiado.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0e018965-ac40-4a4c-ae25-c4d843e7cd5a" Title="Colegiado Methods" Url="html/Methods.T-Model.Colegiados.Colegiado.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M-Model.Colegiados.Colegiado.ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b318e6ab-1065-4b6f-94e1-2edb570f2971" Title="Colegiado Properties" Url="html/Properties.T-Model.Colegiados.Colegiado.htm">
+        <HelpTOCNode Title="Idasistente1 Property " Url="html/P-Model.Colegiados.Colegiado.Idasistente1.htm" />
+        <HelpTOCNode Title="Idasistente2 Property " Url="html/P-Model.Colegiados.Colegiado.Idasistente2.htm" />
+        <HelpTOCNode Title="Idcolegiado Property " Url="html/P-Model.Colegiados.Colegiado.Idcolegiado.htm" />
+        <HelpTOCNode Title="Idcuartoarbitro Property " Url="html/P-Model.Colegiados.Colegiado.Idcuartoarbitro.htm" />
+        <HelpTOCNode Title="Idjuezcentral Property " Url="html/P-Model.Colegiados.Colegiado.Idjuezcentral.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f929df4b-0e02-4dba-93f3-bca1192e4022" Title="CuartoArbitro Class" Url="html/T-Model.Colegiados.CuartoArbitro.htm">
+      <HelpTOCNode Title="CuartoArbitro Members" Url="html/AllMembers.T-Model.Colegiados.CuartoArbitro.htm" />
+      <HelpTOCNode Id="6e2690c6-b008-4ea1-99fc-4ef319c52ba3" Title="CuartoArbitro Constructor " Url="html/Overload-Model.Colegiados.CuartoArbitro.-ctor.htm">
+        <HelpTOCNode Title="CuartoArbitro Constructor " Url="html/M-Model.Colegiados.CuartoArbitro.-ctor.htm" />
+        <HelpTOCNode Title="CuartoArbitro Constructor (Int32, String, String, String, String, String, String)" Url="html/M-Model.Colegiados.CuartoArbitro.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7325ca02-a8c1-4d91-9910-d4cac80ddf9c" Title="CuartoArbitro Methods" Url="html/Methods.T-Model.Colegiados.CuartoArbitro.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M-Model.Colegiados.CuartoArbitro.ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CuartoArbitro Properties" Url="html/Properties.T-Model.Colegiados.CuartoArbitro.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="73c7c9c3-3511-4dd7-8eaf-20912a29d177" Title="IntegrantesColegiados Class" Url="html/T-Model.Colegiados.IntegrantesColegiados.htm">
+      <HelpTOCNode Title="IntegrantesColegiados Members" Url="html/AllMembers.T-Model.Colegiados.IntegrantesColegiados.htm" />
+      <HelpTOCNode Id="78769d7b-194e-4886-8d5f-ee82ddcbba0f" Title="IntegrantesColegiados Methods" Url="html/Methods.T-Model.Colegiados.IntegrantesColegiados.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M-Model.Colegiados.IntegrantesColegiados.ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0eb6aadf-5151-435c-bd2b-15260dfbc7dc" Title="IntegrantesColegiados Properties" Url="html/Properties.T-Model.Colegiados.IntegrantesColegiados.htm">
+        <HelpTOCNode Title="IdGrupoColegiado Property " Url="html/P-Model.Colegiados.IntegrantesColegiados.IdGrupoColegiado.htm" />
+        <HelpTOCNode Title="Nombreasistente1 Property " Url="html/P-Model.Colegiados.IntegrantesColegiados.Nombreasistente1.htm" />
+        <HelpTOCNode Title="Nombreasistente2 Property " Url="html/P-Model.Colegiados.IntegrantesColegiados.Nombreasistente2.htm" />
+        <HelpTOCNode Title="NombrecuartoArbitro Property " Url="html/P-Model.Colegiados.IntegrantesColegiados.NombrecuartoArbitro.htm" />
+        <HelpTOCNode Title="NombrejuezCentral Property " Url="html/P-Model.Colegiados.IntegrantesColegiados.NombrejuezCentral.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0972d884-a5b9-427d-8ceb-d2e0a5ed0a77" Title="JuezCentral Class" Url="html/T-Model.Colegiados.JuezCentral.htm">
+      <HelpTOCNode Title="JuezCentral Members" Url="html/AllMembers.T-Model.Colegiados.JuezCentral.htm" />
+      <HelpTOCNode Id="ccf29f63-072c-47b2-8d98-3dbf9998ca5c" Title="JuezCentral Constructor " Url="html/Overload-Model.Colegiados.JuezCentral.-ctor.htm">
+        <HelpTOCNode Title="JuezCentral Constructor " Url="html/M-Model.Colegiados.JuezCentral.-ctor.htm" />
+        <HelpTOCNode Title="JuezCentral Constructor (Int32, String, String, String, String, String, String)" Url="html/M-Model.Colegiados.JuezCentral.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b4c4f65c-3d7a-4c4c-92c0-c45a8b615143" Title="JuezCentral Methods" Url="html/Methods.T-Model.Colegiados.JuezCentral.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M-Model.Colegiados.JuezCentral.ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="JuezCentral Properties" Url="html/Properties.T-Model.Colegiados.JuezCentral.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="481ef48f-0bf5-41c3-b86e-86535665436c" Title="Model.Equipo Namespace" Url="html/N-Model.Equipo.htm">
+    <HelpTOCNode Id="a0eff11e-7f03-4ac7-9473-e93f3766786d" Title="Equipo Class" Url="html/T-Model.Equipo.Equipo.htm">
+      <HelpTOCNode Title="Equipo Members" Url="html/AllMembers.T-Model.Equipo.Equipo.htm" />
+      <HelpTOCNode Id="864bbcfa-dec4-4023-bede-7e5e051ae65d" Title="Equipo Constructor " Url="html/Overload-Model.Equipo.Equipo.-ctor.htm">
+        <HelpTOCNode Title="Equipo Constructor " Url="html/M-Model.Equipo.Equipo.-ctor.htm" />
+        <HelpTOCNode Title="Equipo Constructor (String, Int32, String, String)" Url="html/M-Model.Equipo.Equipo.-ctor_1.htm" />
+        <HelpTOCNode Title="Equipo Constructor (Int32, String, Int32, String, String)" Url="html/M-Model.Equipo.Equipo.-ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cfa1ced9-e4c8-4f81-b81f-f88ce214d491" Title="Equipo Methods" Url="html/Methods.T-Model.Equipo.Equipo.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M-Model.Equipo.Equipo.ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5ab7c40a-321c-427a-9374-242269d575ed" Title="Equipo Properties" Url="html/Properties.T-Model.Equipo.Equipo.htm">
+        <HelpTOCNode Title="IdEquipo Property " Url="html/P-Model.Equipo.Equipo.IdEquipo.htm" />
+        <HelpTOCNode Title="NombreDirectoTecnico Property " Url="html/P-Model.Equipo.Equipo.NombreDirectoTecnico.htm" />
+        <HelpTOCNode Title="NombreEquipo Property " Url="html/P-Model.Equipo.Equipo.NombreEquipo.htm" />
+        <HelpTOCNode Title="NumeroJugadores Property " Url="html/P-Model.Equipo.Equipo.NumeroJugadores.htm" />
+        <HelpTOCNode Title="PresidenteEquipo Property " Url="html/P-Model.Equipo.Equipo.PresidenteEquipo.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="9a87b6ab-48f7-49be-b9c3-c36b22b6eb9b" Title="Model.Partido Namespace" Url="html/N-Model.Partido.htm">
+    <HelpTOCNode Id="012761bd-db82-4f2f-b49c-151a43f0be0b" Title="EncuentroFinalizado Class" Url="html/T-Model.Partido.EncuentroFinalizado.htm">
+      <HelpTOCNode Title="EncuentroFinalizado Members" Url="html/AllMembers.T-Model.Partido.EncuentroFinalizado.htm" />
+      <HelpTOCNode Id="7c2ef865-4072-4e9e-a969-823a67abd7c9" Title="EncuentroFinalizado Constructor " Url="html/Overload-Model.Partido.EncuentroFinalizado.-ctor.htm">
+        <HelpTOCNode Title="EncuentroFinalizado Constructor " Url="html/M-Model.Partido.EncuentroFinalizado.-ctor.htm" />
+        <HelpTOCNode Title="EncuentroFinalizado Constructor (Int32, Int32, Int32, Int32)" Url="html/M-Model.Partido.EncuentroFinalizado.-ctor_1.htm" />
+        <HelpTOCNode Title="EncuentroFinalizado Constructor (Int32, Int32, Int32, Int32, Int32, String, String, Int32)" Url="html/M-Model.Partido.EncuentroFinalizado.-ctor_2.htm" />
+        <HelpTOCNode Title="EncuentroFinalizado Constructor (Int32, Int32, Int32, Int32, Int32, Int32, String, String, Int32)" Url="html/M-Model.Partido.EncuentroFinalizado.-ctor_3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EncuentroFinalizado Methods" Url="html/Methods.T-Model.Partido.EncuentroFinalizado.htm" />
+      <HelpTOCNode Id="f30b05f6-635a-4327-bdd0-b6a80459229b" Title="EncuentroFinalizado Properties" Url="html/Properties.T-Model.Partido.EncuentroFinalizado.htm">
+        <HelpTOCNode Title="Copa Property " Url="html/P-Model.Partido.EncuentroFinalizado.Copa.htm" />
+        <HelpTOCNode Title="Estado Property " Url="html/P-Model.Partido.EncuentroFinalizado.Estado.htm" />
+        <HelpTOCNode Title="GolesContra Property " Url="html/P-Model.Partido.EncuentroFinalizado.GolesContra.htm" />
+        <HelpTOCNode Title="GolesDiferencia Property " Url="html/P-Model.Partido.EncuentroFinalizado.GolesDiferencia.htm" />
+        <HelpTOCNode Title="GolesFavor Property " Url="html/P-Model.Partido.EncuentroFinalizado.GolesFavor.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-Model.Partido.EncuentroFinalizado.Id.htm" />
+        <HelpTOCNode Title="IdEncuentroDefinido Property " Url="html/P-Model.Partido.EncuentroFinalizado.IdEncuentroDefinido.htm" />
+        <HelpTOCNode Title="IdEquipo Property " Url="html/P-Model.Partido.EncuentroFinalizado.IdEquipo.htm" />
+        <HelpTOCNode Title="Puntos Property " Url="html/P-Model.Partido.EncuentroFinalizado.Puntos.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="a5571dce-f98a-42b5-852d-4ecdbf9663ec" Title="Sistema Namespace" Url="html/N-Sistema.htm">
+    <HelpTOCNode Id="644307a2-f38a-495d-9e41-84267815db2b" Title="ConexionBD Class" Url="html/T-Sistema.ConexionBD.htm">
+      <HelpTOCNode Title="ConexionBD Members" Url="html/AllMembers.T-Sistema.ConexionBD.htm" />
+      <HelpTOCNode Id="1b3a5936-b3ed-419d-984c-6661bb221716" Title="ConexionBD Methods" Url="html/Methods.T-Sistema.ConexionBD.htm">
+        <HelpTOCNode Title="GetConexion Method " Url="html/M-Sistema.ConexionBD.GetConexion.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
