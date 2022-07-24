@@ -14,7 +14,7 @@ namespace GestionDeColegiados {
 
     private void RefrezcarVista() {
       MenuPrincipal menuPrincipal = new MenuPrincipal();
-      menuPrincipal.abrirFormNuevoEquipo();
+      menuPrincipal.AbrirFormNuevoEquipo();
     }
 
     /* Evento que desata en cadena la funcionalidad de registrar un nuevo equipo */
@@ -53,7 +53,7 @@ namespace GestionDeColegiados {
       }
     }
     /*Evento que permite solo el ingreso de numeros en el campo de texto*/
-    private void numjugadores_KeyPress(object sender, KeyPressEventArgs e) {
+    private void Numjugadores_KeyPress(object sender, KeyPressEventArgs e) {
       if(!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back)) {
 
         MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -64,7 +64,7 @@ namespace GestionDeColegiados {
 
     }
     /*Evento que permite el tecleo de palabras, uso de la tecla de borrado y la barra espaciadora*/
-    private void director_KeyPress(object sender, KeyPressEventArgs e) {
+    private void Director_KeyPress(object sender, KeyPressEventArgs e) {
       if(!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space)) {
 
         MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

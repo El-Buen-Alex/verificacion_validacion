@@ -9,7 +9,7 @@ namespace GestionDeColegiados.FrmsArbitro {
   public partial class FrmVerCompeticion : Form {
     private AdmEncuentroFinalizado _admEncuentroFinalizado = AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados();
     private AdmEncuentrosDefinidos _admEncuentroDefinido = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
-    private AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
+    private AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.GetAdmadmGenerarEncuentros();
     private AdmEstadio _admEstadio = AdmEstadio.GetAdmEstadio();
     public FrmVerCompeticion(bool puedeAdministrar) {
       InitializeComponent();

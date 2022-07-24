@@ -8,7 +8,7 @@ using Control.AdmEquipos;
 namespace GestionDeColegiados {
   public partial class frmGenerarEncuentros : Form {
     AdmEquipo _admEquipo = AdmEquipo.GetEquipo();
-    AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
+    AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.GetAdmadmGenerarEncuentros();
     private List<Label> _listaContenedoresLocal = new List<Label>();
     private List<Label> _listaContenedoresVisitante = new List<Label>();
     private List<PictureBox> _listaPictureBox = new List<PictureBox>();
@@ -112,7 +112,7 @@ namespace GestionDeColegiados {
       CambiarAccesibilidad(_listaContenedoresLocal, true);
       CambiarAccesibilidad(_listaContenedoresVisitante, true);
       CambiarAccesibilidadPictureBox(_listaPictureBox, true);
-      bool genero = _admGenerarEncuentros.generarEncuentrosAleatorios(_listaContenedoresLocal, _listaContenedoresVisitante);
+      bool genero = _admGenerarEncuentros.GenerarEncuentrosAleatorios(_listaContenedoresLocal, _listaContenedoresVisitante);
       //una vez generado los encuentros se activa la opcion de Guardar encuentros
       if(genero) {
 
@@ -124,7 +124,7 @@ namespace GestionDeColegiados {
 
     private void GuardarDatos_Click(object sender, EventArgs e) {
       //se guarda los encuentos y retorna un mensaje respuesta a la acción de Guardar
-      string guardo = _admGenerarEncuentros.guardarEncuentrosAleatorios();
+      string guardo = _admGenerarEncuentros.GuardarEncuentrosAleatorios();
       MessageBox.Show(guardo);
       if(guardo[0] == 'S') {
 

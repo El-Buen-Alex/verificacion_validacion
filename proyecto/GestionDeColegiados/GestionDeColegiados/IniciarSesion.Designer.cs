@@ -73,9 +73,9 @@ namespace GestionDeColegiados {
       this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
       this.pbMinimizar.TabIndex = 4;
       this.pbMinimizar.TabStop = false;
-      this.pbMinimizar.Click += new System.EventHandler(this.pictureBox3_Click);
-      this.pbMinimizar.MouseEnter += new System.EventHandler(this.pbMinimizar_MouseEnter);
-      this.pbMinimizar.MouseLeave += new System.EventHandler(this.pbMinimizar_MouseLeave);
+      this.pbMinimizar.Click += new System.EventHandler(this.PictureBox3_Click);
+      this.pbMinimizar.MouseEnter += new System.EventHandler(this.PbMinimizar_MouseEnter);
+      this.pbMinimizar.MouseLeave += new System.EventHandler(this.PbMinimizar_MouseLeave);
       // 
       // pbCerrar
       // 
@@ -88,9 +88,9 @@ namespace GestionDeColegiados {
       this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
       this.pbCerrar.TabIndex = 2;
       this.pbCerrar.TabStop = false;
-      this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
-      this.pbCerrar.MouseEnter += new System.EventHandler(this.pbCerrar_MouseEnter);
-      this.pbCerrar.MouseLeave += new System.EventHandler(this.pbCerrar_MouseLeave);
+      this.pbCerrar.Click += new System.EventHandler(this.PbCerrar_Click);
+      this.pbCerrar.MouseEnter += new System.EventHandler(this.PbCerrar_MouseEnter);
+      this.pbCerrar.MouseLeave += new System.EventHandler(this.PbCerrar_MouseLeave);
       // 
       // label2
       // 
@@ -185,7 +185,7 @@ namespace GestionDeColegiados {
       this.button1.TabIndex = 10;
       this.button1.Text = "Iniciar Sesión";
       this.button1.UseVisualStyleBackColor = true;
-      this.button1.Click += new System.EventHandler(this.button1_Click);
+      this.button1.Click += new System.EventHandler(this.Button1_Click);
       // 
       // pictureBox2
       // 

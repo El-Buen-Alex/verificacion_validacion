@@ -7,21 +7,18 @@ using Control.AdmEncuentrosGenerados;
 using Control.AdmEstadios;
 
 namespace GestionDeColegiados {
-  public partial class frmCambiarEstadioPartido : Form {
-    AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
-    AdmEstadio admEstadio = AdmEstadio.GetAdmEstadio();
-    AdmColegiado admColegiado = AdmColegiado.GetAdmCol();
-    private bool muestraInfo;
-    private ValidacionGUI validacionGUI = new ValidacionGUI();
-    public frmCambiarEstadioPartido() {
+  public partial class FrmCambiarEstadioPartido : Form {
+    AdmEncuentrosDefinidos _admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
+    AdmEstadio _admEstadio = AdmEstadio.GetAdmEstadio();
+    AdmColegiado _admColegiado = AdmColegiado.GetAdmCol();
+    private bool _muestraInfo;
+    private ValidacionGUI _validacionGUI = new ValidacionGUI();
+    public FrmCambiarEstadioPartido() {
       InitializeComponent();
       //se setean los controladores graficos
-      admEncuentrosDefinidos.LlenarPartidosCmb(cmbEncuentros);
-      cambiarDisponibilidadControladoresUi(false);
-
-
+      _admEncuentrosDefinidos.LlenarPartidosCmb(cmbEncuentros);
+      CambiarDisponibilidadControladoresUi(false);
     }
-
 
     private void EnviarDatosGuardar() {
       int indexEncuentro, indexEstadio, indexColegiados;
@@ -35,35 +32,35 @@ namespace GestionDeColegiados {
         DateTime hora = dtpHora.Value;
 
         //se intenta cambiar el estadio al encuentro
-        bool actualizo = admEncuentrosDefinidos.ActualizarEncuentroDefinido(indexEncuentro, indexEstadio, indexColegiados, fecha, hora);
+        bool actualizo = _admEncuentrosDefinidos.ActualizarEncuentroDefinido(indexEncuentro, indexEstadio, indexColegiados, fecha, hora);
         if(actualizo) {
           // si no ocurre problemas al cambiar, se refrezcan los componentes y 
           //se muestra que el cambio se realizó con exito
           MessageBox.Show("El cambio se realizo con exito");
-          cambiarDisponibilidadControladoresUi(false);
-          cambiarAccesibilidadBotonGuardar(false);
+          CambiarDisponibilidadControladoresUi(false);
+          CambiarAccesibilidadBotonGuardar(false);
         } else {
           MessageBox.Show("No se logró modificar el registro.");
         }
       }
     }
 
-    private void btnGuardarCambios_Click(object sender, EventArgs e) {
+    private void BtnGuardarCambios_Click(object sender, EventArgs e) {
       EnviarDatosGuardar();
     }
 
-    private void cmbEncuentros_SelectedIndexChanged(object sender, EventArgs e) {
+    private void CmbEncuentros_SelectedIndexChanged(object sender, EventArgs e) {
       /*cuando el usuario seleccione un encuentro
        el contenido del lblEstadioActual se seteara con el
       nombre del estadio actual del encuentro que se ha seleccionado*/
       int indexEncuentroDefinidoSeleccionado = cmbEncuentros.SelectedIndex;
-      muestraInfo = admEncuentrosDefinidos.LlenarInformacíonPartidoCompleta(indexEncuentroDefinidoSeleccionado, lblEquipoLocal, lblEquipoVisitante, cmbEstadios, dtpFechaEncuentro, dtpHora, cmbGrupoColegiado, txtColegiados);
-      if(muestraInfo) {
-        cambiarDisponibilidadControladoresUi(true);
-        validarFecha();
+      _muestraInfo = _admEncuentrosDefinidos.LlenarInformacíonPartidoCompleta(indexEncuentroDefinidoSeleccionado, lblEquipoLocal, lblEquipoVisitante, cmbEstadios, dtpFechaEncuentro, dtpHora, cmbGrupoColegiado, txtColegiados);
+      if(_muestraInfo) {
+        CambiarDisponibilidadControladoresUi(true);
+        ValidarFecha();
       }
     }
-    private void cambiarDisponibilidadControladoresUi(bool estado) {
+    private void CambiarDisponibilidadControladoresUi(bool estado) {
       lblEquipoLocal.Enabled = estado;
       lblEquipoVisitante.Enabled = estado;
       dtpFechaEncuentro.Enabled = estado;
@@ -71,43 +68,42 @@ namespace GestionDeColegiados {
       cmbGrupoColegiado.Enabled = estado;
       cmbEstadios.Enabled = estado;
     }
-    private void cambiarAccesibilidadBotonGuardar(bool estado) {
+    private void CambiarAccesibilidadBotonGuardar(bool estado) {
       btnGuardarCambios.Enabled = estado;
     }
 
-    private void cmb_SelectedIndexChanged(object sender, EventArgs e) {
-      //si se selecciona un nuevo estadio, habilitará la opcion de Guardar
+    private void Cmb_SelectedIndexChanged(object sender, EventArgs e) {
+      //si se selecciona un nuevo estadio, habilitará la opcion de guardar
       btnGuardarCambios.Enabled = true;
     }
-    private void cmbColegiados_SelectedIndexChanged(object sender, EventArgs e) {
-      //si se selecciona un nuevo estadio, habilitará la opcion de Guardar
+    private void CmbColegiados_SelectedIndexChanged(object sender, EventArgs e) {
+      //si se selecciona un nuevo estadio, habilitará la opcion de guardar
       int indexColegiados = cmbGrupoColegiado.SelectedIndex;
-      string s = admColegiado.ObtenerNombreDeColegiadosIndex(indexColegiados);
+      string s = _admColegiado.ObtenerNombreDeColegiadosIndex(indexColegiados);
       txtColegiados.Text = s;
       btnGuardarCambios.Enabled = true;
     }
 
-    private void validarFecha() {
-      bool fecha = validacionGUI.ValidarFecha(dtpFechaEncuentro.Value);
+    private void ValidarFecha() {
+      bool fecha = _validacionGUI.ValidarFecha(dtpFechaEncuentro.Value);
       if(!fecha) {
-        cambiarDisponibilidadControladoresUi(false);
-        cambiarAccesibilidadBotonGuardar(false);
+        CambiarDisponibilidadControladoresUi(false);
+        CambiarAccesibilidadBotonGuardar(false);
         dtpFechaEncuentro.Enabled = true;
         lblFechaMenor.Visible = true;
       } else {
         lblFechaMenor.Visible = false;
-        cambiarDisponibilidadControladoresUi(muestraInfo);
-        cambiarAccesibilidadBotonGuardar(muestraInfo);
+        CambiarDisponibilidadControladoresUi(_muestraInfo);
+        CambiarAccesibilidadBotonGuardar(_muestraInfo);
       }
     }
 
-    private void dtpFechaEncuentro_ValueChanged(object sender, EventArgs e) {
-      validarFecha();
+    private void DtpFechaEncuentro_ValueChanged(object sender, EventArgs e) {
+      ValidarFecha();
 
     }
-    private void dtpHoraEncuentro_ValueChanged(object sender, EventArgs e) {
-      cambiarAccesibilidadBotonGuardar(muestraInfo);
+    private void DtpHoraEncuentro_ValueChanged(object sender, EventArgs e) {
+      CambiarAccesibilidadBotonGuardar(_muestraInfo);
     }
-
   }
 }

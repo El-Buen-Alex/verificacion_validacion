@@ -68,7 +68,7 @@ namespace GestionDeColegiados
             this.director.Name = "director";
             this.director.Size = new System.Drawing.Size(213, 22);
             this.director.TabIndex = 17;
-            this.director.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.director_KeyPress);
+            this.director.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Director_KeyPress);
             // 
             // numjugadores
             // 
@@ -79,7 +79,7 @@ namespace GestionDeColegiados
             this.numjugadores.Size = new System.Drawing.Size(213, 22);
             this.numjugadores.TabIndex = 16;
             this.numjugadores.TextChanged += new System.EventHandler(this.Numjugadores_TextChanged);
-            this.numjugadores.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numjugadores_KeyPress);
+            this.numjugadores.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numjugadores_KeyPress);
             // 
             // nombre
             // 

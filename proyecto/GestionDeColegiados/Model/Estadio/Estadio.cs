@@ -1,20 +1,20 @@
 ﻿namespace Model {
   public class Estadio {
-    private int id;
-    private string nombre;
-    private string asignacion;
+    private int _id;
+    private string _nombre;
+    private string _asignacion;
 
     public Estadio() {
 
     }
     public Estadio(int id, string nombre, string estado) {
-      this.id = id;
-      this.nombre = nombre;
-      this.asignacion = estado;
+      this._id = id;
+      this._nombre = nombre;
+      this._asignacion = estado;
     }
 
-    public int Id { get => id; set => id = value; }
-    public string Nombre { get => nombre; set => nombre = value; }
-    public string Asignacion { get => asignacion; set => asignacion = value; }
+    public int Id { get => _id; set => _id = value; }
+    public string Nombre { get => _nombre; set => _nombre = value; }
+    public string Asignacion { get => _asignacion; set => _asignacion = value; }
   }
 }

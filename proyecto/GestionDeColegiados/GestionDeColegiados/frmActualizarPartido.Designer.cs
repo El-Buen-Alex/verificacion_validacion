@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace GestionDeColegiados
 {
-    partial class frmCambiarEstadioPartido
+    partial class FrmCambiarEstadioPartido
     {
         /// <summary>
         /// Required designer variable.
@@ -84,7 +84,7 @@ namespace GestionDeColegiados
             this.cmbEncuentros.Name = "cmbEncuentros";
             this.cmbEncuentros.Size = new System.Drawing.Size(373, 24);
             this.cmbEncuentros.TabIndex = 4;
-            this.cmbEncuentros.SelectedIndexChanged += new System.EventHandler(this.cmbEncuentros_SelectedIndexChanged);
+            this.cmbEncuentros.SelectedIndexChanged += new System.EventHandler(this.CmbEncuentros_SelectedIndexChanged);
             // 
             // btnGuardarCambios
             // 
@@ -98,7 +98,7 @@ namespace GestionDeColegiados
             this.btnGuardarCambios.TabIndex = 23;
             this.btnGuardarCambios.Text = "GUARDAR";
             this.btnGuardarCambios.UseVisualStyleBackColor = false;
-            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
+            this.btnGuardarCambios.Click += new System.EventHandler(this.BtnGuardarCambios_Click);
             // 
             // cmbEstadios
             // 
@@ -108,7 +108,7 @@ namespace GestionDeColegiados
             this.cmbEstadios.Name = "cmbEstadios";
             this.cmbEstadios.Size = new System.Drawing.Size(121, 24);
             this.cmbEstadios.TabIndex = 38;
-            this.cmbEstadios.SelectedIndexChanged += new System.EventHandler(this.cmb_SelectedIndexChanged);
+            this.cmbEstadios.SelectedIndexChanged += new System.EventHandler(this.Cmb_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -143,7 +143,7 @@ namespace GestionDeColegiados
             this.dtpHora.ShowUpDown = true;
             this.dtpHora.Size = new System.Drawing.Size(200, 22);
             this.dtpHora.TabIndex = 35;
-            this.dtpHora.ValueChanged += new System.EventHandler(this.dtpHoraEncuentro_ValueChanged);
+            this.dtpHora.ValueChanged += new System.EventHandler(this.DtpHoraEncuentro_ValueChanged);
             // 
             // label7
             // 
@@ -177,7 +177,7 @@ namespace GestionDeColegiados
             this.cmbGrupoColegiado.Name = "cmbGrupoColegiado";
             this.cmbGrupoColegiado.Size = new System.Drawing.Size(121, 24);
             this.cmbGrupoColegiado.TabIndex = 32;
-            this.cmbGrupoColegiado.SelectedIndexChanged += new System.EventHandler(this.cmbColegiados_SelectedIndexChanged);
+            this.cmbGrupoColegiado.SelectedIndexChanged += new System.EventHandler(this.CmbColegiados_SelectedIndexChanged);
             // 
             // dtpFechaEncuentro
             // 
@@ -186,7 +186,7 @@ namespace GestionDeColegiados
             this.dtpFechaEncuentro.Name = "dtpFechaEncuentro";
             this.dtpFechaEncuentro.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaEncuentro.TabIndex = 31;
-            this.dtpFechaEncuentro.ValueChanged += new System.EventHandler(this.dtpFechaEncuentro_ValueChanged);
+            this.dtpFechaEncuentro.ValueChanged += new System.EventHandler(this.DtpFechaEncuentro_ValueChanged);
             // 
             // lblEquipoVisitante
             // 

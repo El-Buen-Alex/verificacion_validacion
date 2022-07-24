@@ -130,7 +130,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.btnGestionColegiado1.TabIndex = 19;
             this.btnGestionColegiado1.Text = "PARTIDO FINALIZADO";
             this.btnGestionColegiado1.UseVisualStyleBackColor = false;
-            this.btnGestionColegiado1.MouseEnter += new System.EventHandler(this.btnGestionColegiado1_MouseEnter);
+            this.btnGestionColegiado1.MouseEnter += new System.EventHandler(this.BtnGestionColegiado1_MouseEnter);
             // 
             // flpGestionPartidoFinalizado
             // 
@@ -167,7 +167,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.btnRegistrarPartido.TabIndex = 15;
             this.btnRegistrarPartido.Text = "REGISTRAR PARTIDO ";
             this.btnRegistrarPartido.UseVisualStyleBackColor = false;
-            this.btnRegistrarPartido.Click += new System.EventHandler(this.btnRegistrarPartido_Click);
+            this.btnRegistrarPartido.Click += new System.EventHandler(this.BtnRegistrarPartido_Click);
             // 
             // panel17
             // 
@@ -191,7 +191,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.btnActualizarPartido.TabIndex = 19;
             this.btnActualizarPartido.Text = "EDITAR PARTIDO";
             this.btnActualizarPartido.UseVisualStyleBackColor = false;
-            this.btnActualizarPartido.Click += new System.EventHandler(this.btnActualizarPartidoFinalizado_Click);
+            this.btnActualizarPartido.Click += new System.EventHandler(this.BtnActualizarPartidoFinalizado_Click);
             // 
             // flpOpcionGestionEncuentros
             // 
@@ -251,7 +251,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.btnVerTodosPartidos.TabIndex = 25;
             this.btnVerTodosPartidos.Text = "VER COMPETICION";
             this.btnVerTodosPartidos.UseVisualStyleBackColor = false;
-            this.btnVerTodosPartidos.Click += new System.EventHandler(this.btnVerTodosPartidos_Click);
+            this.btnVerTodosPartidos.Click += new System.EventHandler(this.BtnVerTodosPartidos_Click);
             // 
             // panel2
             // 
@@ -321,9 +321,9 @@ namespace GestionDeColegiados.FrmsArbitro
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMinimizar.TabIndex = 4;
             this.pbMinimizar.TabStop = false;
-            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click_1);
-            this.pbMinimizar.MouseEnter += new System.EventHandler(this.pbMinimizar_MouseEnter);
-            this.pbMinimizar.MouseLeave += new System.EventHandler(this.pbMinimizar_MouseLeave);
+            this.pbMinimizar.Click += new System.EventHandler(this.PbMinimizar_Click_1);
+            this.pbMinimizar.MouseEnter += new System.EventHandler(this.PbMinimizar_MouseEnter);
+            this.pbMinimizar.MouseLeave += new System.EventHandler(this.PbMinimizar_MouseLeave);
             // 
             // pbCerrar
             // 
@@ -336,9 +336,9 @@ namespace GestionDeColegiados.FrmsArbitro
             this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCerrar.TabIndex = 2;
             this.pbCerrar.TabStop = false;
-            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
-            this.pbCerrar.MouseEnter += new System.EventHandler(this.pbCerrar_MouseEnter);
-            this.pbCerrar.MouseLeave += new System.EventHandler(this.pbCerrar_MouseLeave);
+            this.pbCerrar.Click += new System.EventHandler(this.PbCerrar_Click);
+            this.pbCerrar.MouseEnter += new System.EventHandler(this.PbCerrar_MouseEnter);
+            this.pbCerrar.MouseLeave += new System.EventHandler(this.PbCerrar_MouseLeave);
             // 
             // button2
             // 
@@ -351,7 +351,7 @@ namespace GestionDeColegiados.FrmsArbitro
             this.button2.TabIndex = 15;
             this.button2.Text = "CERRAR SESIÓN";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // FrmMenuArbitro
             // 

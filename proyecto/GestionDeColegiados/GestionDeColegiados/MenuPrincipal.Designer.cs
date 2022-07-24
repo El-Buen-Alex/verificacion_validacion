@@ -179,7 +179,7 @@ namespace GestionDeColegiados
             this.btnNuevoGrupoColegiados.TabIndex = 15;
             this.btnNuevoGrupoColegiados.Text = "Añadir Nuevo Grupo ";
             this.btnNuevoGrupoColegiados.UseVisualStyleBackColor = false;
-            this.btnNuevoGrupoColegiados.Click += new System.EventHandler(this.btnNuevoGrupoColegiados_Click);
+            this.btnNuevoGrupoColegiados.Click += new System.EventHandler(this.BtnNuevoGrupoColegiados_Click);
             // 
             // panel7
             // 
@@ -203,7 +203,7 @@ namespace GestionDeColegiados
             this.btnVerTodosColegiados.TabIndex = 19;
             this.btnVerTodosColegiados.Text = "Ver Todos";
             this.btnVerTodosColegiados.UseVisualStyleBackColor = false;
-            this.btnVerTodosColegiados.Click += new System.EventHandler(this.btnVerTodosColegiados_Click);
+            this.btnVerTodosColegiados.Click += new System.EventHandler(this.BtnVerTodosColegiados_Click);
             // 
             // panel9
             // 
@@ -228,7 +228,7 @@ namespace GestionDeColegiados
             this.btnGestionEquipos2.TabIndex = 15;
             this.btnGestionEquipos2.Text = "Gestión Equipos";
             this.btnGestionEquipos2.UseVisualStyleBackColor = false;
-            this.btnGestionEquipos2.MouseEnter += new System.EventHandler(this.btnGestionEquipos2_MouseEnter);
+            this.btnGestionEquipos2.MouseEnter += new System.EventHandler(this.BtnGestionEquipos2_MouseEnter);
             // 
             // flpOpcionGestionEquipo
             // 
@@ -267,7 +267,7 @@ namespace GestionDeColegiados
             this.button5.TabIndex = 24;
             this.button5.Text = "Añadir Equipo";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // panel12
             // 
@@ -291,7 +291,7 @@ namespace GestionDeColegiados
             this.btnGenerarEncuentros.TabIndex = 19;
             this.btnGenerarEncuentros.Text = "Generar Encuentros";
             this.btnGenerarEncuentros.UseVisualStyleBackColor = false;
-            this.btnGenerarEncuentros.Click += new System.EventHandler(this.btnGenerarEncuentros_Click);
+            this.btnGenerarEncuentros.Click += new System.EventHandler(this.BtnGenerarEncuentros_Click);
             // 
             // panel17
             // 
@@ -315,7 +315,7 @@ namespace GestionDeColegiados
             this.btnVerTodos.TabIndex = 27;
             this.btnVerTodos.Text = "Editar / Eliminar";
             this.btnVerTodos.UseVisualStyleBackColor = false;
-            this.btnVerTodos.Click += new System.EventHandler(this.button3_Click);
+            this.btnVerTodos.Click += new System.EventHandler(this.Button3_Click);
             // 
             // btnGestionEncuentros2
             // 
@@ -331,7 +331,7 @@ namespace GestionDeColegiados
             this.btnGestionEncuentros2.TabIndex = 18;
             this.btnGestionEncuentros2.Text = "Gestión Encuentros";
             this.btnGestionEncuentros2.UseVisualStyleBackColor = false;
-            this.btnGestionEncuentros2.MouseEnter += new System.EventHandler(this.btnGestionEncuentros2_MouseEnter);
+            this.btnGestionEncuentros2.MouseEnter += new System.EventHandler(this.BtnGestionEncuentros2_MouseEnter);
             // 
             // flpOpcionGestionEncuentros
             // 
@@ -370,7 +370,7 @@ namespace GestionDeColegiados
             this.btnAsignarColegiados.TabIndex = 15;
             this.btnAsignarColegiados.Text = "Asignar Colegiados y Fecha";
             this.btnAsignarColegiados.UseVisualStyleBackColor = false;
-            this.btnAsignarColegiados.Click += new System.EventHandler(this.btnAsignarColegiados_Click);
+            this.btnAsignarColegiados.Click += new System.EventHandler(this.BtnAsignarColegiados_Click);
             // 
             // panel14
             // 
@@ -403,7 +403,7 @@ namespace GestionDeColegiados
             this.btnCambiarGrupo.TabIndex = 19;
             this.btnCambiarGrupo.Text = "EDITAR PARTIDO";
             this.btnCambiarGrupo.UseVisualStyleBackColor = false;
-            this.btnCambiarGrupo.Click += new System.EventHandler(this.btnCambiarEstadio_Click);
+            this.btnCambiarGrupo.Click += new System.EventHandler(this.BtnCambiarEstadio_Click);
             // 
             // panel4
             // 
@@ -437,7 +437,7 @@ namespace GestionDeColegiados
             this.btnVerEncuentrosDefinidos.TabIndex = 25;
             this.btnVerEncuentrosDefinidos.Text = "VER ENCUENTROS DEFINIDOS";
             this.btnVerEncuentrosDefinidos.UseVisualStyleBackColor = false;
-            this.btnVerEncuentrosDefinidos.Click += new System.EventHandler(this.btnVerEncuentrosDefinidos_Click);
+            this.btnVerEncuentrosDefinidos.Click += new System.EventHandler(this.BtnVerEncuentrosDefinidos_Click);
             // 
             // panel15
             // 
@@ -462,7 +462,7 @@ namespace GestionDeColegiados
             this.button1.TabIndex = 25;
             this.button1.Text = "COMPETENCIA: LIGA";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.button1.MouseEnter += new System.EventHandler(this.Button1_MouseEnter);
             // 
             // flpVerCompetencia
             // 
@@ -497,7 +497,7 @@ namespace GestionDeColegiados
             this.btnVerTodosPartidos.TabIndex = 25;
             this.btnVerTodosPartidos.Text = "VER COMPETICION";
             this.btnVerTodosPartidos.UseVisualStyleBackColor = false;
-            this.btnVerTodosPartidos.Click += new System.EventHandler(this.btnVerTodosPartidos_Click);
+            this.btnVerTodosPartidos.Click += new System.EventHandler(this.BtnVerTodosPartidos_Click);
             // 
             // panel2
             // 
@@ -588,9 +588,9 @@ namespace GestionDeColegiados
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMinimizar.TabIndex = 4;
             this.pbMinimizar.TabStop = false;
-            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click_1);
-            this.pbMinimizar.MouseEnter += new System.EventHandler(this.pbMinimizar_MouseEnter);
-            this.pbMinimizar.MouseLeave += new System.EventHandler(this.pbMinimizar_MouseLeave);
+            this.pbMinimizar.Click += new System.EventHandler(this.PbMinimizar_Click_1);
+            this.pbMinimizar.MouseEnter += new System.EventHandler(this.PbMinimizar_MouseEnter);
+            this.pbMinimizar.MouseLeave += new System.EventHandler(this.PbMinimizar_MouseLeave);
             // 
             // pbCerrar
             // 
@@ -603,9 +603,9 @@ namespace GestionDeColegiados
             this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCerrar.TabIndex = 2;
             this.pbCerrar.TabStop = false;
-            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
-            this.pbCerrar.MouseEnter += new System.EventHandler(this.pbCerrar_MouseEnter);
-            this.pbCerrar.MouseLeave += new System.EventHandler(this.pbCerrar_MouseLeave);
+            this.pbCerrar.Click += new System.EventHandler(this.PbCerrar_Click);
+            this.pbCerrar.MouseEnter += new System.EventHandler(this.PbCerrar_MouseEnter);
+            this.pbCerrar.MouseLeave += new System.EventHandler(this.PbCerrar_MouseLeave);
             // 
             // button2
             // 
@@ -618,7 +618,7 @@ namespace GestionDeColegiados
             this.button2.TabIndex = 14;
             this.button2.Text = "CERRAR SESIÓN";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // panel10
             // 

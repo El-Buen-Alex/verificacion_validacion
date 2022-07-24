@@ -14,24 +14,23 @@ using Model.Partido;
 namespace Control.AdmEncuentros {
   public class AdmEncuentroFinalizado {
 
-    private static AdmEncuentroFinalizado admEncuentroFinalizado = null;
-    private List<EncuentroFinalizado> encuentrosFinalizados;
-    private AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
-    private AdmGenerarEncuentros admEncuentrosGenerados = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
-    private AdmEquipo admEquipos = AdmEquipo.GetEquipo();
-    private ValidacionGUI validaciones = new ValidacionGUI();
-    private DatosEncuentroFinalizado datosEncuentroFinalizado = new DatosEncuentroFinalizado();
+    private static AdmEncuentroFinalizado _admEncuentroFinalizado = null;
+    private List<EncuentroFinalizado> _encuentrosFinalizados;
+    private AdmEncuentrosDefinidos _admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
+    private AdmGenerarEncuentros _admEncuentrosGenerados = AdmGenerarEncuentros.GetAdmadmGenerarEncuentros();
+    private AdmEquipo _admEquipos = AdmEquipo.GetEquipo();
+    private ValidacionGUI _validaciones = new ValidacionGUI();
+    private DatosEncuentroFinalizado _datosEncuentroFinalizado = new DatosEncuentroFinalizado();
 
     private AdmEncuentroFinalizado() {
-      encuentrosFinalizados = new List<EncuentroFinalizado>();
+      _encuentrosFinalizados = new List<EncuentroFinalizado>();
     }
 
     public static AdmEncuentroFinalizado GetAdmEncuentrosFinalizados() {
-      if(admEncuentroFinalizado == null) {
-        admEncuentroFinalizado = new AdmEncuentroFinalizado();
+      if(_admEncuentroFinalizado == null) {
+        _admEncuentroFinalizado = new AdmEncuentroFinalizado();
       }
-
-      return admEncuentroFinalizado;
+      return _admEncuentroFinalizado;
     }
     /// <summary>
     /// Usado para finalizar una competencia
@@ -42,7 +41,7 @@ namespace Control.AdmEncuentros {
 
       //respuesta = DarBajaCompetencia();
       string anio = DateTime.Now.Year.ToString();
-      respuesta = datosEncuentroFinalizado.FinalizarCompetencia(anio, "F");
+      respuesta = _datosEncuentroFinalizado.FinalizarCompetencia(anio, "F");
       return respuesta;
     }
     /// <summary>
@@ -52,15 +51,14 @@ namespace Control.AdmEncuentros {
     public bool ReinicarCompetencia() {
       bool respuesta = false;
       string anio = DateTime.Now.Year.ToString();
-      int cantidad = datosEncuentroFinalizado.GetCantidadEncuentrosFinalizados(anio);
+      int cantidad = _datosEncuentroFinalizado.GetCantidadEncuentrosFinalizados(anio);
       if(cantidad > 0) {
-        respuesta = datosEncuentroFinalizado.FinalizarCompetencia(anio, "R");
+        respuesta = _datosEncuentroFinalizado.FinalizarCompetencia(anio, "R");
       } else if(cantidad == 0) {
         respuesta = true;
       } else if(cantidad == -1) {
         respuesta = false;
       }
-
       return respuesta;
     }
     /// <summary>
@@ -71,15 +69,14 @@ namespace Control.AdmEncuentros {
     public bool DarBajaCompetencia() {
       bool respuesta = false;
       string anio = DateTime.Now.Year.ToString();
-      int cantidad = datosEncuentroFinalizado.GetCantidadEncuentrosFinalizados(anio);
+      int cantidad = _datosEncuentroFinalizado.GetCantidadEncuentrosFinalizados(anio);
       if(cantidad > 0) {
-        respuesta = datosEncuentroFinalizado.FinalizarCompetencia(anio, "N");
+        respuesta = _datosEncuentroFinalizado.FinalizarCompetencia(anio, "N");
       } else if(cantidad == 0) {
         respuesta = true;
       } else if(cantidad == -1) {
         respuesta = false;
       }
-
       return respuesta;
     }
     /// <summary>
@@ -90,11 +87,11 @@ namespace Control.AdmEncuentros {
     public bool LlenarDgv(DataGridView dgvCompeticion) {
       bool respuesta = false;
       string anio = "" + DateTime.Now.Year;
-      encuentrosFinalizados = datosEncuentroFinalizado.GetEncuentrosFinalizados(anio);
-      if(encuentrosFinalizados.Count > 0) {
+      _encuentrosFinalizados = _datosEncuentroFinalizado.GetEncuentrosFinalizados(anio);
+      if(_encuentrosFinalizados.Count > 0) {
         int posicion = 1;
-        foreach(EncuentroFinalizado encuentro in encuentrosFinalizados) {
-          string nombreEquipo = admEquipos.ObtenerEquipoPorId(encuentro.IdEquipo).NombreEquipo;
+        foreach(EncuentroFinalizado encuentro in _encuentrosFinalizados) {
+          string nombreEquipo = _admEquipos.ObtenerEquipoPorId(encuentro.IdEquipo).NombreEquipo;
           dgvCompeticion.Rows.Add(posicion, nombreEquipo, encuentro.GolesFavor, encuentro.GolesContra, encuentro.GolesDiferencia, encuentro.Puntos);
           posicion++;
         }
@@ -102,8 +99,6 @@ namespace Control.AdmEncuentros {
       }
       return respuesta;
     }
-
-
     /// <summary>
     /// Encargado de calcular puntos de un equipo B
     /// </summary>
@@ -129,9 +124,9 @@ namespace Control.AdmEncuentros {
     /// <param name="lblPuntosLocalResultado">Cantidad de puntos para el equipo local, acorde al resultado de goles</param>
     /// <param name="lblPuntosVisitanteResultado">Cantidad de puntos para el equipo visitante, acorde al resultado de goles</param>
     public void LlenarInformacionPartido(int index, TextBox txtGolesLocal, TextBox txtGolesVisitante, Label lblPuntosLocalResultado, Label lblPuntosVisitanteResultado) {
-      EncuentroDefinido encuentroDefinido = admEncuentrosDefinidos.GetEncuentroDefinidoByIndex(index);
-      EncuentroGenerado encuentroGenerado = admEncuentrosGenerados.ObtenerEncuentroPorID(encuentroDefinido.IdEncuentroGeneradoPendiente);
-      EncuentroFinalizado encuentroFinalizado = datosEncuentroFinalizado.GetEncuentroFinalizadoByIDefinidoEquipo(encuentroDefinido.Id, encuentroGenerado.IdEquipoLocal);
+      EncuentroDefinido encuentroDefinido = _admEncuentrosDefinidos.GetEncuentroDefinidoByIndex(index);
+      EncuentroGenerado encuentroGenerado = _admEncuentrosGenerados.ObtenerEncuentroPorID(encuentroDefinido.IdEncuentroGeneradoPendiente);
+      EncuentroFinalizado encuentroFinalizado = _datosEncuentroFinalizado.GetEncuentroFinalizadoByIDefinidoEquipo(encuentroDefinido.Id, encuentroGenerado.IdEquipoLocal);
       txtGolesLocal.Text = encuentroFinalizado.GolesFavor.ToString();
       txtGolesVisitante.Text = encuentroFinalizado.GolesContra.ToString();
       int puntosLocal = encuentroFinalizado.Puntos;
@@ -148,10 +143,10 @@ namespace Control.AdmEncuentros {
     /// <returns>Regresa un Encuentro finalizado, acorde a los datos recibidos</returns>
     private EncuentroFinalizado GetEncuentro(int idEquipo, int idDefinido, string golesFavor, string golesContra) {
 
-      Equipo equipo = admEquipos.ObtenerEquipoPorId(idEquipo);
+      Equipo equipo = _admEquipos.ObtenerEquipoPorId(idEquipo);
 
-      int golAFavor = validaciones.AInt(golesFavor);
-      int golEnContra = validaciones.AInt(golesContra);
+      int golAFavor = _validaciones.AInt(golesFavor);
+      int golEnContra = _validaciones.AInt(golesContra);
       return new EncuentroFinalizado(equipo.IdEquipo, golAFavor, golEnContra, idDefinido);
 
     }
@@ -165,22 +160,22 @@ namespace Control.AdmEncuentros {
     public bool UpdateEncuentroFinalizado(int index, string golesLocal, string golesVisitante) {
       bool respuesta = false;
 
-      EncuentroDefinido encuentroDefinido = admEncuentrosDefinidos.ListaEncuentrosDefinidos[index];
-      EncuentroGenerado encuentroGenerado = admEncuentrosGenerados.ObtenerEncuentroPorID(encuentroDefinido.IdEncuentroGeneradoPendiente);
+      EncuentroDefinido encuentroDefinido = _admEncuentrosDefinidos.ListaEncuentrosDefinidos[index];
+      EncuentroGenerado encuentroGenerado = _admEncuentrosGenerados.ObtenerEncuentroPorID(encuentroDefinido.IdEncuentroGeneradoPendiente);
 
 
       EncuentroFinalizado encuentroResultadoLocal = GetEncuentro(encuentroGenerado.IdEquipoLocal, encuentroDefinido.Id, golesLocal, golesVisitante);
       EncuentroFinalizado encuentroResultadoVisitante = GetEncuentro(encuentroGenerado.IdEquipoVisitante, encuentroDefinido.Id, golesVisitante, golesLocal);
 
-      respuesta = datosEncuentroFinalizado.UpdateEncuentroFinalizado(encuentroResultadoLocal);
+      respuesta = _datosEncuentroFinalizado.UpdateEncuentroFinalizado(encuentroResultadoLocal);
       if(respuesta) {
-        respuesta = datosEncuentroFinalizado.UpdateEncuentroFinalizado(encuentroResultadoVisitante);
+        respuesta = _datosEncuentroFinalizado.UpdateEncuentroFinalizado(encuentroResultadoVisitante);
       }
       return respuesta;
     }
 
     /// <summary>
-    /// Metodo encargado de Guardar un encuentro finalizado
+    /// Metodo encargado de guardar un encuentro finalizado
     /// </summary>
     /// <param name="index">la posicion del encuentro finalizado respecto a una lista</param>
     /// <param name="golesLocal">cantidad de goles de local que se han actualizado</param>
@@ -189,21 +184,21 @@ namespace Control.AdmEncuentros {
     public bool GuardarEncuentroFinalizado(int index, string golesLocal, string golesVisitante) {
       bool guardado = true;
 
-      EncuentroDefinido encuentroDefinido = admEncuentrosDefinidos.ListaEncuentrosDefinidos[index];
-      EncuentroGenerado encuentroGenerado = admEncuentrosGenerados.ObtenerEncuentroPorID(encuentroDefinido.IdEncuentroGeneradoPendiente);
+      EncuentroDefinido encuentroDefinido = _admEncuentrosDefinidos.ListaEncuentrosDefinidos[index];
+      EncuentroGenerado encuentroGenerado = _admEncuentrosGenerados.ObtenerEncuentroPorID(encuentroDefinido.IdEncuentroGeneradoPendiente);
 
-      Equipo equipoLocal = admEquipos.ObtenerEquipoPorId(encuentroGenerado.IdEquipoLocal);
-      Equipo equipoVisitante = admEquipos.ObtenerEquipoPorId(encuentroGenerado.IdEquipoVisitante);
+      Equipo equipoLocal = _admEquipos.ObtenerEquipoPorId(encuentroGenerado.IdEquipoLocal);
+      Equipo equipoVisitante = _admEquipos.ObtenerEquipoPorId(encuentroGenerado.IdEquipoVisitante);
 
-      int golLocal = validaciones.AInt(golesLocal);
-      int golVisitante = validaciones.AInt(golesVisitante);
+      int golLocal = _validaciones.AInt(golesLocal);
+      int golVisitante = _validaciones.AInt(golesVisitante);
 
       EncuentroFinalizado encuentroResultadoLocal = new EncuentroFinalizado(equipoLocal.IdEquipo, golLocal, golVisitante, encuentroDefinido.Id);
       EncuentroFinalizado encuentroResultadoVisitante = new EncuentroFinalizado(equipoVisitante.IdEquipo, golVisitante, golLocal, encuentroDefinido.Id);
 
-      bool guardo = datosEncuentroFinalizado.AddEncuentroFinalizado(encuentroResultadoLocal);
+      bool guardo = _datosEncuentroFinalizado.AddEncuentroFinalizado(encuentroResultadoLocal);
       if(guardo) {
-        guardado = datosEncuentroFinalizado.AddEncuentroFinalizado(encuentroResultadoVisitante);
+        guardado = _datosEncuentroFinalizado.AddEncuentroFinalizado(encuentroResultadoVisitante);
       }
 
       return guardado;
@@ -211,12 +206,12 @@ namespace Control.AdmEncuentros {
 
     public void CalcularPuntos(Label lblPuntos, string golFavor, string golContra) {
       if(!String.IsNullOrEmpty(golFavor) && !String.IsNullOrEmpty(golContra)) {
-        int gFavor = validaciones.AInt(golFavor);
-        int gContra = validaciones.AInt(golContra);
-        lblPuntos.Text = "" + puntos(gFavor, gContra);
+        int gFavor = _validaciones.AInt(golFavor);
+        int gContra = _validaciones.AInt(golContra);
+        lblPuntos.Text = "" + Puntos(gFavor, gContra);
       }
     }
-    private int puntos(int golFavor, int golContra) {
+    private int Puntos(int golFavor, int golContra) {
       int respuesta = 0;
       if(golContra == golFavor) {
         respuesta = 1;
@@ -230,10 +225,8 @@ namespace Control.AdmEncuentros {
 
     public int GetCantidadEncuentrosFinalizados() {
       string anio = DateTime.Now.Year.ToString();
-      int cantidad = datosEncuentroFinalizado.GetCantidadEncuentrosFinalizados(anio);
-      if(cantidad < 0) {
-
-      }
+      int cantidad = _datosEncuentroFinalizado.GetCantidadEncuentrosFinalizados(anio);
+      if(cantidad < 0) { }
       return cantidad;
     }
   }

@@ -9,9 +9,9 @@ namespace GestionDeColegiados {
   /// Formulario para agregar Áribtros.
   /// </summary>
   public partial class frmNuevoGrupoColegiado : Form {
-    ValidacionGUI validacionGUI = new ValidacionGUI();
-    Contexto contexto = null;
-    AdmColegiado admColegiado = AdmColegiado.GetAdmCol();
+    ValidacionGUI _validacionGUI = new ValidacionGUI();
+    Contexto _contexto = null;
+    AdmColegiado _admColegiado = AdmColegiado.GetAdmCol();
 
     /// <summary>
     /// Constructor del formulario.
@@ -25,7 +25,7 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void validarNumeros_KeyPress(object sender, KeyPressEventArgs e) {
+    private void ValidarNumeros_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsNumber(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back))) {
         e.Handled = true;
         return;
@@ -37,7 +37,7 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void validarLetras_KeyPress(object sender, KeyPressEventArgs e) {
+    private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsLetter(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back)) &&
           (e.KeyChar != Convert.ToChar(Keys.Space))) {
         e.Handled = true;
@@ -53,19 +53,19 @@ namespace GestionDeColegiados {
     /// </remarks>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnsiguiente1_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.ValidarVacios(txtcedulaJC, txtnombreJC, txtapellidoJC, txtdomicilioJC, txtemailJC, txttelefonoJC);
-      bool cedulaRepetida = admColegiado.ValidarCedula(txtcedulaJC);
+    private void Btnsiguiente1_Click(object sender, EventArgs e) {
+      bool vacio = _validacionGUI.ValidarVacios(txtcedulaJC, txtnombreJC, txtapellidoJC, txtdomicilioJC, txtemailJC, txttelefonoJC);
+      bool cedulaRepetida = _admColegiado.ValidarCedula(txtcedulaJC);
       bool txtcedulaRepetida = (txtcedulaJC.Text == txtcedulaAs1.Text) || (txtcedulaJC.Text == txtcedulaAs2.Text) || (txtcedulaJC.Text == txtcedulaCA.Text);
       if(vacio != true) {
         if(cedulaRepetida != true && txtcedulaRepetida != true) {
-          camposJuezCentral(false);
-          camposAsistente1(true);
+          CamposJuezCentral(false);
+          CamposAsistente1(true);
         } else {
-          mensajeCedulaRepetida();
+          MensajeCedulaRepetida();
         }
       } else {
-        camposIncompletos();
+        CamposIncompletos();
       }
     }
 
@@ -77,19 +77,19 @@ namespace GestionDeColegiados {
     /// </remarks>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnsiguiente2_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.ValidarVacios(txtcedulaAs1, txtnombreAs1, txtapellidoAs1, txtdomicilioAs1, txtemailAs1, txttelefonoAs1);
-      bool cedulaRepetida = admColegiado.ValidarCedula(txtcedulaAs1);
+    private void Btnsiguiente2_Click(object sender, EventArgs e) {
+      bool vacio = _validacionGUI.ValidarVacios(txtcedulaAs1, txtnombreAs1, txtapellidoAs1, txtdomicilioAs1, txtemailAs1, txttelefonoAs1);
+      bool cedulaRepetida = _admColegiado.ValidarCedula(txtcedulaAs1);
       bool txtcedulaRepetida = (txtcedulaAs1.Text == txtcedulaJC.Text) || (txtcedulaAs1.Text == txtcedulaAs2.Text) || (txtcedulaAs1.Text == txtcedulaCA.Text);
       if(vacio != true) {
         if(cedulaRepetida != true && txtcedulaRepetida != true) {
-          camposAsistente1(false);
-          camposAsistente2(true);
+          CamposAsistente1(false);
+          CamposAsistente2(true);
         } else {
-          mensajeCedulaRepetida();
+          MensajeCedulaRepetida();
         }
       } else {
-        camposIncompletos();
+        CamposIncompletos();
       }
     }
 
@@ -101,9 +101,9 @@ namespace GestionDeColegiados {
     /// </remarks>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnRegresar2_Click(object sender, EventArgs e) {
-      camposAsistente1(false);
-      camposJuezCentral(true);
+    private void BtnRegresar2_Click(object sender, EventArgs e) {
+      CamposAsistente1(false);
+      CamposJuezCentral(true);
     }
 
     /// <summary>
@@ -114,19 +114,19 @@ namespace GestionDeColegiados {
     /// </remarks>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnsiguiente3_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.ValidarVacios(txtcedulaAs2, txtnombreAs2, txtapellidoAs2, txtdomicilioAs2, txtemailAs2, txttelefonoAs2);
-      bool cedulaRepetida = admColegiado.ValidarCedula(txtcedulaAs2);
+    private void Btnsiguiente3_Click(object sender, EventArgs e) {
+      bool vacio = _validacionGUI.ValidarVacios(txtcedulaAs2, txtnombreAs2, txtapellidoAs2, txtdomicilioAs2, txtemailAs2, txttelefonoAs2);
+      bool cedulaRepetida = _admColegiado.ValidarCedula(txtcedulaAs2);
       bool txtcedulaRepetida = (txtcedulaAs2.Text == txtcedulaJC.Text) || (txtcedulaAs2.Text == txtcedulaAs1.Text) || (txtcedulaAs2.Text == txtcedulaCA.Text);
       if(vacio != true) {
         if(cedulaRepetida != true && txtcedulaRepetida != true) {
-          camposAsistente2(false);
-          camposCuartoArbitro(true);
+          CamposAsistente2(false);
+          CamposCuartoArbitro(true);
         } else {
-          mensajeCedulaRepetida();
+          MensajeCedulaRepetida();
         }
       } else {
-        camposIncompletos();
+        CamposIncompletos();
       }
     }
 
@@ -138,9 +138,9 @@ namespace GestionDeColegiados {
     /// </remarks>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnRegresar3_Click(object sender, EventArgs e) {
-      camposAsistente2(false);
-      camposAsistente1(true);
+    private void BtnRegresar3_Click(object sender, EventArgs e) {
+      CamposAsistente2(false);
+      CamposAsistente1(true);
     }
 
     /// <summary>
@@ -151,24 +151,24 @@ namespace GestionDeColegiados {
     /// </remarks>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnRegistrar_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.ValidarVacios(txtcedulaCA, txtnombreCA, txtapellidoCA, txtdomicilioCA, txtemailCA, txttelefonoCA);
-      bool cedulaRepetida = admColegiado.ValidarCedula(txtcedulaCA);
+    private void BtnRegistrar_Click(object sender, EventArgs e) {
+      bool vacio = _validacionGUI.ValidarVacios(txtcedulaCA, txtnombreCA, txtapellidoCA, txtdomicilioCA, txtemailCA, txttelefonoCA);
+      bool cedulaRepetida = _admColegiado.ValidarCedula(txtcedulaCA);
       bool txtcedulaRepetida = (txtcedulaCA.Text == txtcedulaJC.Text) || (txtcedulaCA.Text == txtcedulaAs1.Text) || (txtcedulaCA.Text == txtcedulaAs2.Text);
       if(vacio != true) {
         if(cedulaRepetida != true && txtcedulaRepetida != true) {
-          registrarColegiado();
-          limpiarCamposJuezCentral();
-          limpiarCamposAsistente1();
-          limpiarCamposAsistente2();
-          limpiarCamposArbitroCentral();
-          camposCuartoArbitro(false);
-          camposJuezCentral(true);
+          RegistrarColegiado();
+          LimpiarCamposJuezCentral();
+          LimpiarCamposAsistente1();
+          LimpiarCamposAsistente2();
+          LimpiarCamposArbitroCentral();
+          CamposCuartoArbitro(false);
+          CamposJuezCentral(true);
         } else {
-          mensajeCedulaRepetida();
+          MensajeCedulaRepetida();
         }
       } else {
-        camposIncompletos();
+        CamposIncompletos();
       }
     }
 
@@ -180,9 +180,9 @@ namespace GestionDeColegiados {
     /// </remarks>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnRegresar4_Click(object sender, EventArgs e) {
-      camposCuartoArbitro(false);
-      camposAsistente2(true);
+    private void BtnRegresar4_Click(object sender, EventArgs e) {
+      CamposCuartoArbitro(false);
+      CamposAsistente2(true);
     }
 
     /// <summary>
@@ -193,18 +193,18 @@ namespace GestionDeColegiados {
     /// </remarks>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnCancelar_Click(object sender, EventArgs e) {
+    private void BtnCancelar_Click(object sender, EventArgs e) {
       DialogResult resultado;
       resultado = MessageBox.Show("¿Está seguro que desea cancelar?\nSi lo hace, los datos ingresados se borrarán.", "Cancelar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
       if(resultado == DialogResult.Yes) {
-        limpiarCamposJuezCentral();
-        limpiarCamposAsistente1();
-        limpiarCamposAsistente2();
-        limpiarCamposArbitroCentral();
-        camposAsistente1(false);
-        camposAsistente2(false);
-        camposCuartoArbitro(false);
-        camposJuezCentral(true);
+        LimpiarCamposJuezCentral();
+        LimpiarCamposAsistente1();
+        LimpiarCamposAsistente2();
+        LimpiarCamposArbitroCentral();
+        CamposAsistente1(false);
+        CamposAsistente2(false);
+        CamposCuartoArbitro(false);
+        CamposJuezCentral(true);
       }
     }
 
@@ -214,14 +214,14 @@ namespace GestionDeColegiados {
     /// <remarks>
     /// Recoge todos los id de los árbitros y los guarda.
     /// </remarks>
-    private void registrarColegiado() {
-      int idJuezCentral = obtenerIdJuezCentral(),
-          idAsistente1 = obtenerIdAsistente1(),
-          idAsistente2 = obtenerIdAsistente2(),
-          idCuartoArbitro = obtenerIdCuartoArbitro();
-      bool vacio = validacionGUI.ValidarNum(idJuezCentral, idAsistente1, idAsistente2, idCuartoArbitro);
+    private void RegistrarColegiado() {
+      int idJuezCentral = ObtenerIdJuezCentral(),
+          idAsistente1 = ObtenerIdAsistente1(),
+          idAsistente2 = ObtenerIdAsistente2(),
+          idCuartoArbitro = ObtenerIdCuartoArbitro();
+      bool vacio = _validacionGUI.ValidarNum(idJuezCentral, idAsistente1, idAsistente2, idCuartoArbitro);
       if(vacio != true) {
-        admColegiado.Guardar(idJuezCentral, idAsistente1, idAsistente2, idCuartoArbitro);
+        _admColegiado.Guardar(idJuezCentral, idAsistente1, idAsistente2, idCuartoArbitro);
       } else {
         MessageBox.Show("No se pudo agregar colegiados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
@@ -230,70 +230,70 @@ namespace GestionDeColegiados {
     /// <summary>
     /// Muestra mensaje de campos vacios.
     /// </summary>
-    private void camposIncompletos() {
+    private void CamposIncompletos() {
       MessageBox.Show("Hay ciertos campos vacios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
 
     /// <summary>
     /// Muestra mensaje si existe algún árbitro registrado.
     /// </summary>
-    private void mensajeCedulaRepetida() {
+    private void MensajeCedulaRepetida() {
       MessageBox.Show("El árbitro que ingresó ya se encuentra registrado!!\nIngrese uno nuevo", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
 
     /// <summary>
-    /// Envia los datos para Guardar Juez Central.
+    /// Envia los datos para guardar Juez Central.
     /// </summary>
     /// <remarks>
     /// Usa la clase contexto para asignarle el árbitro.
     /// </remarks>
     /// <returns>Devuelve el id del último Juez Central ingresado como entero.</returns>
-    private int obtenerIdJuezCentral() {
+    private int ObtenerIdJuezCentral() {
       int id = 0;
-      contexto = new Contexto(AdmJuezCentral.GetAdmJ());
-      id = contexto.ObtenerDatos(txtcedulaJC, txtnombreJC, txtapellidoJC, txtdomicilioJC, txtemailJC, txttelefonoJC);
+      _contexto = new Contexto(AdmJuezCentral.GetAdmJ());
+      id = _contexto.ObtenerDatos(txtcedulaJC, txtnombreJC, txtapellidoJC, txtdomicilioJC, txtemailJC, txttelefonoJC);
       return id;
     }
 
     /// <summary>
-    /// Envia los datos para Guardar Asistente 1.
+    /// Envia los datos para guardar Asistente 1.
     /// </summary>
     /// <remarks>
     /// Usa la clase contexto para asignarle el árbitro.
     /// </remarks>
     /// <returns>Devuelve el id del último Asistente 1 ingresado como entero.</returns>
-    private int obtenerIdAsistente1() {
+    private int ObtenerIdAsistente1() {
       int id = 0;
-      contexto = new Contexto(AdmAsistente1.GetAdmA1());
-      id = contexto.ObtenerDatos(txtcedulaAs1, txtnombreAs1, txtapellidoAs1, txtdomicilioAs1, txtemailAs1, txttelefonoAs1);
+      _contexto = new Contexto(AdmAsistente1.GetAdmA1());
+      id = _contexto.ObtenerDatos(txtcedulaAs1, txtnombreAs1, txtapellidoAs1, txtdomicilioAs1, txtemailAs1, txttelefonoAs1);
       return id;
     }
 
     /// <summary>
-    /// Envia los datos para Guardar Asistente 2.
+    /// Envia los datos para guardar Asistente 2.
     /// </summary>
     /// <remarks>
     /// Usa la clase contexto para asignarle el árbitro.
     /// </remarks>
     /// <returns>Devuelve el id del último Asistente 2 ingresado como entero.</returns>
-    private int obtenerIdAsistente2() {
+    private int ObtenerIdAsistente2() {
       int id = 0;
-      contexto = new Contexto(AdmAsistente2.GetAdmA2());
-      id = contexto.ObtenerDatos(txtcedulaAs2, txtnombreAs2, txtapellidoAs2, txtdomicilioAs2, txtemailAs2, txttelefonoAs2);
+      _contexto = new Contexto(AdmAsistente2.GetAdmA2());
+      id = _contexto.ObtenerDatos(txtcedulaAs2, txtnombreAs2, txtapellidoAs2, txtdomicilioAs2, txtemailAs2, txttelefonoAs2);
       return id;
     }
 
     /// <summary>
-    /// Envia los datos para Guardar Cuarto Árbitro.
+    /// Envia los datos para guardar Cuarto Árbitro.
     /// </summary>
     /// <remarks>
     /// Usa la clase contexto para asignarle el árbitro.
     /// </remarks>
     /// <returns>Devuelve el id del último Cuarto Árbitro ingresado como entero.</returns>
-    private int obtenerIdCuartoArbitro() {
+    private int ObtenerIdCuartoArbitro() {
       int id = 0;
-      contexto = new Contexto(AdmCuartoArbitro.GetAdmCA());
-      id = contexto.ObtenerDatos(txtcedulaCA, txtnombreCA, txtapellidoCA, txtdomicilioCA, txtemailCA, txttelefonoCA);
+      _contexto = new Contexto(AdmCuartoArbitro.GetAdmCA());
+      id = _contexto.ObtenerDatos(txtcedulaCA, txtnombreCA, txtapellidoCA, txtdomicilioCA, txtemailCA, txttelefonoCA);
       return id;
     }
 
@@ -301,7 +301,7 @@ namespace GestionDeColegiados {
     /// Método para cambiar la propiedad de "Visible" para Juez Central.
     /// </summary>
     /// <param name="valor">Parámetro con valor booleano.</param>
-    private void camposJuezCentral(bool valor) {
+    private void CamposJuezCentral(bool valor) {
       labJuezCentral.Visible = valor;
       txtcedulaJC.Visible = valor;
       txtnombreJC.Visible = valor;
@@ -316,7 +316,7 @@ namespace GestionDeColegiados {
     /// Método para cambiar la propiedad de "Visible" para Asistente 1.
     /// </summary>
     /// <param name="valor">Parámetro con valor booleano.</param>
-    private void camposAsistente1(bool valor) {
+    private void CamposAsistente1(bool valor) {
       labAsist1.Visible = valor;
       txtcedulaAs1.Visible = valor;
       txtnombreAs1.Visible = valor;
@@ -332,7 +332,7 @@ namespace GestionDeColegiados {
     /// Método para cambiar la propiedad de "Visible" para Asistente 2.
     /// </summary>
     /// <param name="valor">Parámetro con valor booleano.</param>
-    private void camposAsistente2(bool valor) {
+    private void CamposAsistente2(bool valor) {
       labAsist2.Visible = valor;
       txtcedulaAs2.Visible = valor;
       txtnombreAs2.Visible = valor;
@@ -348,7 +348,7 @@ namespace GestionDeColegiados {
     /// Método para cambiar la propiedad de "Visible" para Cuarto Árbitro.
     /// </summary>
     /// <param name="valor">Parámetro con valor booleano.</param>
-    private void camposCuartoArbitro(bool valor) {
+    private void CamposCuartoArbitro(bool valor) {
       labCuartoArb.Visible = valor;
       txtcedulaCA.Visible = valor;
       txtnombreCA.Visible = valor;
@@ -363,7 +363,7 @@ namespace GestionDeColegiados {
     /// <summary>
     /// Método para limpiar los campos de Juez central.
     /// </summary>
-    private void limpiarCamposJuezCentral() {
+    private void LimpiarCamposJuezCentral() {
       txtcedulaJC.Text = "";
       txtnombreJC.Text = "";
       txtapellidoJC.Text = "";
@@ -375,7 +375,7 @@ namespace GestionDeColegiados {
     /// <summary>
     /// Método para limpiar los campos de Asistente 1.
     /// </summary>
-    private void limpiarCamposAsistente1() {
+    private void LimpiarCamposAsistente1() {
       txtcedulaAs1.Text = "";
       txtnombreAs1.Text = "";
       txtapellidoAs1.Text = "";
@@ -387,7 +387,7 @@ namespace GestionDeColegiados {
     /// <summary>
     /// Método para limpiar los campos de Asistente 2.
     /// </summary>
-    private void limpiarCamposAsistente2() {
+    private void LimpiarCamposAsistente2() {
       txtcedulaAs2.Text = "";
       txtnombreAs2.Text = "";
       txtapellidoAs2.Text = "";
@@ -399,7 +399,7 @@ namespace GestionDeColegiados {
     /// <summary>
     /// Método para limpiar los campos de Cuarto Árbitro.
     /// </summary>
-    private void limpiarCamposArbitroCentral() {
+    private void LimpiarCamposArbitroCentral() {
       txtcedulaCA.Text = "";
       txtnombreCA.Text = "";
       txtapellidoCA.Text = "";

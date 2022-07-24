@@ -15,35 +15,33 @@ namespace GestionDeColegiados {
 
     //dll y variables necesarios para poder mover de lugar la barra de titulo 
     [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-    private static extern void ReleaseCapture();
+    private extern static void ReleaseCapture();
     [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-    private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+    private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-    private Color colorDefaultClose;
-    private Color colorDefaultMin;
-    private AdmEncuentroFinalizado admEncuentroFinalizado = AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados();
-    private AdmGenerarEncuentros admGenerarEncuentros = AdmGenerarEncuentros.getAdmadmGenerarEncuentros();
-    private AdmEquipo admEquipo = AdmEquipo.GetEquipo();
-    private AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
-    private AdmColegiado admColegiado = AdmColegiado.GetAdmCol();
+    private Color _colorDefaultClose;
+    private Color _colorDefaultMin;
+    private AdmEncuentroFinalizado _admEncuentroFinalizado = AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados();
+    private AdmGenerarEncuentros _admGenerarEncuentros = AdmGenerarEncuentros.GetAdmadmGenerarEncuentros();
+    private AdmEquipo _admEquipo = AdmEquipo.GetEquipo();
+    private AdmEncuentrosDefinidos _admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
+    private AdmColegiado _admColegiado = AdmColegiado.GetAdmCol();
 
     public MenuPrincipal() {
       InitializeComponent();
     }
 
-    private void btnGestionColegiados_MouseEnter(object sender, EventArgs e) {
-
+    private void BtnGestionColegiados_MouseEnter(object sender, EventArgs e) {
       flpOpcionGestionColegiado.Visible = true;
     }
 
-    private void btnGestionEquipos2_MouseEnter(object sender, EventArgs e) {
+    private void BtnGestionEquipos2_MouseEnter(object sender, EventArgs e) {
       flpOpcionGestionEquipo.Visible = true;
     }
 
-    private void btnGestionEncuentros2_MouseEnter(object sender, EventArgs e) {
+    private void BtnGestionEncuentros2_MouseEnter(object sender, EventArgs e) {
       flpOpcionGestionEncuentros.Visible = true;
     }
-
 
     /// <summary>
     /// Metodo encargado de pintar cada ventana en un panel
@@ -64,12 +62,12 @@ namespace GestionDeColegiados {
 
     }
 
-    private void btnNuevoGrupoColegiados_Click(object sender, EventArgs e) {
+    private void BtnNuevoGrupoColegiados_Click(object sender, EventArgs e) {
       AbrirFormEnPanel(new frmNuevoGrupoColegiado());
     }
 
-    private void btnVerTodosColegiados_Click(object sender, EventArgs e) {
-      if(admColegiado.ObtenerCantidadColegiado() == 0) {
+    private void BtnVerTodosColegiados_Click(object sender, EventArgs e) {
+      if(_admColegiado.ObtenerCantidadColegiado() == 0) {
         MessageBox.Show("No se han registrado colegiados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         AbrirFormEnPanel(new frmNuevoGrupoColegiado());
       } else {
@@ -78,8 +76,8 @@ namespace GestionDeColegiados {
       }
     }
 
-    private void btnAnadirEquipo_Click(object sender, EventArgs e) {
-      if(admEquipo.ObtenerCantidadEquipo() < 10) {
+    private void BtnAnadirEquipo_Click(object sender, EventArgs e) {
+      if(_admEquipo.ObtenerCantidadEquipo() < 10) {
         AbrirFormEnPanel(new FrmNuevoEquipo());
       } else {
         AbrirFormEnPanel(new FrmListaEquipos());
@@ -87,27 +85,27 @@ namespace GestionDeColegiados {
     }
 
     private void ExaminarAccesibilidadGenerarEncuentrosPorCantidadEquipo() {
-      if(admEquipo.ObtenerCantidadEquipo() == 10) {
+      if(_admEquipo.ObtenerCantidadEquipo() == 10) {
         ExaminarAccesibilidadGenerarEncuentros();
       } else {
         string faltaEquipo = "Para generar encuentros debe existir 10 equipos registrados" +
-            "\n\rExisten: " + admEquipo.ObtenerCantidadEquipo() + " Equipos registrados." +
-            " Por favor ingrese: " + (10 - admEquipo.ObtenerCantidadEquipo()) + " más";
+            "\n\rExisten: " + _admEquipo.ObtenerCantidadEquipo() + " Equipos registrados." +
+            " Por favor ingrese: " + (10 - _admEquipo.ObtenerCantidadEquipo()) + " más";
         MessageBox.Show(faltaEquipo, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         AbrirFormEnPanel(new FrmNuevoEquipo());
       }
     }
 
     private void ExaminarAccesibilidadGenerarEncuentros() {
-      if(admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes() == 0) {
+      if(_admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes() == 0) {
         AbrirFormEnPanel(new frmGenerarEncuentros(false));
       } else {
         MessageBox.Show("Ya se han generado y registrados los encuentros");
         AbrirFormEnPanel(new frmGenerarEncuentros(true));
       }
     }
-    private void btnGenerarEncuentros_Click(object sender, EventArgs e) {
-      int cantEncuentrosDefinidos = admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar();
+    private void BtnGenerarEncuentros_Click(object sender, EventArgs e) {
+      int cantEncuentrosDefinidos = _admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar();
       if(cantEncuentrosDefinidos == 0) {
         ExaminarAccesibilidadGenerarEncuentrosPorCantidadEquipo();
       } else {
@@ -117,8 +115,8 @@ namespace GestionDeColegiados {
 
     }
 
-    private void btnAsignarColegiados_Click(object sender, EventArgs e) {
-      int numeroEncuentros = admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes();
+    private void BtnAsignarColegiados_Click(object sender, EventArgs e) {
+      int numeroEncuentros = _admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes();
       if(numeroEncuentros == 0) {
         MessageBox.Show("No hay encuentros disponibles para asignar fecha y colegiados ");
       } else {
@@ -127,14 +125,13 @@ namespace GestionDeColegiados {
 
     }
 
-    private void btnCambiarEstadio_Click(object sender, EventArgs e) {
-      if(admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar() == 0) {
+    private void BtnCambiarEstadio_Click(object sender, EventArgs e) {
+      if(_admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar() == 0) {
         MessageBox.Show("No hay Partidos por definir. Por favor, genere encuentros primero");
       } else {
-        AbrirFormEnPanel(new frmCambiarEstadioPartido());
+        AbrirFormEnPanel(new FrmCambiarEstadioPartido());
       }
     }
-
 
     //metodo que controla el evento de arrastrar pantalla
     private void PanelBarraTitulo_MouseDown(object sender, MouseEventArgs e) {
@@ -143,74 +140,74 @@ namespace GestionDeColegiados {
     }
 
     //evento para minimizar pantalla
-    private void pbMinimizar_Click_1(object sender, EventArgs e) {
+    private void PbMinimizar_Click_1(object sender, EventArgs e) {
       this.WindowState = FormWindowState.Minimized;
     }
     //evento para cerrar pantalla
-    private void pbCerrar_Click(object sender, EventArgs e) {
+    private void PbCerrar_Click(object sender, EventArgs e) {
       Application.Exit();
     }
 
 
     //Eventos que generan un efecto visual en cuanto el mouse pasa por dicho controlador
-    private void pbCerrar_MouseEnter(object sender, EventArgs e) {
-      colorDefaultClose = pbCerrar.BackColor;
+    private void PbCerrar_MouseEnter(object sender, EventArgs e) {
+      _colorDefaultClose = pbCerrar.BackColor;
       pbCerrar.BackColor = Color.FromArgb(202, 49, 32);
     }
-    protected void pbCerrar_MouseLeave(object sender, EventArgs e) {
-      pbCerrar.BackColor = colorDefaultClose;
+    protected void PbCerrar_MouseLeave(object sender, EventArgs e) {
+      pbCerrar.BackColor = _colorDefaultClose;
     }
 
-    protected void pbMinimizar_MouseEnter(object sender, EventArgs e) {
-      colorDefaultMin = pbMinimizar.BackColor;
+    protected void PbMinimizar_MouseEnter(object sender, EventArgs e) {
+      _colorDefaultMin = pbMinimizar.BackColor;
       pbMinimizar.BackColor = Color.FromArgb(52, 58, 64);
     }
 
-    private void pbMinimizar_MouseLeave(object sender, EventArgs e) {
-      pbMinimizar.BackColor = colorDefaultMin;
+    private void PbMinimizar_MouseLeave(object sender, EventArgs e) {
+      pbMinimizar.BackColor = _colorDefaultMin;
     }
 
-    private void btnVerEncuentrosDefinidos_Click(object sender, EventArgs e) {
-      if(admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar() == 0) {
+    private void BtnVerEncuentrosDefinidos_Click(object sender, EventArgs e) {
+      if(_admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar() == 0) {
         MessageBox.Show("No hay Partidos por definir. Por favor, genere encuentros primero");
       } else {
         AbrirFormEnPanel(new frmTodosLosEncuentrosDefinidos());
       }
     }
 
-    private void btnVerTodosPartidos_Click(object sender, EventArgs e) {
+    private void BtnVerTodosPartidos_Click(object sender, EventArgs e) {
       AbrirFormEnPanel(new FrmVerCompeticion(true));
     }
 
-    private void button1_MouseEnter(object sender, EventArgs e) {
+    private void Button1_MouseEnter(object sender, EventArgs e) {
       flpVerCompetencia.Visible = true;
     }
 
-    private void button2_Click(object sender, EventArgs e) {
+    private void Button2_Click(object sender, EventArgs e) {
       this.Close();
-      btnIniciarSesion frm = new btnIniciarSesion();
+      BtnIniciarSesion frm = new BtnIniciarSesion();
       frm.Show();
     }
-    public void abrirFormNuevoEquipo() {
-      if(admEquipo.ObtenerCantidadEquipo() < 10) {
+    public void AbrirFormNuevoEquipo() {
+      if(_admEquipo.ObtenerCantidadEquipo() < 10) {
         AbrirFormEnPanel(new FrmNuevoEquipo());
       } else {
         AbrirFormEnPanel(new FrmListaEquipos());
       }
     }
-    private void button5_Click(object sender, EventArgs e) {
-      abrirFormNuevoEquipo();
+    private void Button5_Click(object sender, EventArgs e) {
+      AbrirFormNuevoEquipo();
     }
 
     private void ExaminarAccesibilidadEditarEquipoPorEncuentrosGenerados() {
-      if(admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes() == 0 && admEncuentroFinalizado.GetCantidadEncuentrosFinalizados() == 0 && admEncuentrosDefinidos.ObtenerCantidadEncuentrosDefinidos() == 0) {
+      if(_admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes() == 0 && _admEncuentroFinalizado.GetCantidadEncuentrosFinalizados() == 0 && _admEncuentrosDefinidos.ObtenerCantidadEncuentrosDefinidos() == 0) {
         AbrirFormEnPanel(new FrmVerTodos());
       } else {
         MessageBox.Show("Existen encuentros generados o definidos. No se pueden eliminar o editar equipos.");
       }
     }
-    private void button3_Click(object sender, EventArgs e) {
-      if(admEquipo.ObtenerCantidadEquipo() > 0) {
+    private void Button3_Click(object sender, EventArgs e) {
+      if(_admEquipo.ObtenerCantidadEquipo() > 0) {
         ExaminarAccesibilidadEditarEquipoPorEncuentrosGenerados();
       } else {
         MessageBox.Show("Ingrese primero algunos equipos");

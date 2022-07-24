@@ -16,7 +16,7 @@ namespace Data {
     public List<Estadio> ObtenerEstadiosDisponibles() {
       List<Estadio> listaEstadios = new List<Estadio>();
       Estadio estadio = null;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       try {
         MySqlCommand comando = new MySqlCommand("estadiosDiponibles", _conexion);
@@ -38,7 +38,7 @@ namespace Data {
 
     public Estadio ObtenerEstadioPorId(int idEstadio) {
       Estadio estadio = null;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       try {
         MySqlCommand comando = new MySqlCommand("obtenerEstadioPorId", _conexion);
@@ -62,7 +62,7 @@ namespace Data {
 
     public bool PutEstadiosDisponibles() {
       bool cambio = false;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       _transaccion = _conexion.BeginTransaction();
       try {
@@ -82,7 +82,7 @@ namespace Data {
 
     public bool CambiarEstado(int idEsadio, string estado) {
       bool cambio = false;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       _transaccion = _conexion.BeginTransaction();
       try {

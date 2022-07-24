@@ -27,7 +27,7 @@ namespace GestionDeColegiados {
       if(cambiar.StartsWith("EXITO")) {
 
         this.Close();
-        btnIniciarSesion iniciar = new btnIniciarSesion();
+        BtnIniciarSesion iniciar = new BtnIniciarSesion();
         iniciar.Show();
 
       } else {

@@ -22,7 +22,7 @@ namespace Control.AdmEquipos {
 
 
     public void LlenarCampos(TextBox idEquipo, TextBox nombre, TextBox numjugadores, TextBox director, TextBox presidente, string id) {
-      _listaEquipo = _datos.consultarEquiposTabla();
+      _listaEquipo = _datos.ConsultarEquiposTabla();
       foreach(Equipo equipo in _listaEquipo) {
         if(equipo.IdEquipo.Equals(Convert.ToInt32(id))) {
 
@@ -96,7 +96,7 @@ namespace Control.AdmEquipos {
     public void LlenaTabla(DataGridView tablaDatos, string nombre) {
       int i = 1;
       tablaDatos.Rows.Clear();
-      _listaEquipo = _datos.consultarEquiposTabla();
+      _listaEquipo = _datos.ConsultarEquiposTabla();
       foreach(Equipo equipo in _listaEquipo) {
         if(equipo.NombreEquipo.ToLower().Contains(nombre.ToLower())) {
 
@@ -169,7 +169,7 @@ namespace Control.AdmEquipos {
     /// </summary>
     /// <returns>Retorna algun equipo</returns>
     public List<Equipo> ExtraerEquipos() {
-      _listaEquipo = _datos.consultarEquipos();
+      _listaEquipo = _datos.ConsultarEquipos();
       return _listaEquipo;
 
     }
