@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5B342B2-977A-4A3B-A2A0-F1D9EAE7D8C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GestionDeColegiados</RootNamespace>
+    <AssemblyName>GestionDeColegiados</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CambiarPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPass.Designer.cs">
+      <DependentUpon>CambiarPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmActualizarPartido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarPartido.Designer.cs">
+      <DependentUpon>frmActualizarPartido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarEquipo.Designer.cs">
+      <DependentUpon>frmEditarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerTodos.Designer.cs">
+      <DependentUpon>frmVerTodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerarEncuentros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerarEncuentros.Designer.cs">
+      <DependentUpon>frmGenerarEncuentros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaEquipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaEquipos.Designer.cs">
+      <DependentUpon>frmListaEquipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoEquipo.Designer.cs">
+      <DependentUpon>frmNuevoEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsColegiado\frmEditarArbitro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsColegiado\frmEditarArbitro.Designer.cs">
+      <DependentUpon>frmEditarArbitro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsColegiado\frmElimAgregarArbitro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsColegiado\frmElimAgregarArbitro.Designer.cs">
+      <DependentUpon>frmElimAgregarArbitro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsColegiado\frmNuevoGrupoColegiado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsColegiado\frmNuevoGrupoColegiado.Designer.cs">
+      <DependentUpon>frmNuevoGrupoColegiado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarPartido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarPartido.Designer.cs">
+      <DependentUpon>frmRegistrarPartido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsArbitro\FrmEditarPartidoFinalizado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsArbitro\FrmEditarPartidoFinalizado.Designer.cs">
+      <DependentUpon>FrmEditarPartidoFinalizado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsArbitro\FrmMenuArbitro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsArbitro\FrmMenuArbitro.Designer.cs">
+      <DependentUpon>FrmMenuArbitro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsArbitro\FrmRegistrarResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsArbitro\FrmRegistrarResultado.Designer.cs">
+      <DependentUpon>FrmRegistrarResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsArbitro\FrmVerCompeticion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsArbitro\FrmVerCompeticion.Designer.cs">
+      <DependentUpon>FrmVerCompeticion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodosLosEncuentrosDefinidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodosLosEncuentrosDefinidos.Designer.cs">
+      <DependentUpon>frmTodosLosEncuentrosDefinidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsColegiado\frmVerTodosLosColegiados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsColegiado\frmVerTodosLosColegiados.Designer.cs">
+      <DependentUpon>frmVerTodosLosColegiados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.Designer.cs">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CambiarPass.resx">
+      <DependentUpon>CambiarPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizarPartido.resx">
+      <DependentUpon>frmActualizarPartido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarEquipo.resx">
+      <DependentUpon>frmEditarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerTodos.resx">
+      <DependentUpon>frmVerTodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerarEncuentros.resx">
+      <DependentUpon>frmGenerarEncuentros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaEquipos.resx">
+      <DependentUpon>frmListaEquipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoEquipo.resx">
+      <DependentUpon>frmNuevoEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsColegiado\frmEditarArbitro.resx">
+      <DependentUpon>frmEditarArbitro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsColegiado\frmElimAgregarArbitro.resx">
+      <DependentUpon>frmElimAgregarArbitro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsColegiado\frmNuevoGrupoColegiado.resx">
+      <DependentUpon>frmNuevoGrupoColegiado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarPartido.resx">
+      <DependentUpon>frmRegistrarPartido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsArbitro\FrmEditarPartidoFinalizado.resx">
+      <DependentUpon>FrmEditarPartidoFinalizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsArbitro\FrmMenuArbitro.resx">
+      <DependentUpon>FrmMenuArbitro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsArbitro\FrmRegistrarResultado.resx">
+      <DependentUpon>FrmRegistrarResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsArbitro\FrmVerCompeticion.resx">
+      <DependentUpon>FrmVerCompeticion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodosLosEncuentrosDefinidos.resx">
+      <DependentUpon>frmTodosLosEncuentrosDefinidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsColegiado\frmVerTodosLosColegiados.resx">
+      <DependentUpon>frmVerTodosLosColegiados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniciarSesion.resx">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FEF_logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar-Bar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrarF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrarVentana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-rounded-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Control\Control.csproj">
+      <Project>{2483b36b-ec02-47ee-a103-8ddeeafa5ceb}</Project>
+      <Name>Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{6F613673-769D-462B-8A59-93C5BB888B39}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+    <Content Include="Resources\vrs.png" />
+    <None Include="Resources\tupla.png" />
+    <None Include="Resources\visitante.png" />
+    <None Include="Resources\Local.png" />
+    <Content Include="Resources\marco.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
