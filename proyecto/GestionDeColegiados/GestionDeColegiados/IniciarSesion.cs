@@ -9,24 +9,24 @@ using GestionDeColegiados.FrmsArbitro;
 
 
 namespace GestionDeColegiados {
-  public partial class btnIniciarSesion : Form {
+  public partial class BtnIniciarSesion : Form {
     //dlly variables necesarios para poder mover de lugar la barra de titulo 
     [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-    private static extern void ReleaseCapture();
+    private extern static void ReleaseCapture();
     [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-    private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+    private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
     /*variables necesarias para gestionar efectos visuales cuando el mouse se posiciona
         dentro de un controlador previamente determinado
     */
-    private Color colorDefaultClose;
-    private Color colorDefaultMin;
+    private Color _colorDefaultClose;
+    private Color _colorDefaultMin;
 
 
-    private GestionLogin gestionLogin = new GestionLogin();
+    private GestionLogin _gestionLogin = new GestionLogin();
 
 
-    public btnIniciarSesion() {
+    public BtnIniciarSesion() {
       InitializeComponent();
     }
 
@@ -39,55 +39,55 @@ namespace GestionDeColegiados {
     }
 
 
-    private void pbCerrar_Click(object sender, EventArgs e) {
+    private void PbCerrar_Click(object sender, EventArgs e) {
       Application.Exit();
     }
 
-    private void pictureBox3_Click(object sender, EventArgs e) {
+    private void PictureBox3_Click(object sender, EventArgs e) {
       this.WindowState = FormWindowState.Minimized;
     }
 
 
     //Eventos que generan un efecto visual en cuanto el mouse pasa por dicho controlador
-    private void pbCerrar_MouseEnter(object sender, EventArgs e) {
-      colorDefaultClose = pbCerrar.BackColor;
+    private void PbCerrar_MouseEnter(object sender, EventArgs e) {
+      _colorDefaultClose = pbCerrar.BackColor;
       pbCerrar.BackColor = Color.FromArgb(202, 49, 32);
     }
-    protected void pbCerrar_MouseLeave(object sender, EventArgs e) {
-      pbCerrar.BackColor = colorDefaultClose;
+    protected void PbCerrar_MouseLeave(object sender, EventArgs e) {
+      pbCerrar.BackColor = _colorDefaultClose;
     }
 
-    protected void pbMinimizar_MouseEnter(object sender, EventArgs e) {
-      colorDefaultMin = pbMinimizar.BackColor;
+    protected void PbMinimizar_MouseEnter(object sender, EventArgs e) {
+      _colorDefaultMin = pbMinimizar.BackColor;
       pbMinimizar.BackColor = Color.FromArgb(52, 58, 64);
     }
 
-    private void pbMinimizar_MouseLeave(object sender, EventArgs e) {
-      pbMinimizar.BackColor = colorDefaultMin;
+    private void PbMinimizar_MouseLeave(object sender, EventArgs e) {
+      pbMinimizar.BackColor = _colorDefaultMin;
     }
 
     //Evento que abre el formulario luego de un inicio de sesión exitoso
-    private void button1_Click(object sender, EventArgs e) {
+    private void Button1_Click(object sender, EventArgs e) {
       string usuario = txtUsuario.Text;
       string password = txtPassword.Text;
 
       if(string.IsNullOrEmpty(usuario) || (string.IsNullOrEmpty(password))) {
-        validarCamposVaciosLogin();
+        ValidarCamposVaciosLogin();
       } else {
         //metodo que envia el usuario y contraseña ingrsado para validar si los datos fueron ingresados correctamente
         string mensaje = "";
-        mensaje = gestionLogin.controlLogin(usuario, password);
+        mensaje = _gestionLogin.ControlLogin(usuario, password);
 
-        redirigirUsuario(mensaje, usuario, password);
+        RedirigirUsuario(mensaje, usuario, password);
       }
     }
-    private void borrarCampos() {
+    private void BorrarCampos() {
       txtUsuario.Text = "";
       txtPassword.Text = "";
 
     }
     //metodo que valida si existen campos vacios en la GUI
-    private void validarCamposVaciosLogin() {
+    private void ValidarCamposVaciosLogin() {
       string usuario = txtUsuario.Text;
       string password = txtPassword.Text;
 
@@ -118,26 +118,26 @@ namespace GestionDeColegiados {
     /// <param name="mensaje">recibe el rol del usuario que intenta loggearse</param>
     /// <param name="usuario">User name dle usuario</param>
     /// <param name="password">pasword del usuario</param>
-    private void controlarUltimoAcceso(bool tuvoUltimoAcceso, string mensaje, string usuario, string password) {
+    private void ControlarUltimoAcceso(bool tuvoUltimoAcceso, string mensaje, string usuario, string password) {
       if(tuvoUltimoAcceso) {
         AccesoUser(mensaje);
       } else {
-        int id = gestionLogin.obtenerId(usuario, password);
+        int id = _gestionLogin.ObtenerId(usuario, password);
         this.Hide();
         CambiarPass cambiar = new CambiarPass(id);
         cambiar.ShowDialog();
       }
     }
 
-    private void redirigirUsuario(string mensaje, string usuario, string password) {
+    private void RedirigirUsuario(string mensaje, string usuario, string password) {
 
       if(mensaje.StartsWith("ERROR")) {
         MessageBox.Show(mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        borrarCampos();
+        BorrarCampos();
       } else {
 
-        bool ultimoAcceso = gestionLogin.validarUltimoAcceso(usuario, password);
-        controlarUltimoAcceso(ultimoAcceso, mensaje, usuario, password);
+        bool ultimoAcceso = _gestionLogin.ValidarUltimoAcceso(usuario, password);
+        ControlarUltimoAcceso(ultimoAcceso, mensaje, usuario, password);
       }
     }
   }

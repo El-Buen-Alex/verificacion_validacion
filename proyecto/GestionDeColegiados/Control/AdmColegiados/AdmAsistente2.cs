@@ -180,7 +180,7 @@ namespace Control.AdmColegiados {
       _asistente2.Telefono = telefono;
 
       if(_asistente2 != null) {
-        editarAsistente2BD(_asistente2);
+        EditarAsistente2BD(_asistente2);
       }
     }
 
@@ -188,7 +188,7 @@ namespace Control.AdmColegiados {
     /// Modificar datos de Asistente1 en la BD.
     /// </summary>
     /// <param name="asistente2">Objeto Asistente2.</param>
-    private void editarAsistente2BD(Asistente asistente2) {
+    private void EditarAsistente2BD(Asistente asistente2) {
       string mensaje = "";
       try {
         _datos.EditarAsistente2BD(asistente2);
@@ -224,7 +224,7 @@ namespace Control.AdmColegiados {
       int idNuevo = 0;
 
       if(_asistente2 != null) {
-        eliminarAsistente2BD(idArbitro);
+        EliminarAsistente2BD(idArbitro);
         idNuevo = GuardarAsistente2BD(_asistente2);
       }
       return idNuevo;
@@ -234,7 +234,7 @@ namespace Control.AdmColegiados {
     /// Eliminar "lógico" en la BD
     /// </summary>
     /// <param name="idArbitro">ID recogido.</param>
-    private void eliminarAsistente2BD(int idArbitro) {
+    private void EliminarAsistente2BD(int idArbitro) {
       string mensaje = "";
       try {
         _datos.EliminarAsistente2BD(idArbitro);

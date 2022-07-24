@@ -26,7 +26,7 @@ namespace Data {
     /// <returns>Devuelve el último id insertado como entero.</returns>
     public int InsertarJuezCentral(JuezCentral juezCentral) {
       int id = 0;
-      _conexion = ConexionBD.getConexion(); //Obtener conexión
+      _conexion = ConexionBD.GetConexion(); //Obtener conexión
       _conexion.Open();                     //Abrir conexión
       _trans = _conexion.BeginTransaction(); //Comenzar transaccion
       try {
@@ -70,7 +70,7 @@ namespace Data {
     /// <returns>Devuelve el último id insertado como entero.</returns>
     public int InsertarAsistente1(Asistente asistente1) {
       int id = 0;
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
@@ -107,7 +107,7 @@ namespace Data {
     /// <returns>Devuelve el último id insertado como entero.</returns>
     public int InsertarAsistente2(Asistente asistente2) {
       int id = 0;
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
@@ -144,7 +144,7 @@ namespace Data {
     /// <returns>Devuelve el último id insertado como entero</returns>
     public int InsertarCuartoArbitro(CuartoArbitro cuartoArbitro) {
       int id = 0;
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
@@ -176,7 +176,7 @@ namespace Data {
     /// <param name="colegiado">Objeto Colegiado.</param>
     /// <returns>Devuelve el último id insertado como entero</returns>
     public void InsertarColegiado(Colegiado colegiado) {
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
@@ -205,7 +205,7 @@ namespace Data {
     public List<int> ConsultarIdColegiado() {
       List<int> listaIdColegiado = new List<int>(); //Crear lista
       MySqlDataReader reader = null;          //tabla virtual
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       try {
         MySqlCommand comando = new MySqlCommand("obtenerIdColegiado", _conexion);
@@ -234,7 +234,7 @@ namespace Data {
       List<JuezCentral> listaArbitro = new List<JuezCentral>(); //Crear lista
       JuezCentral arbitro = null;
       MySqlDataReader reader = null;          //tabla virtual
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       try {
         MySqlCommand comando = new MySqlCommand("obtenerJuezCentral", _conexion);
@@ -271,7 +271,7 @@ namespace Data {
       List<Asistente> listaAsistente = new List<Asistente>();
       Asistente asistente = null;
       MySqlDataReader reader = null;          //tabla virtual
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       try {
         MySqlCommand comando = new MySqlCommand(procedimiento, _conexion);
@@ -329,7 +329,7 @@ namespace Data {
       List<CuartoArbitro> listaCA = new List<CuartoArbitro>(); //Crear lista
       CuartoArbitro arbitro = null;
       MySqlDataReader reader = null;          //tabla virtual
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       try {
         MySqlCommand comando = new MySqlCommand("obtenerCuartoArbitro", _conexion);
@@ -364,7 +364,7 @@ namespace Data {
       List<IntegrantesColegiados> listaColegiado = new List<IntegrantesColegiados>(); //Crear lista
       IntegrantesColegiados integrantesColeg = null;      //Instanciar clase IntegrantesColegiados
       MySqlDataReader reader = null;          //tabla virtual
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       try {
         MySqlCommand comando = new MySqlCommand("obtenerColegiado", _conexion);
@@ -398,7 +398,7 @@ namespace Data {
       List<IntegrantesColegiados> listaColegiado = new List<IntegrantesColegiados>();
       IntegrantesColegiados integrantesColeg = null;
       MySqlDataReader reader = null;          //tabla virtual
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       try {
         MySqlCommand comando = new MySqlCommand("obtenerCedulaColegiado", _conexion);
@@ -432,7 +432,7 @@ namespace Data {
     public string ObtenerNombreDeColegiados(int idColegiado) {
       string nombres = "";
       MySqlDataReader reader = null;          //tabla virtual
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       try {
         MySqlCommand comando = new MySqlCommand("obtenerUnColegiado", _conexion);
@@ -462,7 +462,7 @@ namespace Data {
       List<Colegiado> listaIDColegiado = new List<Colegiado>();
       Colegiado colegiado = null;
       MySqlDataReader reader = null;          //tabla virtual
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       try {
         MySqlCommand comando = new MySqlCommand("obtenerTodosIDColegiado", _conexion);
@@ -493,7 +493,7 @@ namespace Data {
     /// </summary>
     /// <param name="juezCentral">ID de Juez Central.</param>
     public void EditarJuezCentralBD(JuezCentral juezCentral) {
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
@@ -523,7 +523,7 @@ namespace Data {
     /// <param name="asistente">Objeto Asistente.</param>
     /// <param name="procedimiento">Nombre del procedimiento.</param>
     public void EditarAsistenteBD(Asistente asistente, string procedimiento) {
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
@@ -570,7 +570,7 @@ namespace Data {
     /// </summary>
     /// <param name="cuartoArbitro">Objeto Cuarto Arbitro-</param>
     public void EditarCuartoArbitro(CuartoArbitro cuartoArbitro) {
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
@@ -600,7 +600,7 @@ namespace Data {
     /// <param name="idArbitro">ID arbitro.</param>
     /// <param name="procedimiento">Nombre del procedimiento.</param>
     public void EliminarArbitro(int idArbitro, string procedimiento) {
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {
@@ -670,7 +670,7 @@ namespace Data {
     /// <param name="idNuevo">ID del nuevo arbitro.</param>
     /// <param name="arbitro">Tipo de árbitro.</param>
     public void ActualizarColegiadoBD(int idColegiado, int idNuevo, string arbitro) {
-      _conexion = ConexionBD.getConexion();    //Obtener conexión
+      _conexion = ConexionBD.GetConexion();    //Obtener conexión
       _conexion.Open();                        //Abrir conexión
       _trans = _conexion.BeginTransaction();    //Comenzar transaccion
       try {

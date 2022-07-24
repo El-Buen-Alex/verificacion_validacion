@@ -10,25 +10,25 @@ namespace GestionDeColegiados.FrmsColegiado {
   /// <summary>
   /// Formulario para eliminar y agregar Áribtros.
   /// </summary>
-  public partial class frmElimAgregarArbitro : Form {
+  public partial class FrmElimAgregarArbitro : Form {
     /// <summary>
     /// DLL y variables necesarias para poder mover el formulario.
     /// </summary>
     [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-    private static extern void ReleaseCapture();
+    private extern static void ReleaseCapture();
     [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-    private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+    private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-    private Color colorDefaultClose;
-    ValidacionGUI validacionGUI = new ValidacionGUI();
-    AdmColegiado admColegiado = AdmColegiado.GetAdmCol();
+    private Color _colorDefaultClose;
+    ValidacionGUI _validacionGUI = new ValidacionGUI();
+    AdmColegiado _admColegiado = AdmColegiado.GetAdmCol();
 
     /// <summary>
     /// Constructor del formulario.
     /// </summary>
     /// <param name="arbitro">Tipo de árbitro.</param>
     /// <param name="idColegiado">ID del colegiado.</param>
-    public frmElimAgregarArbitro(string arbitro, string idColegiado) {
+    public FrmElimAgregarArbitro(string arbitro, string idColegiado) {
       InitializeComponent();
       lblAgregar.Text += arbitro;
       lblID.Text = idColegiado;
@@ -49,7 +49,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void pbCerrar_Click(object sender, EventArgs e) {
+    private void PbCerrar_Click(object sender, EventArgs e) {
       Close();
     }
 
@@ -58,8 +58,8 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void pbCerrar_MouseEnter(object sender, EventArgs e) {
-      colorDefaultClose = pbCerrar.BackColor;
+    private void PbCerrar_MouseEnter(object sender, EventArgs e) {
+      _colorDefaultClose = pbCerrar.BackColor;
       pbCerrar.BackColor = Color.FromArgb(202, 49, 32);
     }
 
@@ -68,8 +68,8 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void pbCerrar_MouseLeave(object sender, EventArgs e) {
-      pbCerrar.BackColor = colorDefaultClose;
+    private void PbCerrar_MouseLeave(object sender, EventArgs e) {
+      pbCerrar.BackColor = _colorDefaultClose;
     }
 
     /// <summary>
@@ -77,7 +77,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void validarNumeros_KeyPress(object sender, KeyPressEventArgs e) {
+    private void ValidarNumeros_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsNumber(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back))) {
         e.Handled = true;
         return;
@@ -89,7 +89,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void validarLetras_KeyPress(object sender, KeyPressEventArgs e) {
+    private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsLetter(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back)) &&
           (e.KeyChar != Convert.ToChar(Keys.Space))) {
         e.Handled = true;
@@ -102,9 +102,9 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnAgregar_Click(object sender, EventArgs e) {
-      bool vacio = validacionGUI.ValidarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
-      bool cedulaRepetida = admColegiado.ValidarCedula(txtCedula);
+    private void BtnAgregar_Click(object sender, EventArgs e) {
+      bool vacio = _validacionGUI.ValidarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
+      bool cedulaRepetida = _admColegiado.ValidarCedula(txtCedula);
       if(vacio == true) {
         MessageBox.Show("Hay ciertos campos vacios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
@@ -118,7 +118,7 @@ namespace GestionDeColegiados.FrmsColegiado {
             domicilio = txtDomicilio.Text,
             email = txtEmail.Text,
             telefono = txtTelefono.Text;
-        admColegiado.EliminarArbitro(lblID.Text, cedula, nombre, apellido, domicilio, email, telefono);
+        _admColegiado.EliminarArbitro(lblID.Text, cedula, nombre, apellido, domicilio, email, telefono);
         Close();
       }
     }
@@ -128,7 +128,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnCancelar_Click(object sender, EventArgs e) {
+    private void BtnCancelar_Click(object sender, EventArgs e) {
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de cancelar!", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
       if(resultado == DialogResult.Yes) {

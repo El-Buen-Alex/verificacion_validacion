@@ -10,8 +10,8 @@ using Sistema;
 /*clase que conecta directamente con los procedimientos que están ejecutados en la base de datos*/
 namespace Data {
   public class DatosEquipos {
-    private MySqlConnection conexion = null;
-    private MySqlTransaction trans = null;
+    private MySqlConnection _conexion = null;
+    private MySqlTransaction _trans = null;
 
     /// <summary>
     /// Método que permite obtener el nombre y el id de un equipos por identificador
@@ -20,15 +20,15 @@ namespace Data {
     /// <returns>Devuelve un arreglo de equipos con la información necesaria</returns>
     public Equipo ObtenerEquipoPorId(int id) {
       Equipo equipo = null;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
       try {
-        MySqlCommand cmd = new MySqlCommand("obtenerEquipo", conexion);
-
+        MySqlCommand cmd = new MySqlCommand("obtenerEquipo", _conexion);
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.AddWithValue("@_equipoID", id);
         MySqlDataReader reader = cmd.ExecuteReader();
         if(reader.Read()) {
+
           equipo = new Equipo();
           equipo.NombreEquipo = reader["nombre"].ToString();
           equipo.IdEquipo = Convert.ToInt32(reader["idequipo"].ToString());
@@ -36,7 +36,7 @@ namespace Data {
       } catch(MySqlException ex) {
         Console.WriteLine(ex.Message);
       }
-      conexion.Close();
+      _conexion.Close();
       return equipo;
     }
 
@@ -44,13 +44,13 @@ namespace Data {
     /// Método usado para extraer los datos completos de un equipo
     /// </summary>
     /// <returns>Devuelve una lista con los datos recuperdos desde la bases de datos</returns>
-    public List<Equipo> consultarEquiposTabla() {
+    public List<Equipo> ConsultarEquiposTabla() {
       List<Equipo> listaEquipo = new List<Equipo>();
       Equipo nombreEquipo = null;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
       try {
-        MySqlCommand comando = new MySqlCommand("obtenerDatosEquipos", conexion);
+        MySqlCommand comando = new MySqlCommand("obtenerDatosEquipos", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         MySqlDataReader reader = comando.ExecuteReader();
         while(reader.Read()) {
@@ -66,7 +66,7 @@ namespace Data {
         listaEquipo = null;
         throw new Exception(ex.ToString());
       }
-      conexion.Close();
+      _conexion.Close();
       return listaEquipo;
     }
 
@@ -77,21 +77,21 @@ namespace Data {
     /// <returns>Se regresa una variable entera que funciona como bandera en el caso de ser éxitoso el cambio</returns>
     public int EliminarEquipo(string id) {
       int identificador = 0;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-      trans = conexion.BeginTransaction();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
+      _trans = _conexion.BeginTransaction();
       try {
-        MySqlCommand cmd = new MySqlCommand("eliminarEquipo", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("eliminarEquipo", _conexion, _trans);
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.AddWithValue("@_idEquipo", id);
         cmd.ExecuteNonQuery();
         identificador = 1;
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new Exception(ex.ToString());
       }
-      conexion.Close();
+      _conexion.Close();
       return identificador;
     }
 
@@ -103,11 +103,11 @@ namespace Data {
     /// <returns>Se regresa una variable entera que funciona como bandera en el caso de ser éxitoso el cambio</returns>
     public int EditarEquipo(Equipo equipo) {
       int id = 0;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-      trans = conexion.BeginTransaction();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
+      _trans = _conexion.BeginTransaction();
       try {
-        MySqlCommand cmd = new MySqlCommand("editarEquipo", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("editarEquipo", _conexion, _trans);
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.AddWithValue("@_idEquipo", equipo.IdEquipo);
         cmd.Parameters.AddWithValue("@_nombre", equipo.NombreEquipo);
@@ -116,12 +116,12 @@ namespace Data {
         cmd.Parameters.AddWithValue("@_presidente_equipo", equipo.PresidenteEquipo);
         cmd.ExecuteNonQuery();
         id = 1;
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new Exception(ex.ToString());
       }
-      conexion.Close();
+      _conexion.Close();
       return id;
     }
 
@@ -132,26 +132,26 @@ namespace Data {
     /// <returns>Regresa el id del equipo que se ingresó</returns>
     public int InsertarEquipo(Equipo equipo) {
       int id = 0;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-      trans = conexion.BeginTransaction();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
+      _trans = _conexion.BeginTransaction();
       try {
-        MySqlCommand cmd = new MySqlCommand("guardarEquipo", conexion, trans);
+        MySqlCommand cmd = new MySqlCommand("guardarEquipo", _conexion, _trans);
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.AddWithValue("@_nombre", equipo.NombreEquipo);
         cmd.Parameters.AddWithValue("@_numero_jugadores", equipo.NumeroJugadores);
         cmd.Parameters.AddWithValue("@_nombre_director_tecnico", equipo.NombreDirectoTecnico);
         cmd.Parameters.AddWithValue("@_presidente_equipo", equipo.PresidenteEquipo);
         cmd.ExecuteNonQuery();
-        cmd = new MySqlCommand("obtenerId", conexion);
+        cmd = new MySqlCommand("obtenerId", _conexion);
         cmd.CommandType = CommandType.StoredProcedure;
         id = Convert.ToInt32(cmd.ExecuteScalar());
-        trans.Commit();
+        _trans.Commit();
       } catch(MySqlException ex) {
-        trans.Rollback();
+        _trans.Rollback();
         throw new Exception(ex.ToString());
       }
-      conexion.Close();
+      _conexion.Close();
       return id;
     }
 
@@ -159,13 +159,13 @@ namespace Data {
     /// Método para consultar el nombre de equipo y el id
     /// </summary>
     /// <returns>Devuelve una lista de todos los equipos registrados en la base de datos</returns>
-    public List<Equipo> consultarEquipos() {
+    public List<Equipo> ConsultarEquipos() {
       List<Equipo> listaEquipo = new List<Equipo>();
       Equipo nombreEquipo = null;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
       try {
-        MySqlCommand comando = new MySqlCommand("obtenerNombreEquipo", conexion);
+        MySqlCommand comando = new MySqlCommand("obtenerNombreEquipo", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         MySqlDataReader reader = comando.ExecuteReader();
         while(reader.Read()) {
@@ -178,7 +178,7 @@ namespace Data {
         listaEquipo = null;
         throw new Exception(ex.ToString());
       }
-      conexion.Close();
+      _conexion.Close();
       return listaEquipo;
     }
     /*Método el cual se comunica con el prcedimiento que nos devolverá la cantidad de equipos registrados en la bd*/
@@ -188,19 +188,20 @@ namespace Data {
     /// <returns>Devuelve una variable entera con la información de la cantidad de equipos registrados </returns>
     public int ObtenerCantidadEquipoRegistrados() {
       int cantidad = 0;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
       try {
-        MySqlCommand cmd = new MySqlCommand("cantidadEquipos", conexion);
+        MySqlCommand cmd = new MySqlCommand("cantidadEquipos", _conexion);
         cmd.CommandType = CommandType.StoredProcedure;
         MySqlDataReader reader = cmd.ExecuteReader();
         if(reader.Read()) {
+
           cantidad = Convert.ToInt32(reader["cantidadEquipos"].ToString());
         }
       } catch(MySqlException ex) {
         Console.WriteLine("Error al obtener la cantidad de equipos registrados" + ex.Message);
       }
-      conexion.Close();
+      _conexion.Close();
       return cantidad;
     }
 

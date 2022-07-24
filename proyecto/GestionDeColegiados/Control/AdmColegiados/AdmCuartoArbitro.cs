@@ -223,6 +223,7 @@ namespace Control.AdmColegiados {
       int idNuevo = 0;
 
       if(_cuartoArbitro != null) {
+
         EliminarCuartoArbitroBD(idArbitro);
         idNuevo = GuardarCuartoArbitroBD(_cuartoArbitro);
       }

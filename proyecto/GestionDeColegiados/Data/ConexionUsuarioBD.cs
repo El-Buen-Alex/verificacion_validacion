@@ -8,20 +8,20 @@ using Sistema;
 namespace Model {
   public class ConexionUsuarioBD {
     //variables necesarias para leer y realizar consultas con exitos de la base de datos
-    private MySqlDataReader reader;
-    private MySqlConnection conexion;
-    private MySqlTransaction transaccion = null;
+    private MySqlDataReader _reader;
+    private MySqlConnection _conexion;
+    private MySqlTransaction _transaccion = null;
 
     //metodo que nos devuelve el administrador creado, si es que el mismo existe
     public Administrador ExisteUsuario(string usuario, string pass) {
       //obtenemos la conexion
-      conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       // abrimos la conexion
-      conexion.Open();
+      _conexion.Open();
 
       //llamamos al procedimiento almacenado creado
 
-      MySqlCommand comando = new MySqlCommand("login", conexion);
+      MySqlCommand comando = new MySqlCommand("login", _conexion);
       //informamos que el comando a enviar es un procedimiento almacenado
       comando.CommandType = CommandType.StoredProcedure;
       /*
@@ -32,31 +32,31 @@ namespace Model {
       comando.Parameters.AddWithValue("@_username", usuario);
       comando.Parameters.AddWithValue("@_pass", pass);
       //ejecutamos dicho procedimiento
-      reader = comando.ExecuteReader();
+      _reader = comando.ExecuteReader();
       // declaramos un administrador como null 
       Administrador administrador = null;
       //si la consulta es real entonces procedemos a instanciar dicho administrador
-      if(reader.Read()) {
+      if(_reader.Read()) {
         administrador = new Administrador();
-        administrador.Id = int.Parse(reader["Id"].ToString());
-        administrador.Nombre = reader["UserName"].ToString();
-        administrador.Password = reader["UserPassword"].ToString();
-        administrador.Rol = reader["rol"].ToString();
-        administrador.PrimerAcceso = reader["primerAcceso"].ToString();
+        administrador.Id = int.Parse(_reader["Id"].ToString());
+        administrador.Nombre = _reader["UserName"].ToString();
+        administrador.Password = _reader["UserPassword"].ToString();
+        administrador.Rol = _reader["rol"].ToString();
+        administrador.PrimerAcceso = _reader["primerAcceso"].ToString();
       }
       //cerramos la conexion
-      conexion.Close();
+      _conexion.Close();
       //finalmente lo retornamos
       return administrador;
     }
 
     public string CambiarPassword(string newPass, int idUser) {
       string respuesta = "";
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-      transaccion = conexion.BeginTransaction();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
+      _transaccion = _conexion.BeginTransaction();
       try {
-        MySqlCommand cmd = new MySqlCommand("cambiarPass", conexion, transaccion);
+        MySqlCommand cmd = new MySqlCommand("cambiarPass", _conexion, _transaccion);
 
         cmd.CommandType = CommandType.StoredProcedure;
 
@@ -66,20 +66,17 @@ namespace Model {
 
         cmd.ExecuteNonQuery();
 
-        transaccion.Commit();
+        _transaccion.Commit();
 
         respuesta = "EXITO: Cambio de contraseña exitoso";
-
       } catch(MySqlException ex) {
-        transaccion.Rollback();
+        _transaccion.Rollback();
         respuesta = "ERROR: Cambio de contraseña no exitoso";
         throw new Exception(ex.ToString());
-
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
       return respuesta;
     }
-
   }
 }

@@ -15,19 +15,19 @@ namespace GestionDeColegiados {
     /// DLL y variables necesarias para poder mover el formulario.
     /// </summary>
     [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-    private static extern void ReleaseCapture();
+    private extern static void ReleaseCapture();
     [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-    private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+    private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-    private Color colorDefaultClose;
-    AdmColegiado admColegiado = AdmColegiado.GetAdmCol();
+    private Color _colorDefaultClose;
+    AdmColegiado _admColegiado = AdmColegiado.GetAdmCol();
 
     /// <summary>
     /// Constructor del formulario.
     /// </summary>
     public frmVerTodosLosColegiados() {
       InitializeComponent();
-      admColegiado.LlenarComboIdColegiado(cmbIdArbitro);
+      _admColegiado.LlenarComboIdColegiado(cmbIdArbitro);
     }
 
     /// <summary>
@@ -45,7 +45,7 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void pbCerrar_Click(object sender, System.EventArgs e) {
+    private void PbCerrar_Click(object sender, System.EventArgs e) {
       Close();
     }
 
@@ -54,8 +54,8 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void pbCerrar_MouseEnter(object sender, System.EventArgs e) {
-      colorDefaultClose = pbCerrar.BackColor;
+    private void PbCerrar_MouseEnter(object sender, System.EventArgs e) {
+      _colorDefaultClose = pbCerrar.BackColor;
       pbCerrar.BackColor = Color.FromArgb(202, 49, 32);
     }
 
@@ -64,8 +64,8 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void pbCerrar_MouseLeave(object sender, System.EventArgs e) {
-      pbCerrar.BackColor = colorDefaultClose;
+    private void PbCerrar_MouseLeave(object sender, System.EventArgs e) {
+      pbCerrar.BackColor = _colorDefaultClose;
     }
 
     /// <summary>
@@ -73,9 +73,9 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>
-    private void btnBuscar_Click(object sender, System.EventArgs e) {
+    private void BtnBuscar_Click(object sender, System.EventArgs e) {
       if(cmbIdArbitro.Text.CompareTo("") != 0) {
-        admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
+        _admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
         btnEditar.Enabled = true;
         btnEliminarArbitro.Enabled = true;
         btnEliminarColegiado.Enabled = true;
@@ -89,13 +89,13 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>>
-    private void btnEditar_Click(object sender, System.EventArgs e) {
+    private void BtnEditar_Click(object sender, System.EventArgs e) {
       DataGridViewRow filaSeleccionada = dgvListarColegiados.CurrentRow;
       string arbitro = filaSeleccionada.Cells[0].Value.ToString();
       FrmEditarArbitro frmEditar = new FrmEditarArbitro(arbitro, cmbIdArbitro.Text);
-      admColegiado.RecogerDatosEditar(dgvListarColegiados);
+      _admColegiado.RecogerDatosEditar(dgvListarColegiados);
       frmEditar.ShowDialog();
-      admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
+      _admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
     }
 
     /// <summary>
@@ -103,16 +103,16 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>>
-    private void btnEliminarArbitro_Click(object sender, System.EventArgs e) {
+    private void BtnEliminarArbitro_Click(object sender, System.EventArgs e) {
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de eliminar un árbitro!\nSi acepta tendrá que agregar uno nuevo", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
       if(resultado == DialogResult.Yes) {
         DataGridViewRow row = dgvListarColegiados.CurrentRow;
         string arbitro = row.Cells[0].Value.ToString();
-        frmElimAgregarArbitro frmAgregar = new frmElimAgregarArbitro(arbitro, cmbIdArbitro.Text);
-        admColegiado.RecogerDatosEliminar(dgvListarColegiados);
+        FrmElimAgregarArbitro frmAgregar = new FrmElimAgregarArbitro(arbitro, cmbIdArbitro.Text);
+        _admColegiado.RecogerDatosEliminar(dgvListarColegiados);
         frmAgregar.ShowDialog();
-        admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
+        _admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
       }
     }
 
@@ -121,14 +121,14 @@ namespace GestionDeColegiados {
     /// </summary>
     /// <param name="sender">Objeto.</param>
     /// <param name="e">Evento.</param>>
-    private void btnEliminarColegiado_Click(object sender, System.EventArgs e) {
+    private void BtnEliminarColegiado_Click(object sender, System.EventArgs e) {
       bool eliminado = false;
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de eliminar el " + cmbIdArbitro.Text + " de colegiados!", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
       if(resultado == DialogResult.Yes) {
-        eliminado = admColegiado.EliminarColegiado(cmbIdArbitro.Text);
+        eliminado = _admColegiado.EliminarColegiado(cmbIdArbitro.Text);
         if(eliminado == true) {
-          admColegiado.LlenarComboIdColegiado(cmbIdArbitro);
+          _admColegiado.LlenarComboIdColegiado(cmbIdArbitro);
           dgvListarColegiados.Rows.Clear();
         }
       }

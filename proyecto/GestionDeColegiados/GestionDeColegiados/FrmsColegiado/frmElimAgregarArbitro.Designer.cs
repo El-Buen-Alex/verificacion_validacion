@@ -1,5 +1,5 @@
 ﻿namespace GestionDeColegiados.FrmsColegiado {
-    partial class frmElimAgregarArbitro {
+    partial class FrmElimAgregarArbitro {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -69,9 +69,9 @@
             this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCerrar.TabIndex = 2;
             this.pbCerrar.TabStop = false;
-            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
-            this.pbCerrar.MouseEnter += new System.EventHandler(this.pbCerrar_MouseEnter);
-            this.pbCerrar.MouseLeave += new System.EventHandler(this.pbCerrar_MouseLeave);
+            this.pbCerrar.Click += new System.EventHandler(this.PbCerrar_Click);
+            this.pbCerrar.MouseEnter += new System.EventHandler(this.PbCerrar_MouseEnter);
+            this.pbCerrar.MouseLeave += new System.EventHandler(this.PbCerrar_MouseLeave);
             // 
             // lblAgregar
             // 
@@ -97,7 +97,7 @@
             this.btnAgregar.TabIndex = 109;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // label7
             // 
@@ -166,7 +166,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(222, 20);
             this.txtTelefono.TabIndex = 102;
-            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarNumeros_KeyPress);
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarNumeros_KeyPress);
             // 
             // txtEmail
             // 
@@ -183,7 +183,7 @@
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(223, 20);
             this.txtDomicilio.TabIndex = 100;
-            this.txtDomicilio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarLetras_KeyPress);
+            this.txtDomicilio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarLetras_KeyPress);
             // 
             // txtApellido
             // 
@@ -192,7 +192,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(223, 20);
             this.txtApellido.TabIndex = 99;
-            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarLetras_KeyPress);
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarLetras_KeyPress);
             // 
             // txtNombre
             // 
@@ -201,7 +201,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(222, 20);
             this.txtNombre.TabIndex = 98;
-            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarLetras_KeyPress);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarLetras_KeyPress);
             // 
             // txtCedula
             // 
@@ -210,7 +210,7 @@
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(222, 20);
             this.txtCedula.TabIndex = 97;
-            this.txtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validarNumeros_KeyPress);
+            this.txtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValidarNumeros_KeyPress);
             // 
             // label2
             // 
@@ -236,7 +236,7 @@
             this.btnCancelar.TabIndex = 111;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // lblID
             // 

@@ -2,7 +2,7 @@
 
 namespace Sistema {
   public class ConexionBD {
-    public static MySqlConnection getConexion() {
+    public static MySqlConnection GetConexion() {
       string servidor = "localhost";
       string puerto = "3306";
       string usuario = "presidente";

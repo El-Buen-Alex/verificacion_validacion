@@ -8,16 +8,16 @@ using Control.AdmEncuentrosGenerados;
 
 namespace GestionDeColegiados.FrmsArbitro {
   public partial class FrmMenuArbitro : Form {
-    private AdmEncuentrosDefinidos admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
-    private AdmEncuentroFinalizado admEncuentroFinalizado = AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados();
+    private AdmEncuentrosDefinidos _admEncuentrosDefinidos = AdmEncuentrosDefinidos.GetAdmGenerarEncuentrosDefinidos();
+    private AdmEncuentroFinalizado _admEncuentroFinalizado = AdmEncuentroFinalizado.GetAdmEncuentrosFinalizados();
     //dll y variables necesarios para poder mover de lugar la barra de titulo 
     [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-    private static extern void ReleaseCapture();
+    private extern static void ReleaseCapture();
     [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-    private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+    private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-    private Color colorDefaultClose;
-    private Color colorDefaultMin;
+    private Color _colorDefaultClose;
+    private Color _colorDefaultMin;
     public FrmMenuArbitro() {
       InitializeComponent();
     }
@@ -41,42 +41,40 @@ namespace GestionDeColegiados.FrmsArbitro {
     }
 
 
-    private void pbMinimizar_Click_1(object sender, EventArgs e) {
+    private void PbMinimizar_Click_1(object sender, EventArgs e) {
       this.WindowState = FormWindowState.Minimized;
     }
     //evento para cerrar pantalla
-    private void pbCerrar_Click(object sender, EventArgs e) {
+    private void PbCerrar_Click(object sender, EventArgs e) {
       Application.Exit();
     }
 
 
     //Eventos que generan un efecto visual en cuanto el mouse pasa por dicho controlador
 
-    private void pbCerrar_MouseEnter(object sender, EventArgs e) {
-      colorDefaultClose = pbCerrar.BackColor;
+    private void PbCerrar_MouseEnter(object sender, EventArgs e) {
+      _colorDefaultClose = pbCerrar.BackColor;
       pbCerrar.BackColor = Color.FromArgb(202, 49, 32);
     }
-    protected void pbCerrar_MouseLeave(object sender, EventArgs e) {
-      pbCerrar.BackColor = colorDefaultClose;
+    protected void PbCerrar_MouseLeave(object sender, EventArgs e) {
+      pbCerrar.BackColor = _colorDefaultClose;
     }
 
-    protected void pbMinimizar_MouseEnter(object sender, EventArgs e) {
-      colorDefaultMin = pbMinimizar.BackColor;
+    protected void PbMinimizar_MouseEnter(object sender, EventArgs e) {
+      _colorDefaultMin = pbMinimizar.BackColor;
       pbMinimizar.BackColor = Color.FromArgb(52, 58, 64);
     }
 
-    private void pbMinimizar_MouseLeave(object sender, EventArgs e) {
-      pbMinimizar.BackColor = colorDefaultMin;
+    private void PbMinimizar_MouseLeave(object sender, EventArgs e) {
+      pbMinimizar.BackColor = _colorDefaultMin;
     }
 
-
-
-    private void btnGestionColegiado1_MouseEnter(object sender, EventArgs e) {
+    private void BtnGestionColegiado1_MouseEnter(object sender, EventArgs e) {
       flpGestionPartidoFinalizado.Visible = true;
     }
 
-    private void btnRegistrarPartido_Click(object sender, EventArgs e) {
-      int cantEncuentrosDefinidos = admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar();
+    private void BtnRegistrarPartido_Click(object sender, EventArgs e) {
+      int cantEncuentrosDefinidos = _admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar();
       if(cantEncuentrosDefinidos == 0) {
         MessageBox.Show("No existen encuentros definidos por registrar");
       } else {
@@ -84,25 +82,25 @@ namespace GestionDeColegiados.FrmsArbitro {
       }
 
     }
-    private void existenRegistrosArbir(object formhija) {
-      int cantEncuentrosFinalizados = admEncuentroFinalizado.GetCantidadEncuentrosFinalizados();
+    private void ExistenRegistrosArbir(object formhija) {
+      int cantEncuentrosFinalizados = _admEncuentroFinalizado.GetCantidadEncuentrosFinalizados();
       if(cantEncuentrosFinalizados > 0) {
         AbrirFormEnPanel(formhija);
       }
     }
-    private void btnActualizarPartidoFinalizado_Click(object sender, EventArgs e) {
-      existenRegistrosArbir(new FrmEditarPartidoFinalizado());
+    private void BtnActualizarPartidoFinalizado_Click(object sender, EventArgs e) {
+      ExistenRegistrosArbir(new FrmEditarPartidoFinalizado());
     }
 
-    private void btnVerTodosPartidos_Click(object sender, EventArgs e) {
+    private void BtnVerTodosPartidos_Click(object sender, EventArgs e) {
 
       AbrirFormEnPanel(new FrmVerCompeticion(false));
 
     }
 
-    private void button2_Click(object sender, EventArgs e) {
+    private void Button2_Click(object sender, EventArgs e) {
       this.Close();
-      btnIniciarSesion frm = new btnIniciarSesion();
+      BtnIniciarSesion frm = new BtnIniciarSesion();
       frm.Show();
     }
   }

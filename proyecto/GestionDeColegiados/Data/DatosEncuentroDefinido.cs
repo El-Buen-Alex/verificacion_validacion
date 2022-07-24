@@ -10,17 +10,17 @@ using Sistema;
 
 namespace Data {
   public class DatosEncuentroDefinido {
-    private MySqlConnection conexion = null;
-    private MySqlTransaction transaccion = null;
+    private MySqlConnection _conexion = null;
+    private MySqlTransaction _transaccion = null;
 
 
     public int GuardarEncuentroDefinido(EncuentroDefinido encuentroDefinido) {
       int id = 0;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-      transaccion = conexion.BeginTransaction();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
+      _transaccion = _conexion.BeginTransaction();
       try {
-        MySqlCommand comando = new MySqlCommand("guardarEncuentrosDefinidos", conexion, transaccion);
+        MySqlCommand comando = new MySqlCommand("guardarEncuentrosDefinidos", _conexion, _transaccion);
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("_fecha", encuentroDefinido.FechaDeEncuentro.ToString("yyyy-MM-dd"));
         comando.Parameters.AddWithValue("_hora", encuentroDefinido.Hora.ToString("HH:mm"));
@@ -28,27 +28,28 @@ namespace Data {
         comando.Parameters.AddWithValue("_idcolegiado", encuentroDefinido.IdColegiado);
         comando.Parameters.AddWithValue("_idestadio", encuentroDefinido.IdEstadio);
         comando.ExecuteNonQuery();
-        comando = new MySqlCommand("obtenerId", conexion);
+        comando = new MySqlCommand("obtenerId", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         id = Convert.ToInt32(comando.ExecuteScalar());
         if(id != 0) {
-          transaccion.Commit();
+
+          _transaccion.Commit();
         }
       } catch(Exception ex) {
-        transaccion.Rollback();
+        _transaccion.Rollback();
         Console.WriteLine(ex.Message);
       }
-      conexion.Close();
+      _conexion.Close();
       return id;
     }
 
     public List<EncuentroDefinido> ObtenerEncuentros() {
       List<EncuentroDefinido> lista = new List<EncuentroDefinido>();
       EncuentroDefinido encuentroDefinido = null;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
       try {
-        MySqlCommand comando = new MySqlCommand("mostrarEncuentroDefinidos", conexion);
+        MySqlCommand comando = new MySqlCommand("mostrarEncuentroDefinidos", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         MySqlDataReader reader = comando.ExecuteReader();
         while(reader.Read()) {
@@ -65,34 +66,27 @@ namespace Data {
       } catch(Exception ex) {
         Console.WriteLine(ex.Message);
       }
-      conexion.Close();
+      _conexion.Close();
       return lista;
     }
 
     public bool CambiarEstadoEnucentroDefinido(string estado) {
       bool respuesta = false;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-      transaccion = conexion.BeginTransaction();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
+      _transaccion = _conexion.BeginTransaction();
       try {
-        MySqlCommand cmd = new MySqlCommand("CambiarEstadoEncuentrosDefinidos", conexion, transaccion);
-
+        MySqlCommand cmd = new MySqlCommand("CambiarEstadoEncuentrosDefinidos", _conexion, _transaccion);
         cmd.CommandType = CommandType.StoredProcedure;
-
         cmd.Parameters.AddWithValue("_estado", estado[0]);
-
         cmd.ExecuteNonQuery();
-
-        transaccion.Commit();
-
+        _transaccion.Commit();
         respuesta = true;
-
       } catch(MySqlException ex) {
-        transaccion.Rollback();
-
+        _transaccion.Rollback();
         throw new Exception(ex.ToString());
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
       return respuesta;
     }
@@ -100,10 +94,10 @@ namespace Data {
     public List<EncuentroDefinido> GetEncuentrosDefinidosFinalizados(string anio) {
       List<EncuentroDefinido> lista = new List<EncuentroDefinido>();
       EncuentroDefinido encuentroDefinido = null;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
       try {
-        MySqlCommand comando = new MySqlCommand("encuentrosDefinidosEncuentrosFinalizados", conexion, transaccion);
+        MySqlCommand comando = new MySqlCommand("encuentrosDefinidosEncuentrosFinalizados", _conexion, _transaccion);
         comando.Parameters.AddWithValue("_copa", anio);
         comando.CommandType = CommandType.StoredProcedure;
         MySqlDataReader reader = comando.ExecuteReader();
@@ -120,38 +114,38 @@ namespace Data {
       } catch(Exception ex) {
         Console.WriteLine(ex.Message);
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
       return lista;
     }
 
     public int ObtenerCantidadEncuentrosDefinidos() {
       int cantidad = 0;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
       try {
-        MySqlCommand comando = new MySqlCommand("cantidadEncuentrosDefinidosActivos", conexion);
+        MySqlCommand comando = new MySqlCommand("cantidadEncuentrosDefinidosActivos", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         MySqlDataReader reader = comando.ExecuteReader();
         if(reader.Read()) {
+
           cantidad = Convert.ToInt32(reader["cantidadEncuentrosActivos"].ToString());
         }
-
       } catch(Exception ex) {
         Console.WriteLine(ex.Message);
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
       return cantidad;
     }
 
     public bool ActualizarEstadioDePartido(int idEncuentroPorActualizar, int idNuevoEstadioAsociado) {
       bool exito = false;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
 
       try {
-        MySqlCommand comando = new MySqlCommand("actulizarEstadioAsociado", conexion, transaccion);
+        MySqlCommand comando = new MySqlCommand("actulizarEstadioAsociado", _conexion, _transaccion);
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("@_idencuentro", idEncuentroPorActualizar);
         comando.Parameters.AddWithValue("@_idEstadio", idNuevoEstadioAsociado);
@@ -160,36 +154,35 @@ namespace Data {
       } catch(MySqlException ex) {
         Console.WriteLine(ex.Message);
       }
-      conexion.Close();
+      _conexion.Close();
       return exito;
     }
 
     public int ObtenerCantidadEncuentrosPorJugar() {
       int cantidad = 0;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
       try {
-        MySqlCommand comando = new MySqlCommand("cantidadEncuentrosPorJugar", conexion);
+        MySqlCommand comando = new MySqlCommand("cantidadEncuentrosPorJugar", _conexion);
         comando.CommandType = CommandType.StoredProcedure;
         MySqlDataReader reader = comando.ExecuteReader();
         if(reader.Read()) {
+
           cantidad = Convert.ToInt32(reader["cantidadEncuentros"].ToString());
         }
-
       } catch(Exception ex) {
         Console.WriteLine(ex.Message);
       }
-      conexion.Close();
+      _conexion.Close();
       return cantidad;
     }
 
     public bool ActualizarFechaHoraDEPartido(int id, DateTime fecha, DateTime hora, int idColegiado) {
       bool exito = false;
-      conexion = ConexionBD.getConexion();
-      conexion.Open();
-
+      _conexion = ConexionBD.GetConexion();
+      _conexion.Open();
       try {
-        MySqlCommand comando = new MySqlCommand("actulizarFechaHoraColegiadoEncuentroDefinido", conexion, transaccion);
+        MySqlCommand comando = new MySqlCommand("actulizarFechaHoraColegiadoEncuentroDefinido", _conexion, _transaccion);
         comando.CommandType = CommandType.StoredProcedure;
         comando.Parameters.AddWithValue("@_idefinido", id);
         comando.Parameters.AddWithValue("@_fecha", fecha.ToString("yyyy-MM-dd"));
@@ -201,7 +194,7 @@ namespace Data {
         Console.WriteLine(ex.Message);
         exito = false;
       } finally {
-        conexion.Close();
+        _conexion.Close();
       }
       return exito;
     }

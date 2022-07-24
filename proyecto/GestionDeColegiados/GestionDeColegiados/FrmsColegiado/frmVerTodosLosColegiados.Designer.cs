@@ -174,7 +174,7 @@ namespace GestionDeColegiados
             this.btnBuscar.TabIndex = 57;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.btnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // btnEditar
             // 
@@ -191,7 +191,7 @@ namespace GestionDeColegiados
             this.btnEditar.TabIndex = 58;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.btnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // btnEliminarArbitro
             // 
@@ -208,7 +208,7 @@ namespace GestionDeColegiados
             this.btnEliminarArbitro.TabIndex = 60;
             this.btnEliminarArbitro.Text = "Eliminar (Árbitro)";
             this.btnEliminarArbitro.UseVisualStyleBackColor = false;
-            this.btnEliminarArbitro.Click += new System.EventHandler(this.btnEliminarArbitro_Click);
+            this.btnEliminarArbitro.Click += new System.EventHandler(this.BtnEliminarArbitro_Click);
             // 
             // btnEliminarColegiado
             // 
@@ -225,7 +225,7 @@ namespace GestionDeColegiados
             this.btnEliminarColegiado.TabIndex = 61;
             this.btnEliminarColegiado.Text = "Eliminar (Colegiado)";
             this.btnEliminarColegiado.UseVisualStyleBackColor = false;
-            this.btnEliminarColegiado.Click += new System.EventHandler(this.btnEliminarColegiado_Click);
+            this.btnEliminarColegiado.Click += new System.EventHandler(this.BtnEliminarColegiado_Click);
             // 
             // PanelBarraTitulo
             // 
@@ -250,9 +250,9 @@ namespace GestionDeColegiados
             this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCerrar.TabIndex = 2;
             this.pbCerrar.TabStop = false;
-            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
-            this.pbCerrar.MouseEnter += new System.EventHandler(this.pbCerrar_MouseEnter);
-            this.pbCerrar.MouseLeave += new System.EventHandler(this.pbCerrar_MouseLeave);
+            this.pbCerrar.Click += new System.EventHandler(this.PbCerrar_Click);
+            this.pbCerrar.MouseEnter += new System.EventHandler(this.PbCerrar_MouseEnter);
+            this.pbCerrar.MouseLeave += new System.EventHandler(this.PbCerrar_MouseLeave);
             // 
             // frmVerTodosLosColegiados
             // 

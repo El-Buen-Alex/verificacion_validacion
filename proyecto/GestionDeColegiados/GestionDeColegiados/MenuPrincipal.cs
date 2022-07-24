@@ -204,7 +204,7 @@ namespace GestionDeColegiados {
 
     private void ExaminarAccesibilidadEditarEquipoPorEncuentrosGenerados() {
       if(admGenerarEncuentros.ObtnerNumeroEncuentrosGeneradosPendientes() == 0 && admEncuentroFinalizado.GetCantidadEncuentrosFinalizados() == 0 && admEncuentrosDefinidos.ObtenerCantidadEncuentrosDefinidos() == 0) {
-        AbrirFormEnPanel(new frmVerTodos());
+        AbrirFormEnPanel(new FrmVerTodos());
       } else {
         MessageBox.Show("Existen encuentros generados o definidos. No se pueden eliminar o editar equipos.");
       }

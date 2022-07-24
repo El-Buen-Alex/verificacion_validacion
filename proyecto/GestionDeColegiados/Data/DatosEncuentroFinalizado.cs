@@ -15,7 +15,7 @@ namespace Data {
 
     public bool AddEncuentroFinalizado(EncuentroFinalizado encuentroFinalizado) {
       bool guardado = false;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       _trans = _conexion.BeginTransaction();
       try {
@@ -48,7 +48,7 @@ namespace Data {
 
     public bool FinalizarCompetencia(string anio, string estado) {
       bool respuesta = false;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       _trans = _conexion.BeginTransaction();
       try {
@@ -77,7 +77,7 @@ namespace Data {
     public List<EncuentroFinalizado> GetEncuentrosFinalizados(string anio) {
       List<EncuentroFinalizado> posiciones = new List<EncuentroFinalizado>();
       EncuentroFinalizado encuentroFinalizado = null;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       try {
         MySqlCommand cmd = new MySqlCommand("obtenerCompetencia", _conexion);
@@ -106,7 +106,7 @@ namespace Data {
 
     public EncuentroFinalizado GetEncuentroFinalizadoByIDefinidoEquipo(int idDefinido, int idEquipoLocal) {
       EncuentroFinalizado encuentroFinalizado = null;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       try {
         MySqlCommand cmd = new MySqlCommand("obtenerEncuentroFinalizadoById", _conexion);
@@ -134,7 +134,7 @@ namespace Data {
 
     public bool UpdateEncuentroFinalizado(EncuentroFinalizado encuentroResultado) {
       bool respuesta = false;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       _trans = _conexion.BeginTransaction();
       try {
@@ -161,7 +161,7 @@ namespace Data {
 
     public int GetCantidadEncuentrosFinalizados(string anio) {
       int cantidad = 0;
-      _conexion = ConexionBD.getConexion();
+      _conexion = ConexionBD.GetConexion();
       _conexion.Open();
       try {
         MySqlCommand comando = new MySqlCommand("cantidadEncuentrosFinalizados", _conexion);
