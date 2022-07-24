@@ -16,6 +16,7 @@ namespace GestionDeColegiados {
       DataGridViewRow filaSeleccionada = tablaDatos.CurrentRow;
       string id = filaSeleccionada.Cells[1].Value.ToString();
       if(id.CompareTo("") != 0) {
+
         FrmEditarEquipo editar = new FrmEditarEquipo(id);
         editar.ShowDialog();
       }
@@ -25,8 +26,10 @@ namespace GestionDeColegiados {
     private void Buscar_Click(object sender, EventArgs e) {
       String nombre = nomEquipo.Text;
       if(nombre.CompareTo("") != 0) {
+
         _equipo.LlenaTabla(tablaDatos, nombre);
         if(tablaDatos.Rows.Count > 0) {
+
           btnEditar.Visible = true;
           btnEliminar.Visible = true;
         } else {
@@ -45,6 +48,7 @@ namespace GestionDeColegiados {
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de eliminar un equipo!\nSi acepta tendrá que agregar uno nuevo", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
       if(id.CompareTo("") != 0 && resultado == DialogResult.Yes) {
+
         _equipo.EliminarRegistro(id);
       }
     }

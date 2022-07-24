@@ -188,6 +188,7 @@ namespace Control.AdmColegiados {
       foreach(IntegrantesColegiados integ in _listaintegColeg) {
         if(integ.NombrejuezCentral == cedula || integ.Nombreasistente1 == cedula ||
             integ.Nombreasistente2 == cedula || integ.NombrecuartoArbitro == cedula) {
+
           repetido = true;
           break;
         }
@@ -205,6 +206,7 @@ namespace Control.AdmColegiados {
       int i = 0;
       foreach(IntegrantesColegiados item in _listaintegColeg) {
         if(item.IdGrupoColegiado == idColegiados) {
+
           cmbGrupoColegiado.SelectedIndex = i;
         }
         i++;
@@ -223,15 +225,19 @@ namespace Control.AdmColegiados {
       Contexto contextoArbitro = null;
       string arbitro = filaSeleccionada.Cells[0].Value.ToString();
       if(arbitro == "Juez Central") {
+
         contextoArbitro = new Contexto(AdmJuezCentral.GetAdmJ());
       }
       if(arbitro == "Asistente 1") {
+
         contextoArbitro = new Contexto(AdmAsistente1.GetAdmA1());
       }
       if(arbitro == "Asistente 2") {
+
         contextoArbitro = new Contexto(AdmAsistente2.GetAdmA2());
       }
       if(arbitro == "Cuarto Árbitro") {
+
         contextoArbitro = new Contexto(AdmCuartoArbitro.GetAdmCA());
       }
       return contextoArbitro;
@@ -272,21 +278,25 @@ namespace Control.AdmColegiados {
       _listaColegiado = _datos.ObtenerTodosIdColegiado(idColegiado);
       string arbitro = filaSeleccionada.Cells[0].Value.ToString();
       if(arbitro == "Juez Central") {
+
         foreach(Colegiado col in _listaColegiado) {
           idArbitro = col.Idjuezcentral;
         }
       }
       if(arbitro == "Asistente 1") {
+
         foreach(Colegiado col in _listaColegiado) {
           idArbitro = col.Idasistente1;
         }
       }
       if(arbitro == "Asistente 2") {
+
         foreach(Colegiado col in _listaColegiado) {
           idArbitro = col.Idasistente2;
         }
       }
       if(arbitro == "Cuarto Árbitro") {
+
         foreach(Colegiado col in _listaColegiado) {
           idArbitro = col.Idcuartoarbitro;
         }
@@ -340,6 +350,7 @@ namespace Control.AdmColegiados {
       _contexto = EscogerArbitro(_filaSeleccionada);
       idNuevo = _contexto.EliminarArbitro(idArbitro, cedula, nombre, apellido, domicilio, email, telefono);
       if(idNuevo != 0) {
+
         string arbitro = _filaSeleccionada.Cells[0].Value.ToString();
         ActualizarColegiadoBD(idColegiado, idNuevo, arbitro);
       }
@@ -374,6 +385,7 @@ namespace Control.AdmColegiados {
       int idColegiado = Convert.ToInt32(cadena[1]);
       bool arbitroAsignado = ValidarArbitroAsignado(idColegiado);
       if(arbitroAsignado != true) {
+
         EliminarColegiadoBD(idColegiado);
         eliminado = true;
       } else {
@@ -393,6 +405,7 @@ namespace Control.AdmColegiados {
       listaEncuentro = _datosEncuentroDefinido.ObtenerEncuentros();
       foreach(EncuentroDefinido encuentroDefinido in listaEncuentro) {
         if(encuentroDefinido.IdColegiado == idColegiado) {
+
           return true;
         }
       }

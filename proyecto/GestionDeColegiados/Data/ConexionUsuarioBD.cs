@@ -37,6 +37,7 @@ namespace Model {
       Administrador administrador = null;
       //si la consulta es real entonces procedemos a instanciar dicho administrador
       if(_reader.Read()) {
+
         administrador = new Administrador();
         administrador.Id = int.Parse(_reader["Id"].ToString());
         administrador.Nombre = _reader["UserName"].ToString();

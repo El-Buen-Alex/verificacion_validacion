@@ -79,6 +79,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     /// <param name="e">Evento.</param>
     private void ValidarNumeros_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsNumber(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back))) {
+
         e.Handled = true;
         return;
       }
@@ -92,6 +93,7 @@ namespace GestionDeColegiados.FrmsColegiado {
     private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsLetter(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back)) &&
           (e.KeyChar != Convert.ToChar(Keys.Space))) {
+
         e.Handled = true;
         return;
       }
@@ -106,12 +108,15 @@ namespace GestionDeColegiados.FrmsColegiado {
       bool vacio = _validacionGUI.ValidarVacios(txtCedula, txtNombre, txtApellido, txtDomicilio, txtEmail, txtTelefono);
       bool cedulaRepetida = _admColegiado.ValidarCedula(txtCedula);
       if(vacio == true) {
+
         MessageBox.Show("Hay ciertos campos vacios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
       if(cedulaRepetida == true) {
+
         MessageBox.Show("El árbitro que ingresó ya se encuentra registrado!!\nIngrese uno nuevo", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
       if(vacio != true && cedulaRepetida != true) {
+
         string cedula = txtCedula.Text,
             nombre = txtNombre.Text,
             apellido = txtApellido.Text,
@@ -132,6 +137,7 @@ namespace GestionDeColegiados.FrmsColegiado {
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de cancelar!", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
       if(resultado == DialogResult.Yes) {
+
         Close();
       }
     }

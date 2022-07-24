@@ -28,6 +28,7 @@ namespace Control.AdmEncuentros {
 
     public static AdmEncuentroFinalizado GetAdmEncuentrosFinalizados() {
       if(_admEncuentroFinalizado == null) {
+
         _admEncuentroFinalizado = new AdmEncuentroFinalizado();
       }
       return _admEncuentroFinalizado;
@@ -53,10 +54,13 @@ namespace Control.AdmEncuentros {
       string anio = DateTime.Now.Year.ToString();
       int cantidad = _datosEncuentroFinalizado.GetCantidadEncuentrosFinalizados(anio);
       if(cantidad > 0) {
+
         respuesta = _datosEncuentroFinalizado.FinalizarCompetencia(anio, "R");
       } else if(cantidad == 0) {
+
         respuesta = true;
       } else if(cantidad == -1) {
+
         respuesta = false;
       }
       return respuesta;
@@ -71,10 +75,13 @@ namespace Control.AdmEncuentros {
       string anio = DateTime.Now.Year.ToString();
       int cantidad = _datosEncuentroFinalizado.GetCantidadEncuentrosFinalizados(anio);
       if(cantidad > 0) {
+
         respuesta = _datosEncuentroFinalizado.FinalizarCompetencia(anio, "N");
       } else if(cantidad == 0) {
+
         respuesta = true;
       } else if(cantidad == -1) {
+
         respuesta = false;
       }
       return respuesta;
@@ -89,6 +96,7 @@ namespace Control.AdmEncuentros {
       string anio = "" + DateTime.Now.Year;
       _encuentrosFinalizados = _datosEncuentroFinalizado.GetEncuentrosFinalizados(anio);
       if(_encuentrosFinalizados.Count > 0) {
+
         int posicion = 1;
         foreach(EncuentroFinalizado encuentro in _encuentrosFinalizados) {
           string nombreEquipo = _admEquipos.ObtenerEquipoPorId(encuentro.IdEquipo).NombreEquipo;
@@ -107,6 +115,7 @@ namespace Control.AdmEncuentros {
     private int CalcularPuntosVisitante(int puntos) {
       int puntosVisitante = 0;
       if(puntos == 0) {
+
         puntosVisitante = 3;
       } else if(puntos == 1) {
         puntosVisitante = 1;
@@ -169,6 +178,7 @@ namespace Control.AdmEncuentros {
 
       respuesta = _datosEncuentroFinalizado.UpdateEncuentroFinalizado(encuentroResultadoLocal);
       if(respuesta) {
+
         respuesta = _datosEncuentroFinalizado.UpdateEncuentroFinalizado(encuentroResultadoVisitante);
       }
       return respuesta;
@@ -198,6 +208,7 @@ namespace Control.AdmEncuentros {
 
       bool guardo = _datosEncuentroFinalizado.AddEncuentroFinalizado(encuentroResultadoLocal);
       if(guardo) {
+
         guardado = _datosEncuentroFinalizado.AddEncuentroFinalizado(encuentroResultadoVisitante);
       }
 
@@ -206,6 +217,7 @@ namespace Control.AdmEncuentros {
 
     public void CalcularPuntos(Label lblPuntos, string golFavor, string golContra) {
       if(!String.IsNullOrEmpty(golFavor) && !String.IsNullOrEmpty(golContra)) {
+
         int gFavor = _validaciones.AInt(golFavor);
         int gContra = _validaciones.AInt(golContra);
         lblPuntos.Text = "" + Puntos(gFavor, gContra);
@@ -214,10 +226,13 @@ namespace Control.AdmEncuentros {
     private int Puntos(int golFavor, int golContra) {
       int respuesta = 0;
       if(golContra == golFavor) {
+
         respuesta = 1;
       } else if(golFavor > golContra) {
+
         respuesta = 3;
       } else if(golFavor < golContra) {
+
         respuesta = 0;
       }
       return respuesta;

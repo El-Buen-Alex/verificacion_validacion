@@ -27,6 +27,7 @@ namespace GestionDeColegiados {
     /// <param name="e">Evento.</param>
     private void ValidarNumeros_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsNumber(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back))) {
+
         e.Handled = true;
         return;
       }
@@ -40,6 +41,7 @@ namespace GestionDeColegiados {
     private void ValidarLetras_KeyPress(object sender, KeyPressEventArgs e) {
       if(!char.IsLetter(e.KeyChar) && (e.KeyChar != Convert.ToChar(Keys.Back)) &&
           (e.KeyChar != Convert.ToChar(Keys.Space))) {
+
         e.Handled = true;
         return;
       }
@@ -58,7 +60,9 @@ namespace GestionDeColegiados {
       bool cedulaRepetida = _admColegiado.ValidarCedula(txtcedulaJC);
       bool txtcedulaRepetida = (txtcedulaJC.Text == txtcedulaAs1.Text) || (txtcedulaJC.Text == txtcedulaAs2.Text) || (txtcedulaJC.Text == txtcedulaCA.Text);
       if(vacio != true) {
+
         if(cedulaRepetida != true && txtcedulaRepetida != true) {
+
           CamposJuezCentral(false);
           CamposAsistente1(true);
         } else {
@@ -82,7 +86,9 @@ namespace GestionDeColegiados {
       bool cedulaRepetida = _admColegiado.ValidarCedula(txtcedulaAs1);
       bool txtcedulaRepetida = (txtcedulaAs1.Text == txtcedulaJC.Text) || (txtcedulaAs1.Text == txtcedulaAs2.Text) || (txtcedulaAs1.Text == txtcedulaCA.Text);
       if(vacio != true) {
+
         if(cedulaRepetida != true && txtcedulaRepetida != true) {
+
           CamposAsistente1(false);
           CamposAsistente2(true);
         } else {
@@ -119,7 +125,9 @@ namespace GestionDeColegiados {
       bool cedulaRepetida = _admColegiado.ValidarCedula(txtcedulaAs2);
       bool txtcedulaRepetida = (txtcedulaAs2.Text == txtcedulaJC.Text) || (txtcedulaAs2.Text == txtcedulaAs1.Text) || (txtcedulaAs2.Text == txtcedulaCA.Text);
       if(vacio != true) {
+
         if(cedulaRepetida != true && txtcedulaRepetida != true) {
+
           CamposAsistente2(false);
           CamposCuartoArbitro(true);
         } else {
@@ -156,7 +164,9 @@ namespace GestionDeColegiados {
       bool cedulaRepetida = _admColegiado.ValidarCedula(txtcedulaCA);
       bool txtcedulaRepetida = (txtcedulaCA.Text == txtcedulaJC.Text) || (txtcedulaCA.Text == txtcedulaAs1.Text) || (txtcedulaCA.Text == txtcedulaAs2.Text);
       if(vacio != true) {
+
         if(cedulaRepetida != true && txtcedulaRepetida != true) {
+
           RegistrarColegiado();
           LimpiarCamposJuezCentral();
           LimpiarCamposAsistente1();
@@ -197,6 +207,7 @@ namespace GestionDeColegiados {
       DialogResult resultado;
       resultado = MessageBox.Show("¿Está seguro que desea cancelar?\nSi lo hace, los datos ingresados se borrarán.", "Cancelar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
       if(resultado == DialogResult.Yes) {
+
         LimpiarCamposJuezCentral();
         LimpiarCamposAsistente1();
         LimpiarCamposAsistente2();
@@ -221,6 +232,7 @@ namespace GestionDeColegiados {
           idCuartoArbitro = ObtenerIdCuartoArbitro();
       bool vacio = _validacionGUI.ValidarNum(idJuezCentral, idAsistente1, idAsistente2, idCuartoArbitro);
       if(vacio != true) {
+
         _admColegiado.Guardar(idJuezCentral, idAsistente1, idAsistente2, idCuartoArbitro);
       } else {
         MessageBox.Show("No se pudo agregar colegiados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);

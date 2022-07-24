@@ -75,6 +75,7 @@ namespace GestionDeColegiados {
     /// <param name="e">Evento.</param>
     private void BtnBuscar_Click(object sender, System.EventArgs e) {
       if(cmbIdArbitro.Text.CompareTo("") != 0) {
+
         _admColegiado.LlenarDatosGrivColegiado(dgvListarColegiados, cmbIdArbitro);
         btnEditar.Enabled = true;
         btnEliminarArbitro.Enabled = true;
@@ -107,6 +108,7 @@ namespace GestionDeColegiados {
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de eliminar un árbitro!\nSi acepta tendrá que agregar uno nuevo", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
       if(resultado == DialogResult.Yes) {
+
         DataGridViewRow row = dgvListarColegiados.CurrentRow;
         string arbitro = row.Cells[0].Value.ToString();
         FrmElimAgregarArbitro frmAgregar = new FrmElimAgregarArbitro(arbitro, cmbIdArbitro.Text);
@@ -126,8 +128,10 @@ namespace GestionDeColegiados {
       DialogResult resultado;
       resultado = MessageBox.Show("¡Está seguro de eliminar el " + cmbIdArbitro.Text + " de colegiados!", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
       if(resultado == DialogResult.Yes) {
+
         eliminado = _admColegiado.EliminarColegiado(cmbIdArbitro.Text);
         if(eliminado == true) {
+
           _admColegiado.LlenarComboIdColegiado(cmbIdArbitro);
           dgvListarColegiados.Rows.Clear();
         }

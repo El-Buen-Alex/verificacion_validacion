@@ -36,7 +36,6 @@ namespace Control.AdmEncuentrosGenerados {
 
         _admGenerarEncuentrosDefinidos = new AdmEncuentrosDefinidos();
       }
-
       return _admGenerarEncuentrosDefinidos;
     }
 
@@ -75,6 +74,7 @@ namespace Control.AdmEncuentrosGenerados {
       cmbEncuentros.Items.Clear();
       _listaEncuentrosDefinidos = _datosEncuentroDefinido.GetEncuentrosDefinidosFinalizados(anio);
       if(_listaEncuentrosDefinidos.Count > 0) {
+
         LlenarCmbMatch(cmbEncuentros);
         resultado = true;
       }
@@ -275,6 +275,7 @@ ademas del estadio*/
       EncuentroDefinido encuentroDefinido = new EncuentroDefinido(idEncuentroGeneradoPendiente, idColegiado, fechaPartido, horaPartido, idEsadio);
       int id = _datosEncuentroDefinido.GuardarEncuentroDefinido(encuentroDefinido);
       if(id != 0) {
+
         bool cambiarEstado = _admEncuentrosGenerados.CambiarEstadoEncuentro(idEncuentroGeneradoPendiente);
         if(cambiarEstado) {
 

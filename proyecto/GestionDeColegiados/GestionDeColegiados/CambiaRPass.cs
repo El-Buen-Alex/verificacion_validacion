@@ -29,7 +29,6 @@ namespace GestionDeColegiados {
         this.Close();
         BtnIniciarSesion iniciar = new BtnIniciarSesion();
         iniciar.Show();
-
       } else {
         MessageBox.Show(cambiar, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }

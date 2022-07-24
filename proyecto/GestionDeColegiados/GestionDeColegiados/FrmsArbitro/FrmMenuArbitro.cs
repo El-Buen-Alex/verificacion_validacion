@@ -76,6 +76,7 @@ namespace GestionDeColegiados.FrmsArbitro {
     private void BtnRegistrarPartido_Click(object sender, EventArgs e) {
       int cantEncuentrosDefinidos = _admEncuentrosDefinidos.ObtenerNumeroPartidosPorJugar();
       if(cantEncuentrosDefinidos == 0) {
+
         MessageBox.Show("No existen encuentros definidos por registrar");
       } else {
         AbrirFormEnPanel(new FrmRegistrarResultado());
@@ -85,6 +86,7 @@ namespace GestionDeColegiados.FrmsArbitro {
     private void ExistenRegistrosArbir(object formhija) {
       int cantEncuentrosFinalizados = _admEncuentroFinalizado.GetCantidadEncuentrosFinalizados();
       if(cantEncuentrosFinalizados > 0) {
+
         AbrirFormEnPanel(formhija);
       }
     }

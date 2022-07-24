@@ -75,6 +75,7 @@ namespace GestionDeColegiados {
     /*Evento que permite el tecleo de palabras, uso de la tecla de borrado y la barra espaciadora*/
     private void Presidente_KeyPress(object sender, KeyPressEventArgs e) {
       if(!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space)) {
+
         MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         e.Handled = true;
         return;
@@ -83,6 +84,7 @@ namespace GestionDeColegiados {
 
     private void Numjugadores_TextChanged(object sender, EventArgs e) {
       if(_validacionGUI.AInt(numjugadores.Text) < 0 || _validacionGUI.AInt(numjugadores.Text) > 12) {
+
         MessageBox.Show("Solo se permite el ingreso de 12 jugadores", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         numjugadores.Text = "";
       }

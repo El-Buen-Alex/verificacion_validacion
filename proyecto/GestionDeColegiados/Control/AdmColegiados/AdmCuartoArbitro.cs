@@ -128,6 +128,7 @@ namespace Control.AdmColegiados {
             cuartoArb.Domicilio == filaSeleccionada.Cells[4].Value.ToString() &&
             cuartoArb.Email == filaSeleccionada.Cells[5].Value.ToString() &&
             cuartoArb.Telefono == filaSeleccionada.Cells[6].Value.ToString()) {
+
           _cA = cuartoArb;
         }
       }

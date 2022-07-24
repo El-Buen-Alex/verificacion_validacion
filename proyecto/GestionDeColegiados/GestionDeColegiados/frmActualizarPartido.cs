@@ -56,6 +56,7 @@ namespace GestionDeColegiados {
       int indexEncuentroDefinidoSeleccionado = cmbEncuentros.SelectedIndex;
       _muestraInfo = _admEncuentrosDefinidos.LlenarInformacíonPartidoCompleta(indexEncuentroDefinidoSeleccionado, lblEquipoLocal, lblEquipoVisitante, cmbEstadios, dtpFechaEncuentro, dtpHora, cmbGrupoColegiado, txtColegiados);
       if(_muestraInfo) {
+
         CambiarDisponibilidadControladoresUi(true);
         ValidarFecha();
       }
@@ -87,6 +88,7 @@ namespace GestionDeColegiados {
     private void ValidarFecha() {
       bool fecha = _validacionGUI.ValidarFecha(dtpFechaEncuentro.Value);
       if(!fecha) {
+
         CambiarDisponibilidadControladoresUi(false);
         CambiarAccesibilidadBotonGuardar(false);
         dtpFechaEncuentro.Enabled = true;

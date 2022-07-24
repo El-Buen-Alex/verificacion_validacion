@@ -32,6 +32,7 @@ namespace Data {
         guardo = false;
       }
       if(guardo == true) {
+
         _transaccion.Commit();
       }
       _conexion.Close();
@@ -49,6 +50,7 @@ namespace Data {
         cmd.Parameters.AddWithValue("@_idencuentro", idEncuentroGeneradoPendiente);
         MySqlDataReader reader = cmd.ExecuteReader();
         if(reader.Read()) {
+
           encuentro = new EncuentroGenerado();
           encuentro.Id = Convert.ToInt32(reader["idencuentro"].ToString());
           encuentro.IdEquipoLocal = Convert.ToInt32(reader["idEquipoLocal"].ToString());
@@ -90,15 +92,10 @@ namespace Data {
       _transaccion = _conexion.BeginTransaction();
       try {
         MySqlCommand cmd = new MySqlCommand("CambiarEstadoEncuentrosGeneradoToN", _conexion, _transaccion);
-
         cmd.CommandType = CommandType.StoredProcedure;
-
         cmd.Parameters.AddWithValue("_estado", estado[0]);
-
         cmd.ExecuteNonQuery();
-
         _transaccion.Commit();
-
         respuesta = true;
 
       } catch(MySqlException ex) {

@@ -69,6 +69,7 @@ namespace Control.AdmColegiados {
       _asistente2 = new Asistente(0, cedula, nombre, apellidos, domicilio, email, telefono, "Izquierda");
 
       if(_asistente2 != null) {
+
         _listaAsistente2.Add(_asistente2);      //Añadir a la lista
         id = GuardarAsistente2BD(_asistente2); //Guardar BD
       }
@@ -127,6 +128,7 @@ namespace Control.AdmColegiados {
             asistente.Domicilio == filaSeleccionada.Cells[4].Value.ToString() &&
             asistente.Email == filaSeleccionada.Cells[5].Value.ToString() &&
             asistente.Telefono == filaSeleccionada.Cells[6].Value.ToString()) {
+
           _as2 = asistente;
         }
       }
@@ -224,6 +226,7 @@ namespace Control.AdmColegiados {
       int idNuevo = 0;
 
       if(_asistente2 != null) {
+
         EliminarAsistente2BD(idArbitro);
         idNuevo = GuardarAsistente2BD(_asistente2);
       }
